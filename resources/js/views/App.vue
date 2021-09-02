@@ -18,7 +18,7 @@
       <div class="p-col-3 p-mt-2 p-d-none p-d-md-block" v-if="toggle">
         <!-- <Sidebar></Sidebar> -->
 
-            <ScrollPanel style="width: 100%;" class="vh-100 custom p-shadow-1 bg-white">
+            <ScrollPanel style="width: 100%;" class="vh-100 custom p-shadow-1 bg-white" v-if="side">
               hello world
               content
               Lorem ipsum dolor sit amet consectetur
@@ -56,10 +56,11 @@ export default {
     if (this.theme == true) {
       import("primevue/resources/themes/bootstrap4-dark-blue/theme.css");
     } else {
-      // import('primevue/resources/themes/bootstrap4-light-blue/theme.css')
       import("primevue/resources/themes/nova-vue/theme.css");
-      // import('primevue/resources/themes/nova/theme.css')
     }
+    console.log(this.$route.fullPath)
+    // console.log(this.$listeners = 'rtest');
+
   },
   data() {
     return {
@@ -73,9 +74,9 @@ export default {
               icon: "pi pi-fw pi-plus",
               items: [
                 {
-                  label: "Bookmark",
+                  label: "Customer",
                   icon: "pi pi-fw pi-bookmark",
-                  to: "/new-file-name"
+                  to: "/create-customer/1"
                 },
                 {
                   label: "Video",
@@ -92,24 +93,24 @@ export default {
               separator: true
             },
             {
-              label: "Export",
-              icon: "pi pi-fw pi-external-link"
+              label: "Form",
+              icon: "pi pi-fw pi-external-link",
+              to : '/form'
             }
           ]
         },
         {
-          label: "Create Designation",
+          label: "Hrm",
           icon: "pi pi-fw pi-pencil",
           items: [
             {
-              label: "Left",
+              label: "Create Designation",
               icon: "pi pi-fw pi-align-left",
               to: "/create-designation"
             },
             {
               label: "Create Department",
               icon: "pi pi-fw pi-align-right",
-              to: '/create-department'
             },
             {
               label: "Center",
@@ -192,7 +193,8 @@ export default {
       ],
       toggle: true,
       classItem: "p-col-9 p-mt-2",
-      theme: false
+      theme: false,
+      side:true,
     };
   },
   methods: {
@@ -209,12 +211,10 @@ export default {
       if (this.theme == true) {
         document.body.style.backgroundColor = "##f8fafc";
         document.body.style.color = "#00000";
-        // require('primevue/resources/themes/nova-vue/theme.css')
         import("primevue/resources/themes/nova-vue/theme.css");
       } else {
         document.body.style.backgroundColor = "rgb(31 39 51)";
         document.body.style.color = "rgb(255 255 255 / 87%)";
-        // require('primevue/resources/themes/bootstrap4-dark-blue/theme.css')
         import("primevue/resources/themes/bootstrap4-dark-blue/theme.css");
       }
     }
