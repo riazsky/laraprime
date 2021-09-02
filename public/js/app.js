@@ -1955,7 +1955,7 @@ __webpack_require__.r(__webpack_exports__);
           items: [{
             label: "Bookmark",
             icon: "pi pi-fw pi-bookmark",
-            to: "/"
+            to: "/new-file-name"
           }, {
             label: "Video",
             icon: "pi pi-fw pi-video",
@@ -1971,15 +1971,16 @@ __webpack_require__.r(__webpack_exports__);
           icon: "pi pi-fw pi-external-link"
         }]
       }, {
-        label: "Edit",
+        label: "Create Designation",
         icon: "pi pi-fw pi-pencil",
         items: [{
           label: "Left",
           icon: "pi pi-fw pi-align-left",
           to: "/create-designation"
         }, {
-          label: "Right",
-          icon: "pi pi-fw pi-align-right"
+          label: "Create Department",
+          icon: "pi pi-fw pi-align-right",
+          to: '/create-department'
         }, {
           label: "Center",
           icon: "pi pi-fw pi-align-center"
@@ -2375,6 +2376,10 @@ var CreateDesignation = function CreateDesignation() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_designations_CreateDesignation_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/designations/CreateDesignation.vue */ "./resources/js/views/designations/CreateDesignation.vue"));
 };
 
+var CreateDepartment = function CreateDepartment() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_departments_CreateDepartment_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/departments/CreateDepartment.vue */ "./resources/js/views/departments/CreateDepartment.vue"));
+};
+
 var routes = [{
   path: '/',
   name: 'Welcome',
@@ -2387,6 +2392,10 @@ var routes = [{
   path: '/create-designation',
   name: 'CreateDesignation',
   component: CreateDesignation
+}, {
+  path: '/create-dapartment',
+  name: 'CreateDepartment',
+  component: CreateDepartment
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_0__.default({
   routes: routes
@@ -70014,7 +70023,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_About_vue":1,"resources_js_views_designations_CreateDesignation_vue":1,"node_modules_primevue_resources_themes_bootstrap4-dark-blue_theme_css":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_About_vue":1,"resources_js_views_designations_CreateDesignation_vue":1,"resources_js_views_departments_CreateDepartment_vue":1,"node_modules_primevue_resources_themes_bootstrap4-dark-blue_theme_css":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

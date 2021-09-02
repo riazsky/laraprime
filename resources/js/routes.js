@@ -1,7 +1,8 @@
 import VueRouter from 'vue-router';
-const Welcome = () => import('./views/Welcome.vue')
-const About = () => import('./views/About.vue')
-const CreateDesignation = () => import('./views/designations/CreateDesignation.vue')
+const Welcome = () => import('./views/Welcome.vue');
+const About = () => import('./views/About.vue');
+const CreateDesignation = () => import('./views/designations/CreateDesignation.vue');
+const CreateDepartment = () => import('./views/departments/CreateDepartment.vue');
 
 const routes = [
     {
@@ -18,6 +19,11 @@ const routes = [
         path: '/create-designation',
         name: 'CreateDesignation',
         component: CreateDesignation
+    },
+    {
+        path: '/create-dapartment',
+        name: 'CreateDepartment',
+        component: CreateDepartment
     },
 
 ]

@@ -75,7 +75,7 @@ export default {
                 {
                   label: "Bookmark",
                   icon: "pi pi-fw pi-bookmark",
-                  to: "/"
+                  to: "/new-file-name"
                 },
                 {
                   label: "Video",
@@ -98,7 +98,7 @@ export default {
           ]
         },
         {
-          label: "Edit",
+          label: "Create Designation",
           icon: "pi pi-fw pi-pencil",
           items: [
             {
@@ -107,8 +107,9 @@ export default {
               to: "/create-designation"
             },
             {
-              label: "Right",
-              icon: "pi pi-fw pi-align-right"
+              label: "Create Department",
+              icon: "pi pi-fw pi-align-right",
+              to: '/create-department'
             },
             {
               label: "Center",

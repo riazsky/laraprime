@@ -85,5 +85,3 @@ const app = new Vue({
     router: routes,
     render: h => h(App)
 });
-
-
