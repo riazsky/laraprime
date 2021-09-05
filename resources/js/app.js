@@ -33,6 +33,7 @@ import Sidebar from 'primevue/sidebar';
 import InputMask from 'primevue/inputmask';
 
 
+
 Vue.use(PrimeVue)
 Vue.use(ToastService)
 Vue.use(VueRouter)
@@ -65,6 +66,7 @@ Vue.component('Toast',Toast);
 Vue.component('Sidebar',Sidebar);
 Vue.component('InputText', InputText)
 Vue.component('InputMask', InputMask)
+
 
 
 

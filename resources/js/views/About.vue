@@ -17,5 +17,8 @@ export default {
         console.log(this.$route.path)
         this.$emit('rtest',this.$route.path);
     },
+    methods: {
+
+    },
 }
 </script>

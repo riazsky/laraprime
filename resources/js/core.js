@@ -43,9 +43,11 @@ $(function() {
 	}), $(".close-switcher").on("click", function() {
 		$(".switcher-wrapper").removeClass("switcher-toggled")
 	}), $("#lightmode").on("click", function() {
-		$("html").attr("class", "light-theme")
+        $("html").attr("class", "light-theme")
+
 	}), $("#darkmode").on("click", function() {
-		$("html").attr("class", "dark-theme")
+        $("html").attr("class", "dark-theme")
+
 	}), $("#semidark").on("click", function() {
 		$("html").attr("class", "semi-dark")
 	}), $("#minimaltheme").on("click", function() {

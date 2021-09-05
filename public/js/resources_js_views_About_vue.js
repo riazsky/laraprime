@@ -29,7 +29,8 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     console.log(this.$route.path);
     this.$emit('rtest', this.$route.path);
-  }
+  },
+  methods: {}
 });
 
 /***/ }),
@@ -44,6 +45,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
 //
 //
 //
@@ -393,7 +397,13 @@ var render = function() {
             rows: 5,
             sortMode: "multiple",
             filters: _vm.filters,
+            rowHover: true,
             selection: _vm.selectedCars,
+            paginatorTemplate:
+              "FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown",
+            rowsPerPageOptions: [5, 10, 25, 50],
+            currentPageReportTemplate:
+              "Showing {first} to {last} of {totalRecords} entries",
             dataKey: "vin",
             editMode: "cell"
           },

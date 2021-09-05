@@ -2,8 +2,11 @@
     <div>
         <Breadcrumb :home="home" :model="items" class="p-mb-2"/>
         <DataTable :value="cars" :paginator="true" :rows="5"
-        sortMode="multiple" :filters="filters"
+        sortMode="multiple" :filters="filters" :rowHover="true"
         :selection.sync="selectedCars"
+        paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
+        :rowsPerPageOptions="[5,10,25,50]"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
         dataKey="vin"
          editMode="cell" class="editable-cells-table">
 

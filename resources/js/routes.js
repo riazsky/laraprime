@@ -3,6 +3,8 @@ const Welcome = () => import('./views/Welcome.vue');
 const About = () => import('./views/About.vue');
 const CreateDesignation = () => import('./views/designations/CreateDesignation.vue');
 const CreateCustomer = () => import('./views/customers/CreateCustomer.vue');
+const CreatePurchase = () => import('./views/purchases/CreatePurchase.vue');
+const Supplier = () => import('./views/suppliers/Supplier.vue');
 const From = () => import('./views/forms/Form.vue');
 
 
@@ -32,11 +34,21 @@ const routes = [
         name: 'Form',
         component: From
     },
+    {
+        path: '/create-purchase',
+        name: 'CreatePurchase',
+        component: CreatePurchase
+    },
+    {
+        path: '/supplier',
+        name: 'Supplier',
+        component: Supplier
+    },
 
 ]
 
 export default new VueRouter({
-    mode: 'history',
+    // mode: 'history',
     routes
 });
 

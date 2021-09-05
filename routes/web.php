@@ -20,6 +20,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/testing',function(Request $request){
+    $file = $request->file('data');
+    return response()->json($file, 200);
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -34,3 +39,4 @@ Route::post('/add-designation', function (Request $request) {
         return response()->json('error');
     }
 });
+

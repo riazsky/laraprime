@@ -63,11 +63,11 @@
 						</li>
 						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/about">About</router-link></a>
 						</li>
-						<li> <a href="dashboard-analytics.html"><i class="pi pi-arrow-right"></i>Analytics</a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-designation">Designation</router-link></a>
 						</li>
-						<li> <a href="dashboard-digital-marketing.html"><i class="pi pi-arrow-right"></i>Digital Marketing</a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-purchase">Purchase</router-link></a>
 						</li>
-						<li> <a href="dashboard-human-resources.html"><i class="pi pi-arrow-right"></i>Human Resources</a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/supplier">Supplier</router-link></a>
 						</li>
 					</ul>
 				</li>
@@ -734,7 +734,7 @@
 		<!--start overlay-->
 		<div class="overlay toggle-icon"></div>
 		<!--end overlay-->
-		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='pi pis-up-arrow-alt'></i></a>
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='pi pi-arrow-up'></i></a>
 		<!--End Back To Top Button-->
 		<footer class="page-footer">
 			<p class="mb-0">Copyright © 2021. All right reserved.</p>
@@ -748,7 +748,7 @@
 		<div class="switcher-body">
 			<div class="d-flex align-items-center">
 				<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
-				<button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
+				<button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"><i class="pi pi-times"></i></button>
 			</div>
 			<hr/>
 			<h6 class="mb-0">Theme Styles</h6>
