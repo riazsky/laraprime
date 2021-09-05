@@ -85,10 +85,6 @@ export default {
               ]
             },
             {
-              label: "Delete",
-              icon: "pi pi-fw pi-trash"
-            },
-            {
               separator: true
             },
             {
@@ -101,6 +97,16 @@ export default {
           label: "Edit",
           icon: "pi pi-fw pi-pencil",
           items: [
+            {
+              label: "Suplier list",
+              icon: "pi pi-fw pi-align-left",
+              to: "/suplier"
+            },
+            {
+              label: "Suplier Form",
+              icon: "pi pi-fw pi-align-left",
+              to: "/supplier_form"
+            },
             {
               label: "Left",
               icon: "pi pi-fw pi-align-left",
@@ -131,6 +137,16 @@ export default {
             {
               label: "Delete",
               icon: "pi pi-fw pi-user-minus"
+            },
+            {
+              label: "Table",
+              icon: "pi pi-fw pi-user-minus",
+              to: '/table'
+            },
+            {
+              label: "From",
+              icon: "pi pi-fw pi-user-minus",
+              to: '/form'
             },
             {
               label: "Search",

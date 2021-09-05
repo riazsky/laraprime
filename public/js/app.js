@@ -1962,9 +1962,6 @@ __webpack_require__.r(__webpack_exports__);
             to: "/about"
           }]
         }, {
-          label: "Delete",
-          icon: "pi pi-fw pi-trash"
-        }, {
           separator: true
         }, {
           label: "Export",
@@ -1974,6 +1971,14 @@ __webpack_require__.r(__webpack_exports__);
         label: "Edit",
         icon: "pi pi-fw pi-pencil",
         items: [{
+          label: "Suplier list",
+          icon: "pi pi-fw pi-align-left",
+          to: "/suplier"
+        }, {
+          label: "Suplier Form",
+          icon: "pi pi-fw pi-align-left",
+          to: "/supplier_form"
+        }, {
           label: "Left",
           icon: "pi pi-fw pi-align-left",
           to: "/create-designation"
@@ -1996,6 +2001,14 @@ __webpack_require__.r(__webpack_exports__);
         }, {
           label: "Delete",
           icon: "pi pi-fw pi-user-minus"
+        }, {
+          label: "Table",
+          icon: "pi pi-fw pi-user-minus",
+          to: '/table'
+        }, {
+          label: "From",
+          icon: "pi pi-fw pi-user-minus",
+          to: '/form'
         }, {
           label: "Search",
           icon: "pi pi-fw pi-users",
@@ -2375,6 +2388,22 @@ var CreateDesignation = function CreateDesignation() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_designations_CreateDesignation_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/designations/CreateDesignation.vue */ "./resources/js/views/designations/CreateDesignation.vue"));
 };
 
+var Table = function Table() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_table_Table_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/table/Table.vue */ "./resources/js/views/table/Table.vue"));
+};
+
+var Form = function Form() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_form_Form_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/form/Form.vue */ "./resources/js/views/form/Form.vue"));
+};
+
+var Suplier = function Suplier() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_suplier_groups_Suplier_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/suplier_groups/Suplier.vue */ "./resources/js/views/suplier_groups/Suplier.vue"));
+};
+
+var SupplierForm = function SupplierForm() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_suplier_groups_Form_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/suplier_groups/Form.vue */ "./resources/js/views/suplier_groups/Form.vue"));
+};
+
 var routes = [{
   path: '/',
   name: 'Welcome',
@@ -2387,6 +2416,22 @@ var routes = [{
   path: '/create-designation',
   name: 'CreateDesignation',
   component: CreateDesignation
+}, {
+  path: '/table',
+  name: 'table',
+  component: Table
+}, {
+  path: '/form',
+  name: 'form',
+  component: Form
+}, {
+  path: '/suplier',
+  name: 'suplier',
+  component: Suplier
+}, {
+  path: '/supplier_form',
+  name: 'supplier_form',
+  component: SupplierForm
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_0__.default({
   routes: routes
@@ -7237,7 +7282,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.p-menubar[data-v-91ac6b5c] {\n  border-radius: 0px;\n}\n.p-scrollpanel-bar[data-v-91ac6b5c] {\n  background-color: #1976d2;\n  opacity: 1;\n  transition: background-color 0.3s;\n}\n.p-scrollpanel-bar[data-v-91ac6b5c]:hover {\n  background-color: #135ba1;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.p-menubar[data-v-91ac6b5c] {\r\n  border-radius: 0px;\n}\n.p-scrollpanel-bar[data-v-91ac6b5c] {\r\n  background-color: #1976d2;\r\n  opacity: 1;\r\n  transition: background-color 0.3s;\n}\n.p-scrollpanel-bar[data-v-91ac6b5c]:hover {\r\n  background-color: #135ba1;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7261,7 +7306,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.p-panelmenu .p-panelmenu-header > .p-panelmenu-header-link[data-v-02a6918d] {\n    padding: 0.857rem 1rem;\n    border: 0px !important;\n    color: #333333;\n    background: #ffffff !important;\n    font-weight: 700;\n    border-radius: 0px !important;\n    transition: background-color 0.2s, box-shadow 0.2s;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.p-panelmenu .p-panelmenu-header > .p-panelmenu-header-link[data-v-02a6918d] {\r\n    padding: 0.857rem 1rem;\r\n    border: 0px !important;\r\n    color: #333333;\r\n    background: #ffffff !important;\r\n    font-weight: 700;\r\n    border-radius: 0px !important;\r\n    transition: background-color 0.2s, box-shadow 0.2s;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -70014,7 +70059,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_About_vue":1,"resources_js_views_designations_CreateDesignation_vue":1,"node_modules_primevue_resources_themes_bootstrap4-dark-blue_theme_css":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_About_vue":1,"resources_js_views_designations_CreateDesignation_vue":1,"resources_js_views_table_Table_vue":1,"resources_js_views_form_Form_vue":1,"resources_js_views_suplier_groups_Suplier_vue":1,"resources_js_views_suplier_groups_Form_vue":1,"node_modules_primevue_resources_themes_bootstrap4-dark-blue_theme_css":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
