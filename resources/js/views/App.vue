@@ -1,41 +1,5 @@
 <template>
   <div>
-    <!-- <Menubar :model="items" class="p-shadow-1 sticky-top">
-      <template #start>
-        <Button v-on:click="fully()">
-          <span v-show="toggle">Hide</span>
-          <span v-show="!toggle">Show</span>
-        </Button>
-        <Button v-on:click="changeTheme()">THeme</Button>
-      </template>
-
-      <template #end>
-        <i class="pi pi-search" style="margin: 4px 4px 0px 0px;"></i>
-        <InputText placeholder="Search Keywords.."></InputText>
-      </template>
-    </Menubar> -->
-    <!-- <div class="p-grid">
-          <div class="p-col-3 p-mt-2 p-d-none p-d-md-block" v-if="toggle">
-            <ScrollPanel style="width: 100%;" class="vh-100 custom p-shadow-1 bg-white" v-if="side">
-              hello world
-              content
-              Lorem ipsum dolor sit amet consectetur
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id unde deleniti quo et, consectetur, dignissimos aspernatur a eaque dicta placeat vitae? Doloremque necessitatibus illo, aliquam perferendis dolor magni iusto ab!
-              adipisicing elit. Doloribus quam dolorem praesentium ducimus harum perspiciatis facere vero suscipit adipisci eius consequuntur quibusdam enim magnam unde, accusamus placeat itaque, at recusandae.
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ipsa fugit quas odit at quasi, voluptatem excepturi beatae illo blanditiis, esse consequuntur ea culpa nisi incidunt id tempora modi eius!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, perferendis qui. Aspernatur asperiores officia nostrum, consectetur ipsa hic praesentium modi amet cumque deserunt magni excepturi saepe. Nemo laudantium iste culpa.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, culpa aut labore exercitationem quidem minus assumenda iusto error dolor minima velit accusamus aliquid quo cum sed voluptas. Expedita, sequi assumenda!
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim repellendus earum soluta optio expedita sapiente recusandae eum? Illum dolores consectetur temporibus saepe sed doloribus perferendis voluptatibus, libero eligendi labore molestiae.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis blanditiis nobis dolorum sed modi animi minima reprehenderit rem aperiam eum, quia nihil. Illum necessitatibus omnis velit adipisci nemo nostrum alias.
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit ducimus, quis nesciunt tempore aperiam recusandae quasi ab, fuga vel laborum fugiat tenetur inventore nostrum iste nemo eaque quo laudantium aliquid.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In odio blanditiis ab. Vel voluptate veritatis, culpa totam nam ducimus quaerat quia explicabo, quo fugiat quae asperiores assumenda at facilis pariatur?
-            </ScrollPanel>
-      </div>
-      <div :class="classItem">
-        <router-view></router-view>
-      </div>
-    </div> -->
-
     <div class="wrapper">
 		<!--sidebar wrapper -->
 		<div class="sidebar-wrapper" data-simplebar="true">
@@ -56,18 +20,18 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='pi pi-home'></i>
 						</div>
-						<div class="menu-title">Dashboard</div>
+						<div class="menu-title">HRM</div>
 					</a>
 					<ul>
 						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/">Home</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/about">About</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-designation"> Create Designations</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-designation">Designation</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/designation-list">Designation list</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-purchase">Purchase</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-department">Create Department</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/supplier">Supplier</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/department-list">Department List</router-link></a>
 						</li>
 					</ul>
 				</li>
@@ -841,14 +805,12 @@
 
 <script>
 import Menubar from "primevue/menubar";
-import Sidebar from "./Sidebar";
 import ScrollPanel from "primevue/scrollpanel";
 
 export default {
   name: "App",
   components: {
     Menubar,
-    Sidebar,
     ScrollPanel
   },
 //   mounted() {
@@ -862,139 +824,9 @@ export default {
 
 //   },
   data() {
-    return {
-    //   items: [
-    //     {
-    //       label: "File",
-    //       icon: "pi pi-fw pi-file",
-    //       items: [
-    //         {
-    //           label: "New",
-    //           icon: "pi pi-fw pi-plus",
-    //           items: [
-    //             {
-    //               label: "Customer",
-    //               icon: "pi pi-fw pi-bookmark",
-    //               to: "/create-customer/1"
-    //             },
-    //             {
-    //               label: "Video",
-    //               icon: "pi pi-fw pi-video",
-    //               to: "/about"
-    //             }
-    //           ]
-    //         },
-    //         {
-    //           label: "Delete",
-    //           icon: "pi pi-fw pi-trash"
-    //         },
-    //         {
-    //           separator: true
-    //         },
-    //         {
-    //           label: "Form",
-    //           icon: "pi pi-fw pi-external-link",
-    //           to : '/form'
-    //         }
-    //       ]
-    //     },
-    //     {
-    //       label: "Hrm",
-    //       icon: "pi pi-fw pi-pencil",
-    //       items: [
-    //         {
-    //           label: "Create Designation",
-    //           icon: "pi pi-fw pi-align-left",
-    //           to: "/create-designation"
-    //         },
-    //         {
-    //           label: "Create Department",
-    //           icon: "pi pi-fw pi-align-right",
-    //         },
-    //         {
-    //           label: "Center",
-    //           icon: "pi pi-fw pi-align-center"
-    //         },
-    //         {
-    //           label: "Justify",
-    //           icon: "pi pi-fw pi-align-justify"
-    //         }
-    //       ]
-    //     },
-    //     {
-    //       label: "Users",
-    //       icon: "pi pi-fw pi-user",
-    //       items: [
-    //         {
-    //           label: "New",
-    //           icon: "pi pi-fw pi-user-plus"
-    //         },
-    //         {
-    //           label: "Delete",
-    //           icon: "pi pi-fw pi-user-minus"
-    //         },
-    //         {
-    //           label: "Search",
-    //           icon: "pi pi-fw pi-users",
-    //           items: [
-    //             {
-    //               label: "Filter",
-    //               icon: "pi pi-fw pi-filter",
-    //               items: [
-    //                 {
-    //                   label: "Print",
-    //                   icon: "pi pi-fw pi-print"
-    //                 }
-    //               ]
-    //             },
-    //             {
-    //               icon: "pi pi-fw pi-bars",
-    //               label: "List"
-    //             }
-    //           ]
-    //         }
-    //       ]
-    //     },
-    //     {
-    //       label: "Events",
-    //       icon: "pi pi-fw pi-calendar",
-    //       items: [
-    //         {
-    //           label: "Edit",
-    //           icon: "pi pi-fw pi-pencil",
-    //           items: [
-    //             {
-    //               label: "Save",
-    //               icon: "pi pi-fw pi-calendar-plus"
-    //             },
-    //             {
-    //               label: "Delete",
-    //               icon: "pi pi-fw pi-calendar-minus"
-    //             }
-    //           ]
-    //         },
-    //         {
-    //           label: "Archieve",
-    //           icon: "pi pi-fw pi-calendar-times",
-    //           items: [
-    //             {
-    //               label: "Remove",
-    //               icon: "pi pi-fw pi-calendar-minus"
-    //             }
-    //           ]
-    //         }
-    //       ]
-    //     },
-    //     {
-    //       label: "Quit",
-    //       icon: "pi pi-fw pi-power-off"
-    //     }
-    //   ],
-    //   toggle: true,
-    //   classItem: "p-col-9 p-mt-2",
-    //   theme: false,
-    //   side:true,
-    };
+	  return{
+
+	  }
   },
 //   methods: {
 //     fully() {

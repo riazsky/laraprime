@@ -1,12 +1,9 @@
 import VueRouter from 'vue-router';
 const Welcome = () => import('./views/Welcome.vue');
-const About = () => import('./views/About.vue');
-const CreateDesignation = () => import('./views/designations/CreateDesignation.vue');
-const CreateCustomer = () => import('./views/customers/CreateCustomer.vue');
-const CreatePurchase = () => import('./views/purchases/CreatePurchase.vue');
-const Supplier = () => import('./views/suppliers/Supplier.vue');
-const From = () => import('./views/forms/Form.vue');
-
+const CreateDesignation = () => import('./views/HRM/designations/CreateDesignation.vue');
+const DesignationList = () => import('./views/HRM/designations/DesignationList.vue');
+const CreateDepartment = () => import('./views/HRM/departments/CreateDepartment.vue');
+const DepartmentList = () => import('./views/HRM/departments/DepartmentList.vue');
 
 const routes = [
     {
@@ -15,35 +12,26 @@ const routes = [
         component: Welcome
     },
     {
-        path: '/about',
-        name: 'About',
-        component: About
-    },
-    {
         path: '/create-designation',
         name: 'CreateDesignation',
         component: CreateDesignation
     },
     {
-        path: '/create-customer/:id',
-        name: 'CreateCustomer',
-        component: CreateCustomer
+        path: '/designation-list',
+        name: 'designationList',
+        component: DesignationList
     },
     {
-        path: '/form',
-        name: 'Form',
-        component: From
+        path: '/create-department',
+        name: 'CreateDepartment',
+        component: CreateDepartment
     },
     {
-        path: '/create-purchase',
-        name: 'CreatePurchase',
-        component: CreatePurchase
+        path: '/department-list',
+        name: 'DepartmentList',
+        component: DepartmentList
     },
-    {
-        path: '/supplier',
-        name: 'Supplier',
-        component: Supplier
-    },
+ 
 
 ]
 
