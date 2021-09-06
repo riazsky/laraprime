@@ -2688,6 +2688,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "App",
+  components: {},
   data: function data() {
     return {};
   }
@@ -2987,12 +2988,20 @@ var Welcome = function Welcome() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_Welcome_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Welcome.vue */ "./resources/js/views/Welcome.vue"));
 };
 
-var CreatePurchase = function CreatePurchase() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_purchases_CreatePurchase_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/purchases/CreatePurchase.vue */ "./resources/js/views/purchases/CreatePurchase.vue"));
+var CreateDesignation = function CreateDesignation() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_designations_CreateDesignation_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/designations/CreateDesignation.vue */ "./resources/js/views/HRM/designations/CreateDesignation.vue"));
 };
 
-var Supplier = function Supplier() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_suppliers_Supplier_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/suppliers/Supplier.vue */ "./resources/js/views/suppliers/Supplier.vue"));
+var DesignationList = function DesignationList() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_designations_DesignationList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/designations/DesignationList.vue */ "./resources/js/views/HRM/designations/DesignationList.vue"));
+};
+
+var CreateDepartment = function CreateDepartment() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_departments_CreateDepartment_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/departments/CreateDepartment.vue */ "./resources/js/views/HRM/departments/CreateDepartment.vue"));
+};
+
+var DepartmentList = function DepartmentList() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_departments_DepartmentList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/departments/DepartmentList.vue */ "./resources/js/views/HRM/departments/DepartmentList.vue"));
 };
 
 var routes = [{
@@ -3000,13 +3009,21 @@ var routes = [{
   name: 'Welcome',
   component: Welcome
 }, {
-  path: '/create-purchase',
-  name: 'CreatePurchase',
-  component: CreatePurchase
+  path: '/create-designation',
+  name: 'CreateDesignation',
+  component: CreateDesignation
 }, {
-  path: '/supplier',
-  name: 'Supplier',
-  component: Supplier
+  path: '/designation-list',
+  name: 'designationList',
+  component: DesignationList
+}, {
+  path: '/create-department',
+  name: 'CreateDepartment',
+  component: CreateDepartment
+}, {
+  path: '/department-list',
+  name: 'DepartmentList',
+  component: DepartmentList
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_0__.default({
   // mode: 'history',
@@ -56069,9 +56086,11 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _c("router-link", { attrs: { to: "/about" } }, [
-                        _vm._v("About")
-                      ])
+                      _c(
+                        "router-link",
+                        { attrs: { to: "/create-designation" } },
+                        [_vm._v(" Create Designations")]
+                      )
                     ],
                     1
                   )
@@ -56084,8 +56103,8 @@ var render = function() {
                       _c("i", { staticClass: "pi pi-arrow-right" }),
                       _c(
                         "router-link",
-                        { attrs: { to: "/create-designation" } },
-                        [_vm._v("Designation")]
+                        { attrs: { to: "/designation-list" } },
+                        [_vm._v("Designation list")]
                       )
                     ],
                     1
@@ -56097,9 +56116,11 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _c("router-link", { attrs: { to: "/create-purchase" } }, [
-                        _vm._v("Purchase")
-                      ])
+                      _c(
+                        "router-link",
+                        { attrs: { to: "/create-department" } },
+                        [_vm._v("Create Department")]
+                      )
                     ],
                     1
                   )
@@ -56110,8 +56131,8 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _c("router-link", { attrs: { to: "/supplier" } }, [
-                        _vm._v("Supplier")
+                      _c("router-link", { attrs: { to: "/department-list" } }, [
+                        _vm._v("Department List")
                       ])
                     ],
                     1
@@ -56214,7 +56235,7 @@ var staticRenderFns = [
           _c("i", { staticClass: "pi pi-home" })
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "menu-title" }, [_vm._v("Dashboard")])
+        _c("div", { staticClass: "menu-title" }, [_vm._v("HRM")])
       ]
     )
   },
@@ -73926,7 +73947,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_purchases_CreatePurchase_vue":1,"resources_js_views_suppliers_Supplier_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_HRM_designations_CreateDesignation_vue":1,"resources_js_views_HRM_designations_DesignationList_vue":1,"resources_js_views_HRM_departments_CreateDepartment_vue":1,"resources_js_views_HRM_departments_DepartmentList_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

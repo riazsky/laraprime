@@ -1,9 +1,9 @@
 import VueRouter from 'vue-router';
 const Welcome = () => import('./views/Welcome.vue');
-const CreatePurchase = () => import('./views/purchases/CreatePurchase.vue');
-const Supplier = () => import('./views/suppliers/Supplier.vue');
-
-
+const CreateDesignation = () => import('./views/HRM/designations/CreateDesignation.vue');
+const DesignationList = () => import('./views/HRM/designations/DesignationList.vue');
+const CreateDepartment = () => import('./views/HRM/departments/CreateDepartment.vue');
+const DepartmentList = () => import('./views/HRM/departments/DepartmentList.vue');
 
 const routes = [
     {
@@ -12,15 +12,26 @@ const routes = [
         component: Welcome
     },
     {
-        path: '/create-purchase',
-        name: 'CreatePurchase',
-        component: CreatePurchase
+        path: '/create-designation',
+        name: 'CreateDesignation',
+        component: CreateDesignation
     },
     {
-        path: '/supplier',
-        name: 'Supplier',
-        component: Supplier
+        path: '/designation-list',
+        name: 'designationList',
+        component: DesignationList
     },
+    {
+        path: '/create-department',
+        name: 'CreateDepartment',
+        component: CreateDepartment
+    },
+    {
+        path: '/department-list',
+        name: 'DepartmentList',
+        component: DepartmentList
+    },
+
 
 ]
 

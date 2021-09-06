@@ -20,18 +20,18 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class='pi pi-home'></i>
 						</div>
-						<div class="menu-title">Dashboard</div>
+						<div class="menu-title">HRM</div>
 					</a>
 					<ul>
 						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/">Home</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/about">About</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-designation"> Create Designations</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-designation">Designation</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/designation-list">Designation list</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-purchase">Purchase</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-department">Create Department</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/supplier">Supplier</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/department-list">Department List</router-link></a>
 						</li>
 					</ul>
 				</li>
@@ -804,12 +804,15 @@
 </template>
 
 <script>
-
 export default {
   name: "App",
+  components: {
+  },
+
   data() {
-    return {
-    };
+	  return{
+
+	  }
   },
 };
 </script>
