@@ -1,35 +1,35 @@
 <template>
   <div>
-    <Card #content>
-      <h2 class="title">Add Purchase</h2>
-      <Toast position="bottom-right" />
+      <Breadcrumb :home="home" :model="items" />
 
+            <div class="p-d-flex p-jc-between p-mt-3">
 
-          <div v-for="(product,index) in products" :key="index">
-                <label for="name">Name</label>
-                <InputText id="name" type="text" v-model="product.name" />
+                <h2 class="title">Add Purchase</h2>
 
-                <label for="quantity">Quantity</label>
-                <InputText id="quantity" type="text" v-model="product.quantity" />
-
-                <label for="price">Price</label>
-                <InputText id="price" type="text" v-model="product.price" />
-                <Button @click="minusProduct(index)" class="p-button-danger"><i class="pi pi-minus"></i></Button>
-          </div>
-
-        <Button @click="addProduct">
-            <i class="pi pi-plus"></i>
-        </Button>
-
-        <div class="card">
-            <div class="card-header">
-                <div class="card-title"></div>
+                <Button><router-link to="/purchase-list" class="text-white">Purchase List</router-link></Button>
             </div>
-            <div class="card-body">
 
+    <Card class="p-mt-3">
+
+        <template #content>
+            <Toast position="bottom-right" />
+
+            <div v-for="(product,index) in products" :key="index">
+                    <label for="name">Name</label>
+                    <InputText id="name" type="text" v-model="product.name" />
+
+                    <label for="quantity">Quantity</label>
+                    <InputText id="quantity" type="text" v-model="product.quantity" />
+
+                    <label for="price">Price</label>
+                    <InputText id="price" type="text" v-model="product.price" />
+                    <Button @click="minusProduct(index)" class="p-button-danger"><i class="pi pi-minus"></i></Button>
             </div>
-            <div class="card-footer"></div>
-        </div>
+
+            <Button @click="addProduct">
+                <i class="pi pi-plus"></i>
+            </Button>
+        </template>
 
     </Card>
 
@@ -48,6 +48,14 @@ export default {
             products: [
                 {name:'', quantity:'',price:''},
             ],
+            home:{icon:'pi pi-home', to:'/'},
+            items: [
+                {label: 'Computer',to:'/supplier'},
+                {label: 'Notebook'},
+                {label: 'Accessories'},
+                {label: 'Backpacks'},
+                {label: 'Item'}
+            ]
         }
     },
     methods: {

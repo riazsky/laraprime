@@ -54,7 +54,6 @@ import App from './views/App.vue'
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('Sidebar', require('./views/Sidebar.vue').default);
 Vue.component('Card', Card);
 Vue.component('Button', Button);
 Vue.component('DataTable', DataTable);

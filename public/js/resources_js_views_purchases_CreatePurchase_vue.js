@@ -62,6 +62,22 @@ __webpack_require__.r(__webpack_exports__);
         name: '',
         quantity: '',
         price: ''
+      }],
+      home: {
+        icon: 'pi pi-home',
+        to: '/'
+      },
+      items: [{
+        label: 'Computer',
+        to: '/supplier'
+      }, {
+        label: 'Notebook'
+      }, {
+        label: 'Accessories'
+      }, {
+        label: 'Backpacks'
+      }, {
+        label: 'Item'
       }]
     };
   },
@@ -414,14 +430,36 @@ var render = function() {
   return _c(
     "div",
     [
+      _c("Breadcrumb", { attrs: { home: _vm.home, model: _vm.items } }),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "p-d-flex p-jc-between p-mt-3" },
+        [
+          _c("h2", { staticClass: "title" }, [_vm._v("Add Purchase")]),
+          _vm._v(" "),
+          _c(
+            "Button",
+            [
+              _c(
+                "router-link",
+                { staticClass: "text-white", attrs: { to: "/purchase-list" } },
+                [_vm._v("Purchase List")]
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
       _c("Card", {
+        staticClass: "p-mt-3",
         scopedSlots: _vm._u([
           {
             key: "content",
             fn: function() {
               return [
-                _c("h2", { staticClass: "title" }, [_vm._v("Add Purchase")]),
-                _vm._v(" "),
                 _c("Toast", { attrs: { position: "bottom-right" } }),
                 _vm._v(" "),
                 _vm._l(_vm.products, function(product, index) {
@@ -491,16 +529,6 @@ var render = function() {
                 _vm._v(" "),
                 _c("Button", { on: { click: _vm.addProduct } }, [
                   _c("i", { staticClass: "pi pi-plus" })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "card" }, [
-                  _c("div", { staticClass: "card-header" }, [
-                    _c("div", { staticClass: "card-title" })
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-body" }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "card-footer" })
                 ])
               ]
             },

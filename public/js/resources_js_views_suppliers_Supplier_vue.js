@@ -56,6 +56,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'Supplier',
   data: function data() {
@@ -254,6 +263,24 @@ var render = function() {
                 return [
                   _c(
                     "div",
+                    { staticStyle: { "text-align": "left" } },
+                    [
+                      _c("MultiSelect", {
+                        staticStyle: { width: "20em" },
+                        attrs: {
+                          value: _vm.selectedColumns,
+                          options: _vm.columns,
+                          optionLabel: "header",
+                          placeholder: "Select Columns"
+                        },
+                        on: { input: _vm.onToggle }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
                     { staticStyle: { "text-align": "right" } },
                     [
                       _c("i", {
@@ -343,7 +370,16 @@ var render = function() {
               rowEditor: true,
               headerStyle: "width:7rem",
               bodyStyle: "text-align:center"
-            }
+            },
+            scopedSlots: _vm._u([
+              {
+                key: "body",
+                fn: function() {
+                  return [_c("button", [_vm._v("h")])]
+                },
+                proxy: true
+              }
+            ])
           })
         ],
         1

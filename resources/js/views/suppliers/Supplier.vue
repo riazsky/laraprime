@@ -9,6 +9,11 @@
       >
 
         <template #header>
+            <div style="text-align:left">
+                <MultiSelect :value="selectedColumns" :options="columns" optionLabel="header" @input="onToggle"
+                    placeholder="Select Columns" style="width: 20em"/>
+            </div>
+
             <div style="text-align: right">
                 <i class="pi pi-search" style="margin: 4px 4px 0px 0px;"></i>
                 <InputText v-model="filters['global']" placeholder="Global Search" class="" />
@@ -31,7 +36,11 @@
                 </template>
             </Column>
         <Column field="color" header="Color" sortable></Column>
-        <Column :rowEditor="true" headerStyle="width:7rem" bodyStyle="text-align:center"></Column>
+        <Column :rowEditor="true" headerStyle="width:7rem" bodyStyle="text-align:center">
+            <template #body>
+                <button>h</button>
+            </template>
+        </Column>
       </DataTable>
       {{ selectedSuppliers }}
   </div>
