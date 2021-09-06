@@ -13,6 +13,9 @@ const EditEmployeeLists = () => import('./views/HRM/Employees/EditEmployeeLists.
 const CreateSalesReturn = () => import('./views/SalesReturn/CreateSalesReturn.vue');
 const ReturnSalesLists = () => import('./views/SalesReturn/ReturnSalesLists.vue');
 const ViewSale = () => import('./views/SalesReturn/ViewSale.vue');
+const CreateCustomer = () => import('./views/CRM/customers/CreateCustomer.vue');
+const CustomerList = () => import('./views/CRM/customers/CustomerList.vue');
+const EditCustomer = () => import('./views/CRM/customers/EditCustomer.vue');
 
 
 
@@ -22,6 +25,7 @@ const routes = [
         name: 'Welcome',
         component: Welcome
     },
+
     {
         path: '/create-designation',
         name: 'CreateDesignation',
@@ -38,19 +42,19 @@ const routes = [
         component: CreateDepartment
     },
     {
-        path: '/CreateContactPerson',
-        name: 'CreateContactPerson',
-        component: CreateContactPerson
+        path: '/CreateCustomer',
+        name: 'CreateCustomer',
+        component: CreateCustomer
     },
     {
-        path: '/ContactPersonList',
-        name: 'ContactPersonList',
-        component: ContactPersonList
+        path: '/EditCustomer',
+        name: 'EditCustomer',
+        component: EditCustomer
     },
     {
-        path: '/EditContactPerson',
-        name: 'EditContactPerson',
-        component: EditContactPerson
+        path: '/CustomerList',
+        name: 'CustomerList',
+        component: CustomerList
     },
     {
         path: '/department-list',

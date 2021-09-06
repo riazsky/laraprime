@@ -294,17 +294,6 @@ module.exports = __webpack_require__(/*! ./Calendar.vue */ "./node_modules/prime
 
 /***/ }),
 
-/***/ "./node_modules/primevue/dropdown/index.js":
-/*!*************************************************!*\
-  !*** ./node_modules/primevue/dropdown/index.js ***!
-  \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-module.exports = __webpack_require__(/*! ./Dropdown.vue */ "./node_modules/primevue/dropdown/Dropdown.vue");
-
-/***/ }),
-
 /***/ "./node_modules/primevue/radiobutton/index.js":
 /*!****************************************************!*\
   !*** ./node_modules/primevue/radiobutton/index.js ***!

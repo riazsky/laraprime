@@ -120,17 +120,6 @@ module.exports = __webpack_require__(/*! ./Checkbox.vue */ "./node_modules/prime
 
 /***/ }),
 
-/***/ "./node_modules/primevue/dropdown/index.js":
-/*!*************************************************!*\
-  !*** ./node_modules/primevue/dropdown/index.js ***!
-  \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-
-module.exports = __webpack_require__(/*! ./Dropdown.vue */ "./node_modules/primevue/dropdown/Dropdown.vue");
-
-/***/ }),
-
 /***/ "./node_modules/primevue/checkbox/Checkbox.vue":
 /*!*****************************************************!*\
   !*** ./node_modules/primevue/checkbox/Checkbox.vue ***!

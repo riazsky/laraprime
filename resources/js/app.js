@@ -33,7 +33,7 @@ import Toast from 'primevue/toast';
 import Sidebar from 'primevue/sidebar';
 import InputMask from 'primevue/inputmask';
 import InputNumber from 'primevue/inputnumber';
-
+import Dropdown from 'primevue/dropdown';
 
 
 Vue.use(PrimeVue)
@@ -69,6 +69,7 @@ Vue.component('Sidebar',Sidebar);
 Vue.component('InputText', InputText)
 Vue.component('InputMask', InputMask)
 Vue.component('InputNumber', InputNumber)
+Vue.component('Dropdown', Dropdown)
 
 
 

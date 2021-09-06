@@ -2732,6 +2732,503 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "App",
   components: {},
@@ -2750,7 +3247,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var primevue_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! primevue/config */ "./node_modules/primevue/config/index.js");
 /* harmony import */ var primevue_resources_primevue_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! primevue/resources/primevue.min.css */ "./node_modules/primevue/resources/primevue.min.css");
 /* harmony import */ var primeicons_primeicons_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primeicons/primeicons.css */ "./node_modules/primeicons/primeicons.css");
@@ -2769,8 +3266,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primevue_sidebar__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! primevue/sidebar */ "./node_modules/primevue/sidebar/index.js");
 /* harmony import */ var primevue_inputmask__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! primevue/inputmask */ "./node_modules/primevue/inputmask/index.js");
 /* harmony import */ var primevue_inputnumber__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! primevue/inputnumber */ "./node_modules/primevue/inputnumber/index.js");
-/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
-/* harmony import */ var _views_App_vue__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./views/App.vue */ "./resources/js/views/App.vue");
+/* harmony import */ var primevue_dropdown__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! primevue/dropdown */ "./node_modules/primevue/dropdown/index.js");
+/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./routes */ "./resources/js/routes.js");
+/* harmony import */ var _views_App_vue__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./views/App.vue */ "./resources/js/views/App.vue");
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -2799,9 +3297,10 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js"
 
 
 
+
 Vue.use(primevue_config__WEBPACK_IMPORTED_MODULE_0__.default);
 Vue.use(primevue_toastservice__WEBPACK_IMPORTED_MODULE_6__.default);
-Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_18__.default);
+Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_19__.default);
 
 
 /**
@@ -2827,6 +3326,7 @@ Vue.component('Sidebar', primevue_sidebar__WEBPACK_IMPORTED_MODULE_15__.default)
 Vue.component('InputText', primevue_inputtext__WEBPACK_IMPORTED_MODULE_7__.default);
 Vue.component('InputMask', primevue_inputmask__WEBPACK_IMPORTED_MODULE_16__.default);
 Vue.component('InputNumber', primevue_inputnumber__WEBPACK_IMPORTED_MODULE_17__.default);
+Vue.component('Dropdown', primevue_dropdown__WEBPACK_IMPORTED_MODULE_18__.default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -2839,9 +3339,9 @@ Vue.component('InputNumber', primevue_inputnumber__WEBPACK_IMPORTED_MODULE_17__.
 
 var app = new Vue({
   el: '#app',
-  router: _routes__WEBPACK_IMPORTED_MODULE_19__.default,
+  router: _routes__WEBPACK_IMPORTED_MODULE_20__.default,
   render: function render(h) {
-    return h(_views_App_vue__WEBPACK_IMPORTED_MODULE_20__.default);
+    return h(_views_App_vue__WEBPACK_IMPORTED_MODULE_21__.default);
   }
 });
 
@@ -3090,6 +3590,18 @@ var ViewSale = function ViewSale() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_SalesReturn_ViewSale_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/ViewSale.vue */ "./resources/js/views/SalesReturn/ViewSale.vue"));
 };
 
+var CreateCustomer = function CreateCustomer() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_customers_CreateCustomer_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/customers/CreateCustomer.vue */ "./resources/js/views/CRM/customers/CreateCustomer.vue"));
+};
+
+var CustomerList = function CustomerList() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_customers_CustomerList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/customers/CustomerList.vue */ "./resources/js/views/CRM/customers/CustomerList.vue"));
+};
+
+var EditCustomer = function EditCustomer() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_customers_EditCustomer_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/customers/EditCustomer.vue */ "./resources/js/views/CRM/customers/EditCustomer.vue"));
+};
+
 var routes = [{
   path: '/',
   name: 'Welcome',
@@ -3107,17 +3619,17 @@ var routes = [{
   name: 'CreateDepartment',
   component: CreateDepartment
 }, {
-  path: '/CreateContactPerson',
-  name: 'CreateContactPerson',
-  component: CreateContactPerson
+  path: '/CreateCustomer',
+  name: 'CreateCustomer',
+  component: CreateCustomer
 }, {
-  path: '/ContactPersonList',
-  name: 'ContactPersonList',
-  component: ContactPersonList
+  path: '/EditCustomer',
+  name: 'EditCustomer',
+  component: EditCustomer
 }, {
-  path: '/EditContactPerson',
-  name: 'EditContactPerson',
-  component: EditContactPerson
+  path: '/CustomerList',
+  name: 'CustomerList',
+  component: CustomerList
 }, {
   path: '/department-list',
   name: 'DepartmentList',
@@ -41581,6 +42093,18 @@ module.exports = __webpack_require__(/*! ./DataTable.vue */ "./node_modules/prim
 
 /***/ }),
 
+/***/ "./node_modules/primevue/dropdown/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/primevue/dropdown/index.js ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+module.exports = __webpack_require__(/*! ./Dropdown.vue */ "./node_modules/primevue/dropdown/Dropdown.vue");
+
+/***/ }),
+
 /***/ "./node_modules/primevue/inputmask/index.js":
 /*!**************************************************!*\
   !*** ./node_modules/primevue/inputmask/index.js ***!
@@ -57395,6 +57919,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c("router-link", { attrs: { to: "/" } }, [
                         _vm._v("Home")
                       ])
@@ -57408,10 +57933,11 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c(
                         "router-link",
                         { attrs: { to: "/create-designation" } },
-                        [_vm._v(" Create Designations")]
+                        [_vm._v("Create Designations")]
                       )
                     ],
                     1
@@ -57423,6 +57949,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c(
                         "router-link",
                         { attrs: { to: "/designation-list" } },
@@ -57438,6 +57965,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c(
                         "router-link",
                         { attrs: { to: "/create-department" } },
@@ -57453,6 +57981,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c("router-link", { attrs: { to: "/department-list" } }, [
                         _vm._v("Department List")
                       ])
@@ -57466,6 +57995,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c("router-link", { attrs: { to: "/sale" } }, [
                         _vm._v("Sale")
                       ])
@@ -57487,6 +58017,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c(
                         "router-link",
                         { attrs: { to: "/create-contact-person" } },
@@ -57502,6 +58033,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c(
                         "router-link",
                         { attrs: { to: "/list-contact-person" } },
@@ -57517,6 +58049,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c(
                         "router-link",
                         { attrs: { to: "/edit-contact-person" } },
@@ -57538,6 +58071,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c("router-link", { attrs: { to: "/CreateEmployees" } }, [
                         _vm._v("Create Employees")
                       ])
@@ -57551,6 +58085,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c("router-link", { attrs: { to: "/EmployeeLists" } }, [
                         _vm._v("Employee Lists")
                       ])
@@ -57564,6 +58099,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c(
                         "router-link",
                         { attrs: { to: "/EditEmployeeLists" } },
@@ -57585,6 +58121,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c(
                         "router-link",
                         { attrs: { to: "/CreateSalesReturn" } },
@@ -57600,6 +58137,7 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
                       _c(
                         "router-link",
                         { attrs: { to: "/ReturnSalesLists" } },
@@ -57612,9 +58150,55 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("UI Elements")]),
+            _c("li", [
+              _vm._m(6),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
+                      _c("router-link", { attrs: { to: "/CreateCustomer" } }, [
+                        _vm._v("Create Customer")
+                      ])
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
+                      _c("router-link", { attrs: { to: "/EditCustomer" } }, [
+                        _vm._v("Edit Customer")
+                      ])
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v(" "),
+                      _c("router-link", { attrs: { to: "/CustomerList" } }, [
+                        _vm._v("Customer List")
+                      ])
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ]),
             _vm._v(" "),
-            _vm._m(6),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("UI Elements")]),
             _vm._v(" "),
             _vm._m(7),
             _vm._v(" "),
@@ -57624,15 +58208,15 @@ var render = function() {
             _vm._v(" "),
             _vm._m(10),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
-            _vm._v(" "),
             _vm._m(11),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
             _vm._v(" "),
             _vm._m(12),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
-            _vm._v(" "),
             _vm._m(13),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
             _vm._v(" "),
             _vm._m(14),
             _vm._v(" "),
@@ -57644,24 +58228,26 @@ var render = function() {
             _vm._v(" "),
             _vm._m(18),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
-            _vm._v(" "),
             _vm._m(19),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
             _vm._v(" "),
             _vm._m(20),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
-            _vm._v(" "),
             _vm._m(21),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
             _vm._v(" "),
             _vm._m(22),
             _vm._v(" "),
-            _vm._m(23)
+            _vm._m(23),
+            _vm._v(" "),
+            _vm._m(24)
           ])
         ]
       ),
       _vm._v(" "),
-      _vm._m(24),
+      _vm._m(25),
       _vm._v(" "),
       _c("div", { staticClass: "page-wrapper" }, [
         _c("div", { staticClass: "page-content" }, [_c("router-view")], 1)
@@ -57669,12 +58255,12 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "overlay toggle-icon" }),
       _vm._v(" "),
-      _vm._m(25),
+      _vm._m(26),
       _vm._v(" "),
-      _vm._m(26)
+      _vm._m(27)
     ]),
     _vm._v(" "),
-    _vm._m(27)
+    _vm._m(28)
   ])
 }
 var staticRenderFns = [
@@ -57725,49 +58311,49 @@ var staticRenderFns = [
         _c("li", [
           _c("a", { attrs: { href: "app-emailbox.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Email")
+            _vm._v("Email\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "app-chat-box.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Chat Box")
+            _vm._v("Chat Box\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "app-file-manager.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("File Manager")
+            _vm._v("File Manager\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "app-contact-list.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Contatcs")
+            _vm._v("Contatcs\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "app-to-do.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Todo List")
+            _vm._v("Todo List\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "app-invoice.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Invoice")
+            _vm._v("Invoice\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "app-fullcalender.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Calendar")
+            _vm._v("Calendar\n              ")
           ])
         ])
       ])
@@ -57825,6 +58411,22 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
+      [
+        _c("div", { staticClass: "parent-icon" }, [
+          _c("i", { staticClass: "pi pi-folder" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "menu-title" }, [_vm._v("Customers")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("li", [
       _c("a", { attrs: { href: "widgets.html" } }, [
         _c("div", { staticClass: "parent-icon" }, [
@@ -57852,28 +58454,28 @@ var staticRenderFns = [
         _c("li", [
           _c("a", { attrs: { href: "ecommerce-products.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Products")
+            _vm._v("Products\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "ecommerce-products-details.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Product Details")
+            _vm._v("Product Details\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "ecommerce-add-new-products.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Add New Products")
+            _vm._v("Add New Products\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "ecommerce-orders.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Orders")
+            _vm._v("Orders\n              ")
           ])
         ])
       ])
@@ -57896,119 +58498,119 @@ var staticRenderFns = [
         _c("li", [
           _c("a", { attrs: { href: "component-alerts.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Alerts")
+            _vm._v("Alerts\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-accordions.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Accordions")
+            _vm._v("Accordions\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-badges.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Badges")
+            _vm._v("Badges\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-buttons.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Buttons")
+            _vm._v("Buttons\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-cards.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Cards")
+            _vm._v("Cards\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-carousels.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Carousels")
+            _vm._v("Carousels\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-list-groups.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("List Groups")
+            _vm._v("List Groups\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-media-object.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Media Objects")
+            _vm._v("Media Objects\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-modals.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Modals")
+            _vm._v("Modals\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-navs-tabs.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Navs & Tabs")
+            _vm._v("Navs & Tabs\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-navbar.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Navbar")
+            _vm._v("Navbar\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-paginations.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Pagination")
+            _vm._v("Pagination\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-popovers-tooltips.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Popovers & Tooltips")
+            _vm._v("Popovers & Tooltips\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-progress-bars.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Progress")
+            _vm._v("Progress\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-spinners.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Spinners")
+            _vm._v("Spinners\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-notifications.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Notifications")
+            _vm._v("Notifications\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "component-avtars-chips.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Avatrs & Chips")
+            _vm._v("Avatrs & Chips\n              ")
           ])
         ])
       ])
@@ -58031,21 +58633,21 @@ var staticRenderFns = [
         _c("li", [
           _c("a", { attrs: { href: "content-grid-system.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Grid System")
+            _vm._v("Grid System\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "content-typography.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Typography")
+            _vm._v("Typography\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "content-text-utilities.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Text Utilities")
+            _vm._v("Text Utilities\n              ")
           ])
         ])
       ])
@@ -58068,21 +58670,21 @@ var staticRenderFns = [
         _c("li", [
           _c("a", { attrs: { href: "icons-line-icons.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Line Icons")
+            _vm._v("Line Icons\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "icons-boxicons.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Boxicons")
+            _vm._v("Boxicons\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "icons-feather-icons.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Feather Icons")
+            _vm._v("Feather Icons\n              ")
           ])
         ])
       ])
@@ -58105,63 +58707,63 @@ var staticRenderFns = [
         _c("li", [
           _c("a", { attrs: { href: "form-elements.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Form Elements")
+            _vm._v("Form Elements\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "form-input-group.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Input Groups")
+            _vm._v("Input Groups\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "form-layouts.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Forms Layouts")
+            _vm._v("Forms Layouts\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "form-validations.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Form Validation")
+            _vm._v("Form Validation\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "form-wizard.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Form Wizard")
+            _vm._v("Form Wizard\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "form-text-editor.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Text Editor")
+            _vm._v("Text Editor\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "form-file-upload.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("File Upload")
+            _vm._v("File Upload\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "form-date-time-pickes.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Date Pickers")
+            _vm._v("Date Pickers\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "form-select2.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Select2")
+            _vm._v("Select2\n              ")
           ])
         ])
       ])
@@ -58184,14 +58786,14 @@ var staticRenderFns = [
         _c("li", [
           _c("a", { attrs: { href: "table-basic-table.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Basic Table")
+            _vm._v("Basic Table\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "table-datatable.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Data Table")
+            _vm._v("Data Table\n              ")
           ])
         ])
       ])
@@ -58215,7 +58817,10 @@ var staticRenderFns = [
           _c(
             "a",
             { attrs: { href: "authentication-signin.html", target: "_blank" } },
-            [_c("i", { staticClass: "pi pi-arrow-right" }), _vm._v("Sign In")]
+            [
+              _c("i", { staticClass: "pi pi-arrow-right" }),
+              _vm._v("Sign In\n              ")
+            ]
           )
         ]),
         _vm._v(" "),
@@ -58223,7 +58828,10 @@ var staticRenderFns = [
           _c(
             "a",
             { attrs: { href: "authentication-signup.html", target: "_blank" } },
-            [_c("i", { staticClass: "pi pi-arrow-right" }), _vm._v("Sign Up")]
+            [
+              _c("i", { staticClass: "pi pi-arrow-right" }),
+              _vm._v("Sign Up\n              ")
+            ]
           )
         ]),
         _vm._v(" "),
@@ -58238,7 +58846,7 @@ var staticRenderFns = [
             },
             [
               _c("i", { staticClass: "pi pi-arrow-right" }),
-              _vm._v("Sign In with Header & Footer")
+              _vm._v("Sign In with Header & Footer\n              ")
             ]
           )
         ]),
@@ -58254,7 +58862,7 @@ var staticRenderFns = [
             },
             [
               _c("i", { staticClass: "pi pi-arrow-right" }),
-              _vm._v("Sign Up with Header & Footer")
+              _vm._v("Sign Up with Header & Footer\n              ")
             ]
           )
         ]),
@@ -58270,7 +58878,7 @@ var staticRenderFns = [
             },
             [
               _c("i", { staticClass: "pi pi-arrow-right" }),
-              _vm._v("Forgot Password")
+              _vm._v("Forgot Password\n              ")
             ]
           )
         ]),
@@ -58286,7 +58894,7 @@ var staticRenderFns = [
             },
             [
               _c("i", { staticClass: "pi pi-arrow-right" }),
-              _vm._v("Reset Password")
+              _vm._v("Reset Password\n              ")
             ]
           )
         ]),
@@ -58302,7 +58910,7 @@ var staticRenderFns = [
             },
             [
               _c("i", { staticClass: "pi pi-arrow-right" }),
-              _vm._v("Lock Screen")
+              _vm._v("Lock Screen\n              ")
             ]
           )
         ])
@@ -58355,7 +58963,10 @@ var staticRenderFns = [
           _c(
             "a",
             { attrs: { href: "errors-404-error.html", target: "_blank" } },
-            [_c("i", { staticClass: "pi pi-arrow-right" }), _vm._v("404 Error")]
+            [
+              _c("i", { staticClass: "pi pi-arrow-right" }),
+              _vm._v("404 Error\n              ")
+            ]
           )
         ]),
         _vm._v(" "),
@@ -58363,7 +58974,10 @@ var staticRenderFns = [
           _c(
             "a",
             { attrs: { href: "errors-500-error.html", target: "_blank" } },
-            [_c("i", { staticClass: "pi pi-arrow-right" }), _vm._v("500 Error")]
+            [
+              _c("i", { staticClass: "pi pi-arrow-right" }),
+              _vm._v("500 Error\n              ")
+            ]
           )
         ]),
         _vm._v(" "),
@@ -58373,7 +58987,7 @@ var staticRenderFns = [
             { attrs: { href: "errors-coming-soon.html", target: "_blank" } },
             [
               _c("i", { staticClass: "pi pi-arrow-right" }),
-              _vm._v("Coming Soon")
+              _vm._v("Coming Soon\n              ")
             ]
           )
         ]),
@@ -58384,7 +58998,7 @@ var staticRenderFns = [
             { attrs: { href: "error-blank-page.html", target: "_blank" } },
             [
               _c("i", { staticClass: "pi pi-arrow-right" }),
-              _vm._v("Blank Page")
+              _vm._v("Blank Page\n              ")
             ]
           )
         ])
@@ -58436,21 +59050,21 @@ var staticRenderFns = [
         _c("li", [
           _c("a", { attrs: { href: "charts-apex-chart.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Apex")
+            _vm._v("Apex\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "charts-chartjs.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Chartjs")
+            _vm._v("Chartjs\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "charts-highcharts.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Highcharts")
+            _vm._v("Highcharts\n              ")
           ])
         ])
       ])
@@ -58473,14 +59087,14 @@ var staticRenderFns = [
         _c("li", [
           _c("a", { attrs: { href: "map-google-maps.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Google Maps")
+            _vm._v("Google Maps\n              ")
           ])
         ]),
         _vm._v(" "),
         _c("li", [
           _c("a", { attrs: { href: "map-vector-maps.html" } }, [
             _c("i", { staticClass: "pi pi-arrow-right" }),
-            _vm._v("Vector Maps")
+            _vm._v("Vector Maps\n              ")
           ])
         ])
       ])
@@ -58504,7 +59118,10 @@ var staticRenderFns = [
           _c(
             "a",
             { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
-            [_c("i", { staticClass: "pi pi-arrow-right" }), _vm._v("Level One")]
+            [
+              _c("i", { staticClass: "pi pi-arrow-right" }),
+              _vm._v("Level One\n              ")
+            ]
           ),
           _vm._v(" "),
           _c("ul", [
@@ -58514,7 +59131,7 @@ var staticRenderFns = [
                 { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
                 [
                   _c("i", { staticClass: "pi pi-arrow-right" }),
-                  _vm._v("Level Two")
+                  _vm._v("Level Two\n                  ")
                 ]
               ),
               _vm._v(" "),
@@ -58522,7 +59139,7 @@ var staticRenderFns = [
                 _c("li", [
                   _c("a", { attrs: { href: "javascript:;" } }, [
                     _c("i", { staticClass: "pi pi-arrow-right" }),
-                    _vm._v("Level Three")
+                    _vm._v("Level Three\n                      ")
                   ])
                 ])
               ])
@@ -58812,13 +59429,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("New Customers"),
+                                  _vm._v(
+                                    "\n                            New Customers\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "14 Sec\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              14 Sec\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -58855,13 +59474,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("New Orders "),
+                                  _vm._v(
+                                    "\n                            New Orders\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "2 min\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              2 min\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -58898,13 +59519,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("24 PDF File"),
+                                  _vm._v(
+                                    "\n                            24 PDF File\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "19 min\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              19 min\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -58941,13 +59564,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Time Response "),
+                                  _vm._v(
+                                    "\n                            Time Response\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "28 min\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              28 min\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -58983,7 +59608,9 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("New Product Approved "),
+                                  _vm._v(
+                                    "\n                            New Product Approved\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
@@ -59026,13 +59653,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("New Comments "),
+                                  _vm._v(
+                                    "\n                            New Comments\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "4 hrs\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              4 hrs\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59069,13 +59698,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Your item is shipped "),
+                                  _vm._v(
+                                    "\n                            Your item is shipped\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "5 hrs\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              5 hrs\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59112,13 +59743,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("New 24 authors"),
+                                  _vm._v(
+                                    "\n                            New 24 authors\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "1 day\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              1 day\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59155,13 +59788,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Defense Alerts "),
+                                  _vm._v(
+                                    "\n                            Defense Alerts\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "2 weeks\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              2 weeks\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59244,13 +59879,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Daisy Anderson "),
+                                  _vm._v(
+                                    "\n                            Daisy Anderson\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "5 sec\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              5 sec\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59280,13 +59917,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Althea Cabardo "),
+                                  _vm._v(
+                                    "\n                            Althea Cabardo\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "14\n\t\t\t\t\t\t\t\t\t\t\t\tsec ago"
+                                        "\n                              14\n                              sec ago\n                            "
                                       )
                                     ]
                                   )
@@ -59316,13 +59955,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Oscar Garner "),
+                                  _vm._v(
+                                    "\n                            Oscar Garner\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "8 min\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              8 min\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59352,13 +59993,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Katherine Pechon "),
+                                  _vm._v(
+                                    "\n                            Katherine Pechon\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "15\n\t\t\t\t\t\t\t\t\t\t\t\tmin ago"
+                                        "\n                              15\n                              min ago\n                            "
                                       )
                                     ]
                                   )
@@ -59388,13 +60031,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Amelia Doe "),
+                                  _vm._v(
+                                    "\n                            Amelia Doe\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "22 min\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              22 min\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59426,13 +60071,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Cristina Jhons "),
+                                  _vm._v(
+                                    "\n                            Cristina Jhons\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "2 hrs\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              2 hrs\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59464,13 +60111,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("James Caviness "),
+                                  _vm._v(
+                                    "\n                            James Caviness\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "4 hrs\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              4 hrs\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59500,13 +60149,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Peter Costanzo "),
+                                  _vm._v(
+                                    "\n                            Peter Costanzo\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "6 hrs\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              6 hrs\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59536,13 +60187,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("David Buckley "),
+                                  _vm._v(
+                                    "\n                            David Buckley\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "2 hrs\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              2 hrs\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59572,13 +60225,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Thomas Wheeler "),
+                                  _vm._v(
+                                    "\n                            Thomas Wheeler\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "2 days\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              2 days\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59608,13 +60263,15 @@ var staticRenderFns = [
                               _vm._v(" "),
                               _c("div", { staticClass: "flex-grow-1" }, [
                                 _c("h6", { staticClass: "msg-name" }, [
-                                  _vm._v("Johnny Seitz "),
+                                  _vm._v(
+                                    "\n                            Johnny Seitz\n                            "
+                                  ),
                                   _c(
                                     "span",
                                     { staticClass: "msg-time float-end" },
                                     [
                                       _vm._v(
-                                        "5 days\n\t\t\t\t\t\t\t\t\t\t\t\tago"
+                                        "\n                              5 days\n                              ago\n                            "
                                       )
                                     ]
                                   )
@@ -59686,6 +60343,7 @@ var staticRenderFns = [
                     },
                     [
                       _c("i", { staticClass: "pi pi-user" }),
+                      _vm._v(" "),
                       _c("span", [_vm._v("Profile")])
                     ]
                   )
@@ -59700,6 +60358,7 @@ var staticRenderFns = [
                     },
                     [
                       _c("i", { staticClass: "pi pi-cog" }),
+                      _vm._v(" "),
                       _c("span", [_vm._v("Settings")])
                     ]
                   )
@@ -59714,6 +60373,7 @@ var staticRenderFns = [
                     },
                     [
                       _c("i", { staticClass: "pi pi-home-circle" }),
+                      _vm._v(" "),
                       _c("span", [_vm._v("Dashboard")])
                     ]
                   )
@@ -59728,6 +60388,7 @@ var staticRenderFns = [
                     },
                     [
                       _c("i", { staticClass: "pi pi-dollar-circle" }),
+                      _vm._v(" "),
                       _c("span", [_vm._v("Earnings")])
                     ]
                   )
@@ -59742,6 +60403,7 @@ var staticRenderFns = [
                     },
                     [
                       _c("i", { staticClass: "pi pi-download" }),
+                      _vm._v(" "),
                       _c("span", [_vm._v("Downloads")])
                     ]
                   )
@@ -59758,6 +60420,7 @@ var staticRenderFns = [
                     },
                     [
                       _c("i", { staticClass: "pi pi-log-out-circle" }),
+                      _vm._v(" "),
                       _c("span", [_vm._v("Logout")])
                     ]
                   )
@@ -75464,7 +76127,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_HRM_designations_CreateDesignation_vue":1,"resources_js_views_HRM_designations_DesignationList_vue":1,"resources_js_views_HRM_departments_CreateDepartment_vue":1,"resources_js_views_HRM_departments_DepartmentList_vue":1,"resources_js_views_CRM_ContactPerson_CreateContactPerson_vue":1,"resources_js_views_CRM_ContactPerson_ContactPersonList_vue":1,"resources_js_views_CRM_ContactPerson_EditContactPerson_vue":1,"resources_js_views_HRM_Employees_CreateEmployees_vue":1,"resources_js_views_HRM_Employees_EmployeeLists_vue":1,"resources_js_views_HRM_Employees_EditEmployeeLists_vue":1,"resources_js_views_SalesReturn_CreateSalesReturn_vue":1,"resources_js_views_SalesReturn_ReturnSalesLists_vue":1,"resources_js_views_SalesReturn_ViewSale_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_HRM_designations_CreateDesignation_vue":1,"resources_js_views_HRM_designations_DesignationList_vue":1,"resources_js_views_HRM_departments_CreateDepartment_vue":1,"resources_js_views_HRM_departments_DepartmentList_vue":1,"resources_js_views_CRM_ContactPerson_CreateContactPerson_vue":1,"resources_js_views_CRM_ContactPerson_ContactPersonList_vue":1,"resources_js_views_CRM_ContactPerson_EditContactPerson_vue":1,"resources_js_views_HRM_Employees_CreateEmployees_vue":1,"resources_js_views_HRM_Employees_EmployeeLists_vue":1,"resources_js_views_HRM_Employees_EditEmployeeLists_vue":1,"resources_js_views_SalesReturn_CreateSalesReturn_vue":1,"resources_js_views_SalesReturn_ReturnSalesLists_vue":1,"resources_js_views_SalesReturn_ViewSale_vue":1,"resources_js_views_CRM_customers_CreateCustomer_vue":1,"resources_js_views_CRM_customers_CustomerList_vue":1,"resources_js_views_CRM_customers_EditCustomer_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
