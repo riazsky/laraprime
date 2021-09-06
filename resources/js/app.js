@@ -22,7 +22,7 @@ import ToastService from 'primevue/toastservice';
 
 import InputText from 'primevue/inputtext';
 import Card from 'primevue/card';
-import Button from 'primevue/Button';
+// import Button from 'primevue/Button';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import ColumnGroup from 'primevue/columngroup';
@@ -30,6 +30,8 @@ import MultiSelect from 'primevue/multiselect';
 import Breadcrumb from 'primevue/breadcrumb';
 import Toast from 'primevue/toast';
 import Sidebar from 'primevue/sidebar';
+import InputMask from 'primevue/inputmask';
+import InputNumber from 'primevue/inputnumber';
 
 
 Vue.use(PrimeVue)
@@ -53,9 +55,8 @@ import App from './views/App.vue'
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('Sidebar', require('./views/Sidebar.vue').default);
-Vue.component('InputText', InputText);
 Vue.component('Card', Card);
-Vue.component('Button', Button);
+// Vue.component('Button', Button);
 Vue.component('DataTable', DataTable);
 Vue.component('Column', Column);
 Vue.component('ColumnGroup', ColumnGroup);
@@ -63,6 +64,10 @@ Vue.component('MultiSelect', MultiSelect);
 Vue.component('Breadcrumb', Breadcrumb);
 Vue.component('Toast',Toast);
 Vue.component('Sidebar',Sidebar);
+Vue.component('InputText', InputText)
+Vue.component('InputMask', InputMask)
+Vue.component('InputNumber', InputNumber)
+
 
 
 
@@ -85,5 +90,3 @@ const app = new Vue({
     router: routes,
     render: h => h(App)
 });
-
-

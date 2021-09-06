@@ -1,11 +1,8 @@
 import VueRouter from 'vue-router';
-const Welcome = () => import('./views/Welcome.vue')
-const About = () => import('./views/About.vue')
-const CreateDesignation = () => import('./views/designations/CreateDesignation.vue')
-const Table = () => import('./views/table/Table.vue')
-const Form = () => import('./views/form/Form.vue')
-const Suplier = () => import('./views/suplier_groups/Suplier.vue')
-const SupplierForm = () => import('./views/suplier_groups/Form.vue')
+const Welcome = () => import('./views/Welcome.vue');
+const CreateContactPerson = () => import('./views/CRM/ContactPerson/CreateContactPerson.vue');
+const ContactPersonList = () => import('./views/CRM/ContactPerson/ContactPersonList.vue');
+const EditContactPerson = () => import('./views/CRM/ContactPerson/EditContactPerson.vue');
 
 
 const routes = [
@@ -15,40 +12,25 @@ const routes = [
         component: Welcome
     },
     {
-        path: '/about',
-        name: 'About',
-        component: About
-    },
-
-    {
-        path: '/create-designation',
-        name: 'CreateDesignation',
-        component: CreateDesignation
-    },
-
-    {
-        path: '/table',
-        name: 'table',
-        component: Table
+        path: '/CreateContactPerson',
+        name: 'CreateContactPerson',
+        component: CreateContactPerson
     },
     {
-        path: '/form',
-        name: 'form',
-        component: Form
+        path: '/ContactPersonList',
+        name: 'ContactPersonList',
+        component: ContactPersonList
     },
     {
-        path: '/suplier',
-        name: 'suplier',
-        component: Suplier
+        path: '/EditContactPerson',
+        name: 'EditContactPerson',
+        component: EditContactPerson
     },
-    {
-        path: '/supplier_form',
-        name: 'supplier_form',
-        component: SupplierForm
-    },
-
 ]
 
-export default new VueRouter({ routes });
+export default new VueRouter({
+    // mode: 'history',
+    routes
+});
 
 
