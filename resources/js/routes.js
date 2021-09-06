@@ -1,11 +1,12 @@
 import VueRouter from 'vue-router';
 const Welcome = () => import('./views/Welcome.vue');
-const About = () => import('./views/About.vue');
-const CreateDesignation = () => import('./views/designations/CreateDesignation.vue');
-const CreateCustomer = () => import('./views/customers/CreateCustomer.vue');
-const CreatePurchase = () => import('./views/purchases/CreatePurchase.vue');
-const Supplier = () => import('./views/suppliers/Supplier.vue');
-const From = () => import('./views/forms/Form.vue');
+const CreateCustomerGroup = () => import('./views/CRM/CustomerGroups/CreateCustomerGroup.vue');
+const ListCustomerGroup = () => import('./views/CRM/CustomerGroups/ListCustomerGroup.vue');
+const CreateCompany = () => import('./views/CRM/Company/CreateCompany.vue');
+const ListCompany = () => import('./views/CRM/Company/ListCompany.vue');
+const CreateBranch = () => import('./views/CRM/Branch/CreateBranch.vue');
+const ListBranch = () => import('./views/CRM/Branch/ListBranch.vue');
+
 
 
 const routes = [
@@ -15,35 +16,36 @@ const routes = [
         component: Welcome
     },
     {
-        path: '/about',
-        name: 'About',
-        component: About
+        path: '/create-customer-group',
+        name: 'CreateCustomerGroup',
+        component: CreateCustomerGroup
     },
     {
-        path: '/create-designation',
-        name: 'CreateDesignation',
-        component: CreateDesignation
+        path: '/list-customer-group',
+        name: 'ListCustomerGroup',
+        component: ListCustomerGroup
     },
     {
-        path: '/create-customer/:id',
-        name: 'CreateCustomer',
-        component: CreateCustomer
+        path: '/create-company',
+        name: 'CreateCompany',
+        component: CreateCompany
     },
     {
-        path: '/form',
-        name: 'Form',
-        component: From
+        path: '/list-company',
+        name: 'ListCompany',
+        component: ListCompany
     },
     {
-        path: '/create-purchase',
-        name: 'CreatePurchase',
-        component: CreatePurchase
+        path: '/create-branch',
+        name: 'CreateBranch',
+        component: CreateBranch
     },
     {
-        path: '/supplier',
-        name: 'Supplier',
-        component: Supplier
-    },
+        path: '/list-branch',
+        name: 'ListBranch',
+        component: ListBranch
+    }
+
 
 ]
 

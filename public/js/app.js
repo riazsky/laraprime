@@ -2725,6 +2725,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3332,28 +3349,28 @@ var Welcome = function Welcome() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_Welcome_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Welcome.vue */ "./resources/js/views/Welcome.vue"));
 };
 
-var About = function About() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_About_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/About.vue */ "./resources/js/views/About.vue"));
+var CreateCustomerGroup = function CreateCustomerGroup() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_CustomerGroups_CreateCustomerGroup_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/CustomerGroups/CreateCustomerGroup.vue */ "./resources/js/views/CRM/CustomerGroups/CreateCustomerGroup.vue"));
 };
 
-var CreateDesignation = function CreateDesignation() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_designations_CreateDesignation_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/designations/CreateDesignation.vue */ "./resources/js/views/designations/CreateDesignation.vue"));
+var ListCustomerGroup = function ListCustomerGroup() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_CustomerGroups_ListCustomerGroup_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/CustomerGroups/ListCustomerGroup.vue */ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue"));
 };
 
-var CreateCustomer = function CreateCustomer() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_customers_CreateCustomer_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/customers/CreateCustomer.vue */ "./resources/js/views/customers/CreateCustomer.vue"));
+var CreateCompany = function CreateCompany() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_Company_CreateCompany_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Company/CreateCompany.vue */ "./resources/js/views/CRM/Company/CreateCompany.vue"));
 };
 
-var CreatePurchase = function CreatePurchase() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_purchases_CreatePurchase_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/purchases/CreatePurchase.vue */ "./resources/js/views/purchases/CreatePurchase.vue"));
+var ListCompany = function ListCompany() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_Company_ListCompany_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Company/ListCompany.vue */ "./resources/js/views/CRM/Company/ListCompany.vue"));
 };
 
-var Supplier = function Supplier() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_suppliers_Supplier_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/suppliers/Supplier.vue */ "./resources/js/views/suppliers/Supplier.vue"));
+var CreateBranch = function CreateBranch() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_Branch_CreateBranch_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Branch/CreateBranch.vue */ "./resources/js/views/CRM/Branch/CreateBranch.vue"));
 };
 
-var From = function From() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_forms_Form_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/forms/Form.vue */ "./resources/js/views/forms/Form.vue"));
+var ListBranch = function ListBranch() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_Branch_ListBranch_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Branch/ListBranch.vue */ "./resources/js/views/CRM/Branch/ListBranch.vue"));
 };
 
 var routes = [{
@@ -3361,29 +3378,29 @@ var routes = [{
   name: 'Welcome',
   component: Welcome
 }, {
-  path: '/about',
-  name: 'About',
-  component: About
+  path: '/create-customer-group',
+  name: 'CreateCustomerGroup',
+  component: CreateCustomerGroup
 }, {
-  path: '/create-designation',
-  name: 'CreateDesignation',
-  component: CreateDesignation
+  path: '/list-customer-group',
+  name: 'ListCustomerGroup',
+  component: ListCustomerGroup
 }, {
-  path: '/create-customer/:id',
-  name: 'CreateCustomer',
-  component: CreateCustomer
+  path: '/create-company',
+  name: 'CreateCompany',
+  component: CreateCompany
 }, {
-  path: '/form',
-  name: 'Form',
-  component: From
+  path: '/list-company',
+  name: 'ListCompany',
+  component: ListCompany
 }, {
-  path: '/create-purchase',
-  name: 'CreatePurchase',
-  component: CreatePurchase
+  path: '/create-branch',
+  name: 'CreateBranch',
+  component: CreateBranch
 }, {
-  path: '/supplier',
-  name: 'Supplier',
-  component: Supplier
+  path: '/list-branch',
+  name: 'ListBranch',
+  component: ListBranch
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_0__.default({
   // mode: 'history',
@@ -10743,7 +10760,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.p-panelmenu .p-panelmenu-header > .p-panelmenu-header-link[data-v-02a6918d] {\n    padding: 0.857rem 1rem;\n    border: 0px !important;\n    color: #333333;\n    background: #ffffff !important;\n    font-weight: 700;\n    border-radius: 0px !important;\n    transition: background-color 0.2s, box-shadow 0.2s;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.p-panelmenu .p-panelmenu-header > .p-panelmenu-header-link[data-v-02a6918d] {\r\n    padding: 0.857rem 1rem;\r\n    border: 0px !important;\r\n    color: #333333;\r\n    background: #ffffff !important;\r\n    font-weight: 700;\r\n    border-radius: 0px !important;\r\n    transition: background-color 0.2s, box-shadow 0.2s;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -58603,9 +58620,87 @@ var render = function() {
             _vm._v(" "),
             _vm._m(2),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("UI Elements")]),
+            _c("li", [
+              _vm._m(3),
+              _vm._v(" "),
+              _c("ul", [
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      { attrs: { to: "/create-customer-group" } },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v("Create Customer Group")
+                      ]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      { attrs: { to: "/list-customer-group" } },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v("List Customer Group")
+                      ]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  [
+                    _c("router-link", { attrs: { to: "/create-company" } }, [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v("Create Company")
+                    ])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  [
+                    _c("router-link", { attrs: { to: "/list-company" } }, [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v("List Company")
+                    ])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  [
+                    _c("router-link", { attrs: { to: "/create-branch" } }, [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v("Create Branch")
+                    ])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  [
+                    _c("router-link", { attrs: { to: "/list-branch" } }, [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v("List Branch")
+                    ])
+                  ],
+                  1
+                )
+              ])
+            ]),
             _vm._v(" "),
-            _vm._m(3),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("UI Elements")]),
             _vm._v(" "),
             _vm._m(4),
             _vm._v(" "),
@@ -58615,15 +58710,15 @@ var render = function() {
             _vm._v(" "),
             _vm._m(7),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
-            _vm._v(" "),
             _vm._m(8),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
             _vm._v(" "),
             _vm._m(9),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
-            _vm._v(" "),
             _vm._m(10),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
             _vm._v(" "),
             _vm._m(11),
             _vm._v(" "),
@@ -58635,24 +58730,26 @@ var render = function() {
             _vm._v(" "),
             _vm._m(15),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
-            _vm._v(" "),
             _vm._m(16),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
             _vm._v(" "),
             _vm._m(17),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
-            _vm._v(" "),
             _vm._m(18),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
             _vm._v(" "),
             _vm._m(19),
             _vm._v(" "),
-            _vm._m(20)
+            _vm._m(20),
+            _vm._v(" "),
+            _vm._m(21)
           ])
         ]
       ),
       _vm._v(" "),
-      _vm._m(21),
+      _vm._m(22),
       _vm._v(" "),
       _c("div", { staticClass: "page-wrapper" }, [
         _c("div", { staticClass: "page-content" }, [_c("router-view")], 1)
@@ -58660,12 +58757,12 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "overlay toggle-icon" }),
       _vm._v(" "),
-      _vm._m(22),
+      _vm._m(23),
       _vm._v(" "),
-      _vm._m(23)
+      _vm._m(24)
     ]),
     _vm._v(" "),
-    _vm._m(24)
+    _vm._m(25)
   ])
 }
 var staticRenderFns = [
@@ -58763,6 +58860,22 @@ var staticRenderFns = [
         ])
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
+      [
+        _c("div", { staticClass: "parent-icon" }, [
+          _c("i", { staticClass: "pi pi-folder" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "menu-title" }, [_vm._v("CRM")])
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -76432,7 +76545,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_About_vue":1,"resources_js_views_designations_CreateDesignation_vue":1,"resources_js_views_customers_CreateCustomer_vue":1,"resources_js_views_purchases_CreatePurchase_vue":1,"resources_js_views_suppliers_Supplier_vue":1,"resources_js_views_forms_Form_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_CRM_CustomerGroups_CreateCustomerGroup_vue":1,"resources_js_views_CRM_CustomerGroups_ListCustomerGroup_vue":1,"resources_js_views_CRM_Company_CreateCompany_vue":1,"resources_js_views_CRM_Company_ListCompany_vue":1,"resources_js_views_CRM_Branch_CreateBranch_vue":1,"resources_js_views_CRM_Branch_ListBranch_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

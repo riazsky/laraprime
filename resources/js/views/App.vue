@@ -94,6 +94,23 @@
 						</li>
 					</ul>
 				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-folder"></i>
+						</div>
+						<div class="menu-title">CRM</div>
+					</a>
+					<ul>
+						<li><router-link to="/create-customer-group"><i class="pi pi-arrow-right"></i>Create Customer Group</router-link></li>
+						<li><router-link to="/list-customer-group"><i class="pi pi-arrow-right"></i>List Customer Group</router-link></li>
+						<li><router-link to="/create-company"><i class="pi pi-arrow-right"></i>Create Company</router-link></li>
+						<li><router-link to="/list-company"><i class="pi pi-arrow-right"></i>List Company</router-link></li>
+						<li><router-link to="/create-branch"><i class="pi pi-arrow-right"></i>Create Branch</router-link></li>
+						<li><router-link to="/list-branch"><i class="pi pi-arrow-right"></i>List Branch</router-link></li>
+					</ul>
+				</li>
+
+
 				<li class="menu-label">UI Elements</li>
 				<li>
 					<a href="widgets.html">
