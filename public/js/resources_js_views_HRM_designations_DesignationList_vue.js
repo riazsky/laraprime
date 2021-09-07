@@ -72,38 +72,43 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'designationList',
+  name: "designationList",
   data: function data() {
     return {
       designations: [{
-        name: 'Name1',
-        description: 'Employe designation List',
-        status: 'Active'
+        name: "Name1",
+        description: "Employe designation List",
+        status: "Active"
       }, {
-        name: 'Name2',
-        description: 'Employe designation List',
-        status: 'Active'
+        name: "Name2",
+        description: "Employe designation List",
+        status: "Active"
       }, {
-        name: 'Name3',
-        description: 'Employe designation List',
-        status: 'Active'
+        name: "Name3",
+        description: "Employe designation List",
+        status: "Active"
       }, {
-        name: 'Name4',
-        description: 'Employe designation List',
-        status: 'Active'
+        name: "Name4",
+        description: "Employe designation List",
+        status: "Active"
       }, {
-        name: 'Name5',
-        description: 'Employe designation List',
-        status: 'Active'
+        name: "Name5",
+        description: "Employe designation List",
+        status: "Active"
       }, {
-        name: 'Name6',
-        description: 'Employe designation List',
-        status: 'Active'
+        name: "Name6",
+        description: "Employe designation List",
+        status: "Active"
       }, {
-        name: 'Name7',
-        description: 'Employe designation List',
-        status: 'Active'
+        name: "Name7",
+        description: "Employe designation List",
+        status: "Active"
       }],
       filters: {},
       selectedDesignation: null,
@@ -264,7 +269,7 @@ var render = function() {
                       value: _vm.designations,
                       filters: _vm.filters,
                       selection: _vm.selectedDesignation,
-                      dataKey: "name",
+                      "data-key": "name",
                       paginator: true,
                       rows: 5,
                       paginatorTemplate:
@@ -295,11 +300,7 @@ var render = function() {
                               "div",
                               { staticClass: "p-d-flex p-jc-between" },
                               [
-                                _c("div", [
-                                  _vm._v(
-                                    "\n          List of Designations\n      "
-                                  )
-                                ]),
+                                _c("div", [_vm._v("List of Designations")]),
                                 _vm._v(" "),
                                 _c(
                                   "div",

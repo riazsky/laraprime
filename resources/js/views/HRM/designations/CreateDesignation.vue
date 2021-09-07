@@ -14,22 +14,22 @@
         <div class="p-fluid p-formgrid p-grid">
           <div class="p-field p-col">
             <label for="designationName">Designation Name </label><br />
-            <InputText type="text" v-model="value" />
+            <InputText type="text" v-model="designation.name" />
           </div>
           <div class="p-field p-col">
             <label for="description">Description </label><br />
-            <Textarea v-model="value2" :autoResize="true" rows="1" cols="30" />
+            <Textarea v-model="designation.description" :autoResize="true" rows="1" cols="30" />
           </div>
         </div>
         <div class="form-group">
           <label for="status">Status </label><br />
-          <Checkbox v-model="status" :binary="true" />
-          <span v-if="status">Active</span>
+          <Checkbox v-model="designation.status" :binary="true" />
+          <span v-if="designation.status">Active</span>
           <span v-else>Inactive</span>
         </div>
         <div class="form-group">
           <label> </label>
-          <Button label="Submit" class="p-button-success" />
+          <button class="btn btn-success">Save</button>
         </div>
       </template>
     </Card>
@@ -47,14 +47,18 @@ export default {
 
   data() {
     return {
-      status: true,
+      designation:{
+          name:'',
+          description: '',
+          status: true
+      },
       home: { icon: "pi pi-home", to: "/" },
       items: [
         { label: "HRM"},
         { label: "Designation" },
         { label: "Designation List",to:"/designation-list" },
         { label: "Create Designation" },
-        
+
       ],
     };
   },

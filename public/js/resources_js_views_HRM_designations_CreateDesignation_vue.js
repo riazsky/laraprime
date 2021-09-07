@@ -60,7 +60,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      status: true,
+      designation: {
+        name: '',
+        description: '',
+        status: true
+      },
       home: {
         icon: "pi pi-home",
         to: "/"
@@ -713,11 +717,11 @@ var render = function() {
                       _c("InputText", {
                         attrs: { type: "text" },
                         model: {
-                          value: _vm.value,
+                          value: _vm.designation.name,
                           callback: function($$v) {
-                            _vm.value = $$v
+                            _vm.$set(_vm.designation, "name", $$v)
                           },
-                          expression: "value"
+                          expression: "designation.name"
                         }
                       })
                     ],
@@ -736,11 +740,11 @@ var render = function() {
                       _c("Textarea", {
                         attrs: { autoResize: true, rows: "1", cols: "30" },
                         model: {
-                          value: _vm.value2,
+                          value: _vm.designation.description,
                           callback: function($$v) {
-                            _vm.value2 = $$v
+                            _vm.$set(_vm.designation, "description", $$v)
                           },
-                          expression: "value2"
+                          expression: "designation.description"
                         }
                       })
                     ],
@@ -760,34 +764,28 @@ var render = function() {
                     _c("Checkbox", {
                       attrs: { binary: true },
                       model: {
-                        value: _vm.status,
+                        value: _vm.designation.status,
                         callback: function($$v) {
-                          _vm.status = $$v
+                          _vm.$set(_vm.designation, "status", $$v)
                         },
-                        expression: "status"
+                        expression: "designation.status"
                       }
                     }),
                     _vm._v(" "),
-                    _vm.status
+                    _vm.designation.status
                       ? _c("span", [_vm._v("Active")])
                       : _c("span", [_vm._v("Inactive")])
                   ],
                   1
                 ),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "form-group" },
-                  [
-                    _c("label"),
-                    _vm._v(" "),
-                    _c("Button", {
-                      staticClass: "p-button-success",
-                      attrs: { label: "Submit" }
-                    })
-                  ],
-                  1
-                )
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label"),
+                  _vm._v(" "),
+                  _c("button", { staticClass: "btn btn-success" }, [
+                    _vm._v("Save")
+                  ])
+                ])
               ]
             },
             proxy: true

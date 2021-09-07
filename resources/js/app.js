@@ -22,7 +22,7 @@ import ToastService from 'primevue/toastservice';
 
 import InputText from 'primevue/inputtext';
 import Card from 'primevue/card';
-import Button from 'primevue/Button';
+// import Button from 'primevue/Button';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import ColumnGroup from 'primevue/columngroup';
@@ -31,6 +31,7 @@ import Breadcrumb from 'primevue/breadcrumb';
 import Toast from 'primevue/toast';
 import Sidebar from 'primevue/sidebar';
 import InputMask from 'primevue/inputmask';
+import InputNumber from 'primevue/inputnumber';
 
 
 
@@ -56,7 +57,7 @@ import App from './views/App.vue'
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 Vue.component('Card', Card);
-Vue.component('Button', Button);
+// Vue.component('Button', Button);
 Vue.component('DataTable', DataTable);
 Vue.component('Column', Column);
 Vue.component('ColumnGroup', ColumnGroup);
@@ -66,6 +67,7 @@ Vue.component('Toast',Toast);
 Vue.component('Sidebar',Sidebar);
 Vue.component('InputText', InputText)
 Vue.component('InputMask', InputMask)
+Vue.component('InputNumber', InputNumber)
 
 
 

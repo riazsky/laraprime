@@ -58,6 +58,21 @@
 						</li>
 					</ul>
 				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-slack"></i>
+						</div>
+						<div class="menu-title">Contact Persons</div>
+					</a>
+					<ul>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/create-contact-person">Create Contact Persons</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/list-contact-person">Contact Person Lists</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/edit-contact-person">Edit Person Lists</router-link></a>
+						</li>
+					</ul>
+				</li>
 				<li class="menu-label">UI Elements</li>
 				<li>
 					<a href="widgets.html">
@@ -808,7 +823,6 @@ export default {
   name: "App",
   components: {
   },
-
   data() {
 	  return{
 
@@ -816,5 +830,3 @@ export default {
   },
 };
 </script>
-
-
