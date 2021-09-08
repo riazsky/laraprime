@@ -60,6 +60,50 @@
 						</li>
 					</ul>
 				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-slack"></i>
+						</div>
+						<div class="menu-title">Contact Persons</div>
+					</a>
+					<ul>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/CreateContactPerson">Create Contact Persons</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/ContactPersonList">Contact Person Lists</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/EditContactPerson">Edit Person Lists</router-link></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-sun"></i>
+						</div>
+						<div class="menu-title">Employees</div>
+					</a>
+					<ul>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/CreateEmployees">Create Employees</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/EmployeeLists">Employee Lists</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/EditEmployeeLists">Edit Employee Lists</router-link></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-sun"></i>
+						</div>
+						<div class="menu-title">Sales Return</div>
+					</a>
+					<ul>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/CreateSalesReturn">Create Sales Return</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/ReturnSalesLists">Return Sales Lists</router-link></a>
+						</li>
+
+					</ul>
+				</li>
 				<li class="menu-label">UI Elements</li>
 				<li>
 					<a href="widgets.html">
@@ -806,6 +850,8 @@
 </template>
 
 <script>
+
+
 export default {
   name: "App",
   components: {
@@ -818,5 +864,3 @@ export default {
   },
 };
 </script>
-
-
