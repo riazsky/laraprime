@@ -1,43 +1,55 @@
 <template>
-  <div class="flex-center position-ref full-height">
-        <div class="p-grid">
+  <div class="">
+        <div class="p-grid animate__animated animate__fadeIn">
             <div class="p-md-6">
-                <Card #content>
+                <Card>
+                    <template  #content>
                     <Chart type="bar" :data="basicData" :options="basicOptions" />
+                    </template>
                 </Card>
             </div>
 
             <div class="p-md-6">
-                <Card #content>
-                    <Chart type="pie" :data="basicData" :options="basicOptions" />
-                </Card>
-            </div>
-        </div>
-
-        <div class="p-grid">
-            <div class="p-md-6">
-                <Card #content>
-                    <Chart type="doughnut" :data="basicData" :options="basicOptions" />
-                </Card>
-            </div>
-
-            <div class="p-md-6">
-                <Card #content>
-                    <Chart type="line" :data="basicData" :options="basicOptions" />
+                <Card>
+                    <template #content>
+                        <Chart type="pie" :data="basicData" :options="basicOptions" />
+                    </template>
                 </Card>
             </div>
         </div>
 
         <div class="p-grid">
             <div class="p-md-6">
-                <Card #content>
+                <Card>
+                    <template #content>
+                        <Chart type="doughnut" :data="basicData" :options="basicOptions" />
+                    </template>
+                </Card>
+            </div>
+
+            <div class="p-md-6">
+                <Card>
+                    <template #content>
+                        <Chart type="line" :data="basicData" :options="basicOptions" />
+                    </template>
+                </Card>
+            </div>
+        </div>
+
+        <div class="p-grid">
+            <div class="p-md-6">
+                <Card>
+                    <template #content>
                     <Chart type="polarArea" :data="basicData" :options="basicOptions" />
+                    </template>
                 </Card>
             </div>
 
             <div class="p-md-6">
-                <Card #content>
+                <Card>
+                    <template #content>
                     <Chart type="radar" :data="basicData" :options="basicOptions" />
+                    </template>
                 </Card>
             </div>
         </div>

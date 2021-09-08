@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Breadcrumb :home="home" :model="items" />
+    <Breadcrumb :home="home" :model="items" class="animate__animated animate__fadeIn"/>
         <div class="p-d-flex p-jc-between p-mt-2">
       <div><h3>Create Department</h3></div>
       <div>
@@ -9,7 +9,7 @@
         </Button>
       </div>
     </div>
-    <Card class="p-mt-2">
+    <Card class="p-mt-2 animate__animated animate__fadeIn">
       <template #content>
         <div class="p-fluid p-formgrid p-grid">
           <div class="p-field p-col">
@@ -79,7 +79,7 @@ export default {
         { label: "Department" },
         { label: "Department List",to:"/department-list"},
         { label: "Create Department" },
-      
+
       ],
     };
   },

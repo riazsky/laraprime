@@ -4,6 +4,7 @@ const CreateDesignation = () => import('./views/HRM/designations/CreateDesignati
 const DesignationList = () => import('./views/HRM/designations/DesignationList.vue');
 const CreateDepartment = () => import('./views/HRM/departments/CreateDepartment.vue');
 const DepartmentList = () => import('./views/HRM/departments/DepartmentList.vue');
+const Sale = () => import('./views/sales/Sale.vue');
 
 const routes = [
     {
@@ -14,7 +15,8 @@ const routes = [
     {
         path: '/create-designation',
         name: 'CreateDesignation',
-        component: CreateDesignation
+        component: CreateDesignation,
+
     },
     {
         path: '/designation-list',
@@ -24,12 +26,18 @@ const routes = [
     {
         path: '/create-department',
         name: 'CreateDepartment',
-        component: CreateDepartment
+        component: CreateDepartment,
+
     },
     {
         path: '/department-list',
         name: 'DepartmentList',
         component: DepartmentList
+    },
+    {
+        path: '/sale',
+        name: 'Sale',
+        component: Sale
     },
 
 

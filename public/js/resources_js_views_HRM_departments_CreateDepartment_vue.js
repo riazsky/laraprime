@@ -451,7 +451,10 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("Breadcrumb", { attrs: { home: _vm.home, model: _vm.items } }),
+      _c("Breadcrumb", {
+        staticClass: "animate__animated animate__fadeIn",
+        attrs: { home: _vm.home, model: _vm.items }
+      }),
       _vm._v(" "),
       _c("div", { staticClass: "p-d-flex p-jc-between p-mt-2" }, [
         _vm._m(0),
@@ -479,7 +482,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("Card", {
-        staticClass: "p-mt-2",
+        staticClass: "p-mt-2 animate__animated animate__fadeIn",
         scopedSlots: _vm._u([
           {
             key: "content",

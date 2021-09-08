@@ -33,6 +33,8 @@
 						</li>
 						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/department-list">Department List</router-link></a>
 						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/sale">Sale</router-link></a>
+						</li>
 					</ul>
 				</li>
 				<li>

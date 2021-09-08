@@ -17,6 +17,7 @@ import 'primevue/resources/primevue.min.css'
 import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'
 import 'primevue/resources/themes/nova-vue/theme.css'
+import "animate.css"
 
 import ToastService from 'primevue/toastservice';
 

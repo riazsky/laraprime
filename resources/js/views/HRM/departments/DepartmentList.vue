@@ -1,9 +1,10 @@
 <template>
-    <div>
-
-<Breadcrumb :home="home" :model="items" />
-        <div class="p-d-flex p-jc-between p-mt-2">
-      <div><h3>Department list</h3></div>
+  <div>
+    <Breadcrumb :home="home" :model="items" class="animate__animated animate__fadeIn" />
+    <div class="p-d-flex p-jc-between p-mt-2">
+      <div>
+        <h3>Department list</h3>
+      </div>
       <div>
         <Button>
           <router-link class="text-white" to="/create-department">Create Department</router-link>
@@ -11,90 +12,126 @@
       </div>
     </div>
 
-    <card class="p-mt-2">
-      <template #content>
-        <DataTable :value="departments" :filters="filters" :selection.sync="selectedDepartments"  dataKey="departmentName" :paginator="true" :rows="5"
-    paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
-    :rowsPerPageOptions="[5,10,20,50]"
-    editMode="row"  :editingRows.sync="editingRows"
-        @row-edit-init="onRowEditInit" @row-edit-cancel="onRowEditCancel"
-    >
-    <template #header>
-                
 
-<div class="p-d-flex p-jc-between">
-    <div class="p-mt-2">List of Departments</div>
+        <DataTable
+          :value="departments"
+          :filters="filters"
+          :selection.sync="selectedDepartments"
+          data-key="departmentName"
+          :paginator="true"
+          :rows="5"
+          paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
+          :rowsPerPageOptions="[5,10,20,50]"
+          editMode="row"
+          :editingRows.sync="editingRows"
+          @row-edit-init="onRowEditInit"
+          @row-edit-cancel="onRowEditCancel"
+          class="p-mt-2 animate__animated animate__fadeIn"
+        >
+          <template #header>
+            <div class="p-d-flex p-jc-between">
+              <div class="p-mt-2">List of Departments</div>
 
-    <div>
-        <i class="pi pi-search" style="margin: 4px 4px 0px 0px;"></i>
-        <InputText v-model="filters['global']" placeholder="Global Search" size="50" />
-    </div>
-
-</div>
-       
-    </template>
-            <Column selectionMode="multiple" headerStyle="width: 3em"></Column>
+              <div>
+                <i class="pi pi-search" style="margin: 4px 4px 0px 0px;"></i>
+                <InputText v-model="filters['global']" placeholder="Global Search" size="50" />
+              </div>
+            </div>
+          </template>
+          <Column selectionMode="multiple" headerStyle="width: 3em"></Column>
           <Column field="departmentName" header="Department Name" sortable>
-           <template #editor="slotProps">
-                <InputText v-model="slotProps.data[slotProps.column.field]" />
+            <template #editor="slotProps">
+              <InputText v-model="slotProps.data[slotProps.column.field]" />
             </template>
           </Column>
           <Column field="departmentHead" header="Department Head" sortable>
-           <template #editor="slotProps">
-                <InputText v-model="slotProps.data[slotProps.column.field]" />
+            <template #editor="slotProps">
+              <InputText v-model="slotProps.data[slotProps.column.field]" />
             </template>
           </Column>
-            <Column field="parentDepartment" header="Parent Department" sortable>
-           <template #editor="slotProps">
-                <InputText v-model="slotProps.data[slotProps.column.field]" />
+          <Column field="parentDepartment" header="Parent Department" sortable>
+            <template #editor="slotProps">
+              <InputText v-model="slotProps.data[slotProps.column.field]" />
             </template>
           </Column>
           <Column field="status" header="Status" sortable>
-           <template #editor="slotProps">
-                <InputText v-model="slotProps.data[slotProps.column.field]" />
+            <template #editor="slotProps">
+              <InputText v-model="slotProps.data[slotProps.column.field]" />
             </template>
-            </Column>
-            <Column :rowEditor="true" headerStyle="width:7rem" bodyStyle="text-align:center"></Column>
+          </Column>
+          <Column :rowEditor="true" headerStyle="width:7rem" bodyStyle="text-align:center"></Column>
         </DataTable>
-      </template>
-    </card>
+
   </div>
 </template>
 <script>
 export default {
-    name:"DepartmentList",
-    data() {
-        return {
-            departments:[
-                {departmentName:'Name1',departmentHead:'Employe designation List',parentDepartment:'Parent Departmant',status:'Active'},
-                {departmentName:'Name2',departmentHead:'Employe designation List',parentDepartment:'Parent Departmant',status:'Active'},
-                {departmentName:'Name3',departmentHead:'Employe designation List',parentDepartment:'Parent Departmant',status:'Active'},
-                {departmentName:'Name4',departmentHead:'Employe designation List',parentDepartment:'Parent Departmant',status:'Active'},
-                {departmentName:'Name5',departmentHead:'Employe designation List',parentDepartment:'Parent Departmant',status:'Active'},
-                {departmentName:'Name6',departmentHead:'Employe designation List',parentDepartment:'Parent Departmant',status:'Active'},
-                {departmentName:'Name7',departmentHead:'Employe designation List',parentDepartment:'Parent Departmant',status:'Active'},
-
-
-            ],
-            filters:{},
-            selectedDepartments:null,
-            editingRows:[],
- home: { icon: "pi pi-home", to: "/" },
-      items: [
-         { label: "HRM"},
-        { label: "Department" },
-        { label: "Create Department ",to:"/create-department"},
-        { label: "Department List" ,to:"/department-list"},
-      ],
+  name: "DepartmentList",
+  data() {
+    return {
+      departments: [
+        {
+          departmentName: "Name1",
+          departmentHead: "Employe designation List",
+          parentDepartment: "Parent Departmant",
+          status: "Active"
+        },
+        {
+          departmentName: "Name2",
+          departmentHead: "Employe designation List",
+          parentDepartment: "Parent Departmant",
+          status: "Active"
+        },
+        {
+          departmentName: "Name3",
+          departmentHead: "Employe designation List",
+          parentDepartment: "Parent Departmant",
+          status: "Active"
+        },
+        {
+          departmentName: "Name4",
+          departmentHead: "Employe designation List",
+          parentDepartment: "Parent Departmant",
+          status: "Active"
+        },
+        {
+          departmentName: "Name5",
+          departmentHead: "Employe designation List",
+          parentDepartment: "Parent Departmant",
+          status: "Active"
+        },
+        {
+          departmentName: "Name6",
+          departmentHead: "Employe designation List",
+          parentDepartment: "Parent Departmant",
+          status: "Active"
+        },
+        {
+          departmentName: "Name7",
+          departmentHead: "Employe designation List",
+          parentDepartment: "Parent Departmant",
+          status: "Active"
         }
+      ],
+      filters: {},
+      selectedDepartments: null,
+      editingRows: [],
+      home: { icon: "pi pi-home", to: "/" },
+      items: [
+        { label: "HRM" },
+        { label: "Department" },
+        { label: "Create Department ", to: "/create-department" },
+        { label: "Department List", to: "/department-list" }
+      ]
+    };
+  },
+  methods: {
+    onRowEditInit(event) {
+      this.originalRows[event.index] = { ...this.designations[event.index] };
     },
-    methods: {
-        onRowEditInit(event) {
-            this.originalRows[event.index] = {...this.designations[event.index]};
-        },
-        onRowEditCancel(event) {
-            Vue.set(this.designations, event.index, this.originalRows[event.index]);
-        },
+    onRowEditCancel(event) {
+      Vue.set(this.designations, event.index, this.originalRows[event.index]);
     }
-}
+  }
+};
 </script>

@@ -61,6 +61,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       status: true,
+      logo_image: 'images/logo.png',
       home: {
         icon: "pi pi-home",
         to: "/"
@@ -666,7 +667,10 @@ var render = function() {
     "div",
     { staticClass: "p-mt-2" },
     [
-      _c("Breadcrumb", { attrs: { home: _vm.home, model: _vm.items } }),
+      _c("Breadcrumb", {
+        staticClass: "animate__animated animate__fadeIn",
+        attrs: { home: _vm.home, model: _vm.items }
+      }),
       _vm._v(" "),
       _c("div", { staticClass: "p-d-flex p-jc-between p-mt-2" }, [
         _vm._m(0),
@@ -694,7 +698,7 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("Card", {
-        staticClass: "p-mt-2",
+        staticClass: "p-mt-2 animate__animated animate__fadeIn",
         scopedSlots: _vm._u([
           {
             key: "content",
@@ -710,16 +714,7 @@ var render = function() {
                       ]),
                       _c("br"),
                       _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { type: "text" },
-                        model: {
-                          value: _vm.value,
-                          callback: function($$v) {
-                            _vm.value = $$v
-                          },
-                          expression: "value"
-                        }
-                      })
+                      _c("InputText", { attrs: { type: "text" } })
                     ],
                     1
                   ),
@@ -734,14 +729,7 @@ var render = function() {
                       _c("br"),
                       _vm._v(" "),
                       _c("Textarea", {
-                        attrs: { autoResize: true, rows: "1", cols: "30" },
-                        model: {
-                          value: _vm.value2,
-                          callback: function($$v) {
-                            _vm.value2 = $$v
-                          },
-                          expression: "value2"
-                        }
+                        attrs: { autoResize: true, rows: "1", cols: "30" }
                       })
                     ],
                     1
