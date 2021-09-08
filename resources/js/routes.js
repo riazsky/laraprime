@@ -16,6 +16,13 @@ const ViewSale = () => import('./views/SalesReturn/ViewSale.vue');
 const CreateCustomer = () => import('./views/CRM/customers/CreateCustomer.vue');
 const CustomerList = () => import('./views/CRM/customers/CustomerList.vue');
 const EditCustomer = () => import('./views/CRM/customers/EditCustomer.vue');
+const CreateCategory = () => import('./views/Base/category/CreateCategory.vue');
+const ListCategory = () => import('./views/Base/category/ListCategory.vue');
+const CreateWarehouse = () => import('./views/Base/warehouse/CreateWarehouse.vue');
+const ListWarehouse = () => import('./views/Base/warehouse/ListWarehouse.vue');
+const CreatePurchase = () => import('./views/Purchase/CreatePurchase.vue');
+const ListPurchase = () => import('./views/Purchase/ListPurchase.vue');
+
 
 
 
@@ -106,6 +113,36 @@ const routes = [
         name: 'EditContactPerson',
         component: EditContactPerson
     },
+    {
+        path: '/create-category',
+        name: 'CreateCategory',
+        component: CreateCategory
+    },
+    {
+        path: '/list-category',
+        name: 'ListCategory',
+        component: ListCategory
+    },
+    {
+        path: '/create-warehouse',
+        name: 'CreateWarehouse',
+        component: CreateWarehouse
+    },
+    {
+        path: '/list-warehouse',
+        name: 'ListWarehouse',
+        component: ListWarehouse
+    },
+    {
+        path: '/create-purchase',
+        name: 'CreatePurchase',
+        component: CreatePurchase
+    },
+    {
+        path: '/list-purchase',
+        name: 'ListPurchase',
+        component: ListPurchase
+    }
 
 
 ]

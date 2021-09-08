@@ -3602,6 +3602,30 @@ var EditCustomer = function EditCustomer() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_customers_EditCustomer_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/customers/EditCustomer.vue */ "./resources/js/views/CRM/customers/EditCustomer.vue"));
 };
 
+var CreateCategory = function CreateCategory() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Base_category_CreateCategory_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/category/CreateCategory.vue */ "./resources/js/views/Base/category/CreateCategory.vue"));
+};
+
+var ListCategory = function ListCategory() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Base_category_ListCategory_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/category/ListCategory.vue */ "./resources/js/views/Base/category/ListCategory.vue"));
+};
+
+var CreateWarehouse = function CreateWarehouse() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Base_warehouse_CreateWarehouse_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/warehouse/CreateWarehouse.vue */ "./resources/js/views/Base/warehouse/CreateWarehouse.vue"));
+};
+
+var ListWarehouse = function ListWarehouse() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Base_warehouse_ListWarehouse_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/warehouse/ListWarehouse.vue */ "./resources/js/views/Base/warehouse/ListWarehouse.vue"));
+};
+
+var CreatePurchase = function CreatePurchase() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Purchase_CreatePurchase_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Purchase/CreatePurchase.vue */ "./resources/js/views/Purchase/CreatePurchase.vue"));
+};
+
+var ListPurchase = function ListPurchase() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Purchase_ListPurchase_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Purchase/ListPurchase.vue */ "./resources/js/views/Purchase/ListPurchase.vue"));
+};
+
 var routes = [{
   path: '/',
   name: 'Welcome',
@@ -3670,6 +3694,30 @@ var routes = [{
   path: '/edit-contact-person',
   name: 'EditContactPerson',
   component: EditContactPerson
+}, {
+  path: '/create-category',
+  name: 'CreateCategory',
+  component: CreateCategory
+}, {
+  path: '/list-category',
+  name: 'ListCategory',
+  component: ListCategory
+}, {
+  path: '/create-warehouse',
+  name: 'CreateWarehouse',
+  component: CreateWarehouse
+}, {
+  path: '/list-warehouse',
+  name: 'ListWarehouse',
+  component: ListWarehouse
+}, {
+  path: '/create-purchase',
+  name: 'CreatePurchase',
+  component: CreatePurchase
+}, {
+  path: '/list-purchase',
+  name: 'ListPurchase',
+  component: ListPurchase
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_0__.default({
   // mode: 'history',
@@ -76127,7 +76175,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_HRM_designations_CreateDesignation_vue":1,"resources_js_views_HRM_designations_DesignationList_vue":1,"resources_js_views_HRM_departments_CreateDepartment_vue":1,"resources_js_views_HRM_departments_DepartmentList_vue":1,"resources_js_views_CRM_ContactPerson_CreateContactPerson_vue":1,"resources_js_views_CRM_ContactPerson_ContactPersonList_vue":1,"resources_js_views_CRM_ContactPerson_EditContactPerson_vue":1,"resources_js_views_HRM_Employees_CreateEmployees_vue":1,"resources_js_views_HRM_Employees_EmployeeLists_vue":1,"resources_js_views_HRM_Employees_EditEmployeeLists_vue":1,"resources_js_views_SalesReturn_CreateSalesReturn_vue":1,"resources_js_views_SalesReturn_ReturnSalesLists_vue":1,"resources_js_views_SalesReturn_ViewSale_vue":1,"resources_js_views_CRM_customers_CreateCustomer_vue":1,"resources_js_views_CRM_customers_CustomerList_vue":1,"resources_js_views_CRM_customers_EditCustomer_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_HRM_designations_CreateDesignation_vue":1,"resources_js_views_HRM_designations_DesignationList_vue":1,"resources_js_views_HRM_departments_CreateDepartment_vue":1,"resources_js_views_HRM_departments_DepartmentList_vue":1,"resources_js_views_CRM_ContactPerson_CreateContactPerson_vue":1,"resources_js_views_CRM_ContactPerson_ContactPersonList_vue":1,"resources_js_views_CRM_ContactPerson_EditContactPerson_vue":1,"resources_js_views_HRM_Employees_CreateEmployees_vue":1,"resources_js_views_HRM_Employees_EmployeeLists_vue":1,"resources_js_views_HRM_Employees_EditEmployeeLists_vue":1,"resources_js_views_SalesReturn_CreateSalesReturn_vue":1,"resources_js_views_SalesReturn_ReturnSalesLists_vue":1,"resources_js_views_SalesReturn_ViewSale_vue":1,"resources_js_views_CRM_customers_CreateCustomer_vue":1,"resources_js_views_CRM_customers_CustomerList_vue":1,"resources_js_views_CRM_customers_EditCustomer_vue":1,"resources_js_views_Base_category_CreateCategory_vue":1,"resources_js_views_Base_category_ListCategory_vue":1,"resources_js_views_Base_warehouse_CreateWarehouse_vue":1,"resources_js_views_Base_warehouse_ListWarehouse_vue":1,"resources_js_views_Purchase_CreatePurchase_vue":1,"resources_js_views_Purchase_ListPurchase_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
