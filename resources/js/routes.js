@@ -6,6 +6,13 @@ const CreateCompany = () => import('./views/CRM/Company/CreateCompany.vue');
 const ListCompany = () => import('./views/CRM/Company/ListCompany.vue');
 const CreateBranch = () => import('./views/CRM/Branch/CreateBranch.vue');
 const ListBranch = () => import('./views/CRM/Branch/ListBranch.vue');
+const CreateCategory = () => import('./views/Base/category/CreateCategory.vue');
+const ListCategory = () => import('./views/Base/category/ListCategory.vue');
+const CreateWarehouse = () => import('./views/Base/warehouse/CreateWarehouse.vue');
+const ListWarehouse = () => import('./views/Base/warehouse/ListWarehouse.vue');
+const CreatePurchase = () => import('./views/Purchase/CreatePurchase.vue');
+const ListPurchase = () => import('./views/Purchase/ListPurchase.vue');
+const InputRepeater = () => import('./views/InputRepeater.vue');
 
 
 
@@ -44,6 +51,41 @@ const routes = [
         path: '/list-branch',
         name: 'ListBranch',
         component: ListBranch
+    },
+    {
+        path: '/create-category',
+        name: 'CreateCategory',
+        component: CreateCategory
+    },
+    {
+        path: '/list-category',
+        name: 'ListCategory',
+        component: ListCategory
+    },
+    {
+        path: '/create-warehouse',
+        name: 'CreateWarehouse',
+        component: CreateWarehouse
+    },
+    {
+        path: '/list-warehouse',
+        name: 'ListWarehouse',
+        component: ListWarehouse
+    },
+    {
+        path: '/create-purchase',
+        name: 'CreatePurchase',
+        component: CreatePurchase
+    },
+    {
+        path: '/list-purchase',
+        name: 'ListPurchase',
+        component: ListPurchase
+    },
+    {
+        path: '/input-repeater',
+        name: 'InputRepeater',
+        component: InputRepeater
     }
 
 

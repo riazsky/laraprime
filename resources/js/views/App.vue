@@ -59,16 +59,11 @@
 						<div class="menu-title">Dashboard</div>
 					</a>
 					<ul>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/">Home</router-link></a>
-						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/about">About</router-link></a>
-						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-designation">Designation</router-link></a>
-						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-purchase">Purchase</router-link></a>
-						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/supplier">Supplier</router-link></a>
-						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/">Home</router-link></a></li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/about">About</router-link></a></li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-designation">Designation</router-link></a></li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-purchase">Purchase</router-link></a></li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/supplier">Supplier</router-link></a></li>
 					</ul>
 				</li>
 				<li>
@@ -94,6 +89,7 @@
 						</li>
 					</ul>
 				</li>
+
 				<li>
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class="pi pi-folder"></i>
@@ -107,6 +103,42 @@
 						<li><router-link to="/list-company"><i class="pi pi-arrow-right"></i>List Company</router-link></li>
 						<li><router-link to="/create-branch"><i class="pi pi-arrow-right"></i>Create Branch</router-link></li>
 						<li><router-link to="/list-branch"><i class="pi pi-arrow-right"></i>List Branch</router-link></li>
+					</ul>
+				</li>
+				<li>
+
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-folder"></i>
+						</div>
+						<div class="menu-title">Base</div>
+					</a>
+					<ul>
+						<li><router-link to="/create-category"><i class="pi pi-arrow-right"></i>Create Category</router-link></li>
+						<li><router-link to="/list-category"><i class="pi pi-arrow-right"></i>List Category</router-link></li>
+						<li><router-link to="/create-warehouse"><i class="pi pi-arrow-right"></i>Create Warehouse</router-link></li>
+						<li><router-link to="/list-warehouse"><i class="pi pi-arrow-right"></i>List Warehouse</router-link></li>
+						
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-folder"></i>
+						</div>
+						<div class="menu-title">Purchase</div>
+					</a>
+					<ul>
+						<li><router-link to="/create-purchase"><i class="pi pi-arrow-right"></i>Create Purchase</router-link></li>
+						<li><router-link to="/list-purchase"><i class="pi pi-arrow-right"></i>List Purchase</router-link></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-folder"></i>
+						</div>
+						<div class="menu-title">Test</div>
+					</a>
+					<ul>
+						<li><router-link to="/input-repeater"><i class="pi pi-arrow-right"></i>Input Repeater</router-link></li>
 					</ul>
 				</li>
 
