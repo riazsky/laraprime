@@ -19,17 +19,22 @@
           <div class="p-field p-col">
             <label for="description">Description </label><br />
             <Textarea :autoResize="true" rows="1" cols="30" />
+            <InputText type="text" v-model="designation.name" />
+          </div>
+          <div class="p-field p-col">
+            <label for="description">Description </label><br />
+            <Textarea v-model="designation.description" :autoResize="true" rows="1" cols="30" />
           </div>
         </div>
         <div class="form-group">
           <label for="status">Status </label><br />
-          <Checkbox v-model="status" :binary="true" />
-          <span v-if="status">Active</span>
+          <Checkbox v-model="designation.status" :binary="true" />
+          <span v-if="designation.status">Active</span>
           <span v-else>Inactive</span>
         </div>
         <div class="form-group">
           <label> </label>
-          <Button label="Submit" class="p-button-success" />
+          <button class="btn btn-success">Save</button>
         </div>
       </template>
     </Card>
@@ -49,6 +54,11 @@ export default {
     return {
       status: true,
       logo_image: 'images/logo.png',
+      designation:{
+          name:'',
+          description: '',
+          status: true
+      },
       home: { icon: "pi pi-home", to: "/" },
       items: [
         { label: "HRM"},

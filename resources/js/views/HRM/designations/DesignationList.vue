@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Breadcrumb :home="home" :model="items" class />
+    <Breadcrumb :home="home" :model="items"/>
     <div class="p-d-flex p-jc-between p-mt-2">
       <div>
         <h3>Designation List</h3>
@@ -13,6 +13,8 @@
     </div>
 
 
+    <Card class="p-mt-2">
+      <template #content>
         <DataTable
           :value="designations"
           :filters="filters"
@@ -37,25 +39,31 @@
               </div>
             </div>
           </template>
+
           <Column selectionMode="multiple" headerStyle="width: 3em"></Column>
+
           <Column field="name" header="Name" sortable>
             <template #editor="slotProps">
               <InputText v-model="slotProps.data[slotProps.column.field]" />
             </template>
           </Column>
+
           <Column field="description" header="Description">
             <template #editor="slotProps">
               <InputText v-model="slotProps.data[slotProps.column.field]" />
             </template>
           </Column>
+
           <Column field="status" header="Status" sortable>
             <template #editor="slotProps">
               <InputText v-model="slotProps.data[slotProps.column.field]" />
             </template>
           </Column>
+
           <Column :rowEditor="true" headerStyle="width:7rem" bodyStyle="text-align:center"></Column>
         </DataTable>
-
+      </template>
+    </Card>
   </div>
 </template>
 <script>

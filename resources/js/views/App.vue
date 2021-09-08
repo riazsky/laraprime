@@ -67,11 +67,11 @@
 						<div class="menu-title">Contact Persons</div>
 					</a>
 					<ul>
-						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/CreateContactPerson">Create Contact Persons</router-link></a>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/create-contact-person">Create Contact Persons</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/ContactPersonList">Contact Person Lists</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/list-contact-person">Contact Person Lists</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/EditContactPerson">Edit Person Lists</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/edit-contact-person">Edit Person Lists</router-link></a>
 						</li>
 					</ul>
 				</li>

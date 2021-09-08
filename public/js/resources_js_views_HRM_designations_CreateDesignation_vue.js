@@ -50,6 +50,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -62,6 +67,11 @@ __webpack_require__.r(__webpack_exports__);
     return {
       status: true,
       logo_image: 'images/logo.png',
+      designation: {
+        name: '',
+        description: '',
+        status: true
+      },
       home: {
         icon: "pi pi-home",
         to: "/"
@@ -730,6 +740,40 @@ var render = function() {
                       _vm._v(" "),
                       _c("Textarea", {
                         attrs: { autoResize: true, rows: "1", cols: "30" }
+                      }),
+                      _vm._v(" "),
+                      _c("InputText", {
+                        attrs: { type: "text" },
+                        model: {
+                          value: _vm.designation.name,
+                          callback: function($$v) {
+                            _vm.$set(_vm.designation, "name", $$v)
+                          },
+                          expression: "designation.name"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "p-field p-col" },
+                    [
+                      _c("label", { attrs: { for: "description" } }, [
+                        _vm._v("Description ")
+                      ]),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("Textarea", {
+                        attrs: { autoResize: true, rows: "1", cols: "30" },
+                        model: {
+                          value: _vm.designation.description,
+                          callback: function($$v) {
+                            _vm.$set(_vm.designation, "description", $$v)
+                          },
+                          expression: "designation.description"
+                        }
                       })
                     ],
                     1
@@ -748,34 +792,28 @@ var render = function() {
                     _c("Checkbox", {
                       attrs: { binary: true },
                       model: {
-                        value: _vm.status,
+                        value: _vm.designation.status,
                         callback: function($$v) {
-                          _vm.status = $$v
+                          _vm.$set(_vm.designation, "status", $$v)
                         },
-                        expression: "status"
+                        expression: "designation.status"
                       }
                     }),
                     _vm._v(" "),
-                    _vm.status
+                    _vm.designation.status
                       ? _c("span", [_vm._v("Active")])
                       : _c("span", [_vm._v("Inactive")])
                   ],
                   1
                 ),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "form-group" },
-                  [
-                    _c("label"),
-                    _vm._v(" "),
-                    _c("Button", {
-                      staticClass: "p-button-success",
-                      attrs: { label: "Submit" }
-                    })
-                  ],
-                  1
-                )
+                _c("div", { staticClass: "form-group" }, [
+                  _c("label"),
+                  _vm._v(" "),
+                  _c("button", { staticClass: "btn btn-success" }, [
+                    _vm._v("Save")
+                  ])
+                ])
               ]
             },
             proxy: true

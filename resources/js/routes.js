@@ -87,6 +87,22 @@ const routes = [
         name: 'ViewSale',
         component: ViewSale
     },
+    {
+        path: '/create-contact-person',
+        name: 'CreateContactPerson',
+        component: CreateContactPerson
+    },
+    {
+        path: '/list-contact-person',
+        name: 'ContactPersonList',
+        component: ContactPersonList
+    },
+    {
+        path: '/edit-contact-person',
+        name: 'EditContactPerson',
+        component: EditContactPerson
+    },
+
 
 ]
 

@@ -3146,6 +3146,18 @@ var routes = [{
   path: '/ViewSale',
   name: 'ViewSale',
   component: ViewSale
+}, {
+  path: '/create-contact-person',
+  name: 'CreateContactPerson',
+  component: CreateContactPerson
+}, {
+  path: '/list-contact-person',
+  name: 'ContactPersonList',
+  component: ContactPersonList
+}, {
+  path: '/edit-contact-person',
+  name: 'EditContactPerson',
+  component: EditContactPerson
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_0__.default({
   // mode: 'history',
@@ -57477,7 +57489,7 @@ var render = function() {
                       _c("i", { staticClass: "pi pi-arrow-right" }),
                       _c(
                         "router-link",
-                        { attrs: { to: "/CreateContactPerson" } },
+                        { attrs: { to: "/create-contact-person" } },
                         [_vm._v("Create Contact Persons")]
                       )
                     ],
@@ -57492,7 +57504,7 @@ var render = function() {
                       _c("i", { staticClass: "pi pi-arrow-right" }),
                       _c(
                         "router-link",
-                        { attrs: { to: "/ContactPersonList" } },
+                        { attrs: { to: "/list-contact-person" } },
                         [_vm._v("Contact Person Lists")]
                       )
                     ],
@@ -57507,7 +57519,7 @@ var render = function() {
                       _c("i", { staticClass: "pi pi-arrow-right" }),
                       _c(
                         "router-link",
-                        { attrs: { to: "/EditContactPerson" } },
+                        { attrs: { to: "/edit-contact-person" } },
                         [_vm._v("Edit Person Lists")]
                       )
                     ],

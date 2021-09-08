@@ -99,11 +99,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'CreateContactPerson',
+  name: "CreateContactPerson",
   components: {
     Dropdown: primevue_dropdown__WEBPACK_IMPORTED_MODULE_0__.default,
     Button: primevue_button__WEBPACK_IMPORTED_MODULE_1__.default,
@@ -114,76 +132,76 @@ __webpack_require__.r(__webpack_exports__);
       date: null,
       department: null,
       home: {
-        icon: 'pi pi-home',
-        to: '/'
+        icon: "pi pi-home",
+        to: "/"
       },
       items: [{
-        label: 'CRM'
+        label: "CRM"
       }, {
-        label: 'Contact Persons'
+        label: "Contact Persons"
       }, {
-        label: 'Create Contact Persons',
-        to: '/CreateContactPerson'
+        label: "Create Contact Persons",
+        to: "/CreateContactPerson"
       }, {
-        label: 'Contact Person Lists',
-        to: '/ContactPersonList'
+        label: "Contact Person Lists",
+        to: "/ContactPersonList"
       }, {
-        label: 'Edit Contact Persons'
+        label: "Edit Contact Persons"
       }],
-      group: [{
-        name: 'Marketing',
-        code: 'Mk'
+      departments: [{
+        name: "Marketing",
+        code: "Mk"
       }, {
-        name: 'Finance',
-        code: 'F'
+        name: "Finance",
+        code: "F"
       }, {
-        name: 'Designing',
-        code: 'D'
+        name: "Designing",
+        code: "D"
       }, {
-        name: 'Programming',
-        code: 'IST'
+        name: "Programming",
+        code: "IST"
       }],
       designation: null,
-      desig: [{
-        name: 'CEO',
-        code: 'CEO'
+      designations: [{
+        name: "CEO",
+        code: "CEO"
       }, {
-        name: 'Manager',
-        code: 'MG'
+        name: "Manager",
+        code: "MG"
       }, {
-        name: 'Ass. Manager',
-        code: 'AM'
+        name: "Ass. Manager",
+        code: "AM"
       }, {
-        name: 'Employe',
-        code: 'E'
+        name: "Employe",
+        code: "E"
       }],
       BranchName: null,
-      branch: [{
-        name: 'Nikunjo',
-        code: 'N'
+      branchs: [{
+        name: "Nikunjo",
+        code: "N"
       }, {
-        name: 'Savar',
-        code: 'Sr'
+        name: "Savar",
+        code: "Sr"
       }, {
-        name: 'Mohakhali',
-        code: 'Mi'
+        name: "Mohakhali",
+        code: "Mi"
       }, {
-        name: 'Munshiganj',
-        code: 'Mj'
+        name: "Munshiganj",
+        code: "Mj"
       }],
       CompanyName: null,
-      company: [{
-        name: 'Nikunjo',
-        code: 'N'
+      companies: [{
+        name: "Nikunjo",
+        code: "N"
       }, {
-        name: 'Savar',
-        code: 'Sr'
+        name: "Savar",
+        code: "Sr"
       }, {
-        name: 'Mohakhali',
-        code: 'Mi'
+        name: "Mohakhali",
+        code: "Mi"
       }, {
-        name: 'Munshiganj',
-        code: 'Mj'
+        name: "Munshiganj",
+        code: "Mj"
       }]
     };
   }
@@ -3801,13 +3819,11 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "email" } }, [
                         _vm._v("Email Address")
                       ]),
                       _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "lastname", type: "email" }
-                      })
+                      _c("InputText", { attrs: { id: "email", type: "email" } })
                     ],
                     1
                   ),
@@ -3816,22 +3832,15 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "number" } }, [
+                      _c("label", { attrs: { for: "mobile_number" } }, [
                         _vm._v("Mobile Number")
                       ]),
                       _vm._v(" "),
                       _c("InputNumber", {
                         attrs: {
-                          id: "withoutgrouping",
+                          id: "mobile_number",
                           mode: "decimal",
                           useGrouping: false
-                        },
-                        model: {
-                          value: _vm.value2,
-                          callback: function($$v) {
-                            _vm.value2 = $$v
-                          },
-                          expression: "value2"
                         }
                       })
                     ],
@@ -3842,22 +3851,15 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "alt_mobile_number" } }, [
                         _vm._v("Alt Mobile Number")
                       ]),
                       _vm._v(" "),
                       _c("InputNumber", {
                         attrs: {
-                          id: "withoutgrouping",
+                          id: "alt_mobile_number",
                           mode: "decimal",
                           useGrouping: false
-                        },
-                        model: {
-                          value: _vm.value2,
-                          callback: function($$v) {
-                            _vm.value2 = $$v
-                          },
-                          expression: "value2"
                         }
                       })
                     ],
@@ -3868,22 +3870,15 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "department" } }, [
                         _vm._v("Department")
                       ]),
                       _vm._v(" "),
                       _c("Dropdown", {
                         attrs: {
-                          options: _vm.group,
+                          options: _vm.departments,
                           optionLabel: "name",
                           placeholder: "Select a Department"
-                        },
-                        model: {
-                          value: _vm.department,
-                          callback: function($$v) {
-                            _vm.department = $$v
-                          },
-                          expression: "department"
                         }
                       })
                     ],
@@ -3894,22 +3889,15 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "designation" } }, [
                         _vm._v("Designation")
                       ]),
                       _vm._v(" "),
                       _c("Dropdown", {
                         attrs: {
-                          options: _vm.desig,
+                          options: _vm.designations,
                           optionLabel: "name",
                           placeholder: "Select a Designation"
-                        },
-                        model: {
-                          value: _vm.designation,
-                          callback: function($$v) {
-                            _vm.designation = $$v
-                          },
-                          expression: "designation"
                         }
                       })
                     ],
@@ -3920,22 +3908,15 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "company" } }, [
                         _vm._v("Company Name")
                       ]),
                       _vm._v(" "),
                       _c("Dropdown", {
                         attrs: {
-                          options: _vm.company,
+                          options: _vm.companies,
                           optionLabel: "name",
                           placeholder: "Select a Company"
-                        },
-                        model: {
-                          value: _vm.CompanyName,
-                          callback: function($$v) {
-                            _vm.CompanyName = $$v
-                          },
-                          expression: "CompanyName"
                         }
                       })
                     ],
@@ -3946,22 +3927,15 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "branch" } }, [
                         _vm._v("Current Branch Name")
                       ]),
                       _vm._v(" "),
                       _c("Dropdown", {
                         attrs: {
-                          options: _vm.branch,
+                          options: _vm.branchs,
                           optionLabel: "name",
                           placeholder: "Select a Branch"
-                        },
-                        model: {
-                          value: _vm.BranchName,
-                          callback: function($$v) {
-                            _vm.BranchName = $$v
-                          },
-                          expression: "BranchName"
                         }
                       })
                     ],
@@ -3988,23 +3962,16 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "credit_limit" } }, [
                         _vm._v("Credit Limit")
                       ]),
                       _vm._v(" "),
                       _c("InputNumber", {
                         attrs: {
-                          id: "currency-us",
+                          id: "credit_limit",
                           mode: "currency",
                           currency: "USD",
                           locale: "en-US"
-                        },
-                        model: {
-                          value: _vm.value9,
-                          callback: function($$v) {
-                            _vm.value9 = $$v
-                          },
-                          expression: "value9"
                         }
                       })
                     ],
@@ -4015,19 +3982,12 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "discount" } }, [
                         _vm._v("Discount")
                       ]),
                       _vm._v(" "),
                       _c("InputNumber", {
-                        attrs: { id: "percent", suffix: "%" },
-                        model: {
-                          value: _vm.value14,
-                          callback: function($$v) {
-                            _vm.value14 = $$v
-                          },
-                          expression: "value14"
-                        }
+                        attrs: { id: "discount", suffix: "%" }
                       })
                     ],
                     1
@@ -4037,12 +3997,12 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "reference" } }, [
                         _vm._v("Reference")
                       ]),
                       _vm._v(" "),
                       _c("InputText", {
-                        attrs: { id: "lastname", type: "text" }
+                        attrs: { id: "reference", type: "text" }
                       })
                     ],
                     1
@@ -4052,12 +4012,12 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "reference_date" } }, [
                         _vm._v("Reference Date")
                       ]),
                       _vm._v(" "),
                       _c("Calendar", {
-                        attrs: { id: "icon", showIcon: true },
+                        attrs: { id: "reference_date", showIcon: true },
                         model: {
                           value: _vm.date,
                           callback: function($$v) {
@@ -4074,22 +4034,13 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
-                        _vm._v("NID")
-                      ]),
+                      _c("label", { attrs: { for: "nid" } }, [_vm._v("NID")]),
                       _vm._v(" "),
                       _c("InputNumber", {
                         attrs: {
-                          id: "withoutgrouping",
+                          id: "nid",
                           mode: "decimal",
                           useGrouping: false
-                        },
-                        model: {
-                          value: _vm.value2,
-                          callback: function($$v) {
-                            _vm.value2 = $$v
-                          },
-                          expression: "value2"
                         }
                       })
                     ],
@@ -4100,12 +4051,12 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "remarks" } }, [
                         _vm._v("Remarks")
                       ]),
                       _vm._v(" "),
                       _c("InputText", {
-                        attrs: { id: "lastname", type: "text" }
+                        attrs: { id: "remarks", type: "text" }
                       })
                     ],
                     1
@@ -4115,12 +4066,12 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "password" } }, [
                         _vm._v("Password")
                       ]),
                       _vm._v(" "),
                       _c("InputText", {
-                        attrs: { id: "lastname", type: "password" }
+                        attrs: { id: "password", type: "password" }
                       })
                     ],
                     1
@@ -4130,12 +4081,12 @@ var render = function() {
                     "div",
                     { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c("label", { attrs: { for: "lastname" } }, [
+                      _c("label", { attrs: { for: "confirm_password" } }, [
                         _vm._v("Confirm Password")
                       ]),
                       _vm._v(" "),
                       _c("InputText", {
-                        attrs: { id: "lastname", type: "password" }
+                        attrs: { id: "confirm_password", type: "password" }
                       })
                     ],
                     1

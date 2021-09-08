@@ -121,7 +121,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         label: 'Contact Persons'
       }, {
         label: 'Create Contact Persons',
-        to: '/CreateContactPerson'
+        to: '/create-contact-person'
       }, {
         label: 'Contact Person Lists'
       }],
@@ -164,7 +164,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }]
     };
   },
-  method: {
+  methods: {
     onRowEditInit: function onRowEditInit(event) {
       this.originalRows[event.index] = _objectSpread({}, this.products3[event.index]);
     },
@@ -277,7 +277,7 @@ var render = function() {
                 "router-link",
                 {
                   staticStyle: { color: "#fff", "text-decoration": "none" },
-                  attrs: { to: "/CreateContactPerson" }
+                  attrs: { to: "/create-contact-person" }
                 },
                 [_vm._v("Create Contact Persons")]
               )
@@ -644,7 +644,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("Column", {
-            attrs: { field: "Action", headerStyle: "width: 150px" },
+            attrs: { headerStyle: "width: 150px" },
             scopedSlots: _vm._u([
               {
                 key: "body",
