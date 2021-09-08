@@ -2701,6 +2701,35 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "App",
   components: {},
@@ -3153,6 +3182,35 @@ var EditContactPerson = function EditContactPerson() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_ContactPerson_EditContactPerson_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/ContactPerson/EditContactPerson.vue */ "./resources/js/views/CRM/ContactPerson/EditContactPerson.vue"));
 };
 
+var CreateEmployees = function CreateEmployees() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_Employees_CreateEmployees_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/Employees/CreateEmployees.vue */ "./resources/js/views/HRM/Employees/CreateEmployees.vue"));
+};
+
+var EmployeeLists = function EmployeeLists() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_Employees_EmployeeLists_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/Employees/EmployeeLists.vue */ "./resources/js/views/HRM/Employees/EmployeeLists.vue"));
+};
+
+var EditEmployeeLists = function EditEmployeeLists() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_Employees_EditEmployeeLists_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/Employees/EditEmployeeLists.vue */ "./resources/js/views/HRM/Employees/EditEmployeeLists.vue"));
+};
+
+var CreateSalesReturn = function CreateSalesReturn() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_SalesReturn_CreateSalesReturn_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/CreateSalesReturn.vue */ "./resources/js/views/SalesReturn/CreateSalesReturn.vue"));
+};
+
+var ReturnSalesLists = function ReturnSalesLists() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_SalesReturn_ReturnSalesLists_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/ReturnSalesLists.vue */ "./resources/js/views/SalesReturn/ReturnSalesLists.vue"));
+};
+
+var ViewSale = function ViewSale() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_SalesReturn_ViewSale_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/ViewSale.vue */ "./resources/js/views/SalesReturn/ViewSale.vue"));
+}; // test perpose
+
+
+var AddRemove = function AddRemove() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Multiple_AddRemove_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Multiple/AddRemove.vue */ "./resources/js/views/Multiple/AddRemove.vue"));
+};
+
 var routes = [{
   path: '/',
   name: 'Welcome',
@@ -3169,6 +3227,41 @@ var routes = [{
   path: '/EditContactPerson',
   name: 'EditContactPerson',
   component: EditContactPerson
+}, // Create Employees Routes
+{
+  path: '/CreateEmployees',
+  name: 'CreateEmployees',
+  component: CreateEmployees
+}, // Employees List Routes
+{
+  path: '/EmployeeLists',
+  name: 'EmployeeLists',
+  component: EmployeeLists
+}, //Edit Employee Lists Routes
+{
+  path: '/EditEmployeeLists',
+  name: 'EditEmployeeLists',
+  component: EditEmployeeLists
+}, //Create Sales Return Routes
+{
+  path: '/CreateSalesReturn',
+  name: 'CreateSalesReturn',
+  component: CreateSalesReturn
+}, // Sales Return lists Routes
+{
+  path: '/ReturnSalesLists',
+  name: 'ReturnSalesLists',
+  component: ReturnSalesLists
+}, // View Sale Routes
+{
+  path: '/ViewSale',
+  name: 'ViewSale',
+  component: ViewSale
+}, //test perpose
+{
+  path: '/AddRemove',
+  name: 'AddRemove',
+  component: AddRemove
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_0__.default({
   // mode: 'history',
@@ -58298,11 +58391,90 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
+            _c("li", [
+              _vm._m(7),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c("router-link", { attrs: { to: "/CreateEmployees" } }, [
+                        _vm._v("Create Employees")
+                      ])
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c("router-link", { attrs: { to: "/EmployeeLists" } }, [
+                        _vm._v("Employee Lists")
+                      ])
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c(
+                        "router-link",
+                        { attrs: { to: "/EditEmployeeLists" } },
+                        [_vm._v("Edit Employee Lists")]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._m(8),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c(
+                        "router-link",
+                        { attrs: { to: "/CreateSalesReturn" } },
+                        [_vm._v("Create Sales Return")]
+                      )
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c(
+                        "router-link",
+                        { attrs: { to: "/ReturnSalesLists" } },
+                        [_vm._v("Return Sales Lists")]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
             _c("li", { staticClass: "menu-label" }, [_vm._v("UI Elements")]),
-            _vm._v(" "),
-            _vm._m(7),
-            _vm._v(" "),
-            _vm._m(8),
             _vm._v(" "),
             _vm._m(9),
             _vm._v(" "),
@@ -58310,17 +58482,17 @@ var render = function() {
             _vm._v(" "),
             _vm._m(11),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
-            _vm._v(" "),
             _vm._m(12),
             _vm._v(" "),
             _vm._m(13),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
             _vm._v(" "),
             _vm._m(14),
             _vm._v(" "),
             _vm._m(15),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
             _vm._v(" "),
             _vm._m(16),
             _vm._v(" "),
@@ -58330,24 +58502,28 @@ var render = function() {
             _vm._v(" "),
             _vm._m(19),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
-            _vm._v(" "),
             _vm._m(20),
             _vm._v(" "),
             _vm._m(21),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
             _vm._v(" "),
             _vm._m(22),
             _vm._v(" "),
             _vm._m(23),
             _vm._v(" "),
-            _vm._m(24)
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
+            _vm._v(" "),
+            _vm._m(24),
+            _vm._v(" "),
+            _vm._m(25),
+            _vm._v(" "),
+            _vm._m(26)
           ])
         ]
       ),
       _vm._v(" "),
-      _vm._m(25),
+      _vm._m(27),
       _vm._v(" "),
       _c("div", { staticClass: "page-wrapper" }, [
         _c("div", { staticClass: "page-content" }, [_c("router-view")], 1)
@@ -58355,12 +58531,12 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "overlay toggle-icon" }),
       _vm._v(" "),
-      _vm._m(26),
+      _vm._m(28),
       _vm._v(" "),
-      _vm._m(27)
+      _vm._m(29)
     ]),
     _vm._v(" "),
-    _vm._m(28)
+    _vm._m(30)
   ])
 }
 var staticRenderFns = [
@@ -58505,6 +58681,38 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "menu-title" }, [_vm._v("Contact Persons")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
+      [
+        _c("div", { staticClass: "parent-icon" }, [
+          _c("i", { staticClass: "pi pi-sun" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "menu-title" }, [_vm._v("Employees")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
+      [
+        _c("div", { staticClass: "parent-icon" }, [
+          _c("i", { staticClass: "pi pi-sun" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "menu-title" }, [_vm._v("Sales Return")])
       ]
     )
   },
@@ -76172,7 +76380,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_CRM_ContactPerson_CreateContactPerson_vue":1,"resources_js_views_CRM_ContactPerson_ContactPersonList_vue":1,"resources_js_views_CRM_ContactPerson_EditContactPerson_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_CRM_ContactPerson_CreateContactPerson_vue":1,"resources_js_views_CRM_ContactPerson_ContactPersonList_vue":1,"resources_js_views_CRM_ContactPerson_EditContactPerson_vue":1,"resources_js_views_HRM_Employees_CreateEmployees_vue":1,"resources_js_views_HRM_Employees_EmployeeLists_vue":1,"resources_js_views_HRM_Employees_EditEmployeeLists_vue":1,"resources_js_views_SalesReturn_CreateSalesReturn_vue":1,"resources_js_views_SalesReturn_ReturnSalesLists_vue":1,"resources_js_views_SalesReturn_ViewSale_vue":1,"resources_js_views_Multiple_AddRemove_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
