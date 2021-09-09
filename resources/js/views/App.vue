@@ -129,6 +129,7 @@
 					<ul>
 						<li><router-link to="/create-purchase"><i class="pi pi-arrow-right"></i>Create Purchase</router-link></li>
 						<li><router-link to="/list-purchase"><i class="pi pi-arrow-right"></i>List Purchase</router-link></li>
+						<li><router-link to="/purchase-invoice"><i class="pi pi-arrow-right"></i>Purchase Invoice</router-link></li>
 					</ul>
 				</li>
 				<li>

@@ -12,6 +12,7 @@ const CreateWarehouse = () => import('./views/Base/warehouse/CreateWarehouse.vue
 const ListWarehouse = () => import('./views/Base/warehouse/ListWarehouse.vue');
 const CreatePurchase = () => import('./views/Purchase/CreatePurchase.vue');
 const ListPurchase = () => import('./views/Purchase/ListPurchase.vue');
+const PurchaseInvoice = () => import('./views/Purchase/PurchaseInvoice.vue');
 const InputRepeater = () => import('./views/InputRepeater.vue');
 
 
@@ -81,6 +82,11 @@ const routes = [
         path: '/list-purchase',
         name: 'ListPurchase',
         component: ListPurchase
+    },
+    {
+        path: '/purchase-invoice',
+        name: 'PurchaseInvoice',
+        component: PurchaseInvoice
     },
     {
         path: '/input-repeater',

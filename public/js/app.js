@@ -2774,6 +2774,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -3428,6 +3429,10 @@ var ListPurchase = function ListPurchase() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_Purchase_ListPurchase_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Purchase/ListPurchase.vue */ "./resources/js/views/Purchase/ListPurchase.vue"));
 };
 
+var PurchaseInvoice = function PurchaseInvoice() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Purchase_PurchaseInvoice_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Purchase/PurchaseInvoice.vue */ "./resources/js/views/Purchase/PurchaseInvoice.vue"));
+};
+
 var InputRepeater = function InputRepeater() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_InputRepeater_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/InputRepeater.vue */ "./resources/js/views/InputRepeater.vue"));
 };
@@ -3484,6 +3489,10 @@ var routes = [{
   path: '/list-purchase',
   name: 'ListPurchase',
   component: ListPurchase
+}, {
+  path: '/purchase-invoice',
+  name: 'PurchaseInvoice',
+  component: PurchaseInvoice
 }, {
   path: '/input-repeater',
   name: 'InputRepeater',
@@ -58641,6 +58650,17 @@ var render = function() {
                     ])
                   ],
                   1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  [
+                    _c("router-link", { attrs: { to: "/purchase-invoice" } }, [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v("Purchase Invoice")
+                    ])
+                  ],
+                  1
                 )
               ])
             ]),
@@ -76555,7 +76575,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_CRM_CustomerGroups_CreateCustomerGroup_vue":1,"resources_js_views_CRM_CustomerGroups_ListCustomerGroup_vue":1,"resources_js_views_CRM_Company_CreateCompany_vue":1,"resources_js_views_CRM_Company_ListCompany_vue":1,"resources_js_views_CRM_Branch_CreateBranch_vue":1,"resources_js_views_CRM_Branch_ListBranch_vue":1,"resources_js_views_Base_category_CreateCategory_vue":1,"resources_js_views_Base_category_ListCategory_vue":1,"resources_js_views_Base_warehouse_CreateWarehouse_vue":1,"resources_js_views_Base_warehouse_ListWarehouse_vue":1,"resources_js_views_Purchase_CreatePurchase_vue":1,"resources_js_views_Purchase_ListPurchase_vue":1,"resources_js_views_InputRepeater_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_CRM_CustomerGroups_CreateCustomerGroup_vue":1,"resources_js_views_CRM_CustomerGroups_ListCustomerGroup_vue":1,"resources_js_views_CRM_Company_CreateCompany_vue":1,"resources_js_views_CRM_Company_ListCompany_vue":1,"resources_js_views_CRM_Branch_CreateBranch_vue":1,"resources_js_views_CRM_Branch_ListBranch_vue":1,"resources_js_views_Base_category_CreateCategory_vue":1,"resources_js_views_Base_category_ListCategory_vue":1,"resources_js_views_Base_warehouse_CreateWarehouse_vue":1,"resources_js_views_Base_warehouse_ListWarehouse_vue":1,"resources_js_views_Purchase_CreatePurchase_vue":1,"resources_js_views_Purchase_ListPurchase_vue":1,"resources_js_views_Purchase_PurchaseInvoice_vue":1,"resources_js_views_InputRepeater_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
