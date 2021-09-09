@@ -234,29 +234,25 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "p-d-flex p-jc-between p-mb-4" },
-        [
-          _c("h2", [_vm._v("List Customer Group")]),
-          _vm._v(" "),
-          _c(
-            "Button",
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "text-white",
-                  attrs: { to: "/create-customer-group" }
-                },
-                [_vm._v("Create Customer Group")]
-              )
-            ],
-            1
-          )
-        ],
-        1
-      ),
+      _c("div", { staticClass: "p-d-flex p-jc-between p-mb-4" }, [
+        _c("h2", [_vm._v("List Customer Group")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "btn btn-success" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "text-white",
+                attrs: { to: "/create-customer-group" }
+              },
+              [_vm._v("Create Customer Group")]
+            )
+          ],
+          1
+        )
+      ]),
       _vm._v(" "),
       _c("Card", {
         scopedSlots: _vm._u([

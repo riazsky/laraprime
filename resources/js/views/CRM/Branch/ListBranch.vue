@@ -3,7 +3,7 @@
   <div class="p-mb-4"><Breadcrumb :home="home" :model="items" /></div>
     <div class="p-d-flex p-jc-between p-mb-4">
         <h2>List Branch</h2>
-        <Button><router-link to="/create-branch" class="text-white">Create Branch</router-link></Button>
+        <button class="btn btn-success"><router-link to="/create-branch" class="text-white">Create Branch</router-link></button>
     </div>
   <Card>
     <template #content>

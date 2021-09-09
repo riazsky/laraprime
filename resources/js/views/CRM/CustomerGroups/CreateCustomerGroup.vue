@@ -3,7 +3,7 @@
     <div class="p-mb-4"><Breadcrumb :home="home" :model="items" /></div>
     <div class="p-d-flex p-jc-between p-mb-4">
         <h2>Create Customer Group</h2>
-        <Button><router-link to="/list-customer-group" class="text-white">Customer Group List</router-link></Button>
+        <button class="btn btn-success"><router-link to="/list-customer-group" class="text-white">Customer Group List</router-link></button>
     </div>
     <Card>
         <template #content>
@@ -16,10 +16,10 @@
                                 <InputText id="title" type="text" autofocus />
                             </div>
                         </div>
-                        <div class="p-field p-grid">
-                            <label for="lastname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Description</label>
+                        <div class="p-field p-grid p-ai-start">
+                            <label for="desp" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Description</label>
                             <div class="p-col-12 p-md-10 ">
-                                <InputText id="desp" type="text"/>
+                                <Textarea v-model="description" :autoResize="true" rows="5"/>
                             </div>
                         </div>
                         <div class="p-field p-grid">
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <div class="p-field p-grid">
-                            <Button label="Submit" />
+                            <button class="form-control btn btn-success">Create</button>
                         </div>
                     </div>
                 </div>
@@ -43,14 +43,18 @@
 
 <script>
 import Checkbox from 'primevue/checkbox';
+import Textarea from 'primevue/textarea';
+
 export default {
     name: 'CreateCustomerGroup',
     components: {
-        Checkbox
+        Checkbox,
+        Textarea
     },
     data() {
         return{
             status: true,
+            description: '',
             home: {icon: 'pi pi-home', to: '/'},
             items: [
                 {label: 'CRM'},

@@ -3,7 +3,7 @@
     <div class="p-mb-4"><Breadcrumb :home="home" :model="items" /></div>
     <div class="p-d-flex p-jc-between p-mb-4">
         <h2>Create Branch</h2>
-        <Button><router-link to="/list-branch" class="text-white">List Branch</router-link></Button>
+        <button class="btn btn-success"><router-link to="/list-branch" class="text-white">List Branch</router-link></button>
     </div>
     <Card>
         <template #content>
@@ -17,15 +17,15 @@
                             </div>
                         </div>
                         <div class="p-field p-grid">
-                            <label for="location" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">location</label>
+                            <label for="location" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Location</label>
                             <div class="p-col-12 p-md-10">
                                 <InputText id="location" type="text" />
                             </div>
                         </div>
-                        <div class="p-field p-grid">
+                        <div class="p-field p-grid p-ai-start">
                             <label for="lastname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Description</label>
                             <div class="p-col-12 p-md-10 ">
-                                <InputText id="desp" type="text"/>
+                                <Textarea v-model="description" :autoResize="true" rows="5"  cols="30"/>
                             </div>
                         </div>
                         <div class="p-field p-grid">
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="p-field p-grid">
-                            <Button label="Submit" />
+                            <button class="form-control btn btn-success">Create</button>
                         </div>
                     </div>
                 </div>
@@ -49,13 +49,17 @@
 
 <script>
 import Checkbox from 'primevue/checkbox';
+import Textarea from 'primevue/textarea';
+
 export default {
     name: 'CreateBranch',
     components: {
-        Checkbox
+        Checkbox,
+        Textarea
     },
     data() {
         return{
+            description: '',
             status: true,
             home: {icon: 'pi pi-home', to: '/'},
             items: [

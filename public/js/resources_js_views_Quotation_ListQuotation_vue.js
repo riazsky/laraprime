@@ -11,13 +11,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-//
 //
 //
 //
@@ -185,14 +178,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         label: 'List Quotation'
       }]
     };
-  },
-  methods: {
-    onRowEditInit: function onRowEditInit(event) {
-      this.originalRows[event.index] = _objectSpread({}, this.ListQuotation[event.index]);
-    },
-    onRowEditCancel: function onRowEditCancel(event) {
-      Vue.set(this.ListQuotation, event.index, this.originalRows[event.index]);
-    }
   }
 });
 
@@ -330,22 +315,12 @@ var render = function() {
                         "Showing {first} to {last} of {totalRecords}",
                       filters: _vm.filters,
                       dataKey: "id",
-                      selection: _vm.selectedTitle,
-                      editingRows: _vm.editingRows,
-                      editMode: "row"
+                      selection: _vm.selectedTitle
                     },
                     on: {
                       "update:selection": function($event) {
                         _vm.selectedTitle = $event
-                      },
-                      "update:editingRows": function($event) {
-                        _vm.editingRows = $event
-                      },
-                      "update:editing-rows": function($event) {
-                        _vm.editingRows = $event
-                      },
-                      "row-edit-init": _vm.onRowEditInit,
-                      "row-edit-cancel": _vm.onRowEditCancel
+                      }
                     },
                     scopedSlots: _vm._u([
                       {

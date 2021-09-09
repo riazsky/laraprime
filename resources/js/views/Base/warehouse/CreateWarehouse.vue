@@ -3,7 +3,7 @@
     <div class="p-mb-4"><Breadcrumb :home="home" :model="items" /></div>
     <div class="p-d-flex p-jc-between p-mb-4">
         <h2>Create Warehouse</h2>
-        <Button><router-link to="/list-warehouse" class="text-white">List Warehouse</router-link></Button>
+        <button class="btn btn-success"><router-link to="/list-warehouse" class="text-white">List Warehouse</router-link></button>
     </div>
     <Card>
         <template #content>
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="p-field p-grid">
-                            <Button label="Submit" />
+                            <button class="form-control btn btn-success">Create</button>
                         </div>
                     </div>
                 </div>
@@ -49,13 +49,17 @@
 
 <script>
 import Checkbox from 'primevue/checkbox';
+import Textarea from 'primevue/textarea';
+
 export default {
     name: 'CreateBranch',
     components: {
-        Checkbox
+        Checkbox,
+        Textarea
     },
     data() {
         return{
+            description: '',
             status: true,
             home: {icon: 'pi pi-home', to: '/'},
             items: [

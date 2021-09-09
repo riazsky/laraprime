@@ -15,8 +15,7 @@
         :filters="filters"
         dataKey="id"
         :selection.sync="selectedTitle" 
-        :editingRows.sync="editingRows"
-        editMode="row" @row-edit-init="onRowEditInit" @row-edit-cancel="onRowEditCancel">
+        >
 
         <template #header>
             <div class="table-header p-d-flex p-jc-end">
@@ -115,13 +114,5 @@ export default {
       ]
     };
   },
-  methods: {
-        onRowEditInit(event) {
-            this.originalRows[event.index] = {...this.ListQuotation[event.index]};
-        },
-        onRowEditCancel(event) {
-            Vue.set(this.ListQuotation, event.index, this.originalRows[event.index]);
-        }
-  }
 };
 </script>

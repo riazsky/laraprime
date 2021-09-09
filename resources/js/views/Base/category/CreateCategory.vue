@@ -3,7 +3,7 @@
     <div class="p-mb-4"><Breadcrumb :home="home" :model="items" /></div>
     <div class="p-d-flex p-jc-between p-mb-4">
         <h2>Create Category</h2>
-        <Button><router-link to="/list-category" class="text-white">List Category</router-link></Button>
+        <button class="btn btn-success"><router-link to="/list-category" class="text-white">List Category</router-link></button>
     </div>
     <Card>
         <template #content>
@@ -25,14 +25,13 @@
                         <div class="p-field p-grid">
                             <label for="logo" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Logo</label>
                             <div class="p-col-12 p-md-10 ">
-                                <input type="file" name="" id="choose_file" class="form-control" formenctype="multipart/form-data" style="height: 44px; border: 1px solid #a6a6a6">
-                                
+                                <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*" :maxFileSize="1000000" @upload="onUpload" />
                             </div>
                         </div>
                         <div class="p-field p-grid p-ai-start">
                             <label for="lastname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Description</label>
                             <div class="p-col-12 p-md-10 ">
-                                <Textarea v-model="description" :autoResize="true" rows="5" cols="83" style="border: 1px solid #a6a6a6"/>
+                                <Textarea v-model="description" :autoResize="true" rows="5"/>
                             </div>
                         </div>
                         <div class="p-field p-grid">
@@ -44,7 +43,7 @@
                             </div>
                         </div>
                         <div class="p-field p-grid">
-                            <Button label="Submit" />
+                            <button label="Submit" class="form-control btn btn-success">Create</button>
                         </div>
                     </div>
                 </div>
@@ -57,12 +56,16 @@
 <script>
 import Checkbox from 'primevue/checkbox';
 import Dropdown from 'primevue/dropdown';
+import FileUpload from 'primevue/fileupload';
+import Textarea from 'primevue/textarea';
 
 export default {
     name: 'CreateBranch',
     components: {
         Checkbox,
         Dropdown,
+        FileUpload,
+        Textarea
 
     },
     data() {
@@ -85,6 +88,11 @@ export default {
                 {name: 'Paris', code: 'PRS'}
             ]
         }
+    },
+    methods: {
+        onUpload() {
+			this.$toast.add({severity: 'info', summary: 'Success', detail: 'File Uploaded', life: 3000});
+		}
     }
 
 }
