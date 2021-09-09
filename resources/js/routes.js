@@ -13,6 +13,9 @@ const ListWarehouse = () => import('./views/Base/warehouse/ListWarehouse.vue');
 const CreatePurchase = () => import('./views/Purchase/CreatePurchase.vue');
 const ListPurchase = () => import('./views/Purchase/ListPurchase.vue');
 const PurchaseInvoice = () => import('./views/Purchase/PurchaseInvoice.vue');
+const CreateQuotation = () => import('./views/Quotation/CreateQuotation.vue');
+const ListQuotation = () => import('./views/Quotation/ListQuotation.vue');
+const QuotationInvoice = () => import('./views/Quotation/QuotationInvoice.vue');
 const InputRepeater = () => import('./views/InputRepeater.vue');
 
 
@@ -87,6 +90,21 @@ const routes = [
         path: '/purchase-invoice',
         name: 'PurchaseInvoice',
         component: PurchaseInvoice
+    },
+    {
+        path: '/create-quotation',
+        name: 'CreateQuotation',
+        component: CreateQuotation
+    },
+    {
+        path: '/list-quotation',
+        name: 'ListQuotation',
+        component: ListQuotation
+    },
+    {
+        path: '/quotation-invoice',
+        name: 'QuotationInvoice',
+        component: QuotationInvoice
     },
     {
         path: '/input-repeater',

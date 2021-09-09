@@ -136,6 +136,18 @@
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class="pi pi-folder"></i>
 						</div>
+						<div class="menu-title">Quotation</div>
+					</a>
+					<ul>
+						<li><router-link to="/create-quotation"><i class="pi pi-arrow-right"></i>Create Quotaion</router-link></li>
+						<li><router-link to="/list-quotation"><i class="pi pi-arrow-right"></i>List Quotaion</router-link></li>
+						<li><router-link to="/quotation-invoice"><i class="pi pi-arrow-right"></i>Quotaion Invoice</router-link></li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-folder"></i>
+						</div>
 						<div class="menu-title">Test</div>
 					</a>
 					<ul>

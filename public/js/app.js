@@ -2775,6 +2775,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3433,6 +3445,18 @@ var PurchaseInvoice = function PurchaseInvoice() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_Purchase_PurchaseInvoice_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Purchase/PurchaseInvoice.vue */ "./resources/js/views/Purchase/PurchaseInvoice.vue"));
 };
 
+var CreateQuotation = function CreateQuotation() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Quotation_CreateQuotation_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Quotation/CreateQuotation.vue */ "./resources/js/views/Quotation/CreateQuotation.vue"));
+};
+
+var ListQuotation = function ListQuotation() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Quotation_ListQuotation_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Quotation/ListQuotation.vue */ "./resources/js/views/Quotation/ListQuotation.vue"));
+};
+
+var QuotationInvoice = function QuotationInvoice() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Quotation_QuotationInvoice_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Quotation/QuotationInvoice.vue */ "./resources/js/views/Quotation/QuotationInvoice.vue"));
+};
+
 var InputRepeater = function InputRepeater() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_InputRepeater_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/InputRepeater.vue */ "./resources/js/views/InputRepeater.vue"));
 };
@@ -3493,6 +3517,18 @@ var routes = [{
   path: '/purchase-invoice',
   name: 'PurchaseInvoice',
   component: PurchaseInvoice
+}, {
+  path: '/create-quotation',
+  name: 'CreateQuotation',
+  component: CreateQuotation
+}, {
+  path: '/list-quotation',
+  name: 'ListQuotation',
+  component: ListQuotation
+}, {
+  path: '/quotation-invoice',
+  name: 'QuotationInvoice',
+  component: QuotationInvoice
 }, {
   path: '/input-repeater',
   name: 'InputRepeater',
@@ -58672,6 +58708,45 @@ var render = function() {
                 _c(
                   "li",
                   [
+                    _c("router-link", { attrs: { to: "/create-quotation" } }, [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v("Create Quotaion")
+                    ])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  [
+                    _c("router-link", { attrs: { to: "/list-quotation" } }, [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v("List Quotaion")
+                    ])
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  [
+                    _c("router-link", { attrs: { to: "/quotation-invoice" } }, [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _vm._v("Quotaion Invoice")
+                    ])
+                  ],
+                  1
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._m(7),
+              _vm._v(" "),
+              _c("ul", [
+                _c(
+                  "li",
+                  [
                     _c("router-link", { attrs: { to: "/input-repeater" } }, [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
                       _vm._v("Input Repeater")
@@ -58684,8 +58759,6 @@ var render = function() {
             _vm._v(" "),
             _c("li", { staticClass: "menu-label" }, [_vm._v("UI Elements")]),
             _vm._v(" "),
-            _vm._m(7),
-            _vm._v(" "),
             _vm._m(8),
             _vm._v(" "),
             _vm._m(9),
@@ -58694,15 +58767,15 @@ var render = function() {
             _vm._v(" "),
             _vm._m(11),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
-            _vm._v(" "),
             _vm._m(12),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
             _vm._v(" "),
             _vm._m(13),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
-            _vm._v(" "),
             _vm._m(14),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
             _vm._v(" "),
             _vm._m(15),
             _vm._v(" "),
@@ -58714,24 +58787,26 @@ var render = function() {
             _vm._v(" "),
             _vm._m(19),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
-            _vm._v(" "),
             _vm._m(20),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
             _vm._v(" "),
             _vm._m(21),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
-            _vm._v(" "),
             _vm._m(22),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
             _vm._v(" "),
             _vm._m(23),
             _vm._v(" "),
-            _vm._m(24)
+            _vm._m(24),
+            _vm._v(" "),
+            _vm._m(25)
           ])
         ]
       ),
       _vm._v(" "),
-      _vm._m(25),
+      _vm._m(26),
       _vm._v(" "),
       _c("div", { staticClass: "page-wrapper" }, [
         _c("div", { staticClass: "page-content" }, [_c("router-view")], 1)
@@ -58739,12 +58814,12 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "overlay toggle-icon" }),
       _vm._v(" "),
-      _vm._m(26),
+      _vm._m(27),
       _vm._v(" "),
-      _vm._m(27)
+      _vm._m(28)
     ]),
     _vm._v(" "),
-    _vm._m(28)
+    _vm._m(29)
   ])
 }
 var staticRenderFns = [
@@ -58888,6 +58963,22 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "menu-title" }, [_vm._v("Purchase")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
+      [
+        _c("div", { staticClass: "parent-icon" }, [
+          _c("i", { staticClass: "pi pi-folder" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "menu-title" }, [_vm._v("Quotation")])
       ]
     )
   },
@@ -76575,7 +76666,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_CRM_CustomerGroups_CreateCustomerGroup_vue":1,"resources_js_views_CRM_CustomerGroups_ListCustomerGroup_vue":1,"resources_js_views_CRM_Company_CreateCompany_vue":1,"resources_js_views_CRM_Company_ListCompany_vue":1,"resources_js_views_CRM_Branch_CreateBranch_vue":1,"resources_js_views_CRM_Branch_ListBranch_vue":1,"resources_js_views_Base_category_CreateCategory_vue":1,"resources_js_views_Base_category_ListCategory_vue":1,"resources_js_views_Base_warehouse_CreateWarehouse_vue":1,"resources_js_views_Base_warehouse_ListWarehouse_vue":1,"resources_js_views_Purchase_CreatePurchase_vue":1,"resources_js_views_Purchase_ListPurchase_vue":1,"resources_js_views_Purchase_PurchaseInvoice_vue":1,"resources_js_views_InputRepeater_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_CRM_CustomerGroups_CreateCustomerGroup_vue":1,"resources_js_views_CRM_CustomerGroups_ListCustomerGroup_vue":1,"resources_js_views_CRM_Company_CreateCompany_vue":1,"resources_js_views_CRM_Company_ListCompany_vue":1,"resources_js_views_CRM_Branch_CreateBranch_vue":1,"resources_js_views_CRM_Branch_ListBranch_vue":1,"resources_js_views_Base_category_CreateCategory_vue":1,"resources_js_views_Base_category_ListCategory_vue":1,"resources_js_views_Base_warehouse_CreateWarehouse_vue":1,"resources_js_views_Base_warehouse_ListWarehouse_vue":1,"resources_js_views_Purchase_CreatePurchase_vue":1,"resources_js_views_Purchase_ListPurchase_vue":1,"resources_js_views_Purchase_PurchaseInvoice_vue":1,"resources_js_views_Quotation_CreateQuotation_vue":1,"resources_js_views_Quotation_ListQuotation_vue":1,"resources_js_views_Quotation_QuotationInvoice_vue":1,"resources_js_views_InputRepeater_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
