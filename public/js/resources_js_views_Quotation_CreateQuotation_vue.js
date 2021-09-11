@@ -251,7 +251,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     add: function add() {
-      this.Quotations.push({
+      this.quotations.push({
         name: '',
         qty: '',
         per_price: '',
@@ -259,7 +259,7 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     remove: function remove(index) {
-      this.Quotations.splice(index, 1);
+      this.quotations.splice(index, 1);
 
       if (index === 0) {
         this.add();
@@ -5470,7 +5470,7 @@ var render = function() {
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
                       _c("label", { attrs: { for: "buyer_name" } }, [
-                        _vm._v("Suplier Name")
+                        _vm._v("Buyer Name")
                       ]),
                       _vm._v(" "),
                       _c("Dropdown", {

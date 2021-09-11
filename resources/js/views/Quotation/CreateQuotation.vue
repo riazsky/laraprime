@@ -13,7 +13,7 @@
                         <Calendar id="quotation_date" v-model="icon" :showIcon="true" />
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="buyer_name">Suplier Name</label>
+                        <label for="buyer_name">Buyer Name</label>
                         <Dropdown v-model="selectedSuplier" :options="suplier" optionLabel="name" placeholder="Select a suplier name" />
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
@@ -224,7 +224,7 @@ export default {
     },
     methods: {
         add() {
-            this.Quotations.push({
+            this.quotations.push({
                 name: '',
                 qty: '',
                 per_price: '',
@@ -232,7 +232,7 @@ export default {
             });
         },
         remove(index) {
-            this.Quotations.splice(index, 1);
+            this.quotations.splice(index, 1);
             if(index === 0){
                 this.add();
             }
