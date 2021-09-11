@@ -9,6 +9,10 @@ const EditEmployeeLists = () => import('./views/HRM/Employees/EditEmployeeLists.
 const CreateSalesReturn = () => import('./views/SalesReturn/CreateSalesReturn.vue');
 const ReturnSalesLists = () => import('./views/SalesReturn/ReturnSalesLists.vue');
 const ViewSale = () => import('./views/SalesReturn/ViewSale.vue');
+const ReturnSaleView = () => import('./views/SalesReturn/ReturnSaleView.vue');
+const CreateProducts = () => import('./views/Inventory/Products/CreateProducts.vue');
+const ProductLists = () => import('./views/Inventory/Products/ProductLists.vue');
+const EditProductLists = () => import('./views/Inventory/Products/EditProductList.vue');
 
 // test perpose
 const AddRemove = () => import('./views/Multiple/AddRemove.vue');
@@ -70,6 +74,30 @@ const routes = [
         path: '/ViewSale',
         name: 'ViewSale',
         component: ViewSale
+    },
+    // Return Sale View Routes
+    {
+        path: '/ReturnSaleView',
+        name: 'ReturnSaleView',
+        component: ReturnSaleView
+    },
+    // Create Products Routes
+    {
+        path: '/CreateProducts',
+        name: 'CreateProducts',
+        component: CreateProducts
+    },
+    // Product Lists Routes
+    {
+        path: '/ProductLists',
+        name: 'ProductLists',
+        component: ProductLists
+    },
+    // Edit Product Lists Routes
+    {
+        path: '/EditProductLists',
+        name: 'EditProductLists',
+        component: EditProductLists
     },
     //test perpose
     {

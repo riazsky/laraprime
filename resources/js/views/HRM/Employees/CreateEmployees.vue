@@ -13,107 +13,96 @@
         </button>
       </div>
     </div>
-    <card class="p-mt-5">
+    <card class="p-mt-3">
       <template #content>
         <div class="p-fluid p-formgrid p-grid">
-          <div class="p-field p-col-12 p-md-6">
-            <label for="firstname">Name</label>
-            <InputText id="firstname" type="text" />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+              <span class="p-float-label">
+                  <InputText id="firstname" type="text" />
+                  <label for="firstname">Name</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Email</label>
-            <InputText id="lastname" type="email" />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+              <span class="p-float-label">
+                  <InputText id="lastname" type="email" />
+                  <label for="lastname">Email</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="number">Phone</label>
-            <InputNumber
-              id="number"
-              v-model="phone"
-              mode="decimal"
-              :useGrouping="false"
-            />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+              <span class="p-float-label">
+                <InputNumber id="number" v-model="phone" mode="decimal" :useGrouping="false"/>
+                <label for="number">Phone</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Department</label>
-            <Dropdown
-              v-model="department"
-              :options="group"
-              optionLabel="name"
-              placeholder="Select a Department"
-            />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+              <span class="p-float-label">
+                  <Dropdown v-model="department" :options="group" optionLabel="name" />
+                  <label for="lastname">Department</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Designation</label>
-            <Dropdown
-              v-model="designation"
-              :options="desig"
-              optionLabel="name"
-              placeholder="Select a Designation"
-            />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+              <span class="p-float-label">
+                <Dropdown v-model="designation" :options="desig" optionLabel="name" />
+                <label for="lastname">Designation</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Shift</label>
-            <Dropdown
-              v-model="Shift"
-              :options="Shifts"
-              optionLabel="name"
-              placeholder="Select a Shift"
-            />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+              <span class="p-float-label">
+                <Dropdown v-model="Shift" :options="Shifts" optionLabel="name" />
+                <label for="lastname">Shift</label>
+              </span>
           </div>
-          <div class="p-field p-col-12">
-            <label for="address">Present Address</label>
-            <Textarea id="address" class="form-control" rows="4" />
+          <div class="p-field p-col-12 p-mt-3">
+              <span class="p-float-label">
+                <Textarea id="address" class="form-control" rows="3" />
+                <label for="address">Present Address</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Join Date</label>
-            <Calendar id="icon" v-model="date" :showIcon="true" />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+            <span class="p-float-label">
+              <Calendar id="icon" v-model="date" :showIcon="true" />
+              <label for="lastname">Join Date</label>
+            </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Duty Type</label>
-            <Dropdown
-              v-model="Duty"
-              :options="Type"
-              optionLabel="name"
-              placeholder="Select a Duty Type"
-            />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+              <span class="p-float-label">
+                <Dropdown v-model="Duty" :options="Type" optionLabel="name" />
+                <label for="lastname">Duty Type</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="number">Salary</label>
-            <InputNumber
-              id="withoutgrouping"
-              v-model="salary"
-              mode="decimal"
-              :useGrouping="false"
-            />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+            <span class="p-float-label">
+              <InputNumber id="withoutgrouping" v-model="salary" mode="decimal" :useGrouping="false" />
+              <label for="number">Salary</label>
+            </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Salary Type</label>
-            <Dropdown
-              :options="SalaryType"
-              optionLabel="name"
-              v-model="salaryvalue"
-              placeholder="Select a Salary Type"
-            />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+              <span class="p-float-label">
+                  <Dropdown :options="SalaryType" optionLabel="name" v-model="salaryvalue"/>
+                  <label for="lastname">Salary Type</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="firstname">Employee Id</label>
-            <InputText id="firstname" type="text" />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+            <span class="p-float-label">
+              <InputText id="firstname" type="text" />
+              <label for="firstname">Employee Id</label>
+            </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Photo</label>
-            <input type="file" class="form-control-file" />
+          <div class="p-field p-col-12 p-md-6 p-mt-3">
+                <input type="file" class="form-control-file" style="padding: 6px;border: 1px solid gray;"/>
+                <label for="lastname">Photo</label>
           </div>
           <div class="p-fluid p-formgrid p-grid">
-            <div class="p-field p-col-12 p-md-12">
+            <div class="p-field p-col-12 p-md-12 p-mt-3">
               <h4>Status</h4>
             </div>
-            <div class="p-field p-col-12 p-md-6">
+            <div class="p-field p-col-12 p-md-6 p-mt-3">
               <div class="p-field-radiobutton">
                 <RadioButton name="Active" value="Active" v-model="city" />
                 <label>Active</label>
               </div>
             </div>
-            <div class="p-field p-col-12 p-md-6">
+            <div class="p-field p-col-12 p-md-6 p-mt-3">
               <div class="p-field-radiobutton">
                 <RadioButton name="Deactive" value="Deactive" v-model="city" />
                 <label>Deactive</label>

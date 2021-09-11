@@ -108,6 +108,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   name: "ContactPersonList",
   data: function data() {
     return {
+      value2: null,
       filters: {},
       editingRows: [],
       selectedProducts3: null,
@@ -136,7 +137,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         "Designation": "CEO",
         "CurrentBranchName": "Dhaka",
         "Discount": "50%",
-        "Action": "Delete"
+        "Actions": "Delete"
       }, {
         "id": "2",
         "PersonName": "Volkswagen2",
@@ -148,7 +149,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         "Designation": "CEO",
         "CurrentBranchName": "Dhaka",
         "Discount": "50%",
-        "Action": "Delete"
+        "Actions": "Delete"
       }, {
         "id": "3",
         "PersonName": "Volkswagen3",
@@ -160,11 +161,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         "Designation": "CEO",
         "CurrentBranchName": "Dhaka",
         "Discount": "50%",
-        "Action": "Delete"
+        "Actions": "Delete"
       }]
     };
   },
-  method: {
+  methods: {
     onRowEditInit: function onRowEditInit(event) {
       this.originalRows[event.index] = _objectSpread({}, this.products3[event.index]);
     },
@@ -265,7 +266,7 @@ var render = function() {
     [
       _c("Breadcrumb", { attrs: { home: _vm.home, model: _vm.items } }),
       _vm._v(" "),
-      _c("div", { staticClass: "p-d-flex p-jc-between p-mt-5 p-mb-5" }, [
+      _c("div", { staticClass: "p-d-flex p-jc-between p-mt-5 p-mb-3" }, [
         _vm._m(0),
         _vm._v(" "),
         _c("div", [
@@ -520,7 +521,7 @@ var render = function() {
           _c("Column", {
             attrs: {
               field: "DepartmentName",
-              headerStyle: "width: 160px",
+              headerStyle: "width: 170px",
               header: "Department",
               sortable: ""
             },
@@ -549,7 +550,7 @@ var render = function() {
           _c("Column", {
             attrs: {
               field: "Designation",
-              headerStyle: "width: 160px",
+              headerStyle: "width: 170px",
               header: "Designation",
               sortable: ""
             },
@@ -644,7 +645,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("Column", {
-            attrs: { field: "Action", headerStyle: "width: 150px" },
+            attrs: { field: "Actions", headerStyle: "width: 150px" },
             scopedSlots: _vm._u([
               {
                 key: "body",

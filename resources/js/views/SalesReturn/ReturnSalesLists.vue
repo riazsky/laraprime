@@ -1,7 +1,7 @@
 <template>
   <div>
     <Breadcrumb :home="home" :model="items" />
-    <div class="p-d-flex p-jc-between p-mt-5 p-mb-5">
+    <div class="p-d-flex p-jc-between p-mt-5 p-mb-3">
       <div class="p-mr-2"><h3>Return Sales Lists</h3></div>
       <div>
         <button class="btn btn-secondary">
@@ -152,7 +152,7 @@ export default {
       ],
     };
   },
-  method: {
+  methods: {
     onRowEditInit(event) {
       this.originalRows[event.index] = { ...this.products3[event.index] };
     },

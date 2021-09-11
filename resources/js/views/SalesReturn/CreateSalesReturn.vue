@@ -13,73 +13,100 @@
         </button>
       </div>
     </div>
-    <card class="p-mt-5">
+    <card class="p-mt-3">
       <template #content>
 
 
         <div class="p-fluid p-formgrid p-grid">
-          <div class="p-field p-col">
-            <label for="lastname">Sale Date</label>
-            <Calendar id="icon" v-model="date" :showIcon="true" />
+          <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <Calendar id="icon" v-model="date" :showIcon="true" />
+                <label for="lastname">Sale Date</label>
+              </span>
           </div>
-          <div class="p-field p-col">
-            <label for="firstname">Customer Name</label>
-            <InputText id="firstname" type="text" />
+          <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <InputText id="firstname" type="text" />
+                <label for="firstname">Customer Name</label>
+              </span>
           </div>
-          <div class="p-field p-col">
-            <label for="lastname">Warehouse</label>
-            <InputText id="lastname" type="text" />
+          <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <InputText id="lastname" type="text" />
+                <label for="lastname">Warehouse</label>
+              </span>
           </div>
         </div>
          <div class="p-fluid p-formgrid p-grid">
-          <div class="p-field p-col">
-            <label for="number">Reference No</label>
-            <InputNumber id="withoutgrouping" v-model="salary" mode="decimal" :useGrouping="false"/>
+          <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <InputNumber id="withoutgrouping" v-model="salary" mode="decimal" :useGrouping="false"/>
+                <label for="number">Reference No</label>
+              </span>
           </div>
-          <div class="p-field p-col">
-            <label for="number">Invoice No</label>
-            <InputNumber id="withoutgrouping" v-model="salary" mode="decimal" :useGrouping="false"/>
+          <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                  <InputNumber id="withoutgrouping" v-model="salary" mode="decimal" :useGrouping="false"/>
+                  <label for="number">Invoice No</label>
+              </span>
           </div>
-          <div class="p-field p-col">
-            <label for="lastname">Sales Status</label>
-            <Dropdown :options="Sales" optionLabel="name" v-model="SaleOrder" placeholder="Select a Sales Status" />
+          <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <Dropdown :options="Sales" optionLabel="name" v-model="SaleOrder" />
+                <label for="lastname">Sales Status</label>
+              </span>
           </div>
          </div>
           <div class="p-fluid p-formgrid p-grid">
-          <div class="p-field p-col">
-            <label for="lastname">Sales By</label>
-            <Dropdown :options="Salesby" optionLabel="name" v-model="SaleBY" placeholder="Select a Salary Type" />
+          <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <Dropdown :options="Salesby" optionLabel="name" v-model="SaleBY" />
+                <label for="lastname">Sales By</label>
+              </span>
+            
           </div>
 
-          <div class="p-field p-col">
-            <label for="lastname">Paymet Status</label>
-            <Dropdown :options="Paymets" optionLabel="name" v-model="PaymentStatus" placeholder="Select a Salary Type" />
+          <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <Dropdown :options="Paymets" optionLabel="name" v-model="PaymentStatus" />
+                <label for="lastname">Paymet Status</label>
+              </span>
           </div>
-            <div class="p-field p-col">
-              <label for="firstname">Note</label>
-              <InputText id="firstname" type="text" />
+            <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <InputText id="firstname" type="text" />
+                <label for="firstname">Note</label>
+              </span>
             </div>
         </div>
         <div class="p-fluid p-formgrid p-grid" v-for="(item,index) in products" :key="index">
-            <div class="p-field p-col">
-              <label for="firstname">Product Name</label>
-              <InputText id="firstname" type="text" v-model="item.name" />
+            <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <InputText id="firstname" type="text" v-model="item.name" />
+                <label for="firstname">Product Name</label>
+              </span>
             </div>
-            <div class="p-field p-col">
-              <label for="number">Qty</label>
-              <InputNumber id="withoutgrouping1" v-model="item.qty" mode="decimal" :useGrouping="false"/>
+            <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <InputNumber id="withoutgrouping1" v-model="item.qty" mode="decimal" :useGrouping="false"/>
+                <label for="number">Qty</label>
+              </span>
             </div>
-            <div class="p-field p-col">
-              <label for="number">Per Price</label>
-              <InputNumber id="withoutgrouping2" v-model="item.price" mode="decimal" :useGrouping="false"/>
+            <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <InputNumber id="withoutgrouping2" v-model="item.price" mode="decimal" :useGrouping="false"/>
+                <label for="number">Per Price</label>
+              </span>
             </div>
-            <div class="p-field p-col">
-              <label for="number">Total Price</label>
-              <InputNumber id="withoutgrouping3" v-model="item.TPrice" mode="decimal" :useGrouping="false"/>
+            <div class="p-field p-col p-mt-3">
+              <span class="p-float-label">
+                <InputNumber id="withoutgrouping3" v-model="item.TPrice" mode="decimal" :useGrouping="false"/>
+                <label for="number">Total Price</label>
+              </span>
             </div>
             
           
-            <div  class="p-field p-col-12 p-md-1" style="margin-top: 30px">
+            <div  class="p-field p-col-12 p-md-1" style="margin-top: 12px">
             <button class="btn btn-danger" v-show="index!=0" @click="remove(index)">-</button>
             </div>
         </div>
@@ -87,8 +114,10 @@
 
       
           <div class="p-field p-col-12 p-md-12">
-            <label for="lastname">Note</label>
-            <Textarea id="mote" class="form-control" rows="2"  placeholder="Leave reason"/>
+              <span class="p-float-label p-mt-3">
+                <Textarea id="mote" class="form-control" rows="2"/>
+                <label for="lastname">Note</label>
+              </span>
           </div>
           <div class="p-grid">
             <div class="col-5 p-offset-7">
@@ -172,14 +201,16 @@ export default {
 
   data() {
     return {
+
       products:[
-        {name:'',qty:'',price:'',TPrice:''}
+        {name:null,qty: null,price:null,TPrice:null}
       ],
       date: null,
       phone: null,
       salary: null,
       city: null,
       value: null,
+      
       home: { icon: "pi pi-home", to: "/" },
       items: [
         { label: "Sales Return" },
@@ -208,7 +239,7 @@ export default {
   },
   methods: {
     add(){
-      this.products.push({name:'',qty:'',price:'',TPrice:''})
+      this.products.push({name:'',qty:null,price:null,TPrice:null})
     },
     remove(index){
       this.products.splice(index,1)

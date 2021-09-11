@@ -2730,6 +2730,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "App",
   components: {},
@@ -3204,6 +3222,22 @@ var ReturnSalesLists = function ReturnSalesLists() {
 
 var ViewSale = function ViewSale() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_SalesReturn_ViewSale_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/ViewSale.vue */ "./resources/js/views/SalesReturn/ViewSale.vue"));
+};
+
+var ReturnSaleView = function ReturnSaleView() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_SalesReturn_ReturnSaleView_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/ReturnSaleView.vue */ "./resources/js/views/SalesReturn/ReturnSaleView.vue"));
+};
+
+var CreateProducts = function CreateProducts() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Inventory_Products_CreateProducts_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Inventory/Products/CreateProducts.vue */ "./resources/js/views/Inventory/Products/CreateProducts.vue"));
+};
+
+var ProductLists = function ProductLists() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Inventory_Products_ProductLists_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Inventory/Products/ProductLists.vue */ "./resources/js/views/Inventory/Products/ProductLists.vue"));
+};
+
+var EditProductLists = function EditProductLists() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_Inventory_Products_EditProductList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Inventory/Products/EditProductList.vue */ "./resources/js/views/Inventory/Products/EditProductList.vue"));
 }; // test perpose
 
 
@@ -3257,6 +3291,26 @@ var routes = [{
   path: '/ViewSale',
   name: 'ViewSale',
   component: ViewSale
+}, // Return Sale View Routes
+{
+  path: '/ReturnSaleView',
+  name: 'ReturnSaleView',
+  component: ReturnSaleView
+}, // Create Products Routes
+{
+  path: '/CreateProducts',
+  name: 'CreateProducts',
+  component: CreateProducts
+}, // Product Lists Routes
+{
+  path: '/ProductLists',
+  name: 'ProductLists',
+  component: ProductLists
+}, // Edit Product Lists Routes
+{
+  path: '/EditProductLists',
+  name: 'EditProductLists',
+  component: EditProductLists
 }, //test perpose
 {
   path: '/AddRemove',
@@ -58470,13 +58524,71 @@ var render = function() {
                     ],
                     1
                   )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c("router-link", { attrs: { to: "/ReturnSaleView" } }, [
+                        _vm._v("Return Sale View")
+                      ])
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _vm._m(9),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c("router-link", { attrs: { to: "/CreateProducts" } }, [
+                        _vm._v("Create Products")
+                      ])
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c("router-link", { attrs: { to: "/ProductLists" } }, [
+                        _vm._v("Product Lists")
+                      ])
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c(
+                        "router-link",
+                        { attrs: { to: "/EditProductLists" } },
+                        [_vm._v("Edit Product Lists")]
+                      )
+                    ],
+                    1
+                  )
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("li", { staticClass: "menu-label" }, [_vm._v("UI Elements")]),
-            _vm._v(" "),
-            _vm._m(9),
             _vm._v(" "),
             _vm._m(10),
             _vm._v(" "),
@@ -58486,15 +58598,15 @@ var render = function() {
             _vm._v(" "),
             _vm._m(13),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
-            _vm._v(" "),
             _vm._m(14),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
             _vm._v(" "),
             _vm._m(15),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
-            _vm._v(" "),
             _vm._m(16),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
             _vm._v(" "),
             _vm._m(17),
             _vm._v(" "),
@@ -58506,24 +58618,26 @@ var render = function() {
             _vm._v(" "),
             _vm._m(21),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
-            _vm._v(" "),
             _vm._m(22),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
             _vm._v(" "),
             _vm._m(23),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
-            _vm._v(" "),
             _vm._m(24),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
             _vm._v(" "),
             _vm._m(25),
             _vm._v(" "),
-            _vm._m(26)
+            _vm._m(26),
+            _vm._v(" "),
+            _vm._m(27)
           ])
         ]
       ),
       _vm._v(" "),
-      _vm._m(27),
+      _vm._m(28),
       _vm._v(" "),
       _c("div", { staticClass: "page-wrapper" }, [
         _c("div", { staticClass: "page-content" }, [_c("router-view")], 1)
@@ -58531,12 +58645,12 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "overlay toggle-icon" }),
       _vm._v(" "),
-      _vm._m(28),
+      _vm._m(29),
       _vm._v(" "),
-      _vm._m(29)
+      _vm._m(30)
     ]),
     _vm._v(" "),
-    _vm._m(30)
+    _vm._m(31)
   ])
 }
 var staticRenderFns = [
@@ -58709,10 +58823,26 @@ var staticRenderFns = [
       { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
       [
         _c("div", { staticClass: "parent-icon" }, [
-          _c("i", { staticClass: "pi pi-sun" })
+          _c("i", { staticClass: "pi pi-flag" })
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "menu-title" }, [_vm._v("Sales Return")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
+      [
+        _c("div", { staticClass: "parent-icon" }, [
+          _c("i", { staticClass: "pi pi-star" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "menu-title" }, [_vm._v("Products")])
       ]
     )
   },
@@ -76380,7 +76510,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_CRM_ContactPerson_CreateContactPerson_vue":1,"resources_js_views_CRM_ContactPerson_ContactPersonList_vue":1,"resources_js_views_CRM_ContactPerson_EditContactPerson_vue":1,"resources_js_views_HRM_Employees_CreateEmployees_vue":1,"resources_js_views_HRM_Employees_EmployeeLists_vue":1,"resources_js_views_HRM_Employees_EditEmployeeLists_vue":1,"resources_js_views_SalesReturn_CreateSalesReturn_vue":1,"resources_js_views_SalesReturn_ReturnSalesLists_vue":1,"resources_js_views_SalesReturn_ViewSale_vue":1,"resources_js_views_Multiple_AddRemove_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_CRM_ContactPerson_CreateContactPerson_vue":1,"resources_js_views_CRM_ContactPerson_ContactPersonList_vue":1,"resources_js_views_CRM_ContactPerson_EditContactPerson_vue":1,"resources_js_views_HRM_Employees_CreateEmployees_vue":1,"resources_js_views_HRM_Employees_EmployeeLists_vue":1,"resources_js_views_HRM_Employees_EditEmployeeLists_vue":1,"resources_js_views_SalesReturn_CreateSalesReturn_vue":1,"resources_js_views_SalesReturn_ReturnSalesLists_vue":1,"resources_js_views_SalesReturn_ViewSale_vue":1,"resources_js_views_SalesReturn_ReturnSaleView_vue":1,"resources_js_views_Inventory_Products_CreateProducts_vue":1,"resources_js_views_Inventory_Products_ProductLists_vue":1,"resources_js_views_Inventory_Products_EditProductList_vue":1,"resources_js_views_Multiple_AddRemove_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

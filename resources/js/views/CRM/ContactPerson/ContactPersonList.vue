@@ -1,7 +1,7 @@
 <template>
     <div>
         <Breadcrumb :home="home" :model="items" />
-        <div class="p-d-flex p-jc-between p-mt-5 p-mb-5">
+        <div class="p-d-flex p-jc-between p-mt-5 p-mb-3">
             <div class="p-mr-2"><h3>Contact Person Lists</h3></div>
             <div><button class="btn btn-secondary"><router-link to="/CreateContactPerson" style="color: #fff;text-decoration:none;">Create Contact Persons</router-link></button></div>
         </div>
@@ -49,12 +49,12 @@
                     <InputText style="width: 100%" v-model="slotProps.data[slotProps.column.field]" autofocus />
                 </template>
             </Column>
-            <Column field="DepartmentName" headerStyle="width: 160px" header="Department" sortable>
+            <Column field="DepartmentName" headerStyle="width: 170px" header="Department" sortable>
                 <template #editor="slotProps">
                     <InputText style="width: 100%" v-model="slotProps.data[slotProps.column.field]" autofocus />
                 </template>
             </Column>
-            <Column field="Designation" headerStyle="width: 160px" header="Designation" sortable>
+            <Column field="Designation" headerStyle="width: 170px" header="Designation" sortable>
                 <template #editor="slotProps">
                     <InputText style="width: 100%" v-model="slotProps.data[slotProps.column.field]" autofocus />
                 </template>
@@ -72,7 +72,7 @@
             <Column :rowEditor="true" :colspan="4"  field="Action" headerStyle="width: 150px" header="Action">
 
             </Column>
-            <Column field="Action" headerStyle="width: 150px" >
+            <Column field="Actions" headerStyle="width: 150px" >
                 <template #body>
                     <button class="btn btn-danger">Delete</button>
                 </template>
@@ -93,6 +93,7 @@ export default {
     name:"ContactPersonList",
     data(){
         return{
+            value2: null,
             filters: {},
             editingRows: [],
             selectedProducts3: null,
@@ -104,14 +105,14 @@ export default {
                 {label: 'Contact Person Lists'},
             ],
             TableData :[
-                {"id":"1","PersonName": "Volkswagen", "CompanyName": 2012, "Email": "Orange", "MobileNumber": "151521324651", "AltMobileNumber": "546515651", "DepartmentName": "CRM", "Designation": "CEO", "CurrentBranchName": "Dhaka", "Discount": "50%", "Action": "Delete"},
-                {"id":"2","PersonName": "Volkswagen2", "CompanyName": 2012, "Email": "Orange", "MobileNumber": "151156465124651", "AltMobileNumber": "546515651", "DepartmentName": "CRM", "Designation": "CEO", "CurrentBranchName": "Dhaka", "Discount": "50%", "Action": "Delete"},
-                {"id":"3","PersonName": "Volkswagen3", "CompanyName": 2012, "Email": "Orange", "MobileNumber": "15124651", "AltMobileNumber": "546554615651", "DepartmentName": "CRM", "Designation": "CEO", "CurrentBranchName": "Dhaka", "Discount": "50%","Action": "Delete"},
+                {"id":"1","PersonName": "Volkswagen", "CompanyName": 2012, "Email": "Orange", "MobileNumber": "151521324651", "AltMobileNumber": "546515651", "DepartmentName": "CRM", "Designation": "CEO", "CurrentBranchName": "Dhaka", "Discount": "50%", "Actions": "Delete"},
+                {"id":"2","PersonName": "Volkswagen2", "CompanyName": 2012, "Email": "Orange", "MobileNumber": "151156465124651", "AltMobileNumber": "546515651", "DepartmentName": "CRM", "Designation": "CEO", "CurrentBranchName": "Dhaka", "Discount": "50%", "Actions": "Delete"},
+                {"id":"3","PersonName": "Volkswagen3", "CompanyName": 2012, "Email": "Orange", "MobileNumber": "15124651", "AltMobileNumber": "546554615651", "DepartmentName": "CRM", "Designation": "CEO", "CurrentBranchName": "Dhaka", "Discount": "50%","Actions": "Delete"},
                 
             ]
         }
     },
-    method: {
+    methods: {
         
         onRowEditInit(event) {
             this.originalRows[event.index] = {...this.products3[event.index]};

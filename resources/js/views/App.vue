@@ -90,7 +90,7 @@
 				</li>
 				<li>
 					<a href="javascript:;" class="has-arrow">
-						<div class="parent-icon"><i class="pi pi-sun"></i>
+						<div class="parent-icon"><i class="pi pi-flag"></i>
 						</div>
 						<div class="menu-title">Sales Return</div>
 					</a>
@@ -98,6 +98,24 @@
 						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/CreateSalesReturn">Create Sales Return</router-link></a>
 						</li>
 						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/ReturnSalesLists">Return Sales Lists</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/ReturnSaleView">Return Sale View</router-link></a>
+						</li>
+	
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-star"></i>
+						</div>
+						<div class="menu-title">Products</div>
+					</a>
+					<ul>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/CreateProducts">Create Products</router-link></a>
+						</li>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/ProductLists">Product Lists</router-link></a>
+						</li>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/EditProductLists">Edit Product Lists</router-link></a>
 						</li>
 	
 					</ul>

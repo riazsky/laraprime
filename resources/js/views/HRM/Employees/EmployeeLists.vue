@@ -1,7 +1,7 @@
 <template>
   <div>
     <Breadcrumb :home="home" :model="items" />
-    <div class="p-d-flex p-jc-between p-mt-5 p-mb-5">
+    <div class="p-d-flex p-jc-between p-mt-5 p-mb-3">
       <div class="p-mr-2"><h3>Employee Lists</h3></div>
       <div>
         <button class="btn btn-secondary">
@@ -230,7 +230,7 @@
         header="Action"
       >
       </Column>
-      <Column field="Action" headerStyle="width: 150px">
+      <Column field="Actions" headerStyle="width: 150px">
         <template #body>
           <button class="btn btn-danger">Delete</button>
         </template>
@@ -276,7 +276,7 @@ export default {
           SalaryType: "Monthly",
           Photo: "images/index.jpg",
           Status: "Active",
-          Action: "Delete",
+          Actions: "Delete",
         },
         {
 
@@ -294,7 +294,7 @@ export default {
           SalaryType: "Monthly",
           Photo: "images/index.jpg",
           Status: "Active",
-          Action: "Delete",
+          Actions: "Delete",
         },
         {
 
@@ -312,13 +312,13 @@ export default {
           SalaryType: "Monthly",
           Photo: "images/index.jpg",
           Status: "Active",
-          Action: "Delete",
+          Actions: "Delete",
         },
 
       ],
     };
   },
-  method: {
+  methods: {
     onRowEditInit(event) {
       this.originalRows[event.index] = { ...this.products3[event.index] };
     },

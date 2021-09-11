@@ -165,7 +165,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }]
     };
   },
-  method: {
+  methods: {
     onRowEditInit: function onRowEditInit(event) {
       this.originalRows[event.index] = _objectSpread({}, this.products3[event.index]);
     },
@@ -266,7 +266,7 @@ var render = function() {
     [
       _c("Breadcrumb", { attrs: { home: _vm.home, model: _vm.items } }),
       _vm._v(" "),
-      _c("div", { staticClass: "p-d-flex p-jc-between p-mt-5 p-mb-5" }, [
+      _c("div", { staticClass: "p-d-flex p-jc-between p-mt-5 p-mb-3" }, [
         _vm._m(0),
         _vm._v(" "),
         _c("div", [
