@@ -14,6 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primevue_textarea__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! primevue/textarea */ "./node_modules/primevue/textarea/index.js");
 /* harmony import */ var primevue_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! primevue/calendar */ "./node_modules/primevue/calendar/index.js");
 /* harmony import */ var primevue_dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primevue/dropdown */ "./node_modules/primevue/dropdown/index.js");
+/* harmony import */ var primevue_inputnumber__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primevue/inputnumber */ "./node_modules/primevue/inputnumber/index.js");
 //
 //
 //
@@ -184,6 +185,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+
 
 
 
@@ -192,10 +196,24 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Textarea: primevue_textarea__WEBPACK_IMPORTED_MODULE_0__.default,
     Calendar: primevue_calendar__WEBPACK_IMPORTED_MODULE_1__.default,
-    Dropdown: primevue_dropdown__WEBPACK_IMPORTED_MODULE_2__.default
+    Dropdown: primevue_dropdown__WEBPACK_IMPORTED_MODULE_2__.default,
+    InputNumber: primevue_inputnumber__WEBPACK_IMPORTED_MODULE_3__.default
   },
   data: function data() {
     return {
+      total_price: null,
+      subtotal_price: null,
+      total_quantity: null,
+      total_product: null,
+      sale_discount: null,
+      total_discount: null,
+      total_tax: null,
+      shipping_cost: null,
+      grand_total: null,
+      privious: null,
+      net_total: null,
+      paid_amount: null,
+      due: null,
       home: {
         icon: 'pi pi-home',
         to: '/'
@@ -277,6 +295,29 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n.p-calendar {\n    position: relativ
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=style&index=0&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=style&index=0&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.p-inputnumber {\n    display: inline-flex;\n}\n.p-inputnumber-button {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex: 0 0 auto;\n}\n.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button .p-button-label,\n.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button .p-button-label {\n    display: none;\n}\n.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-up {\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0;\n    padding: 0;\n}\n.p-inputnumber-buttons-stacked .p-inputnumber-input {\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0;\n}\n.p-inputnumber-buttons-stacked .p-button.p-inputnumber-button-down {\n    border-top-left-radius: 0;\n    border-top-right-radius: 0;\n    border-bottom-left-radius: 0;\n    padding: 0;\n}\n.p-inputnumber-buttons-stacked .p-inputnumber-button-group {\n    display: flex;\n    flex-direction: column;\n}\n.p-inputnumber-buttons-stacked .p-inputnumber-button-group .p-button.p-inputnumber-button {\n    flex: 1 1 auto;\n}\n.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-up {\n    order: 3;\n    border-top-left-radius: 0;\n    border-bottom-left-radius: 0;\n}\n.p-inputnumber-buttons-horizontal .p-inputnumber-input {\n    order: 2;\n    border-radius: 0;\n}\n.p-inputnumber-buttons-horizontal .p-button.p-inputnumber-button-down {\n    order: 1;\n    border-top-right-radius: 0;\n    border-bottom-right-radius: 0;\n}\n.p-inputnumber-buttons-vertical {\n    flex-direction: column;\n}\n.p-inputnumber-buttons-vertical .p-button.p-inputnumber-button-up {\n    order: 1;\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0;\n    width: 100%;\n}\n.p-inputnumber-buttons-vertical .p-inputnumber-input {\n    order: 2;\n    border-radius: 0;\n    text-align: center;\n}\n.p-inputnumber-buttons-vertical .p-button.p-inputnumber-button-down {\n    order: 3;\n    border-top-left-radius: 0;\n    border-top-right-radius: 0;\n    width: 100%;\n}\n.p-inputnumber-input {\n    flex: 1 1 auto;\n}\n.p-fluid .p-inputnumber {\n    width: 100%;\n}\n.p-fluid .p-inputnumber .p-inputnumber-input {\n    width: 1%;\n}\n.p-fluid .p-inputnumber-buttons-vertical .p-inputnumber-input {\n    width: 100%;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css&":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css& ***!
@@ -322,6 +363,17 @@ module.exports = __webpack_require__(/*! ./Dropdown.vue */ "./node_modules/prime
 
 /***/ }),
 
+/***/ "./node_modules/primevue/inputnumber/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/primevue/inputnumber/index.js ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+module.exports = __webpack_require__(/*! ./InputNumber.vue */ "./node_modules/primevue/inputnumber/InputNumber.vue");
+
+/***/ }),
+
 /***/ "./node_modules/primevue/textarea/index.js":
 /*!*************************************************!*\
   !*** ./node_modules/primevue/textarea/index.js ***!
@@ -359,6 +411,35 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_InputNumber_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./InputNumber.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=style&index=0&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_InputNumber_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default, options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_InputNumber_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
@@ -2749,6 +2830,917 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/primevue/inputnumber/InputNumber.vue":
+/*!***********************************************************!*\
+  !*** ./node_modules/primevue/inputnumber/InputNumber.vue ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _InputNumber_vue_vue_type_template_id_e4d95394___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InputNumber.vue?vue&type=template&id=e4d95394& */ "./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=template&id=e4d95394&");
+/* harmony import */ var _InputNumber_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./InputNumber.vue?vue&type=script&lang=js& */ "./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=script&lang=js&");
+/* harmony import */ var _InputNumber_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./InputNumber.vue?vue&type=style&index=0&lang=css& */ "./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__.default)(
+  _InputNumber_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _InputNumber_vue_vue_type_template_id_e4d95394___WEBPACK_IMPORTED_MODULE_0__.render,
+  _InputNumber_vue_vue_type_template_id_e4d95394___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "node_modules/primevue/inputnumber/InputNumber.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _inputtext_InputText__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../inputtext/InputText */ "./node_modules/primevue/inputtext/InputText.vue");
+/* harmony import */ var _button_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../button/Button */ "./node_modules/primevue/button/Button.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+    inheritAttrs: false,
+    props: {
+        value: {
+            type: Number,
+            default: null
+        },
+        format: {
+            type: Boolean,
+            default: true
+        },
+        showButtons: {
+            type: Boolean,
+            default: false
+        },
+        buttonLayout: {
+            type: String,
+            default: 'stacked'
+        },
+        incrementButtonClass: {
+            type: String,
+            default: null,
+        },
+        decrementButtonClass: {
+            type: String,
+            default: null,
+        },
+        incrementButtonIcon: {
+            type: String,
+            default: 'pi pi-angle-up',
+        },
+        decrementButtonIcon: {
+            type: String,
+            default: 'pi pi-angle-down',
+        },
+        locale: {
+            type: String,
+            default: undefined
+        },
+        localeMatcher: {
+            type: String,
+            default: undefined
+        },
+        mode: {
+            type: String,
+            default: 'decimal'
+        },
+        prefix: {
+            type: String,
+            default: null
+        },
+        suffix: {
+            type: String,
+            default: null
+        },
+        currency: {
+            type: String,
+            default: undefined
+        },
+        currencyDisplay: {
+            type: String,
+            default: undefined
+        },
+        useGrouping: {
+            type: Boolean,
+            default: true
+        },
+        minFractionDigits: {
+            type: Number,
+            default: undefined
+        },
+        maxFractionDigits: {
+            type: Number,
+            default: undefined
+        },
+        min: {
+            type: Number,
+            default: null
+        },
+        max: {
+            type: Number,
+            default: null
+        },
+        step: {
+            type: Number,
+            default: 1
+        },
+        inputStyle: null,
+        inputClass: null
+    },
+    numberFormat: null,
+    _numeral: null,
+    _decimal: null,
+    _group: null,
+    _minusSign: null,
+    _currency: null,
+    _suffix: null,
+    _prefix: null,
+    _index: null,
+    groupChar: '',
+    isSpecialChar: null,
+    prefixChar: null,
+    suffixChar: null,
+    timer: null,
+    data() {
+        return {
+            focused: false
+        }
+    },
+    watch: {
+		locale(newValue, oldValue) {
+            this.updateConstructParser(newValue, oldValue);
+        },
+        localeMatcher(newValue, oldValue) {
+            this.updateConstructParser(newValue, oldValue);
+        },
+        mode(newValue, oldValue) {
+            this.updateConstructParser(newValue, oldValue);
+        },
+        currency(newValue, oldValue) {
+            this.updateConstructParser(newValue, oldValue);
+        },
+        currencyDisplay(newValue, oldValue) {
+            this.updateConstructParser(newValue, oldValue);
+        },
+        useGrouping(newValue, oldValue) {
+            this.updateConstructParser(newValue, oldValue);
+        },
+        minFractionDigits(newValue, oldValue) {
+            this.updateConstructParser(newValue, oldValue);
+        },
+        maxFractionDigits(newValue, oldValue) {
+            this.updateConstructParser(newValue, oldValue);
+        },
+        suffix(newValue, oldValue) {
+            this.updateConstructParser(newValue, oldValue);
+        },
+        prefix(newValue, oldValue) {
+            this.updateConstructParser(newValue, oldValue);
+        }
+    },
+    created() {
+        this.constructParser();
+    },
+    methods: {
+        getOptions() {
+            return {
+                localeMatcher: this.localeMatcher,
+                style: this.mode,
+                currency: this.currency,
+                currencyDisplay: this.currencyDisplay,
+                useGrouping: this.useGrouping,
+                minimumFractionDigits: this.minFractionDigits,
+                maximumFractionDigits: this.maxFractionDigits
+            };
+        },
+        constructParser() {
+            this.numberFormat = new Intl.NumberFormat(this.locale, this.getOptions());
+            const numerals = [...new Intl.NumberFormat(this.locale, {useGrouping: false}).format(9876543210)].reverse();
+            const index = new Map(numerals.map((d, i) => [d, i]));
+            this._numeral = new RegExp(`[${numerals.join('')}]`, 'g');
+            this._decimal = this.getDecimalExpression();
+            this._group = this.getGroupingExpression();
+            this._minusSign = this.getMinusSignExpression();
+            this._currency = this.getCurrencyExpression();
+            this._suffix = this.getSuffixExpression();
+            this._prefix = this.getPrefixExpression();
+            this._index = d => index.get(d);
+        },
+        updateConstructParser(newValue, oldValue) {
+            if (newValue !== oldValue) {
+                this.constructParser();
+            }
+        },
+        escapeRegExp(text) {
+            return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+        },
+        getDecimalExpression() {
+            const formatter = new Intl.NumberFormat(this.locale, {useGrouping: false});
+            return new RegExp(`[${formatter.format(1.1).trim().replace(this._numeral, '')}]`, 'g');
+        },
+        getGroupingExpression() {
+            const formatter = new Intl.NumberFormat(this.locale, {useGrouping: true});
+            this.groupChar = formatter.format(1000000).trim().replace(this._numeral, '').charAt(0);
+            return new RegExp(`[${this.groupChar}]`, 'g');
+        },
+        getMinusSignExpression() {
+            const formatter = new Intl.NumberFormat(this.locale, {useGrouping: false});
+            return new RegExp(`[${formatter.format(-1).trim().replace(this._numeral, '')}]`, 'g');
+        },
+        getCurrencyExpression() {
+            if (this.currency) {
+                const formatter = new Intl.NumberFormat(this.locale, {style: 'currency', currency: this.currency, currencyDisplay: this.currencyDisplay});
+                return new RegExp(`[${formatter.format(1).replace(/\s/g, '').replace(this._numeral, '').replace(this._decimal, '').replace(this._group, '')}]`, 'g');
+            }
+
+            return new RegExp(`[]`,'g');
+        },
+        getPrefixExpression() {
+            if (this.prefix) {
+                this.prefixChar = this.prefix;
+            }
+            else {
+                const formatter = new Intl.NumberFormat(this.locale, {style: this.mode, currency: this.currency, currencyDisplay: this.currencyDisplay});
+                this.prefixChar = formatter.format(1).split('1')[0];
+            }
+
+            return new RegExp(`${this.escapeRegExp(this.prefixChar||'')}`, 'g');
+        },
+        getSuffixExpression() {
+            if (this.suffix) {
+                this.suffixChar = this.suffix;
+            }
+            else {
+                const formatter = new Intl.NumberFormat(this.locale, {style: this.mode, currency: this.currency, currencyDisplay: this.currencyDisplay,
+                    minimumFractionDigits: 0, maximumFractionDigits: 0});
+                this.suffixChar = formatter.format(1).split('1')[1];
+            }
+
+            return new RegExp(`${this.escapeRegExp(this.suffixChar||'')}`, 'g');
+        },
+        formatValue(value) {
+            if (value != null) {
+                if (value === '-') { // Minus sign
+                    return value;
+                }
+
+                if (this.format) {
+                    let formatter = new Intl.NumberFormat(this.locale, this.getOptions());
+                    let formattedValue = formatter.format(value);
+                    if (this.prefix) {
+                        formattedValue = this.prefix + formattedValue;
+                    }
+
+                    if (this.suffix) {
+                        formattedValue = formattedValue + this.suffix;
+                    }
+
+                    return formattedValue;
+                }
+
+                return value.toString();
+            }
+
+            return '';
+        },
+        parseValue(text) {
+            let filteredText = text
+                                .replace(this._suffix, '')
+                                .replace(this._prefix, '')
+                                .trim()
+                                .replace(/\s/g, '')
+                                .replace(this._currency, '')
+                                .replace(this._group, '')
+                                .replace(this._minusSign, '-')
+                                .replace(this._decimal, '.')
+                                .replace(this._numeral, this._index);
+
+            if (filteredText) {
+                if (filteredText === '-') // Minus sign
+                    return filteredText;
+
+                let parsedValue = +filteredText;
+                return isNaN(parsedValue) ? null : parsedValue;
+            }
+
+            return null;
+        },
+        repeat(event, interval, dir) {
+            let i = interval || 500;
+
+            this.clearTimer();
+            this.timer = setTimeout(() => {
+                this.repeat(event, 40, dir);
+            }, i);
+
+            this.spin(event, dir);
+        },
+        spin(event, dir) {
+            if (this.$refs.input) {
+                let step = this.step * dir;
+                let currentValue = this.parseValue(this.$refs.input.$el.value) || 0;
+                let newValue = this.validateValue(currentValue + step);
+
+                this.updateInput(newValue, null, 'spin');
+                this.updateModel(event, newValue);
+            }
+        },
+        onUpButtonMouseDown(event) {
+            if (!this.$attrs.disabled) {
+                this.$refs.input.$el.focus();
+                this.repeat(event, null, 1);
+                event.preventDefault();
+            }
+        },
+        onUpButtonMouseUp() {
+            if (!this.$attrs.disabled) {
+                this.clearTimer();
+            }
+        },
+        onUpButtonMouseLeave() {
+            if (!this.$attrs.disabled) {
+                this.clearTimer();
+            }
+        },
+        onUpButtonKeyUp() {
+            if (!this.$attrs.disabled) {
+                this.clearTimer();
+            }
+        },
+        onUpButtonKeyDown(event) {
+            if (event.keyCode === 32 || event.keyCode === 13) {
+                this.repeat(event, null, 1);
+            }
+        },
+        onDownButtonMouseDown(event) {
+            if (!this.$attrs.disabled) {
+                this.$refs.input.$el.focus();
+                this.repeat(event, null, -1);
+                event.preventDefault();
+            }
+        },
+        onDownButtonMouseUp() {
+            if (!this.$attrs.disabled) {
+                this.clearTimer();
+            }
+        },
+        onDownButtonMouseLeave() {
+            if (!this.$attrs.disabled) {
+                this.clearTimer();
+            }
+        },
+        onDownButtonKeyUp() {
+            if (!this.$attrs.disabled) {
+                this.clearTimer();
+            }
+        },
+        onDownButtonKeyDown(event) {
+            if (event.keyCode === 32 || event.keyCode === 13) {
+                this.repeat(event, null, -1);
+            }
+        },
+        onInput() {
+            if (this.isSpecialChar) {
+                this.$refs.input.$el.value = this.lastValue;
+            }
+            this.isSpecialChar = false;
+        },
+        onInputKeyDown(event) {
+            this.lastValue = event.target.value;
+            if (event.shiftKey || event.altKey) {
+                this.isSpecialChar = true;
+                return;
+            }
+
+            let selectionStart = event.target.selectionStart;
+            let selectionEnd = event.target.selectionEnd;
+            let inputValue = event.target.value;
+            let newValueStr = null;
+
+            if (event.altKey) {
+                event.preventDefault();
+            }
+
+            switch (event.which) {
+                //up
+                case 38:
+                    this.spin(event, 1);
+                    event.preventDefault();
+                break;
+
+                //down
+                case 40:
+                    this.spin(event, -1);
+                    event.preventDefault();
+                break;
+
+                //left
+                case 37:
+                    if (!this.isNumeralChar(inputValue.charAt(selectionStart - 1))) {
+                        event.preventDefault();
+                    }
+                break;
+
+                //right
+                case 39:
+                    if (!this.isNumeralChar(inputValue.charAt(selectionStart))) {
+                        event.preventDefault();
+                    }
+                break;
+
+                //enter
+                case 13:
+                    newValueStr = this.validateValue(this.parseValue(inputValue));
+                    this.$refs.input.$el.value = this.formatValue(newValueStr);
+                    this.$refs.input.$el.setAttribute('aria-valuenow', newValueStr);
+                    this.updateModel(event, newValueStr);
+                break;
+
+                //backspace
+                case 8: {
+                    event.preventDefault();
+
+                    if (selectionStart === selectionEnd) {
+                        let deleteChar = inputValue.charAt(selectionStart - 1);
+                        let decimalCharIndex = inputValue.search(this._decimal);
+                        this._decimal.lastIndex = 0;
+
+                        if (this.isNumeralChar(deleteChar)) {
+                            if (this._group.test(deleteChar)) {
+                                this._group.lastIndex = 0;
+                                newValueStr = inputValue.slice(0, selectionStart - 2) + inputValue.slice(selectionStart - 1);
+                            }
+                            else if (this._decimal.test(deleteChar)) {
+                                this._decimal.lastIndex = 0;
+                                this.$refs.input.$el.setSelectionRange(selectionStart - 1, selectionStart - 1);
+                            }
+                            else if (decimalCharIndex > 0 && selectionStart > decimalCharIndex) {
+                                newValueStr = inputValue.slice(0, selectionStart - 1) + '0' + inputValue.slice(selectionStart);
+                            }
+                            else if (decimalCharIndex > 0 && decimalCharIndex === 1) {
+                                newValueStr = inputValue.slice(0, selectionStart - 1) + '0' + inputValue.slice(selectionStart);
+                                newValueStr = this.parseValue(newValueStr) > 0 ? newValueStr : '';
+                            }
+                            else {
+                                newValueStr = inputValue.slice(0, selectionStart - 1) + inputValue.slice(selectionStart);
+                            }
+                        }
+
+                        this.updateValue(event, newValueStr, null, 'delete-single');
+                    }
+                    else {
+                        newValueStr = this.deleteRange(inputValue, selectionStart, selectionEnd);
+                        this.updateValue(event, newValueStr, null, 'delete-range');
+                    }
+
+                    break;
+                }
+
+                // del
+                case 46:
+                    event.preventDefault();
+
+                    if (selectionStart === selectionEnd) {
+                        let deleteChar = inputValue.charAt(selectionStart);
+                        let decimalCharIndex = inputValue.search(this._decimal);
+                        this._decimal.lastIndex = 0;
+
+                        if (this.isNumeralChar(deleteChar)) {
+                            if (this._group.test(deleteChar)) {
+                                this._group.lastIndex = 0;
+                                newValueStr = inputValue.slice(0, selectionStart) + inputValue.slice(selectionStart + 2);
+                            }
+                            else if (this._decimal.test(deleteChar)) {
+                                this._decimal.lastIndex = 0;
+                                this.$refs.input.$el.setSelectionRange(selectionStart + 1, selectionStart + 1);
+                            }
+                            else if (decimalCharIndex > 0 && selectionStart > decimalCharIndex) {
+                                newValueStr = inputValue.slice(0, selectionStart) + '0' + inputValue.slice(selectionStart + 1);
+                            }
+                            else if (decimalCharIndex > 0 && decimalCharIndex === 1) {
+                                newValueStr = inputValue.slice(0, selectionStart) + '0' + inputValue.slice(selectionStart + 1);
+                                newValueStr = this.parseValue(newValueStr) > 0 ? newValueStr : '';
+                            }
+                            else {
+                                newValueStr = inputValue.slice(0, selectionStart) + inputValue.slice(selectionStart + 1);
+                            }
+                        }
+
+                        this.updateValue(event, newValueStr, null, 'delete-back-single');
+                    }
+                    else {
+                        newValueStr = this.deleteRange(inputValue, selectionStart, selectionEnd);
+                        this.updateValue(event, newValueStr, null, 'delete-range');
+                    }
+                break;
+
+                default:
+                break;
+            }
+        },
+        onInputKeyPress(event) {
+            event.preventDefault();
+            let code = event.which || event.keyCode;
+            let char = String.fromCharCode(code);
+            const isDecimalSign = this.isDecimalSign(char);
+            const isMinusSign = this.isMinusSign(char);
+
+            if ((48 <= code && code <= 57) || isMinusSign || isDecimalSign) {
+                this.insert(event, char, { isDecimalSign, isMinusSign });
+            }
+        },
+        onPaste(event) {
+            event.preventDefault();
+            let data = (event.clipboardData || window['clipboardData']).getData('Text');
+            if (data) {
+                let filteredData = this.parseValue(data);
+                if (filteredData != null) {
+                    this.insert(event, filteredData.toString());
+                }
+            }
+        },
+        allowMinusSign() {
+            return this.min === null || this.min < 0;
+        },
+        isMinusSign(char) {
+            if (this._minusSign.test(char)) {
+                this._minusSign.lastIndex = 0;
+                return true;
+            }
+
+            return false;
+        },
+        isDecimalSign(char) {
+            if (this._decimal.test(char)) {
+                this._decimal.lastIndex = 0;
+                return true;
+            }
+
+            return false;
+        },
+        insert(event, text, sign = { isDecimalSign: false, isMinusSign: false }) {
+            const minusCharIndexOnText = text.search(this._minusSign);
+            this._minusSign.lastIndex = 0;
+            if (!this.allowMinusSign() && minusCharIndexOnText !== -1) {
+                return;
+            }
+
+            const selectionStart = this.$refs.input.$el.selectionStart;
+            const selectionEnd = this.$refs.input.$el.selectionEnd;
+            let inputValue = this.$refs.input.$el.value.trim();
+            const decimalCharIndex = inputValue.search(this._decimal);
+            this._decimal.lastIndex = 0;
+            const minusCharIndex = inputValue.search(this._minusSign);
+            this._minusSign.lastIndex = 0;
+            let newValueStr;
+
+            if (sign.isMinusSign) {
+                if (selectionStart === 0) {
+                    newValueStr = inputValue;
+                    if (minusCharIndex === -1 || selectionEnd !== 0) {
+                        newValueStr = this.insertText(inputValue, text, 0, selectionEnd);
+                    }
+
+                    this.updateValue(event, newValueStr, text, 'insert');
+                }
+            }
+            else if (sign.isDecimalSign) {
+                if (decimalCharIndex > 0 && selectionStart === decimalCharIndex) {
+                    this.updateValue(event, inputValue, text, 'insert');
+                }
+                else if (decimalCharIndex > selectionStart && decimalCharIndex < selectionEnd) {
+                    newValueStr = this.insertText(inputValue, text, selectionStart, selectionEnd);
+                    this.updateValue(event, newValueStr, text, 'insert');
+                }
+            }
+            else {
+                const maxFractionDigits = this.numberFormat.resolvedOptions().maximumFractionDigits;
+                const operation = selectionStart !== selectionEnd ? 'range-insert' : 'insert';
+
+                if (decimalCharIndex > 0 && selectionStart > decimalCharIndex) {
+                    if ((selectionStart + text.length - (decimalCharIndex + 1)) <= maxFractionDigits) {
+                        newValueStr = inputValue.slice(0, selectionStart) + text + inputValue.slice(selectionStart + text.length);
+                        this.updateValue(event, newValueStr, text, operation);
+                    }
+                }
+                else {
+                    newValueStr = this.insertText(inputValue, text, selectionStart, selectionEnd);
+                    this.updateValue(event, newValueStr, text, operation);
+                }
+            }
+        },
+        insertText(value, text, start, end) {
+            let textSplit = text.split('.');
+
+            if (textSplit.length === 2) {
+                const decimalCharIndex = value.slice(start, end).search(this._decimal);
+                this._decimal.lastIndex = 0;
+                return (decimalCharIndex > 0) ? value.slice(0, start) + this.formatValue(text) + value.slice(end) : (value || this.formatValue(text));
+            }
+            else if ((end - start) === value.length) {
+                return this.formatValue(text);
+            }
+            else if (start === 0) {
+                return text + value.slice(end);
+            }
+            else if (end === value.length) {
+                return value.slice(0, start) + text;
+            }
+            else {
+                return value.slice(0, start) + text + value.slice(end);
+            }
+        },
+        deleteRange(value, start, end) {
+            let newValueStr;
+
+            if ((end - start) === value.length)
+                newValueStr = '';
+            else if (start === 0)
+                newValueStr = value.slice(end);
+            else if (end === value.length)
+                newValueStr = value.slice(0, start);
+            else
+                newValueStr = value.slice(0, start) + value.slice(end);
+
+            return newValueStr;
+        },
+        initCursor() {
+            let selectionStart = this.$refs.input.$el.selectionStart;
+            let inputValue = this.$refs.input.$el.value;
+            let valueLength = inputValue.length;
+            let index = null;
+
+            let char = inputValue.charAt(selectionStart);
+            if (this.isNumeralChar(char)) {
+                return;
+            }
+
+            //left
+            let i = selectionStart - 1;
+            while (i >= 0) {
+                char = inputValue.charAt(i);
+                if (this.isNumeralChar(char)) {
+                    index = i;
+                    break;
+                }
+                else {
+                    i--;
+                }
+            }
+
+            if (index !== null) {
+                this.$refs.input.$el.setSelectionRange(index + 1, index + 1);
+            }
+            else {
+                i = selectionStart + 1;
+                while (i < valueLength) {
+                    char = inputValue.charAt(i);
+                    if (this.isNumeralChar(char)) {
+                        index = i;
+                        break;
+                    }
+                    else {
+                        i++;
+                    }
+                }
+
+                if (index !== null) {
+                    this.$refs.input.$el.setSelectionRange(index, index);
+                }
+            }
+        },
+        onInputClick() {
+            this.initCursor();
+        },
+        isNumeralChar(char) {
+            if (char.length === 1 && (this._numeral.test(char) || this._decimal.test(char) || this._group.test(char) || this._minusSign.test(char))) {
+                this.resetRegex();
+                return true;
+            }
+
+            return false;
+        },
+        resetRegex() {
+            this._numeral.lastIndex =  0;
+            this._decimal.lastIndex =  0;
+            this._group.lastIndex =  0;
+            this._minusSign.lastIndex =  0;
+        },
+        updateValue(event, valueStr, insertedValueStr, operation) {
+            if (valueStr != null) {
+                let newValue = this.parseValue(valueStr);
+                this.updateInput(newValue, insertedValueStr, operation);
+            }
+        },
+        validateValue(value) {
+            if (this.min != null && value < this.min) {
+                return this.min;
+            }
+
+            if (this.max != null && value > this.max) {
+                return this.max;
+            }
+
+            if (value === '-') { // Minus sign
+                return null;
+            }
+
+            return value;
+        },
+        updateInput(value, insertedValueStr, operation) {
+            insertedValueStr = insertedValueStr || '';
+
+            let inputValue = this.$refs.input.$el.value;
+            let newValue = this.formatValue(value);
+            let currentLength = inputValue.length;
+
+            if (currentLength === 0) {
+                this.$refs.input.$el.value = newValue;
+                this.$refs.input.$el.setSelectionRange(0, 0);
+                this.initCursor();
+                const prefixLength = (this.prefixChar || '').length;
+                const selectionEnd = prefixLength + insertedValueStr.length;
+                this.$refs.input.$el.setSelectionRange(selectionEnd, selectionEnd);
+            }
+            else {
+                let selectionStart = this.$refs.input.$el.selectionStart;
+                let selectionEnd = this.$refs.input.$el.selectionEnd;
+                this.$refs.input.$el.value = newValue;
+                let newLength = newValue.length;
+
+                if (operation === 'range-insert') {
+                    const startValue = this.parseValue((inputValue || '').slice(0, selectionStart));
+                    const startValueStr = startValue !== null ? startValue.toString() : '';
+                    const startExpr = startValueStr.split('').join(`(${this.groupChar})?`);
+                    const sRegex = new RegExp(startExpr, 'g');
+                    sRegex.test(newValue);
+
+                    const tExpr = insertedValueStr.split('').join(`(${this.groupChar})?`);
+                    const tRegex = new RegExp(tExpr, 'g');
+                    tRegex.test(newValue.slice(sRegex.lastIndex));
+
+                    selectionEnd = sRegex.lastIndex + tRegex.lastIndex;
+                    this.$refs.input.$el.setSelectionRange(selectionEnd, selectionEnd);
+                }
+                else if (newLength === currentLength) {
+                    if (operation === 'insert' || operation === 'delete-back-single')
+                        this.$refs.input.$el.setSelectionRange(selectionEnd + 1, selectionEnd + 1);
+                    else if (operation === 'delete-single')
+                        this.$refs.input.$el.setSelectionRange(selectionEnd - 1, selectionEnd - 1);
+                    else if (operation === 'delete-range' || operation === 'spin')
+                        this.$refs.input.$el.setSelectionRange(selectionEnd, selectionEnd);
+                }
+                else if (operation === 'delete-back-single') {
+                    let prevChar = inputValue.charAt(selectionEnd - 1);
+                    let nextChar = inputValue.charAt(selectionEnd);
+                    let diff = currentLength - newLength;
+                    let isGroupChar = this._group.test(nextChar);
+
+                    if (isGroupChar && diff === 1) {
+                        selectionEnd += 1;
+                    }
+                    else if (!isGroupChar && this.isNumeralChar(prevChar)) {
+                        selectionEnd += (-1 * diff) + 1;
+                    }
+
+                    this._group.lastIndex = 0;
+                    this.$refs.input.$el.setSelectionRange(selectionEnd, selectionEnd);
+                }
+                else {
+                    selectionEnd = selectionEnd + (newLength - currentLength);
+                    this.$refs.input.$el.setSelectionRange(selectionEnd, selectionEnd);
+                }
+            }
+
+            this.$refs.input.$el.setAttribute('aria-valuenow', value);
+        },
+        updateModel(event, value) {
+            this.$emit('input', value);
+        },
+        onInputFocus(event) {
+            this.focused = true;
+            this.$emit('focus', event);
+        },
+        onInputBlur(event) {
+            this.focused = false;
+
+            let input = event.target;
+            let newValue = this.validateValue(this.parseValue(input.value));
+            input.value = this.formatValue(newValue);
+            input.setAttribute('aria-valuenow', newValue);
+            this.updateModel(event, newValue);
+
+            this.$emit('blur', event);
+        },
+        clearTimer() {
+            if (this.timer) {
+                clearInterval(this.timer);
+            }
+        }
+    },
+    computed: {
+        containerClass() {
+            return ['p-inputnumber p-component', {
+                'p-inputwrapper-filled': this.filled,
+                'p-inputwrapper-focus': this.focused,
+                'p-inputnumber-buttons-stacked': this.showButtons && this.buttonLayout === 'stacked',
+                'p-inputnumber-buttons-horizontal': this.showButtons && this.buttonLayout === 'horizontal',
+                'p-inputnumber-buttons-vertical': this.showButtons && this.buttonLayout === 'vertical'
+            }];
+        },
+        upButtonClass() {
+            return ['p-inputnumber-button p-inputnumber-button-up', this.incrementButtonClass];
+        },
+        downButtonClass() {
+            return ['p-inputnumber-button p-inputnumber-button-down', this.decrementButtonClass];
+        },
+        filled() {
+            return (this.value != null && this.value.toString().length > 0)
+        },
+        listeners() {
+            return {
+                ...this.$listeners,
+                input: val => this.onInput(val),
+                keydown: event => this.onInputKeyDown(event),
+                keypress: event => this.onInputKeyPress(event),
+                paste: event => this.onPaste(event),
+                click: event => this.onInputClick(event),
+                focus: event => this.onInputFocus(event),
+                blur: event => this.onInputBlur(event)
+            };
+        },
+        upButtonListeners() {
+            return {
+                mousedown: event => this.onUpButtonMouseDown(event),
+                mouseup: event => this.onUpButtonMouseUp(event),
+                mouseleave: event => this.onUpButtonMouseLeave(event),
+                keydown: event => this.onUpButtonKeyDown(event),
+                keyup: event => this.onUpButtonKeyUp(event)
+            }
+        },
+        downButtonListeners() {
+            return {
+                mousedown: event => this.onDownButtonMouseDown(event),
+                mouseup: event => this.onDownButtonMouseUp(event),
+                mouseleave: event => this.onDownButtonMouseLeave(event),
+                keydown: event => this.onDownButtonKeyDown(event),
+                keyup: event => this.onDownButtonKeyUp(event)
+            }
+        },
+        formattedValue() {
+            return this.formatValue(this.value);
+        }
+    },
+    components: {
+        'INInputText': _inputtext_InputText__WEBPACK_IMPORTED_MODULE_0__.default,
+        'INButton': _button_Button__WEBPACK_IMPORTED_MODULE_1__.default
+    }
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/primevue/textarea/Textarea.vue":
 /*!*****************************************************!*\
   !*** ./node_modules/primevue/textarea/Textarea.vue ***!
@@ -2922,6 +3914,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_loader_dist_cjs_js_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_InputNumber_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../style-loader/dist/cjs.js!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./InputNumber.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=style&index=0&lang=css&");
+
+
+/***/ }),
+
 /***/ "./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css&":
 /*!**************************************************************************************!*\
   !*** ./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css& ***!
@@ -2992,6 +3996,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_template_id_c9ca3924___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_template_id_c9ca3924___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../vue-loader/lib/index.js??vue-loader-options!./Calendar.vue?vue&type=template&id=c9ca3924& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=template&id=c9ca3924&");
+
+
+/***/ }),
+
+/***/ "./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _vue_loader_lib_index_js_vue_loader_options_InputNumber_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/index.js??vue-loader-options!./InputNumber.vue?vue&type=script&lang=js& */ "./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_vue_loader_lib_index_js_vue_loader_options_InputNumber_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=template&id=e4d95394&":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=template&id=e4d95394& ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_InputNumber_vue_vue_type_template_id_e4d95394___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_InputNumber_vue_vue_type_template_id_e4d95394___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _vue_loader_lib_loaders_templateLoader_js_vue_loader_options_vue_loader_lib_index_js_vue_loader_options_InputNumber_vue_vue_type_template_id_e4d95394___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../vue-loader/lib/index.js??vue-loader-options!./InputNumber.vue?vue&type=template&id=e4d95394& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=template&id=e4d95394&");
 
 
 /***/ }),
@@ -4202,6 +5237,126 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=template&id=e4d95394&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/inputnumber/InputNumber.vue?vue&type=template&id=e4d95394& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "span",
+    { class: _vm.containerClass },
+    [
+      _c(
+        "INInputText",
+        _vm._g(
+          _vm._b(
+            {
+              ref: "input",
+              class: ["p-inputnumber-input", _vm.inputClass],
+              style: _vm.inputStyle,
+              attrs: {
+                value: _vm.formattedValue,
+                "aria-valumin": _vm.min,
+                "aria-valuemax": _vm.max
+              }
+            },
+            "INInputText",
+            _vm.$attrs,
+            false
+          ),
+          _vm.listeners
+        )
+      ),
+      _vm._v(" "),
+      _vm.showButtons && _vm.buttonLayout === "stacked"
+        ? _c(
+            "span",
+            { staticClass: "p-inputnumber-button-group" },
+            [
+              _c(
+                "INButton",
+                _vm._g(
+                  {
+                    class: _vm.upButtonClass,
+                    attrs: {
+                      icon: _vm.incrementButtonIcon,
+                      disabled: _vm.$attrs.disabled
+                    }
+                  },
+                  _vm.upButtonListeners
+                )
+              ),
+              _vm._v(" "),
+              _c(
+                "INButton",
+                _vm._g(
+                  {
+                    class: _vm.downButtonClass,
+                    attrs: {
+                      icon: _vm.decrementButtonIcon,
+                      disabled: _vm.$attrs.disabled
+                    }
+                  },
+                  _vm.downButtonListeners
+                )
+              )
+            ],
+            1
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.showButtons && _vm.buttonLayout !== "stacked"
+        ? _c(
+            "INButton",
+            _vm._g(
+              {
+                class: _vm.upButtonClass,
+                attrs: {
+                  icon: _vm.incrementButtonIcon,
+                  disabled: _vm.$attrs.disabled
+                }
+              },
+              _vm.upButtonListeners
+            )
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.showButtons && _vm.buttonLayout !== "stacked"
+        ? _c(
+            "INButton",
+            _vm._g(
+              {
+                class: _vm.downButtonClass,
+                attrs: {
+                  icon: _vm.decrementButtonIcon,
+                  disabled: _vm.$attrs.disabled
+                }
+              },
+              _vm.downButtonListeners
+            )
+          )
+        : _vm._e()
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=template&id=7b3edeee&":
 /*!***************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=template&id=7b3edeee& ***!
@@ -4447,8 +5602,14 @@ var render = function() {
                         _vm._v("Total Price")
                       ]),
                       _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "total_price", type: "number" }
+                      _c("InputNumber", {
+                        model: {
+                          value: _vm.total_price,
+                          callback: function($$v) {
+                            _vm.total_price = $$v
+                          },
+                          expression: "total_price"
+                        }
                       })
                     ],
                     1
@@ -4459,11 +5620,17 @@ var render = function() {
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
                       _c("label", { attrs: { for: "subtotal_price" } }, [
-                        _vm._v("Suporter Price")
+                        _vm._v("Subtotal Price")
                       ]),
                       _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "subtotal_price", type: "number" }
+                      _c("InputNumber", {
+                        model: {
+                          value: _vm.subtotal_price,
+                          callback: function($$v) {
+                            _vm.subtotal_price = $$v
+                          },
+                          expression: "subtotal_price"
+                        }
                       })
                     ],
                     1
@@ -4477,8 +5644,20 @@ var render = function() {
                         _vm._v("Total Quantity")
                       ]),
                       _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "total_quantity", type: "number" }
+                      _c("InputNumber", {
+                        attrs: {
+                          id: "minmax-buttons",
+                          mode: "decimal",
+                          showButtons: "",
+                          min: 0
+                        },
+                        model: {
+                          value: _vm.total_quantity,
+                          callback: function($$v) {
+                            _vm.total_quantity = $$v
+                          },
+                          expression: "total_quantity"
+                        }
                       })
                     ],
                     1
@@ -4492,8 +5671,20 @@ var render = function() {
                         _vm._v("Total Product")
                       ]),
                       _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "total_product", type: "number" }
+                      _c("InputNumber", {
+                        attrs: {
+                          id: "minmax-buttons",
+                          mode: "decimal",
+                          showButtons: "",
+                          min: 0
+                        },
+                        model: {
+                          value: _vm.total_product,
+                          callback: function($$v) {
+                            _vm.total_product = $$v
+                          },
+                          expression: "total_product"
+                        }
                       })
                     ],
                     1
@@ -4507,7 +5698,7 @@ var render = function() {
                     _vm._l(_vm.purchases, function(purchase, index) {
                       return _c(
                         "div",
-                        { key: index, staticClass: "p-d-flex p-ai-end p-p-2" },
+                        { key: index, staticClass: "p-grid p-ai-end p-p-2" },
                         [
                           _c("div", { staticClass: "p-col-3" }, [
                             _c("label", { attrs: { for: "product_name" } }, [
@@ -4549,9 +5740,21 @@ var render = function() {
                                 }
                               },
                               [
-                                _c("option", { attrs: { value: "" } }, [
-                                  _vm._v("-- Select a Name --")
-                                ])
+                                _c(
+                                  "option",
+                                  {
+                                    attrs: {
+                                      selected: "",
+                                      disabled: "",
+                                      hidden: ""
+                                    }
+                                  },
+                                  [_vm._v("-- Select a Product --")]
+                                ),
+                                _vm._v(" "),
+                                _c("option", [_vm._v("Shirt")]),
+                                _vm._v(" "),
+                                _c("option", [_vm._v("pant")])
                               ]
                             )
                           ]),
@@ -4571,7 +5774,7 @@ var render = function() {
                                 }
                               ],
                               staticClass: "form-control",
-                              attrs: { type: "tel", name: "", id: "qty" },
+                              attrs: { type: "number", name: "", id: "qty" },
                               domProps: { value: purchase.qty },
                               on: {
                                 input: function($event) {
@@ -4584,7 +5787,7 @@ var render = function() {
                             })
                           ]),
                           _vm._v(" "),
-                          _c("div", { staticClass: "p-col-2" }, [
+                          _c("div", { staticClass: "p-col-3" }, [
                             _c("label", { attrs: { for: "per_price" } }, [
                               _vm._v("Per Price")
                             ]),
@@ -4599,7 +5802,11 @@ var render = function() {
                                 }
                               ],
                               staticClass: "form-control",
-                              attrs: { type: "tel", name: "", id: "per_price" },
+                              attrs: {
+                                type: "number",
+                                name: "",
+                                id: "per_price"
+                              },
                               domProps: { value: purchase.per_price },
                               on: {
                                 input: function($event) {
@@ -4632,7 +5839,7 @@ var render = function() {
                               ],
                               staticClass: "form-control",
                               attrs: {
-                                type: "tel",
+                                type: "number",
                                 name: "",
                                 id: "total_price"
                               },
@@ -4694,7 +5901,7 @@ var render = function() {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "p-d-flex p-jc-end" }, [
-                  _c("div", { staticClass: "p-col-4" }, [
+                  _c("div", { staticClass: "p-col-5" }, [
                     _c("div", { staticClass: "p-grid" }, [
                       _c("div", { staticClass: "p-col-6" }, [
                         _c("label", { attrs: { for: "sale_discount" } }, [
@@ -4706,8 +5913,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "sale_discount", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.sale_discount,
+                              callback: function($$v) {
+                                _vm.sale_discount = $$v
+                              },
+                              expression: "sale_discount"
+                            }
                           })
                         ],
                         1
@@ -4723,8 +5936,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "total_discount", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.total_discount,
+                              callback: function($$v) {
+                                _vm.total_discount = $$v
+                              },
+                              expression: "total_discount"
+                            }
                           })
                         ],
                         1
@@ -4740,8 +5959,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "total_tax", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.total_tax,
+                              callback: function($$v) {
+                                _vm.total_tax = $$v
+                              },
+                              expression: "total_tax"
+                            }
                           })
                         ],
                         1
@@ -4757,8 +5982,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "shipping_cost", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.shipping_cost,
+                              callback: function($$v) {
+                                _vm.shipping_cost = $$v
+                              },
+                              expression: "shipping_cost"
+                            }
                           })
                         ],
                         1
@@ -4774,8 +6005,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "grand_total", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.grand_total,
+                              callback: function($$v) {
+                                _vm.grand_total = $$v
+                              },
+                              expression: "grand_total"
+                            }
                           })
                         ],
                         1
@@ -4791,8 +6028,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "privious", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.privious,
+                              callback: function($$v) {
+                                _vm.privious = $$v
+                              },
+                              expression: "privious"
+                            }
                           })
                         ],
                         1
@@ -4808,8 +6051,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "net_total", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.net_total,
+                              callback: function($$v) {
+                                _vm.net_total = $$v
+                              },
+                              expression: "net_total"
+                            }
                           })
                         ],
                         1
@@ -4825,8 +6074,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "paid_amount", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.paid_amount,
+                              callback: function($$v) {
+                                _vm.paid_amount = $$v
+                              },
+                              expression: "paid_amount"
+                            }
                           })
                         ],
                         1
@@ -4842,8 +6097,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "due", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.due,
+                              callback: function($$v) {
+                                _vm.due = $$v
+                              },
+                              expression: "due"
+                            }
                           })
                         ],
                         1
@@ -4856,7 +6117,7 @@ var render = function() {
                   _c(
                     "button",
                     {
-                      staticClass: "btn btn-danger",
+                      staticClass: "btn btn-success",
                       attrs: { type: "submit" }
                     },
                     [_vm._v("Save Purchase")]
