@@ -5,8 +5,7 @@
         <h2>List Purchase</h2>
         <button class="btn btn-danger"><router-link to="/create-purchase" class="text-white">Create Purchase</router-link></button>
     </div>
-  <Card>
-    <template #content>
+
       <DataTable
         :value="ListPurchase" :scrollable="true" :paginator="true" :rows="10"
         paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
@@ -14,7 +13,8 @@
         currentPageReportTemplate="Showing {first} to {last} of {totalRecords}"
         :filters="filters"
         dataKey="id"
-        :selection.sync="selectedTitle" 
+        :selection.sync="selectedTitle"
+        class="p-mt-2 animate__animated animate__fadeIn p-datatable-sm"
         :editingRows.sync="editingRows"
         editMode="row" @row-edit-init="onRowEditInit" @row-edit-cancel="onRowEditCancel">
 
@@ -89,8 +89,7 @@
             </template>
         </Column>
       </DataTable>
-    </template>
-  </Card>
+
 </div>
 </template>
 

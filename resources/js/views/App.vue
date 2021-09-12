@@ -26,40 +26,22 @@
             </a>
             <ul>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/">Home</router-link>
-                </a>
+                  <router-link to="/" active-class="active" exact> <i class="pi pi-arrow-right"></i> Home</router-link>
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/create-designation">Create Designations</router-link>
-                </a>
+                <router-link to="/create-designation" active-class="active"> <i class="pi pi-arrow-right"></i> Create Designations</router-link>
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/designation-list">Designation list</router-link>
-                </a>
+                  <router-link to="/designation-list" active-class="active"> <i class="pi pi-arrow-right"></i> Designation list</router-link>
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/create-department">Create Department</router-link>
-                </a>
+                  <router-link to="/create-department" active-class="active"> <i class="pi pi-arrow-right"></i> Create Department</router-link>
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/department-list">Department List</router-link>
-                </a>
+                  <router-link to="/department-list" active-class="active"> <i class="pi pi-arrow-right"></i> Department List</router-link>
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/sale">Sale</router-link>
-                </a>
+                  <router-link to="/sale" active-class="active"> <i class="pi pi-arrow-right"></i> Sale</router-link>
               </li>
             </ul>
           </li>
@@ -117,22 +99,17 @@
             </a>
             <ul>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/create-contact-person">Create Contact Persons</router-link>
-                </a>
+                  <router-link to="/create-contact-person" active-class="active"><i class="pi pi-arrow-right"></i> Create Contact Persons</router-link>
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/list-contact-person">Contact Person Lists</router-link>
-                </a>
+
+
+                  <router-link to="/list-contact-person" active-class="active"> <i class="pi pi-arrow-right"></i> Contact Person Lists</router-link>
+
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/edit-contact-person">Edit Person Lists</router-link>
-                </a>
+
+                  <router-link to="/edit-contact-person" active-class="active"><i class="pi pi-arrow-right"></i> Edit Person Lists</router-link>
               </li>
             </ul>
           </li>
@@ -145,22 +122,21 @@
             </a>
             <ul>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/CreateEmployees">Create Employees</router-link>
-                </a>
+
+                  <router-link to="/CreateEmployees" active-class="active"> <i class="pi pi-arrow-right"></i> Create Employees</router-link>
+
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/EmployeeLists">Employee Lists</router-link>
-                </a>
+
+
+                  <router-link to="/EmployeeLists" active-class="active"><i class="pi pi-arrow-right"></i> Employee Lists</router-link>
+
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/EditEmployeeLists">Edit Employee Lists</router-link>
-                </a>
+
+
+                  <router-link to="/EditEmployeeLists" active-class="active"><i class="pi pi-arrow-right"></i> Edit Employee Lists</router-link>
+
               </li>
             </ul>
           </li>
@@ -173,16 +149,16 @@
             </a>
             <ul>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/CreateSalesReturn">Create Sales Return</router-link>
-                </a>
+
+
+                  <router-link to="/CreateSalesReturn" active-class="active"><i class="pi pi-arrow-right"></i> Create Sales Return</router-link>
+
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/ReturnSalesLists">Return Sales Lists</router-link>
-                </a>
+
+
+                  <router-link to="/ReturnSalesLists" active-class="active"> <i class="pi pi-arrow-right"></i> Return Sales Lists</router-link>
+
               </li>
             </ul>
           </li>
@@ -195,22 +171,20 @@
             </a>
             <ul>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/CreateCustomer">Create Customer</router-link>
-                </a>
+                  <router-link to="/CreateCustomer" active-class="active"><i class="pi pi-arrow-right"></i> Create Customer</router-link>
+
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/EditCustomer">Edit Customer</router-link>
-                </a>
+
+
+                  <router-link to="/EditCustomer" leave-active-class="active"> <i class="pi pi-arrow-right"></i> Edit Customer</router-link>
+
               </li>
               <li>
-                <a>
-                  <i class="pi pi-arrow-right"></i>
-                  <router-link to="/CustomerList">Customer List</router-link>
-                </a>
+
+
+                  <router-link to="/CustomerList" active-class="active"><i class="pi pi-arrow-right"></i> Customer List</router-link>
+
               </li>
             </ul>
           </li>
@@ -1350,7 +1324,14 @@
 export default {
   name: "App",
   components: {},
-
+  watch: {
+        $route: {
+            immediate: true,
+            handler(to, from) {
+                document.title = to.meta.title || 'ERP';
+            }
+        },
+    },
   data() {
     return {};
   }

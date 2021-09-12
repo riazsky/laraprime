@@ -2,7 +2,7 @@
   <div>
     <Breadcrumb :home="home" :model="items" />
     <div class="p-d-flex p-jc-between p-mt-5 p-mb-5">
-      <div class="p-mr-2"><h3>View Sales Lists</h3></div>
+      <div class="p-mr-2"><h3>Return Sales Lists</h3></div>
       <div>
         <button class="btn btn-secondary">
           <router-link
@@ -25,6 +25,7 @@
       editMode="row"
       dataKey="id"
       :editingRows.sync="editingRows"
+      class="p-mt-2 animate__animated animate__fadeIn p-datatable-sm"
       @row-edit-init="onRowEditInit"
       @row-edit-cancel="onRowEditCancel"
     >
@@ -57,7 +58,7 @@
       <Column field="TotalQty" headerStyle="width: 170px" header="Total Qty" sortable></Column>
       <Column field="SubTotalPrice" headerStyle="width: 190px" header="Sub Total Price" sortable></Column>
       <Column field="TotalPrice" headerStyle="width: 170px" header="Total Price" sortable></Column>
-         
+
 
       <Column field="Action" headerStyle="width: 150px" header="Action">
         <template #body>
@@ -65,7 +66,7 @@
                 <a class="btn btn-info mr-2"><router-link to="/ViewSale"  style="color: #fff; text-decoration: none;">View</router-link></a>
                 <a class="btn btn-danger">Delete</a>
             </div>
- 
+
         </template>
       </Column>
 
@@ -78,7 +79,7 @@
 </template>
 <script>
 export default {
-  name: "ViewSale",
+  name: "ReturnSalesLists",
   data() {
     return {
       filters: {},
@@ -91,7 +92,7 @@ export default {
         { label: "Return Sales Lists" },
       ],
       TableData: [
-        {       
+        {
           id: 1,
           InvoiceNo: "21651",
           SaleDate: "1/05/21",
@@ -109,7 +110,7 @@ export default {
           TotalPrice: "5464",
 
         },
-        {       
+        {
           id: 2,
           InvoiceNo: "21651",
           SaleDate: "1/05/21",
@@ -127,7 +128,7 @@ export default {
           TotalPrice: "5464",
 
         },
-        {       
+        {
           id: 3,
           InvoiceNo: "21651",
           SaleDate: "1/05/21",
@@ -147,7 +148,7 @@ export default {
         },
 
 
-        
+
 
       ],
     };

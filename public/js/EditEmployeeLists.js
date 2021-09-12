@@ -1,10 +1,10 @@
 "use strict";
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_views_HRM_Employees_CreateEmployees_vue"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["EditEmployeeLists"],{
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -142,60 +142,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "CreateEmployees",
+  name: "EditEmployeeLists",
   components: {
     Dropdown: primevue_dropdown__WEBPACK_IMPORTED_MODULE_0__.default,
     Button: primevue_button__WEBPACK_IMPORTED_MODULE_1__.default,
@@ -220,7 +172,10 @@ __webpack_require__.r(__webpack_exports__);
         label: "Employee Lists",
         to: "/EmployeeLists"
       }, {
-        label: "Create Employees"
+        label: "Create Employees",
+        to: "/CreateEmployees"
+      }, {
+        label: "Edit Employee Lists"
       }],
       department: null,
       group: [{
@@ -272,15 +227,15 @@ __webpack_require__.r(__webpack_exports__);
         name: "2nd",
         code: "TWO"
       }],
-      dutyValue: null,
-      dutyType: [{
+      Duty: null,
+      Type: [{
         name: "Full-Time",
         code: "ONE"
       }, {
         name: "Part-Time",
         code: "TWO"
       }],
-      salaryvalue: null,
+      Salary: null,
       SalaryType: [{
         name: "Monthly",
         code: "SM"
@@ -2731,18 +2686,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/views/HRM/Employees/CreateEmployees.vue":
-/*!**************************************************************!*\
-  !*** ./resources/js/views/HRM/Employees/CreateEmployees.vue ***!
-  \**************************************************************/
+/***/ "./resources/js/views/HRM/Employees/EditEmployeeLists.vue":
+/*!****************************************************************!*\
+  !*** ./resources/js/views/HRM/Employees/EditEmployeeLists.vue ***!
+  \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _CreateEmployees_vue_vue_type_template_id_dd238ab8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CreateEmployees.vue?vue&type=template&id=dd238ab8& */ "./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=template&id=dd238ab8&");
-/* harmony import */ var _CreateEmployees_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CreateEmployees.vue?vue&type=script&lang=js& */ "./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=script&lang=js&");
+/* harmony import */ var _EditEmployeeLists_vue_vue_type_template_id_6e5d74d0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EditEmployeeLists.vue?vue&type=template&id=6e5d74d0& */ "./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=template&id=6e5d74d0&");
+/* harmony import */ var _EditEmployeeLists_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EditEmployeeLists.vue?vue&type=script&lang=js& */ "./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -2752,9 +2707,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _CreateEmployees_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _CreateEmployees_vue_vue_type_template_id_dd238ab8___WEBPACK_IMPORTED_MODULE_0__.render,
-  _CreateEmployees_vue_vue_type_template_id_dd238ab8___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _EditEmployeeLists_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _EditEmployeeLists_vue_vue_type_template_id_6e5d74d0___WEBPACK_IMPORTED_MODULE_0__.render,
+  _EditEmployeeLists_vue_vue_type_template_id_6e5d74d0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -2764,23 +2719,23 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/views/HRM/Employees/CreateEmployees.vue"
+component.options.__file = "resources/js/views/HRM/Employees/EditEmployeeLists.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************!*\
-  !*** ./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************/
+/***/ "./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateEmployees_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CreateEmployees.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateEmployees_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_EditEmployeeLists_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EditEmployeeLists.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_EditEmployeeLists_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -2858,18 +2813,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=template&id=dd238ab8&":
-/*!*********************************************************************************************!*\
-  !*** ./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=template&id=dd238ab8& ***!
-  \*********************************************************************************************/
+/***/ "./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=template&id=6e5d74d0&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=template&id=6e5d74d0& ***!
+  \***********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateEmployees_vue_vue_type_template_id_dd238ab8___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateEmployees_vue_vue_type_template_id_dd238ab8___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EditEmployeeLists_vue_vue_type_template_id_6e5d74d0___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EditEmployeeLists_vue_vue_type_template_id_6e5d74d0___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateEmployees_vue_vue_type_template_id_dd238ab8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CreateEmployees.vue?vue&type=template&id=dd238ab8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=template&id=dd238ab8&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EditEmployeeLists_vue_vue_type_template_id_6e5d74d0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./EditEmployeeLists.vue?vue&type=template&id=6e5d74d0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=template&id=6e5d74d0&");
 
 
 /***/ }),
@@ -4055,10 +4010,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=template&id=dd238ab8&":
-/*!************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/CreateEmployees.vue?vue&type=template&id=dd238ab8& ***!
-  \************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=template&id=6e5d74d0&":
+/*!**************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/Employees/EditEmployeeLists.vue?vue&type=template&id=6e5d74d0& ***!
+  \**************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4073,12 +4028,9 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("Breadcrumb", {
-        staticClass: "p-mt-0",
-        attrs: { home: _vm.home, model: _vm.items }
-      }),
+      _c("Breadcrumb", { attrs: { home: _vm.home, model: _vm.items } }),
       _vm._v(" "),
-      _c("div", { staticClass: "p-d-flex p-jc-between p-mt-3" }, [
+      _c("div", { staticClass: "p-d-flex p-jc-between p-mt-5" }, [
         _vm._m(0),
         _vm._v(" "),
         _c("div", [
@@ -4100,454 +4052,282 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("Card", {
-        staticClass: "p-mt-3",
+      _c("card", {
+        staticClass: "p-mt-5",
         scopedSlots: _vm._u([
           {
             key: "content",
             fn: function() {
               return [
-                _c("div", { staticClass: "p-fluid p-grid" }, [
+                _c("div", { staticClass: "p-fluid p-formgrid p-grid" }, [
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-pb-3 p-pt-0 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("InputText", {
-                            attrs: { id: "name", type: "text" }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "name" } }, [
-                            _vm._v("Name")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "firstname" } }, [
+                        _vm._v("Name")
+                      ]),
+                      _vm._v(" "),
+                      _c("InputText", {
+                        attrs: { id: "firstname", type: "text" }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-pb-3 p-pt-0 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("InputText", {
-                            attrs: { id: "email", type: "email" }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "email" } }, [
-                            _vm._v("Email")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "lastname" } }, [
+                        _vm._v("Email")
+                      ]),
+                      _vm._v(" "),
+                      _c("InputText", {
+                        attrs: { id: "lastname", type: "email" }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-pb-3 p-pt-0 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("InputNumber", {
-                            attrs: {
-                              id: "phone",
-                              mode: "decimal",
-                              useGrouping: false
-                            },
-                            model: {
-                              value: _vm.phone,
-                              callback: function($$v) {
-                                _vm.phone = $$v
-                              },
-                              expression: "phone"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "phone" } }, [
-                            _vm._v("Phone")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "number" } }, [
+                        _vm._v("Phone")
+                      ]),
+                      _vm._v(" "),
+                      _c("InputNumber", {
+                        attrs: {
+                          id: "number",
+                          mode: "decimal",
+                          useGrouping: false
+                        },
+                        model: {
+                          value: _vm.phone,
+                          callback: function($$v) {
+                            _vm.phone = $$v
+                          },
+                          expression: "phone"
+                        }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("Dropdown", {
-                            attrs: {
-                              options: _vm.group,
-                              optionLabel: "name",
-                              id: "department"
-                            },
-                            model: {
-                              value: _vm.department,
-                              callback: function($$v) {
-                                _vm.department = $$v
-                              },
-                              expression: "department"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "department" } }, [
-                            _vm._v("Department")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "lastname" } }, [
+                        _vm._v("Department")
+                      ]),
+                      _vm._v(" "),
+                      _c("Dropdown", {
+                        attrs: {
+                          options: _vm.group,
+                          optionLabel: "name",
+                          placeholder: "Select a Department"
+                        },
+                        model: {
+                          value: _vm.department,
+                          callback: function($$v) {
+                            _vm.department = $$v
+                          },
+                          expression: "department"
+                        }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("Dropdown", {
-                            attrs: {
-                              options: _vm.desig,
-                              optionLabel: "name",
-                              id: "Designation"
-                            },
-                            model: {
-                              value: _vm.designation,
-                              callback: function($$v) {
-                                _vm.designation = $$v
-                              },
-                              expression: "designation"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "designation" } }, [
-                            _vm._v("Designation")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "lastname" } }, [
+                        _vm._v("Designation")
+                      ]),
+                      _vm._v(" "),
+                      _c("Dropdown", {
+                        attrs: {
+                          options: _vm.desig,
+                          optionLabel: "name",
+                          placeholder: "Select a Designation"
+                        },
+                        model: {
+                          value: _vm.designation,
+                          callback: function($$v) {
+                            _vm.designation = $$v
+                          },
+                          expression: "designation"
+                        }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("Dropdown", {
-                            staticClass: "p-inputtext-sm",
-                            attrs: {
-                              options: _vm.Shifts,
-                              optionLabel: "name",
-                              id: "shift"
-                            },
-                            model: {
-                              value: _vm.Shift,
-                              callback: function($$v) {
-                                _vm.Shift = $$v
-                              },
-                              expression: "Shift"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "shift" } }, [
-                            _vm._v("Shift")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "lastname" } }, [
+                        _vm._v("Shift")
+                      ]),
+                      _vm._v(" "),
+                      _c("Dropdown", {
+                        attrs: {
+                          options: _vm.Shifts,
+                          optionLabel: "name",
+                          placeholder: "Select a Shift"
+                        },
+                        model: {
+                          value: _vm.Shift,
+                          callback: function($$v) {
+                            _vm.Shift = $$v
+                          },
+                          expression: "Shift"
+                        }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "p-field p-col-12 p-my-0 p-py-3 p-px-2" },
+                    { staticClass: "p-field p-col-12" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("Textarea", {
-                            staticClass: "form-control",
-                            attrs: { id: "address", rows: "4" }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "address" } }, [
-                            _vm._v("Present Address")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "address" } }, [
+                        _vm._v("Present Address")
+                      ]),
+                      _vm._v(" "),
+                      _c("Textarea", {
+                        staticClass: "form-control",
+                        attrs: { id: "address", rows: "4" }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("Calendar", {
-                            staticClass: "p-calendar-sm",
-                            attrs: { id: "join_date", showIcon: true },
-                            model: {
-                              value: _vm.date,
-                              callback: function($$v) {
-                                _vm.date = $$v
-                              },
-                              expression: "date"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "join_date" } }, [
-                            _vm._v("Join Date")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "lastname" } }, [
+                        _vm._v("Join Date")
+                      ]),
+                      _vm._v(" "),
+                      _c("Calendar", {
+                        attrs: { id: "icon", showIcon: true },
+                        model: {
+                          value: _vm.date,
+                          callback: function($$v) {
+                            _vm.date = $$v
+                          },
+                          expression: "date"
+                        }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("Calendar", {
-                            staticClass: "p-calendar-sm",
-                            attrs: { id: "icon", showIcon: true }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "date_of_birth" } }, [
-                            _vm._v("Date Of Birth")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "lastname" } }, [
+                        _vm._v("Duty Type")
+                      ]),
+                      _vm._v(" "),
+                      _c("Dropdown", {
+                        attrs: {
+                          options: _vm.Type,
+                          optionLabel: "name",
+                          placeholder: "Select a Duty Type"
+                        },
+                        model: {
+                          value: _vm.Duty,
+                          callback: function($$v) {
+                            _vm.Duty = $$v
+                          },
+                          expression: "Duty"
+                        }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("InputText", {
-                            attrs: { id: "national_id", type: "text" }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "national_id" } }, [
-                            _vm._v("National Id")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "number" } }, [
+                        _vm._v("Salary")
+                      ]),
+                      _vm._v(" "),
+                      _c("InputNumber", {
+                        attrs: {
+                          id: "withoutgrouping",
+                          mode: "decimal",
+                          useGrouping: false
+                        },
+                        model: {
+                          value: _vm.salary,
+                          callback: function($$v) {
+                            _vm.salary = $$v
+                          },
+                          expression: "salary"
+                        }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("Dropdown", {
-                            attrs: {
-                              options: _vm.dutyType,
-                              optionLabel: "name",
-                              id: "duty_type"
-                            },
-                            model: {
-                              value: _vm.dutyValue,
-                              callback: function($$v) {
-                                _vm.dutyValue = $$v
-                              },
-                              expression: "dutyValue"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "duty_type" } }, [
-                            _vm._v("Duty Type")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "lastname" } }, [
+                        _vm._v("Salary Type")
+                      ]),
+                      _vm._v(" "),
+                      _c("Dropdown", {
+                        attrs: {
+                          options: _vm.SalaryType,
+                          optionLabel: "name",
+                          placeholder: "Select a Salary Type"
+                        }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
+                    { staticClass: "p-field p-col-12 p-md-6" },
                     [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("Dropdown", {
-                            attrs: {
-                              options: _vm.SalaryType,
-                              optionLabel: "name",
-                              id: "salary_type"
-                            },
-                            model: {
-                              value: _vm.salaryvalue,
-                              callback: function($$v) {
-                                _vm.salaryvalue = $$v
-                              },
-                              expression: "salaryvalue"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "salary_type" } }, [
-                            _vm._v("Salary Type")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
+                      _c("label", { attrs: { for: "firstname" } }, [
+                        _vm._v("Employee Id")
+                      ]),
+                      _vm._v(" "),
+                      _c("InputText", {
+                        attrs: { id: "firstname", type: "text" }
+                      })
+                    ],
+                    1
                   ),
                   _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
-                    [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("InputNumber", {
-                            attrs: {
-                              id: "salary",
-                              mode: "decimal",
-                              useGrouping: false
-                            },
-                            model: {
-                              value: _vm.salary,
-                              callback: function($$v) {
-                                _vm.salary = $$v
-                              },
-                              expression: "salary"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "salary" } }, [
-                            _vm._v("Salary")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
-                    [
-                      _c(
-                        "span",
-                        { staticClass: "p-float-label" },
-                        [
-                          _c("InputText", {
-                            attrs: { id: "employee_id", type: "text" }
-                          }),
-                          _vm._v(" "),
-                          _c("label", { attrs: { for: "employee_id" } }, [
-                            _vm._v("Employee Id")
-                          ])
-                        ],
-                        1
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2"
-                    },
-                    [
-                      _c("span", { staticClass: "p-float-label" }, [
-                        _c("input", {
-                          staticClass: "form-control-file",
-                          attrs: { type: "file", id: "photo" }
-                        }),
-                        _vm._v(" "),
-                        _c("label", { attrs: { for: "photo" } }, [
-                          _vm._v("Photo")
-                        ])
-                      ])
-                    ]
-                  ),
+                  _c("div", { staticClass: "p-field p-col-12 p-md-6" }, [
+                    _c("label", { attrs: { for: "lastname" } }, [
+                      _vm._v("Photo")
+                    ]),
+                    _vm._v(" "),
+                    _c("input", {
+                      staticClass: "form-control-file",
+                      attrs: { type: "file" }
+                    })
+                  ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "p-fluid p-formgrid p-grid" }, [
                     _c("div", { staticClass: "p-field p-col-12 p-md-12" }, [
@@ -4617,7 +4397,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "p-mr-2" }, [
-      _c("h3", [_vm._v("Create Employees")])
+      _c("h3", [_vm._v("Edit Employees List")])
     ])
   }
 ]

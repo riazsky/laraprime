@@ -6,62 +6,60 @@
         <h3>Department list</h3>
       </div>
       <div>
-        <Button>
+        <button class="btn btn-success">
           <router-link class="text-white" to="/create-department">Create Department</router-link>
-        </Button>
+        </button>
       </div>
     </div>
 
+    <DataTable
+      :value="departments"
+      :filters="filters"
+      :selection.sync="selectedDepartments"
+      data-key="departmentName"
+      :paginator="true"
+      :rows="5"
+      paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
+      :rowsPerPageOptions="[5,10,20,50]"
+      editMode="row"
+      :editingRows.sync="editingRows"
+      @row-edit-init="onRowEditInit"
+      @row-edit-cancel="onRowEditCancel"
+      class="p-mt-2 animate__animated animate__fadeIn p-datatable-sm"
+    >
+      <template #header>
+        <div class="p-d-flex p-jc-between">
+          <div class="p-mt-2">List of Departments</div>
 
-        <DataTable
-          :value="departments"
-          :filters="filters"
-          :selection.sync="selectedDepartments"
-          data-key="departmentName"
-          :paginator="true"
-          :rows="5"
-          paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
-          :rowsPerPageOptions="[5,10,20,50]"
-          editMode="row"
-          :editingRows.sync="editingRows"
-          @row-edit-init="onRowEditInit"
-          @row-edit-cancel="onRowEditCancel"
-          class="p-mt-2 animate__animated animate__fadeIn"
-        >
-          <template #header>
-            <div class="p-d-flex p-jc-between">
-              <div class="p-mt-2">List of Departments</div>
-
-              <div>
-                <i class="pi pi-search" style="margin: 4px 4px 0px 0px;"></i>
-                <InputText v-model="filters['global']" placeholder="Global Search" size="50" />
-              </div>
-            </div>
-          </template>
-          <Column selectionMode="multiple" headerStyle="width: 3em"></Column>
-          <Column field="departmentName" header="Department Name" sortable>
-            <template #editor="slotProps">
-              <InputText v-model="slotProps.data[slotProps.column.field]" />
-            </template>
-          </Column>
-          <Column field="departmentHead" header="Department Head" sortable>
-            <template #editor="slotProps">
-              <InputText v-model="slotProps.data[slotProps.column.field]" />
-            </template>
-          </Column>
-          <Column field="parentDepartment" header="Parent Department" sortable>
-            <template #editor="slotProps">
-              <InputText v-model="slotProps.data[slotProps.column.field]" />
-            </template>
-          </Column>
-          <Column field="status" header="Status" sortable>
-            <template #editor="slotProps">
-              <InputText v-model="slotProps.data[slotProps.column.field]" />
-            </template>
-          </Column>
-          <Column :rowEditor="true" headerStyle="width:7rem" bodyStyle="text-align:center"></Column>
-        </DataTable>
-
+          <div>
+            <i class="pi pi-search" style="margin: 4px 4px 0px 0px;"></i>
+            <InputText v-model="filters['global']" placeholder="Global Search" size="50" />
+          </div>
+        </div>
+      </template>
+      <Column selectionMode="multiple" headerStyle="width: 3em"></Column>
+      <Column field="departmentName" header="Department Name" sortable>
+        <template #editor="slotProps">
+          <InputText v-model="slotProps.data[slotProps.column.field]" />
+        </template>
+      </Column>
+      <Column field="departmentHead" header="Department Head" sortable>
+        <template #editor="slotProps">
+          <InputText v-model="slotProps.data[slotProps.column.field]" />
+        </template>
+      </Column>
+      <Column field="parentDepartment" header="Parent Department" sortable>
+        <template #editor="slotProps">
+          <InputText v-model="slotProps.data[slotProps.column.field]" />
+        </template>
+      </Column>
+      <Column field="status" header="Status" sortable>
+        <template #editor="slotProps">
+          <InputText v-model="slotProps.data[slotProps.column.field]" />
+        </template>
+      </Column>
+      <Column :rowEditor="true" headerStyle="width:7rem" bodyStyle="text-align:center"></Column>
+    </DataTable>
   </div>
 </template>
 <script>

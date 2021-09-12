@@ -261,6 +261,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "EmployeeLists",
   data: function data() {
@@ -463,6 +464,8 @@ var render = function() {
       _c(
         "DataTable",
         {
+          staticClass:
+            "p-mt-2 animate__animated animate__fadeIn p-datatable-sm",
           attrs: {
             value: _vm.TableData,
             scrollable: true,

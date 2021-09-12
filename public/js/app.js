@@ -3203,35 +3203,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "App",
   components: {},
+  watch: {
+    $route: {
+      immediate: true,
+      handler: function handler(to, from) {
+        document.title = to.meta.title || 'ERP';
+      }
+    }
+  },
   data: function data() {
     return {};
   }
@@ -3533,239 +3515,270 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 
-
-var Welcome = function Welcome() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_Welcome_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Welcome.vue */ "./resources/js/views/Welcome.vue"));
-};
-
-var CreateDesignation = function CreateDesignation() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_designations_CreateDesignation_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/designations/CreateDesignation.vue */ "./resources/js/views/HRM/designations/CreateDesignation.vue"));
-};
-
-var DesignationList = function DesignationList() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_designations_DesignationList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/designations/DesignationList.vue */ "./resources/js/views/HRM/designations/DesignationList.vue"));
-};
-
-var CreateDepartment = function CreateDepartment() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_departments_CreateDepartment_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/departments/CreateDepartment.vue */ "./resources/js/views/HRM/departments/CreateDepartment.vue"));
-};
-
-var DepartmentList = function DepartmentList() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_departments_DepartmentList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/departments/DepartmentList.vue */ "./resources/js/views/HRM/departments/DepartmentList.vue"));
-};
-
-var CreateContactPerson = function CreateContactPerson() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_ContactPerson_CreateContactPerson_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/ContactPerson/CreateContactPerson.vue */ "./resources/js/views/CRM/ContactPerson/CreateContactPerson.vue"));
-};
-
-var ContactPersonList = function ContactPersonList() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_ContactPerson_ContactPersonList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/ContactPerson/ContactPersonList.vue */ "./resources/js/views/CRM/ContactPerson/ContactPersonList.vue"));
-};
-
-var EditContactPerson = function EditContactPerson() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_ContactPerson_EditContactPerson_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/ContactPerson/EditContactPerson.vue */ "./resources/js/views/CRM/ContactPerson/EditContactPerson.vue"));
-};
-
-var CreateEmployees = function CreateEmployees() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_Employees_CreateEmployees_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/Employees/CreateEmployees.vue */ "./resources/js/views/HRM/Employees/CreateEmployees.vue"));
-};
-
-var EmployeeLists = function EmployeeLists() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_Employees_EmployeeLists_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/Employees/EmployeeLists.vue */ "./resources/js/views/HRM/Employees/EmployeeLists.vue"));
-};
-
-var EditEmployeeLists = function EditEmployeeLists() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_HRM_Employees_EditEmployeeLists_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/Employees/EditEmployeeLists.vue */ "./resources/js/views/HRM/Employees/EditEmployeeLists.vue"));
-};
-
-var CreateSalesReturn = function CreateSalesReturn() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_SalesReturn_CreateSalesReturn_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/CreateSalesReturn.vue */ "./resources/js/views/SalesReturn/CreateSalesReturn.vue"));
-};
-
-var ReturnSalesLists = function ReturnSalesLists() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_SalesReturn_ReturnSalesLists_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/ReturnSalesLists.vue */ "./resources/js/views/SalesReturn/ReturnSalesLists.vue"));
-};
-
-var ViewSale = function ViewSale() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_SalesReturn_ViewSale_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/ViewSale.vue */ "./resources/js/views/SalesReturn/ViewSale.vue"));
-};
-
-var CreateCustomer = function CreateCustomer() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_customers_CreateCustomer_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/customers/CreateCustomer.vue */ "./resources/js/views/CRM/customers/CreateCustomer.vue"));
-};
-
-var CustomerList = function CustomerList() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_customers_CustomerList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/customers/CustomerList.vue */ "./resources/js/views/CRM/customers/CustomerList.vue"));
-};
-
-var EditCustomer = function EditCustomer() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_customers_EditCustomer_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/customers/EditCustomer.vue */ "./resources/js/views/CRM/customers/EditCustomer.vue"));
-};
-
-var CreateCategory = function CreateCategory() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_Base_category_CreateCategory_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/category/CreateCategory.vue */ "./resources/js/views/Base/category/CreateCategory.vue"));
-};
-
-var ListCategory = function ListCategory() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_Base_category_ListCategory_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/category/ListCategory.vue */ "./resources/js/views/Base/category/ListCategory.vue"));
-};
-
-var CreateWarehouse = function CreateWarehouse() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_Base_warehouse_CreateWarehouse_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/warehouse/CreateWarehouse.vue */ "./resources/js/views/Base/warehouse/CreateWarehouse.vue"));
-};
-
-var ListWarehouse = function ListWarehouse() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_Base_warehouse_ListWarehouse_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/warehouse/ListWarehouse.vue */ "./resources/js/views/Base/warehouse/ListWarehouse.vue"));
-};
-
-var CreatePurchase = function CreatePurchase() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_Purchase_CreatePurchase_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Purchase/CreatePurchase.vue */ "./resources/js/views/Purchase/CreatePurchase.vue"));
-};
-
-var ListPurchase = function ListPurchase() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_Purchase_ListPurchase_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Purchase/ListPurchase.vue */ "./resources/js/views/Purchase/ListPurchase.vue"));
-};
-
-var CreateCustomerGroup = function CreateCustomerGroup() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_CustomerGroups_CreateCustomerGroup_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/CustomerGroups/CreateCustomerGroup.vue */ "./resources/js/views/CRM/CustomerGroups/CreateCustomerGroup.vue"));
-};
-
-var ListCustomerGroup = function ListCustomerGroup() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_CustomerGroups_ListCustomerGroup_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/CustomerGroups/ListCustomerGroup.vue */ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue"));
-};
-
-var CreateCompany = function CreateCompany() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_Company_CreateCompany_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Company/CreateCompany.vue */ "./resources/js/views/CRM/Company/CreateCompany.vue"));
-};
-
-var ListCompany = function ListCompany() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_Company_ListCompany_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Company/ListCompany.vue */ "./resources/js/views/CRM/Company/ListCompany.vue"));
-};
-
-var CreateBranch = function CreateBranch() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_Branch_CreateBranch_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Branch/CreateBranch.vue */ "./resources/js/views/CRM/Branch/CreateBranch.vue"));
-};
-
-var ListBranch = function ListBranch() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_CRM_Branch_ListBranch_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Branch/ListBranch.vue */ "./resources/js/views/CRM/Branch/ListBranch.vue"));
-};
-
 var routes = [{
   path: '/',
   name: 'Welcome',
-  component: Welcome
-}, {
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Welcome */ "Welcome").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Welcome.vue */ "./resources/js/views/Welcome.vue"));
+  },
+  meta: {
+    title: 'Dashboard - ERP'
+  }
+}, // customer group route
+{
   path: '/create-customer-group',
   name: 'CreateCustomerGroup',
-  component: CreateCustomerGroup
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateCustomerGroup */ "CreateCustomerGroup").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/CustomerGroups/CreateCustomerGroup.vue */ "./resources/js/views/CRM/CustomerGroups/CreateCustomerGroup.vue"));
+  },
+  meta: {
+    title: 'Create Customer'
+  }
 }, {
   path: '/list-customer-group',
   name: 'ListCustomerGroup',
-  component: ListCustomerGroup
-}, {
-  path: '/designation-list',
-  name: 'designationList',
-  component: DesignationList
-}, {
-  path: '/create-designation',
-  name: 'CreateDesignation',
-  component: CreateDesignation
-}, {
+  component: function component() {
+    return __webpack_require__.e(/*! import() | ListCustomerGroup */ "ListCustomerGroup").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/CustomerGroups/ListCustomerGroup.vue */ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue"));
+  },
+  meta: {
+    title: 'Customer Group List'
+  }
+}, //department route
+{
   path: '/create-department',
   name: 'CreateDepartment',
-  component: CreateDepartment
-}, {
-  path: '/CreateCustomer',
-  name: 'CreateCustomer',
-  component: CreateCustomer
-}, {
-  path: '/EditCustomer',
-  name: 'EditCustomer',
-  component: EditCustomer
-}, {
-  path: '/CustomerList',
-  name: 'CustomerList',
-  component: CustomerList
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateDepartment */ "CreateDepartment").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/departments/CreateDepartment.vue */ "./resources/js/views/HRM/departments/CreateDepartment.vue"));
+  },
+  meta: {
+    title: 'Create Department'
+  }
 }, {
   path: '/department-list',
   name: 'DepartmentList',
-  component: DepartmentList
+  component: function component() {
+    return __webpack_require__.e(/*! import() | DepartmentList */ "DepartmentList").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/departments/DepartmentList.vue */ "./resources/js/views/HRM/departments/DepartmentList.vue"));
+  },
+  meta: {
+    title: 'Department list'
+  }
+}, // desigantion route
+{
+  path: '/create-designation',
+  name: 'CreateDesignation',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateDesignation */ "CreateDesignation").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/designations/CreateDesignation.vue */ "./resources/js/views/HRM/designations/CreateDesignation.vue"));
+  },
+  meta: {
+    title: 'Create Designation'
+  }
 }, {
+  path: '/designation-list',
+  name: 'designationList',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | DesignationList */ "DesignationList").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/designations/DesignationList.vue */ "./resources/js/views/HRM/designations/DesignationList.vue"));
+  },
+  meta: {
+    title: 'Designation list'
+  }
+}, // customer route
+{
+  path: '/CreateCustomer',
+  name: 'CreateCustomer',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateCustomer */ "CreateCustomer").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/customers/CreateCustomer.vue */ "./resources/js/views/CRM/customers/CreateCustomer.vue"));
+  },
+  meta: {
+    title: 'Create Customer'
+  }
+}, {
+  path: '/EditCustomer',
+  name: 'EditCustomer',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | EditCustomer */ "EditCustomer").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/customers/EditCustomer.vue */ "./resources/js/views/CRM/customers/EditCustomer.vue"));
+  },
+  meta: {
+    title: 'Edit Customer'
+  }
+}, {
+  path: '/CustomerList',
+  name: 'CustomerList',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CustomerList */ "CustomerList").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/customers/CustomerList.vue */ "./resources/js/views/CRM/customers/CustomerList.vue"));
+  },
+  meta: {
+    title: 'Customer list'
+  }
+}, // employee route
+{
   path: '/CreateEmployees',
   name: 'CreateEmployees',
-  component: CreateEmployees
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateEmployees */ "CreateEmployees").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/Employees/CreateEmployees.vue */ "./resources/js/views/HRM/Employees/CreateEmployees.vue"));
+  },
+  meta: {
+    title: 'Create Employee'
+  }
 }, {
   path: '/EmployeeLists',
   name: 'EmployeeLists',
-  component: EmployeeLists
+  component: function component() {
+    return __webpack_require__.e(/*! import() | EmployeeLists */ "EmployeeLists").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/Employees/EmployeeLists.vue */ "./resources/js/views/HRM/Employees/EmployeeLists.vue"));
+  },
+  meta: {
+    title: 'Employee list'
+  }
 }, {
   path: '/EditEmployeeLists',
   name: 'EditEmployeeLists',
-  component: EditEmployeeLists
-}, {
+  component: function component() {
+    return __webpack_require__.e(/*! import() | EditEmployeeLists */ "EditEmployeeLists").then(__webpack_require__.bind(__webpack_require__, /*! ./views/HRM/Employees/EditEmployeeLists.vue */ "./resources/js/views/HRM/Employees/EditEmployeeLists.vue"));
+  },
+  meta: {
+    title: 'Edit Employee List'
+  }
+}, // sales return route
+{
   path: '/CreateSalesReturn',
   name: 'CreateSalesReturn',
-  component: CreateSalesReturn
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateSalesReturn */ "CreateSalesReturn").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/CreateSalesReturn.vue */ "./resources/js/views/SalesReturn/CreateSalesReturn.vue"));
+  },
+  meta: {
+    title: 'Create sales return product'
+  }
 }, {
-  path: '/ReturnSalesLists',
-  name: 'ReturnSalesLists',
-  component: ReturnSalesLists
-}, {
-  path: '/ViewSale',
-  name: 'ViewSale',
-  component: ViewSale
-}, {
+  path: '/sales-return-list',
+  name: 'SalesReturnList',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | SalesReturnList */ "SalesReturnList").then(__webpack_require__.bind(__webpack_require__, /*! ./views/SalesReturn/SalesReturnList.vue */ "./resources/js/views/SalesReturn/SalesReturnList.vue"));
+  },
+  meta: {
+    title: 'Sales return list'
+  }
+}, // contact person route
+{
   path: '/create-contact-person',
   name: 'CreateContactPerson',
-  component: CreateContactPerson
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateContactPerson */ "CreateContactPerson").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/ContactPerson/CreateContactPerson.vue */ "./resources/js/views/CRM/ContactPerson/CreateContactPerson.vue"));
+  },
+  meta: {
+    title: 'Create Contact Person'
+  }
 }, {
   path: '/list-contact-person',
   name: 'ContactPersonList',
-  component: ContactPersonList
+  component: function component() {
+    return __webpack_require__.e(/*! import() | ContactPersonList */ "ContactPersonList").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/ContactPerson/ContactPersonList.vue */ "./resources/js/views/CRM/ContactPerson/ContactPersonList.vue"));
+  },
+  meta: {
+    title: 'Contact Person List'
+  }
 }, {
   path: '/edit-contact-person',
   name: 'EditContactPerson',
-  component: EditContactPerson
-}, {
+  component: function component() {
+    return __webpack_require__.e(/*! import() | EditContactPerson */ "EditContactPerson").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/ContactPerson/EditContactPerson.vue */ "./resources/js/views/CRM/ContactPerson/EditContactPerson.vue"));
+  },
+  meta: {
+    title: 'Edit Contact Person List'
+  }
+}, // category route
+{
   path: '/create-category',
   name: 'CreateCategory',
-  component: CreateCategory
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateCategory */ "CreateCategory").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/category/CreateCategory.vue */ "./resources/js/views/Base/category/CreateCategory.vue"));
+  },
+  meta: {
+    title: 'Create Category'
+  }
 }, {
   path: '/list-category',
   name: 'ListCategory',
-  component: ListCategory
-}, {
+  component: function component() {
+    return __webpack_require__.e(/*! import() | ListCategory */ "ListCategory").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/category/ListCategory.vue */ "./resources/js/views/Base/category/ListCategory.vue"));
+  },
+  meta: {
+    title: 'List Category'
+  }
+}, // warehouse route
+{
   path: '/create-warehouse',
   name: 'CreateWarehouse',
-  component: CreateWarehouse
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateWarehouse */ "CreateWarehouse").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/warehouse/CreateWarehouse.vue */ "./resources/js/views/Base/warehouse/CreateWarehouse.vue"));
+  },
+  meta: {
+    title: 'Create Warehouse'
+  }
 }, {
   path: '/list-warehouse',
   name: 'ListWarehouse',
-  component: ListWarehouse
-}, {
+  component: function component() {
+    return __webpack_require__.e(/*! import() | ListWarehouse */ "ListWarehouse").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Base/warehouse/ListWarehouse.vue */ "./resources/js/views/Base/warehouse/ListWarehouse.vue"));
+  },
+  meta: {
+    title: 'List Warehouse'
+  }
+}, // company route
+{
   path: '/create-company',
   name: 'CreateCompany',
-  component: CreateCompany
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateCompany */ "CreateCompany").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Company/CreateCompany.vue */ "./resources/js/views/CRM/Company/CreateCompany.vue"));
+  },
+  meta: {
+    title: 'Create Company'
+  }
 }, {
   path: '/list-company',
   name: 'ListCompany',
-  component: ListCompany
-}, {
+  component: function component() {
+    return __webpack_require__.e(/*! import() | ListCompany */ "ListCompany").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Company/ListCompany.vue */ "./resources/js/views/CRM/Company/ListCompany.vue"));
+  },
+  meta: {
+    title: 'List Company'
+  }
+}, // branch route
+{
   path: '/create-branch',
   name: 'CreateBranch',
-  component: CreateBranch
-}, {
-  path: '/create-purchase',
-  name: 'CreatePurchase',
-  component: CreatePurchase
-}, {
-  path: '/list-purchase',
-  name: 'ListPurchase',
-  component: ListPurchase
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreateBranch */ "CreateBranch").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Branch/CreateBranch.vue */ "./resources/js/views/CRM/Branch/CreateBranch.vue"));
+  },
+  meta: {
+    title: 'Create Branch'
+  }
 }, {
   path: '/list-branch',
   name: 'ListBranch',
-  component: ListBranch
+  component: function component() {
+    return __webpack_require__.e(/*! import() | ListBranch */ "ListBranch").then(__webpack_require__.bind(__webpack_require__, /*! ./views/CRM/Branch/ListBranch.vue */ "./resources/js/views/CRM/Branch/ListBranch.vue"));
+  },
+  meta: {
+    title: 'List Branch'
+  }
+}, // purchase route
+{
+  path: '/create-purchase',
+  name: 'CreatePurchase',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | CreatePurchase */ "CreatePurchase").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Purchase/CreatePurchase.vue */ "./resources/js/views/Purchase/CreatePurchase.vue"));
+  },
+  meta: {
+    title: 'Create Purchase'
+  }
+}, {
+  path: '/list-purchase',
+  name: 'ListPurchase',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | ListPurchase */ "ListPurchase").then(__webpack_require__.bind(__webpack_require__, /*! ./views/Purchase/ListPurchase.vue */ "./resources/js/views/Purchase/ListPurchase.vue"));
+  },
+  meta: {
+    title: 'List Purchase'
+  }
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_0__.default({
   // mode: 'history',
@@ -58010,95 +58023,117 @@ var render = function() {
               _vm._m(1),
               _vm._v(" "),
               _c("ul", [
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c("router-link", { attrs: { to: "/" } }, [
-                        _vm._v("Home")
-                      ])
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: { to: "/", "active-class": "active", exact: "" }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Home")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/create-designation" } },
-                        [_vm._v("Create Designations")]
-                      )
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/create-designation",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Create Designations")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/designation-list" } },
-                        [_vm._v("Designation list")]
-                      )
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/designation-list",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Designation list")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/create-department" } },
-                        [_vm._v("Create Department")]
-                      )
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/create-department",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Create Department")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c("router-link", { attrs: { to: "/department-list" } }, [
-                        _vm._v("Department List")
-                      ])
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/department-list",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Department List")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c("router-link", { attrs: { to: "/sale" } }, [
-                        _vm._v("Sale")
-                      ])
-                    ],
-                    1
-                  )
-                ])
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      { attrs: { to: "/sale", "active-class": "active" } },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Sale")
+                      ]
+                    )
+                  ],
+                  1
+                )
               ])
             ]),
             _vm._v(" "),
@@ -58108,53 +58143,65 @@ var render = function() {
               _vm._m(3),
               _vm._v(" "),
               _c("ul", [
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/create-contact-person" } },
-                        [_vm._v("Create Contact Persons")]
-                      )
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/create-contact-person",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Create Contact Persons")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/list-contact-person" } },
-                        [_vm._v("Contact Person Lists")]
-                      )
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/list-contact-person",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Contact Person Lists")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/edit-contact-person" } },
-                        [_vm._v("Edit Person Lists")]
-                      )
-                    ],
-                    1
-                  )
-                ])
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/edit-contact-person",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Edit Person Lists")
+                      ]
+                    )
+                  ],
+                  1
+                )
               ])
             ]),
             _vm._v(" "),
@@ -58162,49 +58209,65 @@ var render = function() {
               _vm._m(4),
               _vm._v(" "),
               _c("ul", [
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c("router-link", { attrs: { to: "/CreateEmployees" } }, [
-                        _vm._v("Create Employees")
-                      ])
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/CreateEmployees",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Create Employees")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c("router-link", { attrs: { to: "/EmployeeLists" } }, [
-                        _vm._v("Employee Lists")
-                      ])
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/EmployeeLists",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Employee Lists")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/EditEmployeeLists" } },
-                        [_vm._v("Edit Employee Lists")]
-                      )
-                    ],
-                    1
-                  )
-                ])
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/EditEmployeeLists",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Edit Employee Lists")
+                      ]
+                    )
+                  ],
+                  1
+                )
               ])
             ]),
             _vm._v(" "),
@@ -58212,37 +58275,45 @@ var render = function() {
               _vm._m(5),
               _vm._v(" "),
               _c("ul", [
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/CreateSalesReturn" } },
-                        [_vm._v("Create Sales Return")]
-                      )
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/CreateSalesReturn",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Create Sales Return")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/ReturnSalesLists" } },
-                        [_vm._v("Return Sales Lists")]
-                      )
-                    ],
-                    1
-                  )
-                ])
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/ReturnSalesLists",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Return Sales Lists")
+                      ]
+                    )
+                  ],
+                  1
+                )
               ])
             ]),
             _vm._v(" "),
@@ -58250,47 +58321,62 @@ var render = function() {
               _vm._m(6),
               _vm._v(" "),
               _c("ul", [
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c("router-link", { attrs: { to: "/CreateCustomer" } }, [
-                        _vm._v("Create Customer")
-                      ])
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/CreateCustomer",
+                          "active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Create Customer")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c("router-link", { attrs: { to: "/EditCustomer" } }, [
-                        _vm._v("Edit Customer")
-                      ])
-                    ],
-                    1
-                  )
-                ]),
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: "/EditCustomer",
+                          "leave-active-class": "active"
+                        }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Edit Customer")
+                      ]
+                    )
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _vm._v(" "),
-                      _c("router-link", { attrs: { to: "/CustomerList" } }, [
-                        _vm._v("Customer List")
-                      ])
-                    ],
-                    1
-                  )
-                ])
+                _c(
+                  "li",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: { to: "/CustomerList", "active-class": "active" }
+                      },
+                      [
+                        _c("i", { staticClass: "pi pi-arrow-right" }),
+                        _vm._v(" Customer List")
+                      ]
+                    )
+                  ],
+                  1
+                )
               ])
             ]),
             _vm._v(" "),
@@ -76223,7 +76309,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_HRM_designations_CreateDesignation_vue":1,"resources_js_views_HRM_designations_DesignationList_vue":1,"resources_js_views_HRM_departments_CreateDepartment_vue":1,"resources_js_views_HRM_departments_DepartmentList_vue":1,"resources_js_views_CRM_ContactPerson_CreateContactPerson_vue":1,"resources_js_views_CRM_ContactPerson_ContactPersonList_vue":1,"resources_js_views_CRM_ContactPerson_EditContactPerson_vue":1,"resources_js_views_HRM_Employees_CreateEmployees_vue":1,"resources_js_views_HRM_Employees_EmployeeLists_vue":1,"resources_js_views_HRM_Employees_EditEmployeeLists_vue":1,"resources_js_views_SalesReturn_CreateSalesReturn_vue":1,"resources_js_views_SalesReturn_ReturnSalesLists_vue":1,"resources_js_views_SalesReturn_ViewSale_vue":1,"resources_js_views_CRM_customers_CreateCustomer_vue":1,"resources_js_views_CRM_customers_CustomerList_vue":1,"resources_js_views_CRM_customers_EditCustomer_vue":1,"resources_js_views_Base_category_CreateCategory_vue":1,"resources_js_views_Base_category_ListCategory_vue":1,"resources_js_views_Base_warehouse_CreateWarehouse_vue":1,"resources_js_views_Base_warehouse_ListWarehouse_vue":1,"resources_js_views_Purchase_CreatePurchase_vue":1,"resources_js_views_Purchase_ListPurchase_vue":1,"resources_js_views_CRM_CustomerGroups_CreateCustomerGroup_vue":1,"resources_js_views_CRM_CustomerGroups_ListCustomerGroup_vue":1,"resources_js_views_CRM_Company_CreateCompany_vue":1,"resources_js_views_CRM_Company_ListCompany_vue":1,"resources_js_views_CRM_Branch_CreateBranch_vue":1,"resources_js_views_CRM_Branch_ListBranch_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"Welcome":1,"CreateCustomerGroup":1,"ListCustomerGroup":1,"CreateDepartment":1,"DepartmentList":1,"CreateDesignation":1,"DesignationList":1,"CreateCustomer":1,"EditCustomer":1,"CustomerList":1,"CreateEmployees":1,"EmployeeLists":1,"EditEmployeeLists":1,"CreateSalesReturn":1,"SalesReturnList":1,"CreateContactPerson":1,"ContactPersonList":1,"EditContactPerson":1,"CreateCategory":1,"ListCategory":1,"CreateWarehouse":1,"ListWarehouse":1,"CreateCompany":1,"ListCompany":1,"CreateBranch":1,"ListBranch":1,"CreatePurchase":1,"ListPurchase":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

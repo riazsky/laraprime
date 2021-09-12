@@ -1,184 +1,199 @@
 import VueRouter from 'vue-router';
-const Welcome = () => import('./views/Welcome.vue');
-const CreateDesignation = () => import('./views/HRM/designations/CreateDesignation.vue');
-const DesignationList = () => import('./views/HRM/designations/DesignationList.vue');
-const CreateDepartment = () => import('./views/HRM/departments/CreateDepartment.vue');
-const DepartmentList = () => import('./views/HRM/departments/DepartmentList.vue');
-const CreateContactPerson = () => import('./views/CRM/ContactPerson/CreateContactPerson.vue');
-const ContactPersonList = () => import('./views/CRM/ContactPerson/ContactPersonList.vue');
-const EditContactPerson = () => import('./views/CRM/ContactPerson/EditContactPerson.vue');
-const CreateEmployees = () => import('./views/HRM/Employees/CreateEmployees.vue');
-const EmployeeLists = () => import('./views/HRM/Employees/EmployeeLists.vue');
-const EditEmployeeLists = () => import('./views/HRM/Employees/EditEmployeeLists.vue');
-const CreateSalesReturn = () => import('./views/SalesReturn/CreateSalesReturn.vue');
-const ReturnSalesLists = () => import('./views/SalesReturn/ReturnSalesLists.vue');
-const ViewSale = () => import('./views/SalesReturn/ViewSale.vue');
-const CreateCustomer = () => import('./views/CRM/customers/CreateCustomer.vue');
-const CustomerList = () => import('./views/CRM/customers/CustomerList.vue');
-const EditCustomer = () => import('./views/CRM/customers/EditCustomer.vue');
-const CreateCategory = () => import('./views/Base/category/CreateCategory.vue');
-const ListCategory = () => import('./views/Base/category/ListCategory.vue');
-const CreateWarehouse = () => import('./views/Base/warehouse/CreateWarehouse.vue');
-const ListWarehouse = () => import('./views/Base/warehouse/ListWarehouse.vue');
-const CreatePurchase = () => import('./views/Purchase/CreatePurchase.vue');
-const ListPurchase = () => import('./views/Purchase/ListPurchase.vue');
-
-const CreateCustomerGroup = () => import('./views/CRM/CustomerGroups/CreateCustomerGroup.vue');
-const ListCustomerGroup = () => import('./views/CRM/CustomerGroups/ListCustomerGroup.vue');
-const CreateCompany = () => import('./views/CRM/Company/CreateCompany.vue');
-const ListCompany = () => import('./views/CRM/Company/ListCompany.vue');
-const CreateBranch = () => import('./views/CRM/Branch/CreateBranch.vue');
-const ListBranch = () => import('./views/CRM/Branch/ListBranch.vue');
-
-
-
 const routes = [
     {
         path: '/',
         name: 'Welcome',
-        component: Welcome
+        component: () => import(/* webpackChunkName: "Welcome"*/'./views/Welcome.vue'),
+        meta: { title: 'Dashboard - ERP' }
     },
+
+    // customer group route
 
     {
         path: '/create-customer-group',
         name: 'CreateCustomerGroup',
-        component: CreateCustomerGroup
+        component: () => import(/* webpackChunkName: "CreateCustomerGroup"*/'./views/CRM/CustomerGroups/CreateCustomerGroup.vue'),
+        meta: { title: 'Create Customer' }
     },
     {
         path: '/list-customer-group',
         name: 'ListCustomerGroup',
-        component: ListCustomerGroup
+        component: () => import(/* webpackChunkName: "ListCustomerGroup"*/'./views/CRM/CustomerGroups/ListCustomerGroup.vue'),
+        meta: { title: 'Customer Group List' }
     },
-    {
-        path: '/designation-list',
-        name: 'designationList',
-        component: DesignationList
-    },
-    {
-        path: '/create-designation',
-        name: 'CreateDesignation',
-        component: CreateDesignation
-    },
+    //department route
     {
         path: '/create-department',
         name: 'CreateDepartment',
-        component: CreateDepartment
-    },
-    {
-        path: '/CreateCustomer',
-        name: 'CreateCustomer',
-        component: CreateCustomer
-    },
-    {
-        path: '/EditCustomer',
-        name: 'EditCustomer',
-        component: EditCustomer
-    },
-    {
-        path: '/CustomerList',
-        name: 'CustomerList',
-        component: CustomerList
+        component: () => import(/* webpackChunkName: "CreateDepartment"*/'./views/HRM/departments/CreateDepartment.vue'),
+        meta: { title: 'Create Department' }
     },
     {
         path: '/department-list',
         name: 'DepartmentList',
-        component: DepartmentList
+        component: () => import(/* webpackChunkName: "DepartmentList"*/'./views/HRM/departments/DepartmentList.vue'),
+        meta: { title: 'Department list' }
     },
+    // desigantion route
+    {
+        path: '/create-designation',
+        name: 'CreateDesignation',
+        component: () => import(/* webpackChunkName: "CreateDesignation"*/'./views/HRM/designations/CreateDesignation.vue'),
+        meta: { title: 'Create Designation' }
+    },
+
+    {
+        path: '/designation-list',
+        name: 'designationList',
+        component: () => import(/* webpackChunkName: "DesignationList"*/'./views/HRM/designations/DesignationList.vue'),
+        meta: { title: 'Designation list' }
+    },
+
+    // customer route
+    {
+        path: '/CreateCustomer',
+        name: 'CreateCustomer',
+        component: () => import(/* webpackChunkName: "CreateCustomer"*/'./views/CRM/customers/CreateCustomer.vue'),
+        meta: { title: 'Create Customer' }
+    },
+    {
+        path: '/EditCustomer',
+        name: 'EditCustomer',
+        component: () => import(/* webpackChunkName: "EditCustomer"*/'./views/CRM/customers/EditCustomer.vue'),
+        meta: { title: 'Edit Customer' }
+    },
+    {
+        path: '/CustomerList',
+        name: 'CustomerList',
+        component: () => import(/* webpackChunkName: "CustomerList"*/'./views/CRM/customers/CustomerList.vue'),
+        meta: { title: 'Customer list' }
+    },
+
+    // employee route
+
     {
         path: '/CreateEmployees',
         name: 'CreateEmployees',
-        component: CreateEmployees
+        component: () => import(/* webpackChunkName: "CreateEmployees"*/'./views/HRM/Employees/CreateEmployees.vue'),
+        meta: { title: 'Create Employee' }
     },
     {
         path: '/EmployeeLists',
         name: 'EmployeeLists',
-        component: EmployeeLists
+        component: () => import(/* webpackChunkName: "EmployeeLists"*/'./views/HRM/Employees/EmployeeLists.vue'),
+        meta: { title: 'Employee list' }
     },
     {
         path: '/EditEmployeeLists',
         name: 'EditEmployeeLists',
-        component: EditEmployeeLists
+        component: () => import(/* webpackChunkName: "EditEmployeeLists"*/'./views/HRM/Employees/EditEmployeeLists.vue'),
+        meta: { title: 'Edit Employee List' }
     },
+
+    // sales return route
     {
         path: '/CreateSalesReturn',
         name: 'CreateSalesReturn',
-        component: CreateSalesReturn
+        component: () => import(/* webpackChunkName: "CreateSalesReturn"*/'./views/SalesReturn/CreateSalesReturn.vue'),
+        meta: { title: 'Create sales return product' }
     },
     {
-        path: '/ReturnSalesLists',
-        name: 'ReturnSalesLists',
-        component: ReturnSalesLists
+        path: '/sales-return-list',
+        name: 'SalesReturnList',
+        component: () => import(/* webpackChunkName: "SalesReturnList"*/'./views/SalesReturn/SalesReturnList.vue'),
+        meta: { title: 'Sales return list' }
     },
-    {
-        path: '/ViewSale',
-        name: 'ViewSale',
-        component: ViewSale
-    },
+
+    // contact person route
     {
         path: '/create-contact-person',
         name: 'CreateContactPerson',
-        component: CreateContactPerson
+        component: () => import(/* webpackChunkName: "CreateContactPerson"*/'./views/CRM/ContactPerson/CreateContactPerson.vue'),
+        meta: { title: 'Create Contact Person' }
     },
     {
         path: '/list-contact-person',
         name: 'ContactPersonList',
-        component: ContactPersonList
+        component: () => import(/* webpackChunkName: "ContactPersonList"*/'./views/CRM/ContactPerson/ContactPersonList.vue'),
+        meta: { title: 'Contact Person List' }
     },
     {
         path: '/edit-contact-person',
         name: 'EditContactPerson',
-        component: EditContactPerson
+        component: () => import(/* webpackChunkName: "EditContactPerson"*/'./views/CRM/ContactPerson/EditContactPerson.vue'),
+        meta: { title: 'Edit Contact Person List' }
     },
+
+    // category route
     {
         path: '/create-category',
         name: 'CreateCategory',
-        component: CreateCategory
+        component: () => import(/* webpackChunkName: "CreateCategory"*/'./views/Base/category/CreateCategory.vue'),
+        meta: { title: 'Create Category' }
     },
     {
         path: '/list-category',
         name: 'ListCategory',
-        component: ListCategory
+        component: () => import(/* webpackChunkName: "ListCategory"*/'./views/Base/category/ListCategory.vue'),
+        meta: { title: 'List Category' }
     },
+
+    // warehouse route
     {
         path: '/create-warehouse',
         name: 'CreateWarehouse',
-        component: CreateWarehouse
+        component: () => import(/* webpackChunkName: "CreateWarehouse"*/'./views/Base/warehouse/CreateWarehouse.vue'),
+        meta: { title: 'Create Warehouse' }
     },
     {
         path: '/list-warehouse',
         name: 'ListWarehouse',
-        component: ListWarehouse
+        component: () => import(/* webpackChunkName: "ListWarehouse"*/'./views/Base/warehouse/ListWarehouse.vue'),
+        meta: { title: 'List Warehouse' }
     },
+
+    // company route
     {
         path: '/create-company',
         name: 'CreateCompany',
-        component: CreateCompany
+        component: () => import(/* webpackChunkName: "CreateCompany"*/'./views/CRM/Company/CreateCompany.vue'),
+        meta: { title: 'Create Company' }
     },
     {
         path: '/list-company',
         name: 'ListCompany',
-        component: ListCompany
+        component: () => import(/* webpackChunkName: "ListCompany"*/'./views/CRM/Company/ListCompany.vue'),
+        meta: { title: 'List Company' }
     },
+
+    // branch route
     {
         path: '/create-branch',
         name: 'CreateBranch',
-        component: CreateBranch
-    },
-    {
-        path: '/create-purchase',
-        name: 'CreatePurchase',
-        component: CreatePurchase
-    },
-    {
-        path: '/list-purchase',
-        name: 'ListPurchase',
-        component: ListPurchase
+        component: () => import(/* webpackChunkName: "CreateBranch"*/'./views/CRM/Branch/CreateBranch.vue'),
+        meta: { title: 'Create Branch' }
     },
     {
         path: '/list-branch',
         name: 'ListBranch',
-        component: ListBranch
-    }
+        component: () => import(/* webpackChunkName: "ListBranch"*/'./views/CRM/Branch/ListBranch.vue'),
+        meta: { title: 'List Branch' }
+    },
+
+    // purchase route
+    {
+        path: '/create-purchase',
+        name: 'CreatePurchase',
+        component: () => import(/* webpackChunkName: "CreatePurchase"*/'./views/Purchase/CreatePurchase.vue'),
+        meta: { title: 'Create Purchase' }
+    },
+    {
+        path: '/list-purchase',
+        name: 'ListPurchase',
+        component: () => import(/* webpackChunkName: "ListPurchase"*/'./views/Purchase/ListPurchase.vue'),
+        meta: { title: 'List Purchase' }
+    },
+
 
 
 ]

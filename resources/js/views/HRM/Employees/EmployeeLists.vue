@@ -24,6 +24,7 @@
       :selection.sync="selectedProducts3"
       editMode="row"
       dataKey="id"
+      class="p-mt-2 animate__animated animate__fadeIn p-datatable-sm"
       :editingRows.sync="editingRows"
       @row-edit-init="onRowEditInit"
       @row-edit-cancel="onRowEditCancel"

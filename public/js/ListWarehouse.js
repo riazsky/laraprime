@@ -1,10 +1,10 @@
 "use strict";
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_views_CRM_CustomerGroups_ListCustomerGroup_vue"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["ListWarehouse"],{
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -68,89 +68,109 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "ListCustomerGroup",
+  name: "ListWarehouse",
   data: function data() {
     return {
-      ListCustomerGroup: [{
-        'id': '1',
-        'title': 'kjsdhflsdhf',
-        'desp': 'lkhlkjhlhlkggrt',
-        'status': 'ghdhdfghfhf'
+      ListWarehouse: [{
+        id: "1",
+        title: "kjsdhflsdhf",
+        location: "Dhaka-1211",
+        desp: "lkhlkjhlhlkggrt",
+        status: "ghdhdfghfhf"
       }, {
-        'id': '2',
-        'title': 'ghjghjghj',
-        'desp': 'lkhlkjhlhlkggrt',
-        'status': 'ghdhdfghfhf'
+        id: "2",
+        title: "ghjghjghj",
+        location: "Dhaka-1211",
+        desp: "lkhlkjhlhlkggrt",
+        status: "ghdhdfghfhf"
       }, {
-        'id': '3',
-        'title': 'hjfghjhjjhkhj',
-        'desp': 'lkhlkjhlhlkggrt',
-        'status': 'ghdhdfghfhf'
+        id: "3",
+        title: "hjfghjhjjhkhj",
+        location: "Dhaka-1211",
+        desp: "lkhlkjhlhlkggrt",
+        status: "ghdhdfghfhf"
       }, {
-        'id': '4',
-        'title': 'hjfghjghjuk',
-        'desp': 'lkhlkjhlhlkggrt',
-        'status': 'ghdhdfghfhf'
+        id: "4",
+        title: "hjfghjghjuk",
+        location: "Dhaka-1211",
+        desp: "lkhlkjhlhlkggrt",
+        status: "ghdhdfghfhf"
       }, {
-        'id': '5',
-        'title': 'uuikmhjd',
-        'desp': 'lkhlkjhlhlkggrt',
-        'status': 'ghdhdfghfhf'
+        id: "5",
+        title: "uuikmhjd",
+        location: "Dhaka-1211",
+        desp: "lkhlkjhlhlkggrt",
+        status: "ghdhdfghfhf"
       }, {
-        'id': '6',
-        'title': 'uyikyuye',
-        'desp': 'lkhlkjhlhlkggrt',
-        'status': 'ghdhdfghfhf'
+        id: "6",
+        title: "uyikyuye",
+        location: "Dhaka-1211",
+        desp: "lkhlkjhlhlkggrt",
+        status: "ghdhdfghfhf"
       }, {
-        'id': '7',
-        'title': 'yjyuioyukryu',
-        'desp': 'lkhlkjhlhlkggrt',
-        'status': 'ghdhdfghfhf'
+        id: "7",
+        title: "yjyuioyukryu",
+        location: "Dhaka-1211",
+        desp: "lkhlkjhlhlkggrt",
+        status: "ghdhdfghfhf"
       }],
       filters: {},
       selectedTitle: null,
       editingRows: [],
       home: {
-        icon: 'pi pi-home',
-        to: '/'
+        icon: "pi pi-home",
+        to: "/"
       },
       items: [{
-        label: 'CRM'
+        label: "Base"
       }, {
-        label: 'Customer Group'
+        label: "Warehouse"
       }, {
-        label: 'Create Customer Group',
-        to: "/create-customer-group"
+        label: "Create Warehouse",
+        to: "/create-warehouse"
       }, {
-        label: 'List Customer Group'
+        label: "List Warehouse"
       }]
     };
   },
   methods: {
     onRowEditInit: function onRowEditInit(event) {
-      this.originalRows[event.index] = _objectSpread({}, this.ListCustomerGroup[event.index]);
+      this.originalRows[event.index] = _objectSpread({}, this.ListWarehouse[event.index]);
     },
     onRowEditCancel: function onRowEditCancel(event) {
-      Vue.set(this.ListCustomerGroup, event.index, this.originalRows[event.index]);
+      Vue.set(this.ListWarehouse, event.index, this.originalRows[event.index]);
     }
   }
 });
 
 /***/ }),
 
-/***/ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue":
-/*!*********************************************************************!*\
-  !*** ./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue ***!
-  \*********************************************************************/
+/***/ "./resources/js/views/Base/warehouse/ListWarehouse.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/views/Base/warehouse/ListWarehouse.vue ***!
+  \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ListCustomerGroup.vue?vue&type=template&id=33e269f6& */ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6&");
-/* harmony import */ var _ListCustomerGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ListCustomerGroup.vue?vue&type=script&lang=js& */ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js&");
+/* harmony import */ var _ListWarehouse_vue_vue_type_template_id_3d8eed3a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ListWarehouse.vue?vue&type=template&id=3d8eed3a& */ "./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=template&id=3d8eed3a&");
+/* harmony import */ var _ListWarehouse_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ListWarehouse.vue?vue&type=script&lang=js& */ "./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -160,9 +180,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _ListCustomerGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__.render,
-  _ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _ListWarehouse_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _ListWarehouse_vue_vue_type_template_id_3d8eed3a___WEBPACK_IMPORTED_MODULE_0__.render,
+  _ListWarehouse_vue_vue_type_template_id_3d8eed3a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -172,46 +192,46 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue"
+component.options.__file = "resources/js/views/Base/warehouse/ListWarehouse.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************!*\
-  !*** ./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************/
+/***/ "./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCustomerGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ListCustomerGroup.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCustomerGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListWarehouse_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ListWarehouse.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListWarehouse_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
-/***/ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6&":
-/*!****************************************************************************************************!*\
-  !*** ./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6& ***!
-  \****************************************************************************************************/
+/***/ "./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=template&id=3d8eed3a&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=template&id=3d8eed3a& ***!
+  \********************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListWarehouse_vue_vue_type_template_id_3d8eed3a___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListWarehouse_vue_vue_type_template_id_3d8eed3a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ListCustomerGroup.vue?vue&type=template&id=33e269f6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListWarehouse_vue_vue_type_template_id_3d8eed3a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ListWarehouse.vue?vue&type=template&id=3d8eed3a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=template&id=3d8eed3a&");
 
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6&":
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6& ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=template&id=3d8eed3a&":
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/warehouse/ListWarehouse.vue?vue&type=template&id=3d8eed3a& ***!
+  \***********************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -237,7 +257,7 @@ var render = function() {
         "div",
         { staticClass: "p-d-flex p-jc-between p-mb-4" },
         [
-          _c("h2", [_vm._v("List Customer Group")]),
+          _c("h2", [_vm._v("List Warehouse")]),
           _vm._v(" "),
           _c(
             "Button",
@@ -246,9 +266,9 @@ var render = function() {
                 "router-link",
                 {
                   staticClass: "text-white",
-                  attrs: { to: "/create-customer-group" }
+                  attrs: { to: "/create-warehouse" }
                 },
-                [_vm._v("Create Customer Group")]
+                [_vm._v("Create Warehouse")]
               )
             ],
             1
@@ -263,7 +283,7 @@ var render = function() {
           staticClass:
             "p-mt-2 animate__animated animate__fadeIn p-datatable-sm",
           attrs: {
-            value: _vm.ListCustomerGroup,
+            value: _vm.ListWarehouse,
             paginator: true,
             rows: 10,
             paginatorTemplate:
@@ -272,7 +292,7 @@ var render = function() {
             currentPageReportTemplate:
               "Showing {first} to {last} of {totalRecords}",
             filters: _vm.filters,
-            dataKey: "id",
+            "data-key": "id",
             selection: _vm.selectedTitle,
             editingRows: _vm.editingRows,
             editMode: "row"
@@ -298,7 +318,7 @@ var render = function() {
                   _c("div", { staticClass: "table-header p-d-flex p-jc-end" }, [
                     _c(
                       "span",
-                      { staticClass: "p-input-icon-left " },
+                      { staticClass: "p-input-icon-left" },
                       [
                         _c("i", { staticClass: "pi pi-search" }),
                         _vm._v(" "),
@@ -337,6 +357,28 @@ var render = function() {
                   return [
                     _c("InputText", {
                       attrs: { autofocus: "" },
+                      model: {
+                        value: slotProps.data[slotProps.column.field],
+                        callback: function($$v) {
+                          _vm.$set(slotProps.data, slotProps.column.field, $$v)
+                        },
+                        expression: "slotProps.data[slotProps.column.field]"
+                      }
+                    })
+                  ]
+                }
+              }
+            ])
+          }),
+          _vm._v(" "),
+          _c("Column", {
+            attrs: { field: "location", header: "Location" },
+            scopedSlots: _vm._u([
+              {
+                key: "editor",
+                fn: function(slotProps) {
+                  return [
+                    _c("InputText", {
                       model: {
                         value: slotProps.data[slotProps.column.field],
                         callback: function($$v) {

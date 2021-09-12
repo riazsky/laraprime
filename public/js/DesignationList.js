@@ -1,10 +1,10 @@
 "use strict";
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_views_HRM_departments_DepartmentList_vue"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["DesignationList"],{
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/designations/DesignationList.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/designations/DesignationList.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -81,48 +81,43 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "DepartmentList",
+  name: "designationList",
   data: function data() {
     return {
-      departments: [{
-        departmentName: "Name1",
-        departmentHead: "Employe designation List",
-        parentDepartment: "Parent Departmant",
+      designations: [{
+        name: "Name1",
+        description: "Employe designation List",
         status: "Active"
       }, {
-        departmentName: "Name2",
-        departmentHead: "Employe designation List",
-        parentDepartment: "Parent Departmant",
+        name: "Name2",
+        description: "Employe designation List",
         status: "Active"
       }, {
-        departmentName: "Name3",
-        departmentHead: "Employe designation List",
-        parentDepartment: "Parent Departmant",
+        name: "Name3",
+        description: "Employe designation List",
         status: "Active"
       }, {
-        departmentName: "Name4",
-        departmentHead: "Employe designation List",
-        parentDepartment: "Parent Departmant",
+        name: "Name4",
+        description: "Employe designation List",
         status: "Active"
       }, {
-        departmentName: "Name5",
-        departmentHead: "Employe designation List",
-        parentDepartment: "Parent Departmant",
+        name: "Name5",
+        description: "Employe designation List",
         status: "Active"
       }, {
-        departmentName: "Name6",
-        departmentHead: "Employe designation List",
-        parentDepartment: "Parent Departmant",
+        name: "Name6",
+        description: "Employe designation List",
         status: "Active"
       }, {
-        departmentName: "Name7",
-        departmentHead: "Employe designation List",
-        parentDepartment: "Parent Departmant",
+        name: "Name7",
+        description: "Employe designation List",
         status: "Active"
       }],
       filters: {},
-      selectedDepartments: null,
+      selectedDesignation: null,
       editingRows: [],
       home: {
         icon: "pi pi-home",
@@ -131,13 +126,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       items: [{
         label: "HRM"
       }, {
-        label: "Department"
+        label: "Designation"
       }, {
-        label: "Create Department ",
-        to: "/create-department"
+        label: "Create Designation",
+        to: "/create-designation"
       }, {
-        label: "Department List",
-        to: "/department-list"
+        label: "Designation List"
       }]
     };
   },
@@ -153,18 +147,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./resources/js/views/HRM/departments/DepartmentList.vue":
-/*!***************************************************************!*\
-  !*** ./resources/js/views/HRM/departments/DepartmentList.vue ***!
-  \***************************************************************/
+/***/ "./resources/js/views/HRM/designations/DesignationList.vue":
+/*!*****************************************************************!*\
+  !*** ./resources/js/views/HRM/designations/DesignationList.vue ***!
+  \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _DepartmentList_vue_vue_type_template_id_f13c872e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DepartmentList.vue?vue&type=template&id=f13c872e& */ "./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=template&id=f13c872e&");
-/* harmony import */ var _DepartmentList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DepartmentList.vue?vue&type=script&lang=js& */ "./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=script&lang=js&");
+/* harmony import */ var _DesignationList_vue_vue_type_template_id_b9980326___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DesignationList.vue?vue&type=template&id=b9980326& */ "./resources/js/views/HRM/designations/DesignationList.vue?vue&type=template&id=b9980326&");
+/* harmony import */ var _DesignationList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DesignationList.vue?vue&type=script&lang=js& */ "./resources/js/views/HRM/designations/DesignationList.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -174,9 +168,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _DepartmentList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _DepartmentList_vue_vue_type_template_id_f13c872e___WEBPACK_IMPORTED_MODULE_0__.render,
-  _DepartmentList_vue_vue_type_template_id_f13c872e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _DesignationList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _DesignationList_vue_vue_type_template_id_b9980326___WEBPACK_IMPORTED_MODULE_0__.render,
+  _DesignationList_vue_vue_type_template_id_b9980326___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -186,46 +180,46 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/views/HRM/departments/DepartmentList.vue"
+component.options.__file = "resources/js/views/HRM/designations/DesignationList.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************!*\
-  !*** ./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************/
+/***/ "./resources/js/views/HRM/designations/DesignationList.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/views/HRM/designations/DesignationList.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DepartmentList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./DepartmentList.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DepartmentList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignationList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./DesignationList.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/designations/DesignationList.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignationList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
-/***/ "./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=template&id=f13c872e&":
-/*!**********************************************************************************************!*\
-  !*** ./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=template&id=f13c872e& ***!
-  \**********************************************************************************************/
+/***/ "./resources/js/views/HRM/designations/DesignationList.vue?vue&type=template&id=b9980326&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/views/HRM/designations/DesignationList.vue?vue&type=template&id=b9980326& ***!
+  \************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DepartmentList_vue_vue_type_template_id_f13c872e___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DepartmentList_vue_vue_type_template_id_f13c872e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignationList_vue_vue_type_template_id_b9980326___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignationList_vue_vue_type_template_id_b9980326___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DepartmentList_vue_vue_type_template_id_f13c872e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./DepartmentList.vue?vue&type=template&id=f13c872e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=template&id=f13c872e&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DesignationList_vue_vue_type_template_id_b9980326___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./DesignationList.vue?vue&type=template&id=b9980326& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/designations/DesignationList.vue?vue&type=template&id=b9980326&");
 
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=template&id=f13c872e&":
-/*!*************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/departments/DepartmentList.vue?vue&type=template&id=f13c872e& ***!
-  \*************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/designations/DesignationList.vue?vue&type=template&id=b9980326&":
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/HRM/designations/DesignationList.vue?vue&type=template&id=b9980326& ***!
+  \***************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -240,31 +234,31 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("Breadcrumb", {
-        staticClass: "animate__animated animate__fadeIn",
-        attrs: { home: _vm.home, model: _vm.items }
-      }),
+      _c("Breadcrumb", { attrs: { home: _vm.home, model: _vm.items } }),
       _vm._v(" "),
       _c("div", { staticClass: "p-d-flex p-jc-between p-mt-2" }, [
         _vm._m(0),
         _vm._v(" "),
-        _c("div", [
-          _c(
-            "button",
-            { staticClass: "btn btn-success" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "text-white",
-                  attrs: { to: "/create-department" }
-                },
-                [_vm._v("Create Department")]
-              )
-            ],
-            1
-          )
-        ])
+        _c(
+          "div",
+          [
+            _c(
+              "Button",
+              [
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "text-white",
+                    attrs: { to: "/create-designation" }
+                  },
+                  [_vm._v("Create Designation")]
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
       ]),
       _vm._v(" "),
       _c(
@@ -273,10 +267,10 @@ var render = function() {
           staticClass:
             "p-mt-2 animate__animated animate__fadeIn p-datatable-sm",
           attrs: {
-            value: _vm.departments,
+            value: _vm.designations,
             filters: _vm.filters,
-            selection: _vm.selectedDepartments,
-            "data-key": "departmentName",
+            selection: _vm.selectedDesignation,
+            "data-key": "name",
             paginator: true,
             rows: 5,
             paginatorTemplate:
@@ -287,7 +281,7 @@ var render = function() {
           },
           on: {
             "update:selection": function($event) {
-              _vm.selectedDepartments = $event
+              _vm.selectedDesignation = $event
             },
             "update:editingRows": function($event) {
               _vm.editingRows = $event
@@ -304,12 +298,11 @@ var render = function() {
               fn: function() {
                 return [
                   _c("div", { staticClass: "p-d-flex p-jc-between" }, [
-                    _c("div", { staticClass: "p-mt-2" }, [
-                      _vm._v("List of Departments")
-                    ]),
+                    _c("div", [_vm._v("List of Designations")]),
                     _vm._v(" "),
                     _c(
                       "div",
+                      { staticStyle: {} },
                       [
                         _c("i", {
                           staticClass: "pi pi-search",
@@ -343,11 +336,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("Column", {
-            attrs: {
-              field: "departmentName",
-              header: "Department Name",
-              sortable: ""
-            },
+            attrs: { field: "name", header: "Name", sortable: "" },
             scopedSlots: _vm._u([
               {
                 key: "editor",
@@ -369,37 +358,7 @@ var render = function() {
           }),
           _vm._v(" "),
           _c("Column", {
-            attrs: {
-              field: "departmentHead",
-              header: "Department Head",
-              sortable: ""
-            },
-            scopedSlots: _vm._u([
-              {
-                key: "editor",
-                fn: function(slotProps) {
-                  return [
-                    _c("InputText", {
-                      model: {
-                        value: slotProps.data[slotProps.column.field],
-                        callback: function($$v) {
-                          _vm.$set(slotProps.data, slotProps.column.field, $$v)
-                        },
-                        expression: "slotProps.data[slotProps.column.field]"
-                      }
-                    })
-                  ]
-                }
-              }
-            ])
-          }),
-          _vm._v(" "),
-          _c("Column", {
-            attrs: {
-              field: "parentDepartment",
-              header: "Parent Department",
-              sortable: ""
-            },
+            attrs: { field: "description", header: "Description" },
             scopedSlots: _vm._u([
               {
                 key: "editor",
@@ -461,7 +420,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h3", [_vm._v("Department list")])])
+    return _c("div", [_c("h3", [_vm._v("Designation List")])])
   }
 ]
 render._withStripped = true

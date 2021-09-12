@@ -1,10 +1,10 @@
 "use strict";
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_views_CRM_CustomerGroups_ListCustomerGroup_vue"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["ListCategory"],{
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/category/ListCategory.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/category/ListCategory.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -68,43 +68,68 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "ListCustomerGroup",
+  name: "ListCategory",
   data: function data() {
     return {
-      ListCustomerGroup: [{
+      ListCategory: [{
         'id': '1',
         'title': 'kjsdhflsdhf',
+        'parent_categoty': 'hjkghjk',
+        'logo': 'images/logo.jpg',
         'desp': 'lkhlkjhlhlkggrt',
         'status': 'ghdhdfghfhf'
       }, {
         'id': '2',
         'title': 'ghjghjghj',
+        'parent_categoty': 'uyuujkhjkl',
+        'logo': 'images/logo.jpg',
         'desp': 'lkhlkjhlhlkggrt',
         'status': 'ghdhdfghfhf'
       }, {
         'id': '3',
         'title': 'hjfghjhjjhkhj',
+        'parent_categoty': 'uyuujkhjkl',
+        'logo': 'images/logo.jpg',
         'desp': 'lkhlkjhlhlkggrt',
         'status': 'ghdhdfghfhf'
       }, {
         'id': '4',
         'title': 'hjfghjghjuk',
+        'parent_categoty': 'uyuujkhjkl',
+        'logo': 'images/logo.jpg',
         'desp': 'lkhlkjhlhlkggrt',
         'status': 'ghdhdfghfhf'
       }, {
         'id': '5',
         'title': 'uuikmhjd',
+        'parent_categoty': 'uyuujkhjkl',
+        'logo': 'images/logo.jpg',
         'desp': 'lkhlkjhlhlkggrt',
         'status': 'ghdhdfghfhf'
       }, {
         'id': '6',
         'title': 'uyikyuye',
+        'parent_categoty': 'uyuujkhjkl',
+        'logo': 'images/logo.jpg',
         'desp': 'lkhlkjhlhlkggrt',
         'status': 'ghdhdfghfhf'
       }, {
         'id': '7',
         'title': 'yjyuioyukryu',
+        'parent_categoty': 'uyuujkhjkl',
+        'logo': 'images/logo.jpg',
         'desp': 'lkhlkjhlhlkggrt',
         'status': 'ghdhdfghfhf'
       }],
@@ -116,41 +141,41 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         to: '/'
       },
       items: [{
-        label: 'CRM'
+        label: 'Base'
       }, {
-        label: 'Customer Group'
+        label: 'Category'
       }, {
-        label: 'Create Customer Group',
-        to: "/create-customer-group"
+        label: 'Create Category',
+        to: "/create-category"
       }, {
-        label: 'List Customer Group'
+        label: 'List Category'
       }]
     };
   },
   methods: {
     onRowEditInit: function onRowEditInit(event) {
-      this.originalRows[event.index] = _objectSpread({}, this.ListCustomerGroup[event.index]);
+      this.originalRows[event.index] = _objectSpread({}, this.ListCategory[event.index]);
     },
     onRowEditCancel: function onRowEditCancel(event) {
-      Vue.set(this.ListCustomerGroup, event.index, this.originalRows[event.index]);
+      Vue.set(this.ListCategory, event.index, this.originalRows[event.index]);
     }
   }
 });
 
 /***/ }),
 
-/***/ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue":
-/*!*********************************************************************!*\
-  !*** ./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue ***!
-  \*********************************************************************/
+/***/ "./resources/js/views/Base/category/ListCategory.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/views/Base/category/ListCategory.vue ***!
+  \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ListCustomerGroup.vue?vue&type=template&id=33e269f6& */ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6&");
-/* harmony import */ var _ListCustomerGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ListCustomerGroup.vue?vue&type=script&lang=js& */ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js&");
+/* harmony import */ var _ListCategory_vue_vue_type_template_id_3682016e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ListCategory.vue?vue&type=template&id=3682016e& */ "./resources/js/views/Base/category/ListCategory.vue?vue&type=template&id=3682016e&");
+/* harmony import */ var _ListCategory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ListCategory.vue?vue&type=script&lang=js& */ "./resources/js/views/Base/category/ListCategory.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -160,9 +185,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _ListCustomerGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__.render,
-  _ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _ListCategory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _ListCategory_vue_vue_type_template_id_3682016e___WEBPACK_IMPORTED_MODULE_0__.render,
+  _ListCategory_vue_vue_type_template_id_3682016e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -172,46 +197,46 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue"
+component.options.__file = "resources/js/views/Base/category/ListCategory.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************!*\
-  !*** ./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************/
+/***/ "./resources/js/views/Base/category/ListCategory.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/views/Base/category/ListCategory.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCustomerGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ListCustomerGroup.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCustomerGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCategory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ListCategory.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/category/ListCategory.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCategory_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
-/***/ "./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6&":
-/*!****************************************************************************************************!*\
-  !*** ./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6& ***!
-  \****************************************************************************************************/
+/***/ "./resources/js/views/Base/category/ListCategory.vue?vue&type=template&id=3682016e&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/views/Base/category/ListCategory.vue?vue&type=template&id=3682016e& ***!
+  \******************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCategory_vue_vue_type_template_id_3682016e___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCategory_vue_vue_type_template_id_3682016e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCustomerGroup_vue_vue_type_template_id_33e269f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ListCustomerGroup.vue?vue&type=template&id=33e269f6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ListCategory_vue_vue_type_template_id_3682016e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ListCategory.vue?vue&type=template&id=3682016e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/category/ListCategory.vue?vue&type=template&id=3682016e&");
 
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6&":
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/CRM/CustomerGroups/ListCustomerGroup.vue?vue&type=template&id=33e269f6& ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/category/ListCategory.vue?vue&type=template&id=3682016e&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Base/category/ListCategory.vue?vue&type=template&id=3682016e& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -237,7 +262,7 @@ var render = function() {
         "div",
         { staticClass: "p-d-flex p-jc-between p-mb-4" },
         [
-          _c("h2", [_vm._v("List Customer Group")]),
+          _c("h2", [_vm._v("List Category")]),
           _vm._v(" "),
           _c(
             "Button",
@@ -246,9 +271,9 @@ var render = function() {
                 "router-link",
                 {
                   staticClass: "text-white",
-                  attrs: { to: "/create-customer-group" }
+                  attrs: { to: "/create-category" }
                 },
-                [_vm._v("Create Customer Group")]
+                [_vm._v("Create Category")]
               )
             ],
             1
@@ -263,7 +288,7 @@ var render = function() {
           staticClass:
             "p-mt-2 animate__animated animate__fadeIn p-datatable-sm",
           attrs: {
-            value: _vm.ListCustomerGroup,
+            value: _vm.ListCategory,
             paginator: true,
             rows: 10,
             paginatorTemplate:
@@ -343,6 +368,47 @@ var render = function() {
                           _vm.$set(slotProps.data, slotProps.column.field, $$v)
                         },
                         expression: "slotProps.data[slotProps.column.field]"
+                      }
+                    })
+                  ]
+                }
+              }
+            ])
+          }),
+          _vm._v(" "),
+          _c("Column", {
+            attrs: { field: "parent_categoty", header: "Parent Category" },
+            scopedSlots: _vm._u([
+              {
+                key: "editor",
+                fn: function(slotProps) {
+                  return [
+                    _c("InputText", {
+                      model: {
+                        value: slotProps.data[slotProps.column.field],
+                        callback: function($$v) {
+                          _vm.$set(slotProps.data, slotProps.column.field, $$v)
+                        },
+                        expression: "slotProps.data[slotProps.column.field]"
+                      }
+                    })
+                  ]
+                }
+              }
+            ])
+          }),
+          _vm._v(" "),
+          _c("Column", {
+            attrs: { field: "logo", header: "Logo" },
+            scopedSlots: _vm._u([
+              {
+                key: "body",
+                fn: function(slotProps) {
+                  return [
+                    _c("img", {
+                      attrs: {
+                        src: slotProps.data[slotProps.column.field],
+                        width: "50"
                       }
                     })
                   ]

@@ -9,6 +9,7 @@
             paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
             :rowsPerPageOptions="[10,20,50]" :filters="filters" :selection.sync="selectedProducts3"
             editMode="row" dataKey="id" :editingRows.sync="editingRows"
+            class="p-mt-2 animate__animated animate__fadeIn p-datatable-sm"
             @row-edit-init="onRowEditInit" @row-edit-cancel="onRowEditCancel"
         >
             <template #header>

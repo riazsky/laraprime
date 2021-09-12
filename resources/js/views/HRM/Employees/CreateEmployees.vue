@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Breadcrumb :home="home" :model="items" />
-    <div class="p-d-flex p-jc-between p-mt-5">
+    <Breadcrumb :home="home" :model="items" class="p-mt-0"/>
+    <div class="p-d-flex p-jc-between p-mt-3">
       <div class="p-mr-2"><h3>Create Employees</h3></div>
       <div>
         <button class="btn btn-secondary">
@@ -13,95 +13,142 @@
         </button>
       </div>
     </div>
-    <card class="p-mt-5">
+    <Card class="p-mt-3">
       <template #content>
-        <div class="p-fluid p-formgrid p-grid">
-          <div class="p-field p-col-12 p-md-6">
-            <label for="firstname">Name</label>
-            <InputText id="firstname" type="text" />
+        <div class="p-fluid p-grid">
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-pb-3 p-pt-0 p-px-2">
+              <span class="p-float-label">
+                <InputText id="name" type="text" />
+                <label for="name">Name</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Email</label>
-            <InputText id="lastname" type="email" />
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-pb-3 p-pt-0 p-px-2">
+              <span class="p-float-label">
+                <InputText id="email" type="email"  />
+                <label for="email">Email</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="number">Phone</label>
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-pb-3 p-pt-0 p-px-2">
+              <span class="p-float-label">
+                <InputNumber
+                id="phone"
+                v-model="phone"
+                mode="decimal"
+                :useGrouping="false"
+
+                />
+                <label for="phone">Phone</label>
+              </span>
+          </div>
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
+                <Dropdown
+                v-model="department"
+                :options="group"
+                optionLabel="name"
+                id="department"
+
+                />
+                <label for="department">Department</label>
+              </span>
+          </div>
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
+                <Dropdown
+                v-model="designation"
+                :options="desig"
+                optionLabel="name"
+                id="Designation"
+
+                />
+                <label for="designation">Designation</label>
+              </span>
+          </div>
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
+                <Dropdown
+                v-model="Shift"
+                :options="Shifts"
+                optionLabel="name"
+                id="shift"
+                class="p-inputtext-sm"
+                />
+                <label for="shift">Shift</label>
+              </span>
+          </div>
+          <div class="p-field p-col-12 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
+                <Textarea id="address" class="form-control" rows="4" />
+                <label for="address">Present Address</label>
+              </span>
+          </div>
+          <div class="p-field p-col-12 p-md-4 p-md-4 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
+                <Calendar id="join_date" v-model="date" :showIcon="true" class="p-calendar-sm"/>
+                <label for="join_date">Join Date</label>
+              </span>
+          </div>
+          <div class="p-field p-col-12 p-md-4 p-md-4 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
+                <Calendar id="icon" :showIcon="true" class="p-calendar-sm"/>
+                <label for="date_of_birth">Date Of Birth</label>
+              </span>
+          </div>
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
+            <InputText id="national_id" type="text"  />
+            <label for="national_id">National Id</label>
+              </span>
+          </div>
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
+                <Dropdown
+                :options="dutyType"
+                optionLabel="name"
+                v-model="dutyValue"
+
+                id="duty_type"
+                />
+                <label for="duty_type">Duty Type</label>
+              </span>
+          </div>
+
+           <div class="p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2">
+               <span class="p-float-label">
+                <Dropdown
+                :options="SalaryType"
+                optionLabel="name"
+                v-model="salaryvalue"
+                id="salary_type"
+                />
+                <label for="salary_type">Salary Type</label>
+               </span>
+          </div>
+
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
             <InputNumber
-              id="number"
-              v-model="phone"
-              mode="decimal"
-              :useGrouping="false"
-            />
-          </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Department</label>
-            <Dropdown
-              v-model="department"
-              :options="group"
-              optionLabel="name"
-              placeholder="Select a Department"
-            />
-          </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Designation</label>
-            <Dropdown
-              v-model="designation"
-              :options="desig"
-              optionLabel="name"
-              placeholder="Select a Designation"
-            />
-          </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Shift</label>
-            <Dropdown
-              v-model="Shift"
-              :options="Shifts"
-              optionLabel="name"
-              placeholder="Select a Shift"
-            />
-          </div>
-          <div class="p-field p-col-12">
-            <label for="address">Present Address</label>
-            <Textarea id="address" class="form-control" rows="4" />
-          </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Join Date</label>
-            <Calendar id="icon" v-model="date" :showIcon="true" />
-          </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Duty Type</label>
-            <Dropdown
-              v-model="Duty"
-              :options="Type"
-              optionLabel="name"
-              placeholder="Select a Duty Type"
-            />
-          </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="number">Salary</label>
-            <InputNumber
-              id="withoutgrouping"
+              id="salary"
               v-model="salary"
               mode="decimal"
               :useGrouping="false"
+
             />
+            <label for="salary">Salary</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Salary Type</label>
-            <Dropdown
-              :options="SalaryType"
-              optionLabel="name"
-              v-model="salaryvalue"
-              placeholder="Select a Salary Type"
-            />
+
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
+                <InputText id="employee_id" type="text" />
+                <label for="employee_id">Employee Id</label>
+              </span>
           </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="firstname">Employee Id</label>
-            <InputText id="firstname" type="text" />
-          </div>
-          <div class="p-field p-col-12 p-md-6">
-            <label for="lastname">Photo</label>
-            <input type="file" class="form-control-file" />
+          <div class="p-field p-col-12 p-md-4 p-my-0 p-py-3 p-px-2">
+              <span class="p-float-label">
+            <input type="file" id="photo" class="form-control-file" />
+            <label for="photo">Photo</label>
+            </span>
           </div>
           <div class="p-fluid p-formgrid p-grid">
             <div class="p-field p-col-12 p-md-12">
@@ -123,7 +170,7 @@
         </div>
         <Button label="Submit" />
       </template>
-    </card>
+    </Card>
   </div>
 </template>
 <script>
@@ -180,8 +227,8 @@ export default {
         { name: "1st", code: "ONE" },
         { name: "2nd", code: "TWO" },
       ],
-      Duty: null,
-      Type: [
+      dutyValue: null,
+      dutyType: [
         { name: "Full-Time", code: "ONE" },
         { name: "Part-Time", code: "TWO" },
       ],

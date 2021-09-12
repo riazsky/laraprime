@@ -13,8 +13,7 @@
     </div>
 
 
-    <Card class="p-mt-2">
-      <template #content>
+
         <DataTable
           :value="designations"
           :filters="filters"
@@ -28,7 +27,7 @@
           :editingRows.sync="editingRows"
           @row-edit-init="onRowEditInit"
           @row-edit-cancel="onRowEditCancel"
-          class="p-mt-2 animate__animated animate__fadeIn"
+          class="p-mt-2 animate__animated animate__fadeIn p-datatable-sm"
         >
           <template #header>
             <div class="p-d-flex p-jc-between">
@@ -62,8 +61,7 @@
 
           <Column :rowEditor="true" headerStyle="width:7rem" bodyStyle="text-align:center"></Column>
         </DataTable>
-      </template>
-    </Card>
+
   </div>
 </template>
 <script>
