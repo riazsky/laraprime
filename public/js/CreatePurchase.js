@@ -14,6 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primevue_textarea__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! primevue/textarea */ "./node_modules/primevue/textarea/index.js");
 /* harmony import */ var primevue_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! primevue/calendar */ "./node_modules/primevue/calendar/index.js");
 /* harmony import */ var primevue_dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primevue/dropdown */ "./node_modules/primevue/dropdown/index.js");
+/* harmony import */ var primevue_inputnumber__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primevue/inputnumber */ "./node_modules/primevue/inputnumber/index.js");
 //
 //
 //
@@ -184,6 +185,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
@@ -192,10 +220,24 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Textarea: primevue_textarea__WEBPACK_IMPORTED_MODULE_0__.default,
     Calendar: primevue_calendar__WEBPACK_IMPORTED_MODULE_1__.default,
-    Dropdown: primevue_dropdown__WEBPACK_IMPORTED_MODULE_2__.default
+    Dropdown: primevue_dropdown__WEBPACK_IMPORTED_MODULE_2__.default,
+    InputNumber: primevue_inputnumber__WEBPACK_IMPORTED_MODULE_3__.default
   },
   data: function data() {
     return {
+      total_price: null,
+      subtotal_price: null,
+      total_quantity: null,
+      total_product: null,
+      sale_discount: null,
+      total_discount: null,
+      total_tax: null,
+      shipping_cost: null,
+      grand_total: null,
+      privious: null,
+      net_total: null,
+      paid_amount: null,
+      due: null,
       home: {
         icon: 'pi pi-home',
         to: '/'
@@ -254,9 +296,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css&":
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css&":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css& ***!
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css& ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -277,9 +319,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n.p-calendar {\n    position: relativ
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css&":
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css&":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css& ***!
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css& ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -322,9 +364,9 @@ module.exports = __webpack_require__(/*! ./Textarea.vue */ "./node_modules/prime
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css&":
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css& ***!
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css& ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -334,7 +376,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Calendar.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Calendar.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css&");
 
             
 
@@ -343,17 +385,17 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default, options);
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default, options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css&":
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css& ***!
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css& ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -363,7 +405,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Textarea_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Textarea.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Textarea_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Textarea.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css&");
 
             
 
@@ -372,11 +414,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Textarea_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default, options);
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Textarea_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default, options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Textarea_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Textarea_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_1__.default.locals || {});
 
 /***/ }),
 
@@ -2788,7 +2830,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _style_loader_dist_cjs_js_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../style-loader/dist/cjs.js!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Calendar.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _style_loader_dist_cjs_js_css_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Calendar_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../style-loader/dist/cjs.js!../../css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Calendar.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/calendar/Calendar.vue?vue&type=style&index=0&lang=css&");
 
 
 /***/ }),
@@ -2800,7 +2842,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _style_loader_dist_cjs_js_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Textarea_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../style-loader/dist/cjs.js!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Textarea.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _style_loader_dist_cjs_js_css_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_1_vue_loader_lib_loaders_stylePostLoader_js_postcss_loader_dist_cjs_js_clonedRuleSet_8_0_rules_0_use_2_vue_loader_lib_index_js_vue_loader_options_Textarea_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../style-loader/dist/cjs.js!../../css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!../../vue-loader/lib/loaders/stylePostLoader.js!../../postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!../../vue-loader/lib/index.js??vue-loader-options!./Textarea.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-8[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./node_modules/primevue/textarea/Textarea.vue?vue&type=style&index=0&lang=css&");
 
 
 /***/ }),
@@ -4076,224 +4118,326 @@ var render = function() {
             fn: function() {
               return [
                 _c("div", { staticClass: "p-fluid p-formgrid p-grid" }, [
+                  _c("div", { staticClass: "p-field p-col-12 p-md-4 p-p-1" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("Calendar", {
+                          attrs: { id: "purchase_date", showIcon: true },
+                          model: {
+                            value: _vm.icon,
+                            callback: function($$v) {
+                              _vm.icon = $$v
+                            },
+                            expression: "icon"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("label", { attrs: { for: "purchase_date" } }, [
+                          _vm._v("Purchase Date")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "p-field p-col-12 p-md-4 p-p-1" },
+                    { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "purchase_date" } }, [
-                        _vm._v("Purchase Date")
-                      ]),
-                      _vm._v(" "),
-                      _c("Calendar", {
-                        attrs: { id: "purchase_date", showIcon: true },
-                        model: {
-                          value: _vm.icon,
-                          callback: function($$v) {
-                            _vm.icon = $$v
-                          },
-                          expression: "icon"
-                        }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("Dropdown", {
+                            attrs: {
+                              options: _vm.suplier,
+                              optionLabel: "name"
+                            },
+                            model: {
+                              value: _vm.selectedSuplier,
+                              callback: function($$v) {
+                                _vm.selectedSuplier = $$v
+                              },
+                              expression: "selectedSuplier"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "buyer_name" } }, [
+                            _vm._v("Suplier Name")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "buyer_name" } }, [
-                        _vm._v("Suplier Name")
-                      ]),
-                      _vm._v(" "),
-                      _c("Dropdown", {
-                        attrs: {
-                          options: _vm.suplier,
-                          optionLabel: "name",
-                          placeholder: "Select a suplier name"
-                        },
-                        model: {
-                          value: _vm.selectedSuplier,
-                          callback: function($$v) {
-                            _vm.selectedSuplier = $$v
-                          },
-                          expression: "selectedSuplier"
-                        }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("Dropdown", {
+                            attrs: {
+                              options: _vm.warehouse,
+                              optionLabel: "name"
+                            },
+                            model: {
+                              value: _vm.selectedWarehouse,
+                              callback: function($$v) {
+                                _vm.selectedWarehouse = $$v
+                              },
+                              expression: "selectedWarehouse"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "warehouse" } }, [
+                            _vm._v("Warehouse")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "warehouse" } }, [
-                        _vm._v("Warehouse")
-                      ]),
-                      _vm._v(" "),
-                      _c("Dropdown", {
-                        attrs: {
-                          options: _vm.warehouse,
-                          optionLabel: "name",
-                          placeholder: "Select a Warehouse"
-                        },
-                        model: {
-                          value: _vm.selectedWarehouse,
-                          callback: function($$v) {
-                            _vm.selectedWarehouse = $$v
-                          },
-                          expression: "selectedWarehouse"
-                        }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputText", {
+                            attrs: { id: "reference_no", type: "text" }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "reference_no" } }, [
+                            _vm._v("Reference No")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "reference_no" } }, [
-                        _vm._v("Reference No")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "reference_no", type: "text" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputText", {
+                            attrs: { id: "invoice_no", type: "text" }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "invoice_no" } }, [
+                            _vm._v("Invoice No")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "invoice_no" } }, [
-                        _vm._v("Invoice No")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "invoice_no", type: "text" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputText", {
+                            attrs: { id: "purchase_satus", type: "text" }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "purchase_satus" } }, [
+                            _vm._v("Purchase Status")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "purchase_satus" } }, [
-                        _vm._v("Purchase Status")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "purchase_satus", type: "text" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputText", {
+                            attrs: { id: "payment_status", type: "text" }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "payment_status" } }, [
+                            _vm._v("Payment Status")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "payment_status" } }, [
-                        _vm._v("Payment Status")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "payment_status", type: "text" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputText", {
+                            attrs: { id: "purchase_by", type: "text" }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "purchase_by" } }, [
+                            _vm._v("Purchase By")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "purchase_by" } }, [
-                        _vm._v("Purchase By")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "purchase_by", type: "text" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.total_price,
+                              callback: function($$v) {
+                                _vm.total_price = $$v
+                              },
+                              expression: "total_price"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "total_price" } }, [
+                            _vm._v("Total Price")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "total_price" } }, [
-                        _vm._v("Total Price")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "total_price", type: "number" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.subtotal_price,
+                              callback: function($$v) {
+                                _vm.subtotal_price = $$v
+                              },
+                              expression: "subtotal_price"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "subtotal_price" } }, [
+                            _vm._v("Subtotal Price")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "subtotal_price" } }, [
-                        _vm._v("Suporter Price")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "subtotal_price", type: "number" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputNumber", {
+                            attrs: {
+                              id: "minmax-buttons",
+                              mode: "decimal",
+                              showButtons: "",
+                              min: 0
+                            },
+                            model: {
+                              value: _vm.total_quantity,
+                              callback: function($$v) {
+                                _vm.total_quantity = $$v
+                              },
+                              expression: "total_quantity"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "total_quantity" } }, [
+                            _vm._v("Total Quantity")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "total_quantity" } }, [
-                        _vm._v("Total Quantity")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "total_quantity", type: "number" }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
-                    [
-                      _c("label", { attrs: { for: "total_product" } }, [
-                        _vm._v("Total Product")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "total_product", type: "number" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputNumber", {
+                            attrs: {
+                              id: "minmax-buttons",
+                              mode: "decimal",
+                              showButtons: "",
+                              min: 0
+                            },
+                            model: {
+                              value: _vm.total_product,
+                              callback: function($$v) {
+                                _vm.total_product = $$v
+                              },
+                              expression: "total_product"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "total_product" } }, [
+                            _vm._v("Total Product")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   )
                 ]),
                 _vm._v(" "),
                 _c(
                   "div",
-                  { staticStyle: { "background-color": "#e4ebea" } },
+                  { staticStyle: { "background-color": "#f8fafc" } },
                   [
                     _vm._l(_vm.purchases, function(purchase, index) {
                       return _c(
                         "div",
-                        { key: index, staticClass: "p-d-flex p-ai-end p-p-2" },
+                        { key: index, staticClass: "p-grid p-ai-end p-p-2" },
                         [
                           _c("div", { staticClass: "p-col-3" }, [
                             _c("label", { attrs: { for: "product_name" } }, [
@@ -4335,9 +4479,21 @@ var render = function() {
                                 }
                               },
                               [
-                                _c("option", { attrs: { value: "" } }, [
-                                  _vm._v("-- Select a Name --")
-                                ])
+                                _c(
+                                  "option",
+                                  {
+                                    attrs: {
+                                      selected: "",
+                                      disabled: "",
+                                      hidden: ""
+                                    }
+                                  },
+                                  [_vm._v("-- Select a Product --")]
+                                ),
+                                _vm._v(" "),
+                                _c("option", [_vm._v("Shirt")]),
+                                _vm._v(" "),
+                                _c("option", [_vm._v("pant")])
                               ]
                             )
                           ]),
@@ -4357,7 +4513,7 @@ var render = function() {
                                 }
                               ],
                               staticClass: "form-control",
-                              attrs: { type: "tel", name: "", id: "qty" },
+                              attrs: { type: "number", name: "", id: "qty" },
                               domProps: { value: purchase.qty },
                               on: {
                                 input: function($event) {
@@ -4370,7 +4526,7 @@ var render = function() {
                             })
                           ]),
                           _vm._v(" "),
-                          _c("div", { staticClass: "p-col-2" }, [
+                          _c("div", { staticClass: "p-col-3" }, [
                             _c("label", { attrs: { for: "per_price" } }, [
                               _vm._v("Per Price")
                             ]),
@@ -4385,7 +4541,11 @@ var render = function() {
                                 }
                               ],
                               staticClass: "form-control",
-                              attrs: { type: "tel", name: "", id: "per_price" },
+                              attrs: {
+                                type: "number",
+                                name: "",
+                                id: "per_price"
+                              },
                               domProps: { value: purchase.per_price },
                               on: {
                                 input: function($event) {
@@ -4418,7 +4578,7 @@ var render = function() {
                               ],
                               staticClass: "form-control",
                               attrs: {
-                                type: "tel",
+                                type: "number",
                                 name: "",
                                 id: "total_price"
                               },
@@ -4480,7 +4640,7 @@ var render = function() {
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "p-d-flex p-jc-end" }, [
-                  _c("div", { staticClass: "p-col-4" }, [
+                  _c("div", { staticClass: "p-col-5" }, [
                     _c("div", { staticClass: "p-grid" }, [
                       _c("div", { staticClass: "p-col-6" }, [
                         _c("label", { attrs: { for: "sale_discount" } }, [
@@ -4492,8 +4652,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "sale_discount", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.sale_discount,
+                              callback: function($$v) {
+                                _vm.sale_discount = $$v
+                              },
+                              expression: "sale_discount"
+                            }
                           })
                         ],
                         1
@@ -4509,8 +4675,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "total_discount", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.total_discount,
+                              callback: function($$v) {
+                                _vm.total_discount = $$v
+                              },
+                              expression: "total_discount"
+                            }
                           })
                         ],
                         1
@@ -4526,8 +4698,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "total_tax", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.total_tax,
+                              callback: function($$v) {
+                                _vm.total_tax = $$v
+                              },
+                              expression: "total_tax"
+                            }
                           })
                         ],
                         1
@@ -4543,8 +4721,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "shipping_cost", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.shipping_cost,
+                              callback: function($$v) {
+                                _vm.shipping_cost = $$v
+                              },
+                              expression: "shipping_cost"
+                            }
                           })
                         ],
                         1
@@ -4560,8 +4744,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "grand_total", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.grand_total,
+                              callback: function($$v) {
+                                _vm.grand_total = $$v
+                              },
+                              expression: "grand_total"
+                            }
                           })
                         ],
                         1
@@ -4577,8 +4767,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "privious", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.privious,
+                              callback: function($$v) {
+                                _vm.privious = $$v
+                              },
+                              expression: "privious"
+                            }
                           })
                         ],
                         1
@@ -4594,8 +4790,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "net_total", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.net_total,
+                              callback: function($$v) {
+                                _vm.net_total = $$v
+                              },
+                              expression: "net_total"
+                            }
                           })
                         ],
                         1
@@ -4611,8 +4813,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "paid_amount", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.paid_amount,
+                              callback: function($$v) {
+                                _vm.paid_amount = $$v
+                              },
+                              expression: "paid_amount"
+                            }
                           })
                         ],
                         1
@@ -4628,8 +4836,14 @@ var render = function() {
                         "div",
                         { staticClass: "p-col-6" },
                         [
-                          _c("InputText", {
-                            attrs: { id: "due", type: "number" }
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.due,
+                              callback: function($$v) {
+                                _vm.due = $$v
+                              },
+                              expression: "due"
+                            }
                           })
                         ],
                         1
@@ -4642,7 +4856,7 @@ var render = function() {
                   _c(
                     "button",
                     {
-                      staticClass: "btn btn-danger",
+                      staticClass: "btn btn-success",
                       attrs: { type: "submit" }
                     },
                     [_vm._v("Save Purchase")]

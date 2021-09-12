@@ -258,219 +258,272 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "p-d-flex p-jc-between p-mb-4" },
-        [
-          _c("h2", [_vm._v("List Category")]),
-          _vm._v(" "),
-          _c(
-            "Button",
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "text-white",
-                  attrs: { to: "/create-category" }
-                },
-                [_vm._v("Create Category")]
-              )
-            ],
-            1
-          )
-        ],
-        1
-      ),
+      _c("div", { staticClass: "p-d-flex p-jc-between p-mb-4" }, [
+        _c("h2", [_vm._v("List Category")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "btn btn-success" },
+          [
+            _c(
+              "router-link",
+              { staticClass: "text-white", attrs: { to: "/create-category" } },
+              [_vm._v("Create Category")]
+            )
+          ],
+          1
+        )
+      ]),
       _vm._v(" "),
-      _c(
-        "DataTable",
-        {
-          staticClass:
-            "p-mt-2 animate__animated animate__fadeIn p-datatable-sm",
-          attrs: {
-            value: _vm.ListCategory,
-            paginator: true,
-            rows: 10,
-            paginatorTemplate:
-              "CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown",
-            rowsPerPageOptions: [10, 20, 50],
-            currentPageReportTemplate:
-              "Showing {first} to {last} of {totalRecords}",
-            filters: _vm.filters,
-            dataKey: "id",
-            selection: _vm.selectedTitle,
-            editingRows: _vm.editingRows,
-            editMode: "row"
-          },
-          on: {
-            "update:selection": function($event) {
-              _vm.selectedTitle = $event
-            },
-            "update:editingRows": function($event) {
-              _vm.editingRows = $event
-            },
-            "update:editing-rows": function($event) {
-              _vm.editingRows = $event
-            },
-            "row-edit-init": _vm.onRowEditInit,
-            "row-edit-cancel": _vm.onRowEditCancel
-          },
-          scopedSlots: _vm._u([
-            {
-              key: "header",
-              fn: function() {
-                return [
-                  _c("div", { staticClass: "table-header p-d-flex p-jc-end" }, [
-                    _c(
-                      "span",
-                      { staticClass: "p-input-icon-left " },
-                      [
-                        _c("i", { staticClass: "pi pi-search" }),
-                        _vm._v(" "),
-                        _c("InputText", {
-                          attrs: { placeholder: "Global Search" },
-                          model: {
-                            value: _vm.filters["global"],
-                            callback: function($$v) {
-                              _vm.$set(_vm.filters, "global", $$v)
-                            },
-                            expression: "filters['global']"
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  ])
-                ]
-              },
-              proxy: true
-            }
-          ])
-        },
-        [
-          _vm._v(" "),
-          _c("Column", {
-            attrs: { selectionMode: "multiple", headerStyle: "width: 3em" }
-          }),
-          _vm._v(" "),
-          _c("Column", {
-            attrs: { field: "title", header: "Title", sortable: true },
-            scopedSlots: _vm._u([
-              {
-                key: "editor",
-                fn: function(slotProps) {
-                  return [
-                    _c("InputText", {
-                      attrs: { autofocus: "" },
-                      model: {
-                        value: slotProps.data[slotProps.column.field],
-                        callback: function($$v) {
-                          _vm.$set(slotProps.data, slotProps.column.field, $$v)
+      _c("Card", {
+        scopedSlots: _vm._u([
+          {
+            key: "content",
+            fn: function() {
+              return [
+                _c(
+                  "DataTable",
+                  {
+                    attrs: {
+                      value: _vm.ListCategory,
+                      paginator: true,
+                      rows: 10,
+                      paginatorTemplate:
+                        "CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown",
+                      rowsPerPageOptions: [10, 20, 50],
+                      currentPageReportTemplate:
+                        "Showing {first} to {last} of {totalRecords}",
+                      filters: _vm.filters,
+                      dataKey: "id",
+                      selection: _vm.selectedTitle,
+                      editingRows: _vm.editingRows,
+                      editMode: "row"
+                    },
+                    on: {
+                      "update:selection": function($event) {
+                        _vm.selectedTitle = $event
+                      },
+                      "update:editingRows": function($event) {
+                        _vm.editingRows = $event
+                      },
+                      "update:editing-rows": function($event) {
+                        _vm.editingRows = $event
+                      },
+                      "row-edit-init": _vm.onRowEditInit,
+                      "row-edit-cancel": _vm.onRowEditCancel
+                    },
+                    scopedSlots: _vm._u([
+                      {
+                        key: "header",
+                        fn: function() {
+                          return [
+                            _c(
+                              "div",
+                              { staticClass: "table-header p-d-flex p-jc-end" },
+                              [
+                                _c(
+                                  "span",
+                                  { staticClass: "p-input-icon-left " },
+                                  [
+                                    _c("i", { staticClass: "pi pi-search" }),
+                                    _vm._v(" "),
+                                    _c("InputText", {
+                                      attrs: { placeholder: "Global Search" },
+                                      model: {
+                                        value: _vm.filters["global"],
+                                        callback: function($$v) {
+                                          _vm.$set(_vm.filters, "global", $$v)
+                                        },
+                                        expression: "filters['global']"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                              ]
+                            )
+                          ]
                         },
-                        expression: "slotProps.data[slotProps.column.field]"
+                        proxy: true
                       }
-                    })
-                  ]
-                }
-              }
-            ])
-          }),
-          _vm._v(" "),
-          _c("Column", {
-            attrs: { field: "parent_categoty", header: "Parent Category" },
-            scopedSlots: _vm._u([
-              {
-                key: "editor",
-                fn: function(slotProps) {
-                  return [
-                    _c("InputText", {
-                      model: {
-                        value: slotProps.data[slotProps.column.field],
-                        callback: function($$v) {
-                          _vm.$set(slotProps.data, slotProps.column.field, $$v)
-                        },
-                        expression: "slotProps.data[slotProps.column.field]"
-                      }
-                    })
-                  ]
-                }
-              }
-            ])
-          }),
-          _vm._v(" "),
-          _c("Column", {
-            attrs: { field: "logo", header: "Logo" },
-            scopedSlots: _vm._u([
-              {
-                key: "body",
-                fn: function(slotProps) {
-                  return [
-                    _c("img", {
+                    ])
+                  },
+                  [
+                    _vm._v(" "),
+                    _c("Column", {
                       attrs: {
-                        src: slotProps.data[slotProps.column.field],
-                        width: "50"
+                        selectionMode: "multiple",
+                        headerStyle: "width: 3em"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "title",
+                        header: "Title",
+                        sortable: true,
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                attrs: { autofocus: "" },
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "parent_categoty",
+                        header: "Parent Category",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "logo",
+                        header: "Logo",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "body",
+                          fn: function(slotProps) {
+                            return [
+                              _c("img", {
+                                attrs: {
+                                  src: slotProps.data[slotProps.column.field],
+                                  width: "50"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "desp",
+                        header: "Description",
+                        sortable: true,
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "status",
+                        header: "Status",
+                        sortable: true,
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        rowEditor: true,
+                        headerStyle: "width:7rem",
+                        bodyStyle: "text-align:center"
                       }
                     })
-                  ]
-                }
-              }
-            ])
-          }),
-          _vm._v(" "),
-          _c("Column", {
-            attrs: { field: "desp", header: "Description", sortable: true },
-            scopedSlots: _vm._u([
-              {
-                key: "editor",
-                fn: function(slotProps) {
-                  return [
-                    _c("InputText", {
-                      model: {
-                        value: slotProps.data[slotProps.column.field],
-                        callback: function($$v) {
-                          _vm.$set(slotProps.data, slotProps.column.field, $$v)
-                        },
-                        expression: "slotProps.data[slotProps.column.field]"
-                      }
-                    })
-                  ]
-                }
-              }
-            ])
-          }),
-          _vm._v(" "),
-          _c("Column", {
-            attrs: { field: "status", header: "Status", sortable: true },
-            scopedSlots: _vm._u([
-              {
-                key: "editor",
-                fn: function(slotProps) {
-                  return [
-                    _c("InputText", {
-                      model: {
-                        value: slotProps.data[slotProps.column.field],
-                        callback: function($$v) {
-                          _vm.$set(slotProps.data, slotProps.column.field, $$v)
-                        },
-                        expression: "slotProps.data[slotProps.column.field]"
-                      }
-                    })
-                  ]
-                }
-              }
-            ])
-          }),
-          _vm._v(" "),
-          _c("Column", {
-            attrs: {
-              rowEditor: true,
-              headerStyle: "width:7rem",
-              bodyStyle: "text-align:center"
-            }
-          })
-        ],
-        1
-      )
+                  ],
+                  1
+                )
+              ]
+            },
+            proxy: true
+          }
+        ])
+      })
     ],
     1
   )

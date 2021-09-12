@@ -9,74 +9,100 @@
             <template #content>
                 <div class="p-fluid p-formgrid p-grid">
                     <div class="p-field p-col-12 p-md-4 p-p-1">
-                        <label for="purchase_date">Purchase Date</label>
-                        <Calendar id="purchase_date" v-model="icon" :showIcon="true" />
+                        <span class="p-float-label">
+                            <Calendar id="purchase_date" v-model="icon" :showIcon="true" />
+                            <label for="purchase_date">Purchase Date</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="buyer_name">Suplier Name</label>
-                        <Dropdown v-model="selectedSuplier" :options="suplier" optionLabel="name" placeholder="Select a suplier name" />
+                        <span class="p-float-label">
+                            <Dropdown v-model="selectedSuplier" :options="suplier" optionLabel="name" />
+                            <label for="buyer_name">Suplier Name</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="warehouse">Warehouse</label>
-                        <Dropdown v-model="selectedWarehouse" :options="warehouse" optionLabel="name" placeholder="Select a Warehouse" />
+                        <span class="p-float-label">
+                            <Dropdown v-model="selectedWarehouse" :options="warehouse" optionLabel="name" />
+                            <label for="warehouse">Warehouse</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="reference_no">Reference No</label>
-                        <InputText id="reference_no" type="text" />
+                        <span class="p-float-label">
+                            <InputText id="reference_no" type="text" />
+                            <label for="reference_no">Reference No</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="invoice_no">Invoice No</label>
-                        <InputText id="invoice_no" type="text" />
+                        <span class="p-float-label">
+                            <InputText id="invoice_no" type="text" />
+                            <label for="invoice_no">Invoice No</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="purchase_satus">Purchase Status</label>
-                        <InputText id="purchase_satus" type="text" />
+                        <span class="p-float-label">
+                            <InputText id="purchase_satus" type="text" />
+                            <label for="purchase_satus">Purchase Status</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="payment_status">Payment Status</label>
-                        <InputText id="payment_status" type="text" />
+                        <span class="p-float-label">
+                            <InputText id="payment_status" type="text" />
+                            <label for="payment_status">Payment Status</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="purchase_by">Purchase By</label>
-                        <InputText id="purchase_by" type="text" />
+                        <span class="p-float-label">
+                            <InputText id="purchase_by" type="text" />
+                            <label for="purchase_by">Purchase By</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="total_price">Total Price</label>
-                        <InputText id="total_price" type="number" />
+                        <span class="p-float-label">
+                            <InputNumber v-model="total_price" />
+                            <label for="total_price">Total Price</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="subtotal_price">Suporter Price</label>
-                        <InputText id="subtotal_price" type="number" />
+                        <span class="p-float-label">
+                            <InputNumber v-model="subtotal_price" />
+                            <label for="subtotal_price">Subtotal Price</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="total_quantity">Total Quantity</label>
-                        <InputText id="total_quantity" type="number" />
+                        <span class="p-float-label">
+                            <InputNumber id="minmax-buttons" v-model="total_quantity" mode="decimal" showButtons :min="0" />
+                            <label for="total_quantity">Total Quantity</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="total_product">Total Product</label>
-                        <InputText id="total_product" type="number" />
+                        <span class="p-float-label">
+                            <InputNumber id="minmax-buttons" v-model="total_product" mode="decimal" showButtons :min="0" />
+                            <label for="total_product">Total Product</label>
+                        </span>
                     </div>
                 </div>
-                
-                <div style="background-color: #e4ebea">
-                    <div v-for="(purchase, index) in purchases" :key="index" class="p-d-flex p-ai-end p-p-2">
+
+                <div style="background-color: #f8fafc">
+                    <div v-for="(purchase, index) in purchases" :key="index" class="p-grid p-ai-end p-p-2">
                         <div class="p-col-3">
                             <label for="product_name">Product Name</label>
                             <select v-model="purchase.name" id="product_name" class="form-control" >
-                                <option value="">-- Select a Name --</option>
+                                <option selected disabled hidden>-- Select a Product --</option>
+                                <option>Shirt</option>
+                                <option>pant</option>
                             </select>
                         </div>
                         <div class="p-col-2">
                             <label for="qty">Qty</label>
-                            <input v-model="purchase.qty" type="tel" name="" id="qty" class="form-control">
+                            <input v-model="purchase.qty" type="number" name="" id="qty" class="form-control">
                         </div>
-                        <div class="p-col-2">
+                        <div class="p-col-3">
                             <label for="per_price">Per Price</label>
-                            <input v-model="purchase.per_price" type="tel" name="" id="per_price" class="form-control">
+                            <input v-model="purchase.per_price" type="number" name="" id="per_price" class="form-control">
                         </div>
                         <div class="p-col-3">
                             <label for="total_price">Total Price</label>
-                            <input v-model="purchase.total_price" type="tel" name="" id="total_price" class="form-control">
+                            <input v-model="purchase.total_price" type="number" name="" id="total_price" class="form-control">
                         </div>
                         <div class="p-col-1">
                             <input @click="remove(index)" type="button" value="-" class="form-control btn btn-danger">
@@ -97,61 +123,61 @@
                 </div>
 
                 <div class="p-d-flex p-jc-end">
-                    <div class="p-col-4">
+                    <div class="p-col-5">
                         <div class="p-grid">
                             <div class="p-col-6">
                                 <label for="sale_discount"><h4>Sale Discount:</h4></label>
                             </div>
                             <div class="p-col-6">
-                                <InputText id="sale_discount" type="number" />
+                                <InputNumber v-model="sale_discount" />
                             </div>
                             <div class="p-col-6">
                                 <label for="total_discount"><h4>Total Discount:</h4></label>
                             </div>
                             <div class="p-col-6">
-                                <InputText id="total_discount" type="number" />
+                                <InputNumber v-model="total_discount" />
                             </div>
                             <div class="p-col-6">
                                 <label for="total_tax"><h4>Total Tax:</h4></label>
                             </div>
                             <div class="p-col-6">
-                                <InputText id="total_tax" type="number" />
+                                <InputNumber v-model="total_tax" />
                             </div>
                             <div class="p-col-6">
                                 <label for="shipping_cost"><h4>Shipping Cost:</h4></label>
                             </div>
                             <div class="p-col-6">
-                                <InputText id="shipping_cost" type="number" />
+                                <InputNumber v-model="shipping_cost" />
                             </div>
                             <div class="p-col-6">
                                 <label for="grand_total"><h4>Grand Total:</h4></label>
                             </div>
                             <div class="p-col-6">
-                                <InputText id="grand_total" type="number" />
+                                <InputNumber v-model="grand_total" />
                             </div>
                             <div class="p-col-6">
                                 <label for="privious"><h4>Previous:</h4></label>
                             </div>
                             <div class="p-col-6">
-                                <InputText id="privious" type="number" />
+                                <InputNumber v-model="privious" />
                             </div>
                             <div class="p-col-6">
                                 <label for="net_total"><h4>Net Total:</h4></label>
                             </div>
                             <div class="p-col-6">
-                                <InputText id="net_total" type="number" />
+                                <InputNumber v-model="net_total" />
                             </div>
                             <div class="p-col-6">
                                 <label for="paid_amount"><h4>Paid Amount:</h4></label>
                             </div>
                             <div class="p-col-6">
-                                <InputText id="paid_amount" type="number" />
+                                <InputNumber v-model="paid_amount" />
                             </div>
                             <div class="p-col-6">
                                 <label for="due"><h4>Due:</h4></label>
                             </div>
                             <div class="p-col-6">
-                                <InputText id="due" type="number" />
+                                <InputNumber v-model="due" />
                             </div>
                         </div>
                     </div>
@@ -160,7 +186,7 @@
 
 
                 <div>
-                    <button type="submit" class="btn btn-danger">Save Purchase</button>
+                    <button type="submit" class="btn btn-success">Save Purchase</button>
                 </div>
 
             </template>
@@ -172,16 +198,31 @@
 import Textarea from 'primevue/textarea';
 import Calendar from 'primevue/calendar';
 import Dropdown from 'primevue/dropdown';
+import InputNumber from 'primevue/inputnumber';
 
 export default {
     name: 'CreatePurchase',
     components: {
         Textarea,
         Calendar,
-        Dropdown
+        Dropdown,
+        InputNumber
     },
     data() {
         return {
+            total_price: null,
+            subtotal_price: null,
+            total_quantity: null,
+            total_product: null,
+            sale_discount: null,
+            total_discount: null,
+            total_tax: null,
+            shipping_cost: null,
+            grand_total: null,
+            privious: null,
+            net_total: null,
+            paid_amount: null,
+            due: null,
             home: {icon: 'pi pi-home', to: '/'},
             items: [
                 {label: 'Base'},
@@ -204,7 +245,6 @@ export default {
             warehouse: [
                 {name: 'Dhaka Division', code: 'NY'},
                 {name: 'Khulna Division', code: 'RM'},
-
             ],
         }
     },

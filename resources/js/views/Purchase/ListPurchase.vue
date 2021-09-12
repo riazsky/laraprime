@@ -5,7 +5,8 @@
         <h2>List Purchase</h2>
         <button class="btn btn-danger"><router-link to="/create-purchase" class="text-white">Create Purchase</router-link></button>
     </div>
-
+  <Card>
+    <template #content>
       <DataTable
         :value="ListPurchase" :scrollable="true" :paginator="true" :rows="10"
         paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
@@ -14,9 +15,7 @@
         :filters="filters"
         dataKey="id"
         :selection.sync="selectedTitle"
-        class="p-mt-2 animate__animated animate__fadeIn p-datatable-sm"
-        :editingRows.sync="editingRows"
-        editMode="row" @row-edit-init="onRowEditInit" @row-edit-cancel="onRowEditCancel">
+        >
 
         <template #header>
             <div class="table-header p-d-flex p-jc-end">
@@ -89,7 +88,8 @@
             </template>
         </Column>
       </DataTable>
-
+    </template>
+  </Card>
 </div>
 </template>
 
@@ -114,13 +114,5 @@ export default {
       ]
     };
   },
-  methods: {
-        onRowEditInit(event) {
-            this.originalRows[event.index] = {...this.ListPurchase[event.index]};
-        },
-        onRowEditCancel(event) {
-            Vue.set(this.ListPurchase, event.index, this.originalRows[event.index]);
-        }
-  }
 };
 </script>

@@ -11,12 +11,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+<<<<<<< HEAD
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+=======
+>>>>>>> 1a229676310f976f075b062045414a08e87f53a4
 //
 //
 //
@@ -184,6 +187,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         label: 'List Purchase'
       }]
     };
+<<<<<<< HEAD
   },
   methods: {
     onRowEditInit: function onRowEditInit(event) {
@@ -192,6 +196,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     onRowEditCancel: function onRowEditCancel(event) {
       Vue.set(this.ListPurchase, event.index, this.originalRows[event.index]);
     }
+=======
+>>>>>>> 1a229676310f976f075b062045414a08e87f53a4
   }
 });
 
@@ -308,6 +314,7 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
+<<<<<<< HEAD
       _c(
         "DataTable",
         {
@@ -696,6 +703,463 @@ var render = function() {
         ],
         1
       )
+=======
+      _c("Card", {
+        scopedSlots: _vm._u([
+          {
+            key: "content",
+            fn: function() {
+              return [
+                _c(
+                  "DataTable",
+                  {
+                    attrs: {
+                      value: _vm.ListPurchase,
+                      scrollable: true,
+                      paginator: true,
+                      rows: 10,
+                      paginatorTemplate:
+                        "CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown",
+                      rowsPerPageOptions: [10, 20, 50],
+                      currentPageReportTemplate:
+                        "Showing {first} to {last} of {totalRecords}",
+                      filters: _vm.filters,
+                      dataKey: "id",
+                      selection: _vm.selectedTitle
+                    },
+                    on: {
+                      "update:selection": function($event) {
+                        _vm.selectedTitle = $event
+                      }
+                    },
+                    scopedSlots: _vm._u([
+                      {
+                        key: "header",
+                        fn: function() {
+                          return [
+                            _c(
+                              "div",
+                              { staticClass: "table-header p-d-flex p-jc-end" },
+                              [
+                                _c(
+                                  "span",
+                                  { staticClass: "p-input-icon-left " },
+                                  [
+                                    _c("i", { staticClass: "pi pi-search" }),
+                                    _vm._v(" "),
+                                    _c("InputText", {
+                                      attrs: { placeholder: "Global Search" },
+                                      model: {
+                                        value: _vm.filters["global"],
+                                        callback: function($$v) {
+                                          _vm.$set(_vm.filters, "global", $$v)
+                                        },
+                                        expression: "filters['global']"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                              ]
+                            )
+                          ]
+                        },
+                        proxy: true
+                      }
+                    ])
+                  },
+                  [
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        selectionMode: "multiple",
+                        headerStyle: "width: 3em"
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "invoice_no",
+                        header: "Invoice No",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "purchase_date",
+                        header: "Purchase Date",
+                        sortable: true,
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "suplier_name",
+                        header: "Suplier Name",
+                        sortable: true,
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "warehouse",
+                        header: "Warehouse",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "reference_no",
+                        header: "Reference No",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "purchase_status",
+                        header: "Purchase Status",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "payment_status",
+                        header: "Payment Status",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "purchased_by",
+                        header: "Purchaseed by",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "total_price",
+                        header: "Total Price",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "subtotal_price",
+                        header: "Subtotal Price",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "total_quantity",
+                        header: "Total Quantity",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    }),
+                    _vm._v(" "),
+                    _c("Column", {
+                      attrs: {
+                        field: "total_product",
+                        header: "Total Product",
+                        headerStyle: "width: 250px"
+                      },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "editor",
+                          fn: function(slotProps) {
+                            return [
+                              _c("InputText", {
+                                model: {
+                                  value: slotProps.data[slotProps.column.field],
+                                  callback: function($$v) {
+                                    _vm.$set(
+                                      slotProps.data,
+                                      slotProps.column.field,
+                                      $$v
+                                    )
+                                  },
+                                  expression:
+                                    "slotProps.data[slotProps.column.field]"
+                                }
+                              })
+                            ]
+                          }
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                )
+              ]
+            },
+            proxy: true
+          }
+        ])
+      })
+>>>>>>> 1a229676310f976f075b062045414a08e87f53a4
     ],
     1
   )

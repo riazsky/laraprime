@@ -3,9 +3,10 @@
   <div class="p-mb-4"><Breadcrumb :home="home" :model="items" /></div>
     <div class="p-d-flex p-jc-between p-mb-4">
         <h2>List Branch</h2>
-        <Button><router-link to="/create-branch" class="text-white">Create Branch</router-link></Button>
+        <button class="btn btn-success"><router-link to="/create-branch" class="text-white">Create Branch</router-link></button>
     </div>
-
+  <Card>
+    <template #content>
       <DataTable
         :value="ListBranch" :paginator="true" :rows="10"
         paginatorTemplate="CurrentPageReport FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown"
@@ -14,7 +15,6 @@
         :filters="filters"
         dataKey="id"
         :selection.sync="selectedTitle"
-        class="p-mt-2 animate__animated animate__fadeIn p-datatable-sm"
         :editingRows.sync="editingRows"
         editMode="row" @row-edit-init="onRowEditInit" @row-edit-cancel="onRowEditCancel">
 
@@ -51,7 +51,8 @@
         </Column>
         <Column :rowEditor="true" headerStyle="width:7rem" bodyStyle="text-align:center"></Column>
       </DataTable>
-
+    </template>
+  </Card>
 </div>
 </template>
 

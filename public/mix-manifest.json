@@ -1,12 +1,11 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css",
     "/js/Welcome.js": "/js/Welcome.js",
-    "/js/CreateDesignation.js": "/js/CreateDesignation.js",
     "/js/CreateCustomerGroup.js": "/js/CreateCustomerGroup.js",
     "/js/ListCustomerGroup.js": "/js/ListCustomerGroup.js",
     "/js/CreateDepartment.js": "/js/CreateDepartment.js",
     "/js/DepartmentList.js": "/js/DepartmentList.js",
+    "/js/CreateDesignation.js": "/js/CreateDesignation.js",
     "/js/DesignationList.js": "/js/DesignationList.js",
     "/js/CreateCustomer.js": "/js/CreateCustomer.js",
     "/js/EditCustomer.js": "/js/EditCustomer.js",

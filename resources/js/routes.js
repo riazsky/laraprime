@@ -1,4 +1,5 @@
 import VueRouter from 'vue-router';
+
 const routes = [
     {
         path: '/',
@@ -39,9 +40,8 @@ const routes = [
         path: '/create-designation',
         name: 'CreateDesignation',
         component: () => import(/* webpackChunkName: "CreateDesignation"*/'./views/HRM/designations/CreateDesignation.vue'),
-        meta: { title: 'Create Designation' }
+        meta: { title: 'Create Designation'}
     },
-
     {
         path: '/designation-list',
         name: 'designationList',
@@ -193,8 +193,30 @@ const routes = [
         component: () => import(/* webpackChunkName: "ListPurchase"*/'./views/Purchase/ListPurchase.vue'),
         meta: { title: 'List Purchase' }
     },
-
-
+    {
+        path: '/purchase-invoice',
+        name: 'PurchaseInvoice',
+        component: () => import(/* webpackChunkName: "ListPurchase"*/'./views/Purchase/PurchaseInvoice.vue'),
+        meta: { title: 'Purchase Invoice' }
+    },
+    {
+        path: '/create-quotation',
+        name: 'CreateQuotation',
+        component: () => import(/* webpackChunkName: "ListPurchase"*/'./views/Quotation/CreateQuotation.vue'),
+        meta: { title: 'Create Quotation' }
+    },
+    {
+        path: '/list-quotation',
+        name: 'ListQuotation',
+        component: () => import(/* webpackChunkName: "ListPurchase"*/'./views/Quotation/ListQuotation.vue'),
+        meta: { title: 'List Quotation' }
+    },
+    {
+        path: '/quotation-invoice',
+        name: 'QuotationInvoice',
+        component: () => import(/* webpackChunkName: "ListPurchase"*/'./views/Quotation/QuotationInvoice.vue'),
+        meta: { title: 'Quotation invoice' }
+    },
 
 ]
 
