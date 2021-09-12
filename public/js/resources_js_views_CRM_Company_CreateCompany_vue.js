@@ -54,8 +54,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -702,109 +700,95 @@ var render = function() {
             key: "content",
             fn: function() {
               return [
-                _c("div", { staticClass: "p-d-flex p-jc-center" }, [
-                  _c("div", { staticClass: "p-col-8" }, [
-                    _c("div", { staticClass: "p-fluid" }, [
-                      _c("div", { staticClass: "p-field p-grid" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "p-col-12 p-mb-2 p-md-2 p-mb-md-0",
-                            attrs: { for: "firstname" }
-                          },
-                          [_vm._v("Title")]
-                        ),
+                _c("div", { staticClass: "p-fluid p-col-6 p-m-auto" }, [
+                  _c("div", { staticClass: "p-field p-col-12 p-mb-4" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("InputText", {
+                          attrs: { id: "title", type: "text" }
+                        }),
                         _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "p-col-12 p-md-10" },
-                          [
-                            _c("InputText", {
-                              attrs: {
-                                id: "title",
-                                type: "text",
-                                autofocus: ""
-                              }
-                            })
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "p-field p-grid p-ai-start" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "p-col-12 p-mb-2 p-md-2 p-mb-md-0",
-                            attrs: { for: "lastname" }
-                          },
-                          [_vm._v("Description")]
-                        ),
+                        _c("label", { attrs: { for: "title" } }, [
+                          _vm._v("Title")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-col-12 p-mb-4" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("Textarea", {
+                          attrs: { autoResize: true, rows: "5" },
+                          model: {
+                            value: _vm.description,
+                            callback: function($$v) {
+                              _vm.description = $$v
+                            },
+                            expression: "description"
+                          }
+                        }),
                         _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "p-col-12 p-md-10 " },
-                          [
-                            _c("Textarea", {
-                              attrs: { autoResize: true, rows: "5" },
-                              model: {
-                                value: _vm.description,
-                                callback: function($$v) {
-                                  _vm.description = $$v
-                                },
-                                expression: "description"
-                              }
-                            })
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "p-field p-grid" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "p-col-12 p-mb-2 p-md-2 p-mb-md-0",
-                            attrs: { for: "status" }
-                          },
-                          [_vm._v("Status")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "p-mt-2 p-ml-2" },
-                          [
-                            _c("Checkbox", {
-                              attrs: { binary: true },
-                              model: {
-                                value: _vm.status,
-                                callback: function($$v) {
-                                  _vm.status = $$v
-                                },
-                                expression: "status"
-                              }
-                            }),
-                            _vm._v(" "),
-                            _vm.status
-                              ? _c("span", { staticClass: "p-ml-2" }, [
-                                  _vm._v("Active")
-                                ])
-                              : _c("span", { staticClass: "p-ml-2" }, [
-                                  _vm._v("Inactive ")
-                                ])
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "p-field p-grid" }, [
-                        _c(
-                          "button",
-                          { staticClass: "form-control btn btn-success" },
-                          [_vm._v("Create")]
-                        )
-                      ])
-                    ])
+                        _c("label", { attrs: { for: "lastname" } }, [
+                          _vm._v("Description")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "p-field p-grid p-ai-center p-col-12" },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "p-d-flex p-col-12 p-ai-start" },
+                        [
+                          _c(
+                            "label",
+                            { staticClass: "p-mr-4", attrs: { for: "status" } },
+                            [_vm._v("Status")]
+                          ),
+                          _vm._v(" "),
+                          _c("Checkbox", {
+                            attrs: { binary: true },
+                            model: {
+                              value: _vm.status,
+                              callback: function($$v) {
+                                _vm.status = $$v
+                              },
+                              expression: "status"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _vm.status
+                            ? _c("span", { staticClass: "p-ml-2" }, [
+                                _vm._v("Active")
+                              ])
+                            : _c("span", { staticClass: "p-ml-2" }, [
+                                _vm._v("Inactive ")
+                              ])
+                        ],
+                        1
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-col-12 p-md-12" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "form-control btn btn-success",
+                        attrs: { label: "Submit" }
+                      },
+                      [_vm._v("\r\n              Create\r\n            ")]
+                    )
                   ])
                 ])
               ]

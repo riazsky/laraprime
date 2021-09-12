@@ -1,99 +1,113 @@
 <template>
-<div>
+  <div>
     <div class="p-mb-4"><Breadcrumb :home="home" :model="items" /></div>
     <div class="p-d-flex p-jc-between p-mb-4">
-        <h2>Create Category</h2>
-        <button class="btn btn-success"><router-link to="/list-category" class="text-white">List Category</router-link></button>
+      <h2>Create Category</h2>
+      <button class="btn btn-success">
+        <router-link to="/list-category" class="text-white"
+          >List Category</router-link
+        >
+      </button>
     </div>
     <Card>
-        <template #content>
-            <div class="p-d-flex p-jc-center">
-                <div class="p-col-8">
-                    <div class="p-fluid">
-                        <div class="p-field p-grid">
-                            <label for="title" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Title</label>
-                            <div class="p-col-12 p-md-10">
-                                <InputText id="title" type="text" autofocus />
-                            </div>
-                        </div>
-                        <div class="p-field p-grid">
-                            <label for="select_parent_category" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Parent Category</label>
-                            <div class="p-col-12 p-md-10">
-                                <Dropdown v-model="parentCategory" :options="parent_category" optionLabel="name" placeholder="Select a Parent Category" />
-                            </div>
-                        </div>
-                        <div class="p-field p-grid">
-                            <label for="logo" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Logo</label>
-                            <div class="p-col-12 p-md-10 ">
-                                <FileUpload mode="basic" name="demo[]" url="./upload.php" accept="image/*" :maxFileSize="1000000" @upload="onUpload" />
-                            </div>
-                        </div>
-                        <div class="p-field p-grid p-ai-start">
-                            <label for="lastname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Description</label>
-                            <div class="p-col-12 p-md-10 ">
-                                <Textarea v-model="description" :autoResize="true" rows="5"/>
-                            </div>
-                        </div>
-                        <div class="p-field p-grid">
-                            <label for="status" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Status</label>
-                            <div class="p-mt-2 p-ml-2">
-                                <Checkbox v-model="status"  :binary="true" />
-                                <span v-if="status" class="p-ml-2">Active</span>
-                                <span v-else class="p-ml-2">Inactive </span>
-                            </div>
-                        </div>
-                        <div class="p-field p-grid">
-                            <button label="Submit" class="form-control btn btn-success">Create</button>
-                        </div>
-                    </div>
-                </div>
+      <template #content>
+        <div class="p-fluid p-col-6 p-m-auto">
+          <div class="p-field p-col-12 p-mb-4">
+            <span class="p-float-label">
+              <InputText id="title" type="text" />
+              <label for="title">Title</label>
+            </span>
+          </div>
+          <div class="p-field p-col-12 p-mb-5">
+            <span class="p-float-label">
+              <Dropdown id="dropdown" v-model="category" :options="categories" optionLabel="categoryName" />
+              <label for="select_parent_category">Parent Category</label>
+            </span>
+          </div>
+          <div class="p-field p-col-12 p-mb-4">
+            <span class="p-float-label">
+              <Textarea v-model="description" :autoResize="true" rows="5" />
+              <label for="lastname">Description</label>
+            </span>
+           
+          </div>
+          <div class="p-field p-grid p-col-12">
+            <div class="p-d-flex p-col-12 p-ai-start">
+                <label for="status" class="p-mr-4">Status</label>
+                <Checkbox v-model="status" :binary="true" />
+                <span v-if="status" class="p-ml-2">Active</span>
+                <span v-else class="p-ml-2">Inactive </span>
             </div>
-        </template>
+          </div>
+          <div class="p-field p-grid p-col-12">
+            <div class="p-d-flex p-col-12">
+                <label for="logo" class="p-mr-4">Choose a logo</label>
+                <FileUpload
+                    mode="basic"
+                    name="demo[]"
+                    url="./upload.php"
+                    accept="image/*"
+                    :maxFileSize="1000000"
+                    @upload="onUpload"
+                />
+            </div>
+          </div>
+          <div class="p-field p-col-12 p-md-12">
+            <button label="Submit" class="form-control btn btn-success">
+              Create
+            </button>
+          </div>
+        </div>
+      </template>
     </Card>
-</div>
+  </div>
 </template>
  
 <script>
-import Checkbox from 'primevue/checkbox';
-import Dropdown from 'primevue/dropdown';
-import FileUpload from 'primevue/fileupload';
-import Textarea from 'primevue/textarea';
+  import Checkbox from "primevue/checkbox";
+  import Dropdown from "primevue/dropdown";
+  import FileUpload from "primevue/fileupload";
+  import Textarea from "primevue/textarea";
 
-export default {
-    name: 'CreateBranch',
+  export default {
+    name: "CreateCategory",
     components: {
-        Checkbox,
-        Dropdown,
-        FileUpload,
-        Textarea
-
+      Checkbox,
+      Dropdown,
+      FileUpload,
+      Textarea,
     },
     data() {
-        return{
-            status: true,
-            home: {icon: 'pi pi-home', to: '/'},
-            items: [
-                {label: 'Base'},
-                {label: 'Category'},
-                {label: 'List Category', to:"/list-category"},
-                {label: 'Create Category'}
-            ],
-            description: '',
-            parentCategory: {},
-		    parent_category: [
-                {name: 'New York', code: 'NY'},
-                {name: 'Rome', code: 'RM'},
-                {name: 'London', code: 'LDN'},
-                {name: 'Istanbul', code: 'IST'},
-                {name: 'Paris', code: 'PRS'}
-            ]
-        }
+      return {
+        status: true,
+
+        home: { icon: "pi pi-home", to: "/" },
+        items: [
+          { label: "Base" },
+          { label: "Category" },
+          { label: "List Category", to: "/list-category" },
+          { label: "Create Category" },
+        ],
+        description: null,
+        category: null,
+        categories: [
+          {categoryName: 'gggg', code: 'NY'},
+          {categoryName: 'Rome', code: 'RM'},
+          {categoryName: 'London', code: 'LDN'},
+          {categoryName: 'Istanbul', code: 'IST'},
+          {categoryName: 'Paris', code: 'PRS'}
+        ],
+      };
     },
     methods: {
-        onUpload() {
-			this.$toast.add({severity: 'info', summary: 'Success', detail: 'File Uploaded', life: 3000});
-		}
-    }
-
-}
+      onUpload() {
+        this.$toast.add({
+          severity: "info",
+          summary: "Success",
+          detail: "File Uploaded",
+          life: 3000,
+        });
+      },
+    },
+  };
 </script>

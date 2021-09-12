@@ -187,6 +187,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -5445,255 +5469,321 @@ var render = function() {
             fn: function() {
               return [
                 _c("div", { staticClass: "p-fluid p-formgrid p-grid" }, [
+                  _c("div", { staticClass: "p-field p-col-12 p-md-4 p-p-1" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("Calendar", {
+                          attrs: { id: "purchase_date", showIcon: true },
+                          model: {
+                            value: _vm.icon,
+                            callback: function($$v) {
+                              _vm.icon = $$v
+                            },
+                            expression: "icon"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("label", { attrs: { for: "purchase_date" } }, [
+                          _vm._v("Purchase Date")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "p-field p-col-12 p-md-4 p-p-1" },
+                    { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "purchase_date" } }, [
-                        _vm._v("Purchase Date")
-                      ]),
-                      _vm._v(" "),
-                      _c("Calendar", {
-                        attrs: { id: "purchase_date", showIcon: true },
-                        model: {
-                          value: _vm.icon,
-                          callback: function($$v) {
-                            _vm.icon = $$v
-                          },
-                          expression: "icon"
-                        }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("Dropdown", {
+                            attrs: {
+                              options: _vm.suplier,
+                              optionLabel: "name"
+                            },
+                            model: {
+                              value: _vm.selectedSuplier,
+                              callback: function($$v) {
+                                _vm.selectedSuplier = $$v
+                              },
+                              expression: "selectedSuplier"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "buyer_name" } }, [
+                            _vm._v("Suplier Name")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "buyer_name" } }, [
-                        _vm._v("Suplier Name")
-                      ]),
-                      _vm._v(" "),
-                      _c("Dropdown", {
-                        attrs: {
-                          options: _vm.suplier,
-                          optionLabel: "name",
-                          placeholder: "Select a suplier name"
-                        },
-                        model: {
-                          value: _vm.selectedSuplier,
-                          callback: function($$v) {
-                            _vm.selectedSuplier = $$v
-                          },
-                          expression: "selectedSuplier"
-                        }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("Dropdown", {
+                            attrs: {
+                              options: _vm.warehouse,
+                              optionLabel: "name"
+                            },
+                            model: {
+                              value: _vm.selectedWarehouse,
+                              callback: function($$v) {
+                                _vm.selectedWarehouse = $$v
+                              },
+                              expression: "selectedWarehouse"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "warehouse" } }, [
+                            _vm._v("Warehouse")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "warehouse" } }, [
-                        _vm._v("Warehouse")
-                      ]),
-                      _vm._v(" "),
-                      _c("Dropdown", {
-                        attrs: {
-                          options: _vm.warehouse,
-                          optionLabel: "name",
-                          placeholder: "Select a Warehouse"
-                        },
-                        model: {
-                          value: _vm.selectedWarehouse,
-                          callback: function($$v) {
-                            _vm.selectedWarehouse = $$v
-                          },
-                          expression: "selectedWarehouse"
-                        }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputText", {
+                            attrs: { id: "reference_no", type: "text" }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "reference_no" } }, [
+                            _vm._v("Reference No")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "reference_no" } }, [
-                        _vm._v("Reference No")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "reference_no", type: "text" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputText", {
+                            attrs: { id: "invoice_no", type: "text" }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "invoice_no" } }, [
+                            _vm._v("Invoice No")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "invoice_no" } }, [
-                        _vm._v("Invoice No")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "invoice_no", type: "text" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputText", {
+                            attrs: { id: "purchase_satus", type: "text" }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "purchase_satus" } }, [
+                            _vm._v("Purchase Status")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "purchase_satus" } }, [
-                        _vm._v("Purchase Status")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "purchase_satus", type: "text" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputText", {
+                            attrs: { id: "payment_status", type: "text" }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "payment_status" } }, [
+                            _vm._v("Payment Status")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "payment_status" } }, [
-                        _vm._v("Payment Status")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "payment_status", type: "text" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputText", {
+                            attrs: { id: "purchase_by", type: "text" }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "purchase_by" } }, [
+                            _vm._v("Purchase By")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "purchase_by" } }, [
-                        _vm._v("Purchase By")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { id: "purchase_by", type: "text" }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.total_price,
+                              callback: function($$v) {
+                                _vm.total_price = $$v
+                              },
+                              expression: "total_price"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "total_price" } }, [
+                            _vm._v("Total Price")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "total_price" } }, [
-                        _vm._v("Total Price")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputNumber", {
-                        model: {
-                          value: _vm.total_price,
-                          callback: function($$v) {
-                            _vm.total_price = $$v
-                          },
-                          expression: "total_price"
-                        }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputNumber", {
+                            model: {
+                              value: _vm.subtotal_price,
+                              callback: function($$v) {
+                                _vm.subtotal_price = $$v
+                              },
+                              expression: "subtotal_price"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "subtotal_price" } }, [
+                            _vm._v("Subtotal Price")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "subtotal_price" } }, [
-                        _vm._v("Subtotal Price")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputNumber", {
-                        model: {
-                          value: _vm.subtotal_price,
-                          callback: function($$v) {
-                            _vm.subtotal_price = $$v
-                          },
-                          expression: "subtotal_price"
-                        }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputNumber", {
+                            attrs: {
+                              id: "minmax-buttons",
+                              mode: "decimal",
+                              showButtons: "",
+                              min: 0
+                            },
+                            model: {
+                              value: _vm.total_quantity,
+                              callback: function($$v) {
+                                _vm.total_quantity = $$v
+                              },
+                              expression: "total_quantity"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "total_quantity" } }, [
+                            _vm._v("Total Quantity")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c(
                     "div",
                     { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
                     [
-                      _c("label", { attrs: { for: "total_quantity" } }, [
-                        _vm._v("Total Quantity")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputNumber", {
-                        attrs: {
-                          id: "minmax-buttons",
-                          mode: "decimal",
-                          showButtons: "",
-                          min: 0
-                        },
-                        model: {
-                          value: _vm.total_quantity,
-                          callback: function($$v) {
-                            _vm.total_quantity = $$v
-                          },
-                          expression: "total_quantity"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    { staticClass: "p-field p-col-12 p-md-4 p-p-1 p-" },
-                    [
-                      _c("label", { attrs: { for: "total_product" } }, [
-                        _vm._v("Total Product")
-                      ]),
-                      _vm._v(" "),
-                      _c("InputNumber", {
-                        attrs: {
-                          id: "minmax-buttons",
-                          mode: "decimal",
-                          showButtons: "",
-                          min: 0
-                        },
-                        model: {
-                          value: _vm.total_product,
-                          callback: function($$v) {
-                            _vm.total_product = $$v
-                          },
-                          expression: "total_product"
-                        }
-                      })
-                    ],
-                    1
+                      _c(
+                        "span",
+                        { staticClass: "p-float-label" },
+                        [
+                          _c("InputNumber", {
+                            attrs: {
+                              id: "minmax-buttons",
+                              mode: "decimal",
+                              showButtons: "",
+                              min: 0
+                            },
+                            model: {
+                              value: _vm.total_product,
+                              callback: function($$v) {
+                                _vm.total_product = $$v
+                              },
+                              expression: "total_product"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("label", { attrs: { for: "total_product" } }, [
+                            _vm._v("Total Product")
+                          ])
+                        ],
+                        1
+                      )
+                    ]
                   )
                 ]),
                 _vm._v(" "),
                 _c(
                   "div",
-                  { staticStyle: { "background-color": "#e4ebea" } },
+                  { staticStyle: { "background-color": "#f8fafc" } },
                   [
                     _vm._l(_vm.purchases, function(purchase, index) {
                       return _c(

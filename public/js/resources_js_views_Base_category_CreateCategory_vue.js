@@ -70,12 +70,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'CreateBranch',
+  name: "CreateCategory",
   components: {
     Checkbox: primevue_checkbox__WEBPACK_IMPORTED_MODULE_0__.default,
     Dropdown: primevue_dropdown__WEBPACK_IMPORTED_MODULE_1__.default,
@@ -86,35 +96,35 @@ __webpack_require__.r(__webpack_exports__);
     return {
       status: true,
       home: {
-        icon: 'pi pi-home',
-        to: '/'
+        icon: "pi pi-home",
+        to: "/"
       },
       items: [{
-        label: 'Base'
+        label: "Base"
       }, {
-        label: 'Category'
+        label: "Category"
       }, {
-        label: 'List Category',
+        label: "List Category",
         to: "/list-category"
       }, {
-        label: 'Create Category'
+        label: "Create Category"
       }],
-      description: '',
-      parentCategory: {},
-      parent_category: [{
-        name: 'New York',
+      description: null,
+      category: null,
+      categories: [{
+        categoryName: 'gggg',
         code: 'NY'
       }, {
-        name: 'Rome',
+        categoryName: 'Rome',
         code: 'RM'
       }, {
-        name: 'London',
+        categoryName: 'London',
         code: 'LDN'
       }, {
-        name: 'Istanbul',
+        categoryName: 'Istanbul',
         code: 'IST'
       }, {
-        name: 'Paris',
+        categoryName: 'Paris',
         code: 'PRS'
       }]
     };
@@ -122,9 +132,9 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     onUpload: function onUpload() {
       this.$toast.add({
-        severity: 'info',
-        summary: 'Success',
-        detail: 'File Uploaded',
+        severity: "info",
+        summary: "Success",
+        detail: "File Uploaded",
         life: 3000
       });
     }
@@ -2380,174 +2390,147 @@ var render = function() {
             key: "content",
             fn: function() {
               return [
-                _c("div", { staticClass: "p-d-flex p-jc-center" }, [
-                  _c("div", { staticClass: "p-col-8" }, [
-                    _c("div", { staticClass: "p-fluid" }, [
-                      _c("div", { staticClass: "p-field p-grid" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "p-col-12 p-mb-2 p-md-2 p-mb-md-0",
-                            attrs: { for: "title" }
+                _c("div", { staticClass: "p-fluid p-col-6 p-m-auto" }, [
+                  _c("div", { staticClass: "p-field p-col-12 p-mb-4" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("InputText", {
+                          attrs: { id: "title", type: "text" }
+                        }),
+                        _vm._v(" "),
+                        _c("label", { attrs: { for: "title" } }, [
+                          _vm._v("Title")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-col-12 p-mb-5" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("Dropdown", {
+                          attrs: {
+                            id: "dropdown",
+                            options: _vm.categories,
+                            optionLabel: "categoryName"
                           },
-                          [_vm._v("Title")]
-                        ),
+                          model: {
+                            value: _vm.category,
+                            callback: function($$v) {
+                              _vm.category = $$v
+                            },
+                            expression: "category"
+                          }
+                        }),
                         _vm._v(" "),
                         _c(
-                          "div",
-                          { staticClass: "p-col-12 p-md-10" },
-                          [
-                            _c("InputText", {
-                              attrs: {
-                                id: "title",
-                                type: "text",
-                                autofocus: ""
-                              }
-                            })
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "p-field p-grid" }, [
-                        _c(
                           "label",
-                          {
-                            staticClass: "p-col-12 p-mb-2 p-md-2 p-mb-md-0",
-                            attrs: { for: "select_parent_category" }
-                          },
+                          { attrs: { for: "select_parent_category" } },
                           [_vm._v("Parent Category")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "p-col-12 p-md-10" },
-                          [
-                            _c("Dropdown", {
-                              attrs: {
-                                options: _vm.parent_category,
-                                optionLabel: "name",
-                                placeholder: "Select a Parent Category"
-                              },
-                              model: {
-                                value: _vm.parentCategory,
-                                callback: function($$v) {
-                                  _vm.parentCategory = $$v
-                                },
-                                expression: "parentCategory"
-                              }
-                            })
-                          ],
-                          1
                         )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "p-field p-grid" }, [
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-col-12 p-mb-4" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("Textarea", {
+                          attrs: { autoResize: true, rows: "5" },
+                          model: {
+                            value: _vm.description,
+                            callback: function($$v) {
+                              _vm.description = $$v
+                            },
+                            expression: "description"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("label", { attrs: { for: "lastname" } }, [
+                          _vm._v("Description")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-grid p-col-12" }, [
+                    _c(
+                      "div",
+                      { staticClass: "p-d-flex p-col-12 p-ai-start" },
+                      [
                         _c(
                           "label",
-                          {
-                            staticClass: "p-col-12 p-mb-2 p-md-2 p-mb-md-0",
-                            attrs: { for: "logo" }
-                          },
-                          [_vm._v("Logo")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "p-col-12 p-md-10 " },
-                          [
-                            _c("FileUpload", {
-                              attrs: {
-                                mode: "basic",
-                                name: "demo[]",
-                                url: "./upload.php",
-                                accept: "image/*",
-                                maxFileSize: 1000000
-                              },
-                              on: { upload: _vm.onUpload }
-                            })
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "p-field p-grid p-ai-start" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "p-col-12 p-mb-2 p-md-2 p-mb-md-0",
-                            attrs: { for: "lastname" }
-                          },
-                          [_vm._v("Description")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          { staticClass: "p-col-12 p-md-10 " },
-                          [
-                            _c("Textarea", {
-                              attrs: { autoResize: true, rows: "5" },
-                              model: {
-                                value: _vm.description,
-                                callback: function($$v) {
-                                  _vm.description = $$v
-                                },
-                                expression: "description"
-                              }
-                            })
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "p-field p-grid" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "p-col-12 p-mb-2 p-md-2 p-mb-md-0",
-                            attrs: { for: "status" }
-                          },
+                          { staticClass: "p-mr-4", attrs: { for: "status" } },
                           [_vm._v("Status")]
                         ),
                         _vm._v(" "),
+                        _c("Checkbox", {
+                          attrs: { binary: true },
+                          model: {
+                            value: _vm.status,
+                            callback: function($$v) {
+                              _vm.status = $$v
+                            },
+                            expression: "status"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _vm.status
+                          ? _c("span", { staticClass: "p-ml-2" }, [
+                              _vm._v("Active")
+                            ])
+                          : _c("span", { staticClass: "p-ml-2" }, [
+                              _vm._v("Inactive ")
+                            ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-grid p-col-12" }, [
+                    _c(
+                      "div",
+                      { staticClass: "p-d-flex p-col-12" },
+                      [
                         _c(
-                          "div",
-                          { staticClass: "p-mt-2 p-ml-2" },
-                          [
-                            _c("Checkbox", {
-                              attrs: { binary: true },
-                              model: {
-                                value: _vm.status,
-                                callback: function($$v) {
-                                  _vm.status = $$v
-                                },
-                                expression: "status"
-                              }
-                            }),
-                            _vm._v(" "),
-                            _vm.status
-                              ? _c("span", { staticClass: "p-ml-2" }, [
-                                  _vm._v("Active")
-                                ])
-                              : _c("span", { staticClass: "p-ml-2" }, [
-                                  _vm._v("Inactive ")
-                                ])
-                          ],
-                          1
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "p-field p-grid" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "form-control btn btn-success",
-                            attrs: { label: "Submit" }
+                          "label",
+                          { staticClass: "p-mr-4", attrs: { for: "logo" } },
+                          [_vm._v("Choose a logo")]
+                        ),
+                        _vm._v(" "),
+                        _c("FileUpload", {
+                          attrs: {
+                            mode: "basic",
+                            name: "demo[]",
+                            url: "./upload.php",
+                            accept: "image/*",
+                            maxFileSize: 1000000
                           },
-                          [_vm._v("Create")]
-                        )
-                      ])
-                    ])
+                          on: { upload: _vm.onUpload }
+                        })
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-col-12 p-md-12" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "form-control btn btn-success",
+                        attrs: { label: "Submit" }
+                      },
+                      [_vm._v("\n            Create\n          ")]
+                    )
                   ])
                 ])
               ]

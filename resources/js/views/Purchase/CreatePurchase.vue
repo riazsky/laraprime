@@ -9,56 +9,80 @@
             <template #content>
                 <div class="p-fluid p-formgrid p-grid">
                     <div class="p-field p-col-12 p-md-4 p-p-1">
-                        <label for="purchase_date">Purchase Date</label>
-                        <Calendar id="purchase_date" v-model="icon" :showIcon="true" />
+                        <span class="p-float-label">
+                            <Calendar id="purchase_date" v-model="icon" :showIcon="true" />
+                            <label for="purchase_date">Purchase Date</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="buyer_name">Suplier Name</label>
-                        <Dropdown v-model="selectedSuplier" :options="suplier" optionLabel="name" placeholder="Select a suplier name" />
+                        <span class="p-float-label">
+                            <Dropdown v-model="selectedSuplier" :options="suplier" optionLabel="name" />
+                            <label for="buyer_name">Suplier Name</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="warehouse">Warehouse</label>
-                        <Dropdown v-model="selectedWarehouse" :options="warehouse" optionLabel="name" placeholder="Select a Warehouse" />
+                        <span class="p-float-label">
+                            <Dropdown v-model="selectedWarehouse" :options="warehouse" optionLabel="name" />
+                            <label for="warehouse">Warehouse</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="reference_no">Reference No</label>
-                        <InputText id="reference_no" type="text" />
+                        <span class="p-float-label">
+                            <InputText id="reference_no" type="text" />
+                            <label for="reference_no">Reference No</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="invoice_no">Invoice No</label>
-                        <InputText id="invoice_no" type="text" />
+                        <span class="p-float-label">
+                            <InputText id="invoice_no" type="text" />
+                            <label for="invoice_no">Invoice No</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="purchase_satus">Purchase Status</label>
-                        <InputText id="purchase_satus" type="text" />
+                        <span class="p-float-label">
+                            <InputText id="purchase_satus" type="text" />
+                            <label for="purchase_satus">Purchase Status</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="payment_status">Payment Status</label>
-                        <InputText id="payment_status" type="text" />
+                        <span class="p-float-label">
+                            <InputText id="payment_status" type="text" />
+                            <label for="payment_status">Payment Status</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="purchase_by">Purchase By</label>
-                        <InputText id="purchase_by" type="text" />
+                        <span class="p-float-label">
+                            <InputText id="purchase_by" type="text" />
+                            <label for="purchase_by">Purchase By</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="total_price">Total Price</label>
-                        <InputNumber v-model="total_price" />
+                        <span class="p-float-label">
+                            <InputNumber v-model="total_price" />
+                            <label for="total_price">Total Price</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="subtotal_price">Subtotal Price</label>
-                        <InputNumber v-model="subtotal_price" />
+                        <span class="p-float-label">
+                            <InputNumber v-model="subtotal_price" />
+                            <label for="subtotal_price">Subtotal Price</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="total_quantity">Total Quantity</label>
-                        <InputNumber id="minmax-buttons" v-model="total_quantity" mode="decimal" showButtons :min="0" />
+                        <span class="p-float-label">
+                            <InputNumber id="minmax-buttons" v-model="total_quantity" mode="decimal" showButtons :min="0" />
+                            <label for="total_quantity">Total Quantity</label>
+                        </span>
                     </div>
                     <div class="p-field p-col-12 p-md-4 p-p-1 p-">
-                        <label for="total_product">Total Product</label>
-                        <InputNumber id="minmax-buttons" v-model="total_product" mode="decimal" showButtons :min="0" />
+                        <span class="p-float-label">
+                            <InputNumber id="minmax-buttons" v-model="total_product" mode="decimal" showButtons :min="0" />
+                            <label for="total_product">Total Product</label>
+                        </span>
                     </div>
                 </div>
                 
-                <div style="background-color: #e4ebea">
+                <div style="background-color: #f8fafc">
                     <div v-for="(purchase, index) in purchases" :key="index" class="p-grid p-ai-end p-p-2">
                         <div class="p-col-3">
                             <label for="product_name">Product Name</label>

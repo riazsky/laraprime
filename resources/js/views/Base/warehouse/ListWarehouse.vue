@@ -3,7 +3,7 @@
   <div class="p-mb-4"><Breadcrumb :home="home" :model="items" /></div>
     <div class="p-d-flex p-jc-between p-mb-4">
         <h2>List Warehouse</h2>
-        <Button><router-link to="/create-warehouse" class="text-white">Create Warehouse</router-link></Button>
+        <button class="btn btn-success"><router-link to="/create-warehouse" class="text-white">Create Warehouse</router-link></button>
     </div>
   <Card>
     <template #content>

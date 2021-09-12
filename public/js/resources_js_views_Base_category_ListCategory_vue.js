@@ -80,6 +80,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "ListCategory",
   data: function data() {
@@ -259,29 +260,22 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "p-d-flex p-jc-between p-mb-4" },
-        [
-          _c("h2", [_vm._v("List Category")]),
-          _vm._v(" "),
-          _c(
-            "Button",
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "text-white",
-                  attrs: { to: "/create-category" }
-                },
-                [_vm._v("Create Category")]
-              )
-            ],
-            1
-          )
-        ],
-        1
-      ),
+      _c("div", { staticClass: "p-d-flex p-jc-between p-mb-4" }, [
+        _c("h2", [_vm._v("List Category")]),
+        _vm._v(" "),
+        _c(
+          "button",
+          { staticClass: "btn btn-success" },
+          [
+            _c(
+              "router-link",
+              { staticClass: "text-white", attrs: { to: "/create-category" } },
+              [_vm._v("Create Category")]
+            )
+          ],
+          1
+        )
+      ]),
       _vm._v(" "),
       _c("Card", {
         scopedSlots: _vm._u([
@@ -305,7 +299,8 @@ var render = function() {
                       dataKey: "id",
                       selection: _vm.selectedTitle,
                       editingRows: _vm.editingRows,
-                      editMode: "row"
+                      editMode: "row",
+                      scrollable: true
                     },
                     on: {
                       "update:selection": function($event) {
@@ -369,7 +364,8 @@ var render = function() {
                       attrs: {
                         field: "title",
                         header: "Title",
-                        sortable: true
+                        sortable: true,
+                        headerStyle: "width: 250px"
                       },
                       scopedSlots: _vm._u([
                         {
@@ -400,7 +396,8 @@ var render = function() {
                     _c("Column", {
                       attrs: {
                         field: "parent_categoty",
-                        header: "Parent Category"
+                        header: "Parent Category",
+                        headerStyle: "width: 250px"
                       },
                       scopedSlots: _vm._u([
                         {
@@ -428,7 +425,11 @@ var render = function() {
                     }),
                     _vm._v(" "),
                     _c("Column", {
-                      attrs: { field: "logo", header: "Logo" },
+                      attrs: {
+                        field: "logo",
+                        header: "Logo",
+                        headerStyle: "width: 250px"
+                      },
                       scopedSlots: _vm._u([
                         {
                           key: "body",
@@ -450,7 +451,8 @@ var render = function() {
                       attrs: {
                         field: "desp",
                         header: "Description",
-                        sortable: true
+                        sortable: true,
+                        headerStyle: "width: 250px"
                       },
                       scopedSlots: _vm._u([
                         {
@@ -481,7 +483,8 @@ var render = function() {
                       attrs: {
                         field: "status",
                         header: "Status",
-                        sortable: true
+                        sortable: true,
+                        headerStyle: "width: 250px"
                       },
                       scopedSlots: _vm._u([
                         {
