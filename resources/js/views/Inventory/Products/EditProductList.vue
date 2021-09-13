@@ -22,8 +22,9 @@
                     </div>
                     <div class="p-field p-col-12 p-mt-3">
                     <span class="p-float-label">
-                        <Textarea id="address" class="form-control" rows="2" />
+                        <Textarea id="address" v-model="Description" class="form-control" rows="2" />
                         <label for="address">Description</label>
+                        
                     </span>
                     </div>
                     <div class="p-field p-col-12 p-md-6 p-mt-3">
@@ -40,7 +41,7 @@
                     </div>
                     <div class="p-field p-col-12 p-mt-3">
                     <span class="p-float-label">
-                            <Textarea id="address" class="form-control" rows="2" />
+                            <Textarea id="address" v-model="MetaDescription" class="form-control" rows="2" />
                             <label for="address">Meta Description</label>
                     </span>
                     </div>
@@ -114,14 +115,16 @@ import Dropdown from 'primevue/dropdown';
 import Button from 'primevue/button';
 import Calendar from 'primevue/calendar';
 import Chips from 'primevue/chips';
+import Textarea from 'primevue/textarea';
 
 export default {
-    name: 'EditProductList',
+    name: 'EditProductLists',
     components:{
         Dropdown,
         Button,
         Calendar,
-        Chips
+        Chips,
+        Textarea
 
     },
 
@@ -131,14 +134,17 @@ export default {
             value2: null,
             date: null,
             department: null,
-                home: {icon: 'pi pi-home', to: '/'},
-                items: [
-                    {label: 'Inventory'},
-                    {label: 'Products'},
-                    {label: 'Products List',to:'/ProductLists'},
-                    {label: 'Create Products',to:'/CreateProducts'},
-                    {label: 'Edit Product Lists'},
-                ],
+            Description: null,
+            MetaDescription: null,
+
+            home: {icon: 'pi pi-home', to: '/'},
+            items: [
+                {label: 'Inventory'},
+                {label: 'Products'},
+                {label: 'Products List',to:'/ProductLists'},
+                {label: 'Create Products',to:'/CreateProducts'},
+                {label: 'Edit Product Lists'},
+            ],
 
             ProductType: null,
             Products: [

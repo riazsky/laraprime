@@ -1,6 +1,42 @@
 <template>
     <div>
         <Breadcrumb :home="home" :model="items" />
+        <!-- Create Filter Option Start -->
+            <Card class="p-mt-3">
+                <template #content>
+                    <div><h4><strong>Filters Option</strong></h4></div>
+                    <div class="p-fluid p-formgrid p-grid">
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Dropdown v-model="ProductType" :options="ProductTypes" optionLabel="name" />
+                                <label for="lastname">Product Type</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Dropdown v-model="Brand" :options="Brands" optionLabel="name" />
+                                <label for="lastname">Brand</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Dropdown v-model="Category" :options="Categories" optionLabel="name" />
+                                <label for="lastname">Category</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Dropdown v-model="Orgin" :options="Orgins" optionLabel="name" />
+                                <label for="lastname">Orgin</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-1">
+                            <button class="btn btn-primary">Fillter</button>
+                        </div>
+                    </div>
+                </template>
+            </Card>
+        <!-- Create Filter Option End -->
         <div class="p-d-flex p-jc-between p-mt-5 p-mb-3">
             <div class="p-mr-2"><h3>Product Lists</h3></div>
             <div><router-link to="/CreateProducts" style="color: #fff;text-decoration:none;"><button class="btn btn-secondary">Create Products</button></router-link></div>
@@ -122,11 +158,14 @@
     </div>
 </template>
 <script>
-
+import Dropdown from 'primevue/dropdown';
 
 export default {
 
     name:"ProductLists",
+    components:{
+        Dropdown
+    },
     onRowEditInit: null,
     onRowEditCancel: null,
     value2: null,
@@ -142,6 +181,32 @@ export default {
                 {label: 'Create Products',to:'/CreateProducts'},
                 {label: 'Edit Product List',to:'/EditProductLists'},
                 {label: 'Products List'},
+            ],
+            ProductType: null,
+            ProductTypes: [
+                {name: 'Mobie', code: 'N'},
+                {name: 'Laptop', code: 'Sr'},
+                {name: 'Mohakhali', code: 'Mi'},
+                {name: 'Munshiganj', code: 'Mj'},
+            ],
+            Category: null,
+            Categories: [
+                {name: 'Nikunjo', code: 'N'},
+                {name: 'Savar', code: 'Sr'},
+                {name: 'Mohakhali', code: 'Mi'},
+                {name: 'Munshiganj', code: 'Mj'},
+            ],
+            Shift: null,
+            Shifts: [
+                {name: 'Day', code: 'N'},
+                {name: 'Night', code: 'Sr'},
+            ],
+            Orgin: null,
+            Orgins: [
+                {name: 'Nikunjo', code: 'N'},
+                {name: 'Savar', code: 'Sr'},
+                {name: 'Mohakhali', code: 'Mi'},
+                {name: 'Munshiganj', code: 'Mj'},
             ],
       TableData: [ 
 

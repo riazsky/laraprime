@@ -1,6 +1,42 @@
 <template>
   <div>
     <Breadcrumb :home="home" :model="items" />
+        <!-- Create Filter Option Start -->
+            <Card class="p-mt-3">
+                <template #content>
+                    <div><h4><strong>Filters Option</strong></h4></div>
+                    <div class="p-fluid p-formgrid p-grid">
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Dropdown v-model="Department" :options="Departments" optionLabel="name" />
+                                <label for="lastname">Department</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Dropdown v-model="Designation" :options="Designations" optionLabel="name" />
+                                <label for="lastname">Designation</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Dropdown v-model="Shift" :options="Shifts" optionLabel="name" />
+                                <label for="lastname">Shift</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Dropdown v-model="BranchName" :options="branch" optionLabel="name" />
+                                <label for="lastname">Current Branch Name</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-1">
+                            <button class="btn btn-primary">Fillter</button>
+                        </div>
+                    </div>
+                </template>
+            </Card>
+        <!-- Create Filter Option End -->
     <div class="p-d-flex p-jc-between p-mt-5 p-mb-3">
       <div class="p-mr-2"><h3>Employee Lists</h3></div>
       <div>
@@ -243,8 +279,12 @@
   </div>
 </template>
 <script>
+import Dropdown from 'primevue/dropdown';
 export default {
   name: "EmployeeLists",
+    components:{
+        Dropdown
+    },
   data() {
     return {
       filters: {},
@@ -258,6 +298,32 @@ export default {
         { label: "Edit Employee Lists", to: "/EditEmployeeLists" },
         { label: "Employee Lists" },
       ],
+		Department: null,
+		Departments: [
+			{name: 'Nikunjo', code: 'N'},
+			{name: 'Savar', code: 'Sr'},
+			{name: 'Mohakhali', code: 'Mi'},
+			{name: 'Munshiganj', code: 'Mj'},
+		],
+		Designation: null,
+		Designations: [
+			{name: 'Nikunjo', code: 'N'},
+			{name: 'Savar', code: 'Sr'},
+			{name: 'Mohakhali', code: 'Mi'},
+			{name: 'Munshiganj', code: 'Mj'},
+		],
+		Shift: null,
+		Shifts: [
+			{name: 'Day', code: 'N'},
+			{name: 'Night', code: 'Sr'},
+		],
+		BranchName: null,
+		branch: [
+			{name: 'Nikunjo', code: 'N'},
+			{name: 'Savar', code: 'Sr'},
+			{name: 'Mohakhali', code: 'Mi'},
+			{name: 'Munshiganj', code: 'Mj'},
+		],
       TableData: [
         {
 

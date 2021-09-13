@@ -1,6 +1,42 @@
 <template>
   <div>
     <Breadcrumb :home="home" :model="items" />
+        <!-- Create Filter Option Start -->
+            <Card class="p-mt-3">
+                <template #content>
+                    <div><h4><strong>Filters Option</strong></h4></div>
+                    <div class="p-fluid p-formgrid p-grid">
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Dropdown v-model="CustomerName" :options="CustomerNames" optionLabel="name" />
+                                <label for="lastname">CustomerName</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Dropdown v-model="Warehouse" :options="ToWarehouses" optionLabel="name" />
+                                <label for="lastname">Warehouse</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Calendar id="icon" v-model="date" :showIcon="true" />
+                                <label for="lastname">From date</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-6 p-mt-3">
+                            <span class="p-float-label">
+                                <Calendar id="icon" v-model="date" :showIcon="true" />
+                                <label for="lastname">To date</label>
+                            </span>
+                        </div>
+                        <div class="p-field p-col-12 p-md-1">
+                            <button class="btn btn-primary">Fillter</button>
+                        </div>
+                    </div>
+                </template>
+            </Card>
+        <!-- Create Filter Option End -->
     <div class="p-d-flex p-jc-between p-mt-5 p-mb-3">
       <div class="p-mr-2"><h3>Return Sales Lists</h3></div>
       <div>
@@ -77,8 +113,14 @@
   </div>
 </template>
 <script>
+import Dropdown from 'primevue/dropdown';
+import Calendar from "primevue/calendar";
 export default {
   name: "ReturnSalesLists",
+    components:{
+        Dropdown,
+        Calendar
+    },
   data() {
     return {
       filters: {},
@@ -89,6 +131,20 @@ export default {
         { label: "Sales Return" },
         { label: "Create Sales Return", to: "/CreateSalesReturn" },
         { label: "Return Sales Lists" },
+      ],
+      CustomerName: null,
+      CustomerNames: [
+          {name: 'Nikunjo', code: 'N'},
+          {name: 'Savar', code: 'Sr'},
+          {name: 'Mohakhali', code: 'Mi'},
+          {name: 'Munshiganj', code: 'Mj'},
+      ],
+      Warehouse: null,
+      Warehouses: [
+          {name: 'Nikunjo', code: 'N'},
+          {name: 'Savar', code: 'Sr'},
+          {name: 'Mohakhali', code: 'Mi'},
+          {name: 'Munshiganj', code: 'Mj'},
       ],
       TableData: [
         {       

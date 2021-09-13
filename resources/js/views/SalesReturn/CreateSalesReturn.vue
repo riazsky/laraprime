@@ -15,8 +15,6 @@
     </div>
     <card class="p-mt-3">
       <template #content>
-
-
         <div class="p-fluid p-formgrid p-grid">
           <div class="p-field p-col p-mt-3">
               <span class="p-float-label">
@@ -26,13 +24,13 @@
           </div>
           <div class="p-field p-col p-mt-3">
               <span class="p-float-label">
-                <InputText id="firstname" type="text" />
+                <InputText id="firstname" type="text" v-model="CustomerN" />
                 <label for="firstname">Customer Name</label>
               </span>
           </div>
           <div class="p-field p-col p-mt-3">
               <span class="p-float-label">
-                <InputText id="lastname" type="text" />
+                <InputText id="lastname" type="text" v-model="Warehouse" />
                 <label for="lastname">Warehouse</label>
               </span>
           </div>
@@ -40,13 +38,13 @@
          <div class="p-fluid p-formgrid p-grid">
           <div class="p-field p-col p-mt-3">
               <span class="p-float-label">
-                <InputNumber id="withoutgrouping" v-model="salary" mode="decimal" :useGrouping="false"/>
+                <InputNumber id="withoutgrouping" v-model="Reference" mode="decimal" :useGrouping="false"/>
                 <label for="number">Reference No</label>
               </span>
           </div>
           <div class="p-field p-col p-mt-3">
               <span class="p-float-label">
-                  <InputNumber id="withoutgrouping" v-model="salary" mode="decimal" :useGrouping="false"/>
+                  <InputNumber id="withoutgrouping" v-model="Invoice" mode="decimal" :useGrouping="false"/>
                   <label for="number">Invoice No</label>
               </span>
           </div>
@@ -74,112 +72,101 @@
           </div>
             <div class="p-field p-col p-mt-3">
               <span class="p-float-label">
-                <InputText id="firstname" type="text" />
+                <InputText id="firstname" type="text"  v-model="Note"/>
                 <label for="firstname">Note</label>
               </span>
             </div>
         </div>
-        <div class="p-fluid p-formgrid p-grid" v-for="(item,index) in products" :key="index">
-            <div class="p-field p-col p-mt-3">
-              <span class="p-float-label">
-                <InputText id="firstname" type="text" v-model="item.name" />
-                <label for="firstname">Product Name</label>
-              </span>
-            </div>
-            <div class="p-field p-col p-mt-3">
-              <span class="p-float-label">
-                <InputNumber id="withoutgrouping1" v-model="item.qty" mode="decimal" :useGrouping="false"/>
-                <label for="number">Qty</label>
-              </span>
-            </div>
-            <div class="p-field p-col p-mt-3">
-              <span class="p-float-label">
-                <InputNumber id="withoutgrouping2" v-model="item.price" mode="decimal" :useGrouping="false"/>
-                <label for="number">Per Price</label>
-              </span>
-            </div>
-            <div class="p-field p-col p-mt-3">
-              <span class="p-float-label">
-                <InputNumber id="withoutgrouping3" v-model="item.TPrice" mode="decimal" :useGrouping="false"/>
-                <label for="number">Total Price</label>
-              </span>
-            </div>
-            
-          
-            <div  class="p-field p-col-12 p-md-1" style="margin-top: 12px">
-            <button class="btn btn-danger" v-show="index!=0" @click="remove(index)">-</button>
-            </div>
+
+        <!-- Second part start -->
+        <div style="background-color: #f8fafc">
+          <table class="table">
+            <tr>
+              <th>Product Name</th>
+              <th>Qty</th>
+              <th>Per Price</th>
+              <th>Total Price</th>
+              <th></th>
+            </tr>
+            <tr v-for="(purchase, index) in purchases" :key="index">
+              <td style="width:30%;">
+                <select v-model="purchase.name" id="product_name" class="form-control">
+                  <option selected disabled hidden>-- Select a Product --</option>
+                  <option>Shirt</option>
+                  <option>pant</option>
+                </select>
+              </td>
+
+              <td style="width:20%;">
+                <input v-model="purchase.qty" type="number"  class="form-control" />
+              </td>
+
+              <td style="width:20%;">
+                <input v-model="purchase.per_price" type="number" class="form-control" />
+              </td>
+              <td style="width:25%;">
+                <input v-model="purchase.total_price" type="number" class="form-control" />
+              </td>
+              <td>
+                <input @click="remove(index)" type="button" value="-" v-if="index != 0" class="btn btn-danger" />
+                <input @click="add" type="button" v-if="index == 0" value="+" class="btn btn-success"/>
+              </td>
+            </tr>
+          </table>
         </div>
-          <button class="btn btn-primary" @click="add">+</button>
+        <!-- Second part end -->
 
-      
-          <div class="p-field p-col-12 p-md-12">
-              <span class="p-float-label p-mt-3">
-                <Textarea id="mote" class="form-control" rows="2"/>
-                <label for="lastname">Note</label>
-              </span>
-          </div>
-          <div class="p-grid">
-            <div class="col-5 p-offset-7">
-              <div class="p-d-flex p-jc-between">
-                  <label for=""><strong>Sale Discount:</strong></label>
-                  <InputNumber  placeholder="Enter Sale Discount" class=""/>
-              </div>
-            </div>
-             <div class="col-5 p-offset-7 ">
-              <div class="p-d-flex p-jc-between p-mt-2">
-                  <label for=""><strong>Sale Total:</strong></label>
-                  <InputNumber placeholder="Enter Sale Discount" class=""/>
-              </div>
-            </div>
-             <div class="col-5 p-offset-7 ">
-              <div class="p-d-flex p-jc-between p-mt-2">
-                  <label for=""><strong>Total Tax:</strong></label>
-                  <InputNumber placeholder="Enter Total Tax" class=""/>
-              </div>
-            </div>
-             <div class="col-5 p-offset-7 ">
-              <div class="p-d-flex p-jc-between p-mt-2">
-                  <label for=""><strong>Shipping Cost:</strong></label>
-                  <InputNumber placeholder="Enter Shipping Cost" class=""/>
-              </div>
-            </div>
-             <div class="col-5 p-offset-7 ">
-              <div class="p-d-flex p-jc-between p-mt-2">
-                  <label for=""><strong>Grand Total:</strong></label>
-                  <InputNumber placeholder="Enter Grand Total" class=""/>
-              </div>
-            </div>
-             <div class="col-5 p-offset-7 ">
-              <div class="p-d-flex p-jc-between p-mt-2">
-                  <label for=""><strong>Previous:</strong></label>
-                  <InputNumber placeholder="Previous" class=""/>
-              </div>
-            </div>
-             <div class="col-5 p-offset-7 ">
-              <div class="p-d-flex p-jc-between p-mt-2">
-                  <label for=""><strong>Net Total:</strong></label>
-                  <InputNumber placeholder="Enter Net Total" class=""/>
-              </div>
-            </div>
-             <div class="col-5 p-offset-7 ">
-              <div class="p-d-flex p-jc-between p-mt-2">
-                  <label for=""><strong>Paid Amount:</strong></label>
-                  <InputNumber placeholder="Enter Paid Amount" class=""/>
-              </div>
-            </div>
-             <div class="col-5 p-offset-7 ">
-              <div class="p-d-flex p-jc-between p-mt-2">
-                  <label for=""><strong>Due:</strong></label>
-                  <InputNumber placeholder="Enter Due" class=""/>
-              </div>
-            </div>
-          </div>
-          <div>
-          <button class="btn btn-outline-info">Save Purchase</button>
-         
+        <!-- last part Start-->
+        <div class="row">
+          <div class="col-7">
+            <label for="note"><b>Note</b></label>
+            <textarea id="note" rows="5" class="form-control"></textarea>
 
-        </div> 
+            <label for="note" class="p-mt-3"><b>Terms And Condition</b></label>
+            <textarea id="note" rows="5" class="form-control"></textarea>
+            <button class="btn btn-success p-mt-3">Save Invoice</button>
+          </div>
+           <div class="col-5">
+              <table class="table">
+                  <tr>
+                      <th>Sale Discount:</th>
+                      <td><InputNumber v-model="sale_discount" class="p-inputtext-sm"/></td>
+                  </tr>
+                  <tr>
+                      <th>Sale Total:</th>
+                      <td><InputNumber v-model="sale_total" class="p-inputtext-sm"/></td>
+                  </tr>
+                  <tr>
+                      <th>Total Tax:</th>
+                      <td><InputNumber v-model="sale_tax" class="p-inputtext-sm"/></td>
+                  </tr>
+                  <tr>
+                      <th>Shipping cost:</th>
+                      <td><InputNumber v-model="shipping_cost" class="p-inputtext-sm" /></td>
+                  </tr>
+                  <tr>
+                      <th>Grand Total:</th>
+                      <td><InputNumber v-model="grand_total" class="p-inputtext-sm"/></td>
+                  </tr>
+                  <tr>
+                      <th>Previous:</th>
+                      <td><InputNumber v-model="Previous" class="p-inputtext-sm"/></td>
+                  </tr>
+                  <tr>
+                      <th>Net Total:</th>
+                      <td><InputNumber v-model="net_total" class="p-inputtext-sm"/></td>
+                  </tr>
+                  <tr>
+                      <th>Paid Amount:</th>
+                      <td><InputNumber v-model="paid_amount" class="p-inputtext-sm"/></td>
+                  </tr>
+                  <tr>
+                      <th>Due:</th>
+                      <td><InputNumber v-model="due" class="p-inputtext-sm"/></td>
+                  </tr>
+              </table>
+          </div>
+        </div>
       </template>
     </card>
   </div>
@@ -188,6 +175,7 @@
 import Dropdown from "primevue/dropdown";
 import Button from "primevue/button";
 import Calendar from "primevue/calendar";
+import Textarea from 'primevue/textarea';
 
 
 export default {
@@ -196,20 +184,35 @@ export default {
     Dropdown,
     Button,
     Calendar,
+    Textarea,
 
   },
 
   data() {
     return {
-
-      products:[
-        {name:null,qty: null,price:null,TPrice:null}
+    mote:null,
+      purchases:[
+        {name:'',qty: null,per_price:null,total_price:null}
       ],
       date: null,
+      CustomerN: null,
+      Warehouse: null,
       phone: null,
-      salary: null,
-      city: null,
+      Reference: null,
+      Note: null,
+      Invoice: null,
+      city: null,  
       value: null,
+
+      sale_discount: null,
+      sale_total: null,
+      sale_tax: null,
+      shipping_cost: null,
+      grand_total: null,
+      net_total: null,
+      Previous: null,
+      paid_amount: null,
+      due: null,
       
       home: { icon: "pi pi-home", to: "/" },
       items: [
@@ -239,10 +242,10 @@ export default {
   },
   methods: {
     add(){
-      this.products.push({name:'',qty:null,price:null,TPrice:null})
+      this.purchases.push({name:'',qty:null,per_price:null,total_price:null})
     },
     remove(index){
-      this.products.splice(index,1)
+      this.purchases.splice(index,1)
 
     }
     

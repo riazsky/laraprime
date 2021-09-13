@@ -22,7 +22,7 @@
                     </div>
                     <div class="p-field p-col-12 p-mt-3">
                     <span class="p-float-label">
-                        <Textarea id="address" class="form-control" rows="2" />
+                        <Textarea v-model="address" id="address" class="form-control" rows="2" />
                         <label for="address">Description</label>
                     </span>
                     </div>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="p-field p-col-12 p-mt-3">
                     <span class="p-float-label">
-                            <Textarea id="address" class="form-control" rows="2" />
+                            <Textarea v-model="Description" class="form-control" rows="2" />
                             <label for="address">Meta Description</label>
                     </span>
                     </div>
@@ -114,6 +114,7 @@ import Dropdown from 'primevue/dropdown';
 import Button from 'primevue/button';
 import Calendar from 'primevue/calendar';
 import Chips from 'primevue/chips';
+import Textarea from 'primevue/textarea';
 
 export default {
     name: 'CreateProducts',
@@ -121,7 +122,8 @@ export default {
         Dropdown,
         Button,
         Calendar,
-        Chips
+        Chips,
+        Textarea
 
     },
 
@@ -131,14 +133,16 @@ export default {
             value2: null,
             date: null,
             department: null,
-                home: {icon: 'pi pi-home', to: '/'},
-                items: [
-                    {label: 'Inventory'},
-                    {label: 'Products'},
-                    {label: 'Products List',to:'/ProductLists'},
-                    {label: 'Edit Product List',to:'/EditProductLists'},
-                    {label: 'Create Products'},
-                ],
+            address:null,
+            Description:null,
+            home: {icon: 'pi pi-home', to: '/'},
+            items: [
+                {label: 'Inventory'},
+                {label: 'Products'},
+                {label: 'Products List',to:'/ProductLists'},
+                {label: 'Edit Product List',to:'/EditProductLists'},
+                {label: 'Create Products'},
+            ],
 
             ProductType: null,
             Products: [

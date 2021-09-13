@@ -18,13 +18,13 @@
         <div class="p-fluid p-formgrid p-grid">
           <div class="p-field p-col-12 p-md-6 p-mt-3">
               <span class="p-float-label">
-                  <InputText id="firstname" type="text" />
+                  <InputText id="firstname" type="text" v-model="text" />
                   <label for="firstname">Name</label>
               </span>
           </div>
           <div class="p-field p-col-12 p-md-6 p-mt-3">
               <span class="p-float-label">
-                  <InputText id="lastname" type="email" />
+                  <InputText id="lastname" type="email" v-model="email" />
                   <label for="lastname">Email</label>
               </span>
           </div>
@@ -54,7 +54,7 @@
           </div>
           <div class="p-field p-col-12 p-mt-3">
               <span class="p-float-label">
-                <Textarea id="address" class="form-control" rows="3" />
+                <Textarea id="address"  v-model="address" class="form-control" rows="3" />
                 <label for="address">Present Address</label>
               </span>
           </div>
@@ -84,7 +84,7 @@
           </div>
           <div class="p-field p-col-12 p-md-6 p-mt-3">
             <span class="p-float-label">
-              <InputText id="firstname" type="text" />
+              <InputText id="firstname" type="text"  v-model="EmployeeId" />
               <label for="firstname">Employee Id</label>
             </span>
           </div>
@@ -120,6 +120,7 @@ import Dropdown from "primevue/dropdown";
 import Button from "primevue/button";
 import Calendar from "primevue/calendar";
 import RadioButton from "primevue/radiobutton";
+import Textarea from 'primevue/textarea';
 
 export default {
   name: "EditEmployeeLists",
@@ -128,14 +129,19 @@ export default {
     Button,
     Calendar,
     RadioButton,
+    Textarea,
   },
 
   data() {
     return {
       date: null,
+      text: null,
+      email: null,
       phone: null,
       salary: null,
       city: null,
+      address: null,
+      EmployeeId: null,
       home: { icon: "pi pi-home", to: "/" },
       items: [
         { label: "HRM" },

@@ -120,6 +120,32 @@
 	
 					</ul>
 				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-star"></i>
+						</div>
+						<div class="menu-title">Voucher</div>
+					</a>
+					<ul>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/CreateVoucher">Create Voucher</router-link></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="pi pi-star"></i>
+						</div>
+						<div class="menu-title">Product Transfer</div>
+					</a>
+					<ul>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/CreateProductTransfer">Create Product Transfer</router-link></a>
+						</li>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/ProductTransferList">Product TransferList</router-link></a>
+						</li>
+						<li> <a ><i class="pi pi-arrow-right"></i><router-link to="/EditProductTransferList">Edit Product TransferList</router-link></a>
+						</li>
+					</ul>
+				</li>
 				<li class="menu-label">UI Elements</li>
 				<li>
 					<a href="widgets.html">

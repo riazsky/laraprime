@@ -13,6 +13,10 @@ const ReturnSaleView = () => import('./views/SalesReturn/ReturnSaleView.vue');
 const CreateProducts = () => import('./views/Inventory/Products/CreateProducts.vue');
 const ProductLists = () => import('./views/Inventory/Products/ProductLists.vue');
 const EditProductLists = () => import('./views/Inventory/Products/EditProductList.vue');
+const CreateVoucher = () => import('./views/Accounts/Voucher/CreateVoucher.vue');
+const CreateProductTransfer = () => import('./views/Inventory/ProductTransfer/CreateProductTransfer.vue');
+const ProductTransferList = () => import('./views/Inventory/ProductTransfer/ProductTransferList.vue');
+const EditProductTransferList = () => import('./views/Inventory/ProductTransfer/EditProductTransferList.vue');
 
 // test perpose
 const AddRemove = () => import('./views/Multiple/AddRemove.vue');
@@ -99,6 +103,31 @@ const routes = [
         name: 'EditProductLists',
         component: EditProductLists
     },
+    // Create Voucher Routes
+    {
+        path: '/CreateVoucher',
+        name: 'CreateVoucher',
+        component: CreateVoucher
+    },
+    // Create Product Transfer Routes
+    {
+        path: '/CreateProductTransfer',
+        name: 'CreateProductTransfer',
+        component: CreateProductTransfer
+    },
+    // Product Transfer Lists Routes
+    {
+        path: '/ProductTransferList',
+        name: 'ProductTransferList',
+        component: ProductTransferList
+    },
+    // Edit Product Transfer Lists Routes
+    {
+        path: '/EditProductTransferList',
+        name: 'EditProductTransferList',
+        component: EditProductTransferList
+    },
+
     //test perpose
     {
         path: '/AddRemove',

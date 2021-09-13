@@ -11,6 +11,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var primevue_dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! primevue/dropdown */ "./node_modules/primevue/dropdown/index.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -140,8 +141,48 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "ProductLists",
+  components: {
+    Dropdown: primevue_dropdown__WEBPACK_IMPORTED_MODULE_0__.default
+  },
   onRowEditInit: null,
   onRowEditCancel: null,
   value2: null,
@@ -166,6 +207,56 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         to: '/EditProductLists'
       }, {
         label: 'Products List'
+      }],
+      ProductType: null,
+      ProductTypes: [{
+        name: 'Mobie',
+        code: 'N'
+      }, {
+        name: 'Laptop',
+        code: 'Sr'
+      }, {
+        name: 'Mohakhali',
+        code: 'Mi'
+      }, {
+        name: 'Munshiganj',
+        code: 'Mj'
+      }],
+      Category: null,
+      Categories: [{
+        name: 'Nikunjo',
+        code: 'N'
+      }, {
+        name: 'Savar',
+        code: 'Sr'
+      }, {
+        name: 'Mohakhali',
+        code: 'Mi'
+      }, {
+        name: 'Munshiganj',
+        code: 'Mj'
+      }],
+      Shift: null,
+      Shifts: [{
+        name: 'Day',
+        code: 'N'
+      }, {
+        name: 'Night',
+        code: 'Sr'
+      }],
+      Orgin: null,
+      Orgins: [{
+        name: 'Nikunjo',
+        code: 'N'
+      }, {
+        name: 'Savar',
+        code: 'Sr'
+      }, {
+        name: 'Mohakhali',
+        code: 'Mi'
+      }, {
+        name: 'Munshiganj',
+        code: 'Mj'
       }],
       TableData: [{
         id: "1",
@@ -236,6 +327,17 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }
   }
 });
+
+/***/ }),
+
+/***/ "./node_modules/primevue/dropdown/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/primevue/dropdown/index.js ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+module.exports = __webpack_require__(/*! ./Dropdown.vue */ "./node_modules/primevue/dropdown/Dropdown.vue");
 
 /***/ }),
 
@@ -327,6 +429,133 @@ var render = function() {
     "div",
     [
       _c("Breadcrumb", { attrs: { home: _vm.home, model: _vm.items } }),
+      _vm._v(" "),
+      _c("Card", {
+        staticClass: "p-mt-3",
+        scopedSlots: _vm._u([
+          {
+            key: "content",
+            fn: function() {
+              return [
+                _c("div", [
+                  _c("h4", [_c("strong", [_vm._v("Filters Option")])])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "p-fluid p-formgrid p-grid" }, [
+                  _c("div", { staticClass: "p-field p-col-12 p-md-6 p-mt-3" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("Dropdown", {
+                          attrs: {
+                            options: _vm.ProductTypes,
+                            optionLabel: "name"
+                          },
+                          model: {
+                            value: _vm.ProductType,
+                            callback: function($$v) {
+                              _vm.ProductType = $$v
+                            },
+                            expression: "ProductType"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("label", { attrs: { for: "lastname" } }, [
+                          _vm._v("Product Type")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-col-12 p-md-6 p-mt-3" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("Dropdown", {
+                          attrs: { options: _vm.Brands, optionLabel: "name" },
+                          model: {
+                            value: _vm.Brand,
+                            callback: function($$v) {
+                              _vm.Brand = $$v
+                            },
+                            expression: "Brand"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("label", { attrs: { for: "lastname" } }, [
+                          _vm._v("Brand")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-col-12 p-md-6 p-mt-3" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("Dropdown", {
+                          attrs: {
+                            options: _vm.Categories,
+                            optionLabel: "name"
+                          },
+                          model: {
+                            value: _vm.Category,
+                            callback: function($$v) {
+                              _vm.Category = $$v
+                            },
+                            expression: "Category"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("label", { attrs: { for: "lastname" } }, [
+                          _vm._v("Category")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-col-12 p-md-6 p-mt-3" }, [
+                    _c(
+                      "span",
+                      { staticClass: "p-float-label" },
+                      [
+                        _c("Dropdown", {
+                          attrs: { options: _vm.Orgins, optionLabel: "name" },
+                          model: {
+                            value: _vm.Orgin,
+                            callback: function($$v) {
+                              _vm.Orgin = $$v
+                            },
+                            expression: "Orgin"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("label", { attrs: { for: "lastname" } }, [
+                          _vm._v("Orgin")
+                        ])
+                      ],
+                      1
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "p-field p-col-12 p-md-1" }, [
+                    _c("button", { staticClass: "btn btn-primary" }, [
+                      _vm._v("Fillter")
+                    ])
+                  ])
+                ])
+              ]
+            },
+            proxy: true
+          }
+        ])
+      }),
       _vm._v(" "),
       _c("div", { staticClass: "p-d-flex p-jc-between p-mt-5 p-mb-3" }, [
         _vm._m(0),

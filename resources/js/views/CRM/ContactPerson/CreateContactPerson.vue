@@ -10,19 +10,19 @@
                 <div class="p-fluid p-formgrid p-grid">
                     <div class="p-field p-col-12 p-md-6 p-mt-3">
                         <span class="p-float-label">
-                            <InputText id="firstname" type="text" />
+                            <InputText id="firstname" v-model="name" type="text" />
                             <label for="firstname">Person Name</label>
                         </span>
                     </div>
                     <div class="p-field p-col-12 p-md-6 p-mt-3">
                         <span class="p-float-label">
-                            <InputText id="lastname" type="email" />
+                            <InputText id="lastname" v-model="email" type="email" />
                             <label for="lastname">Email Address</label>
                         </span>
                     </div>
                     <div class="p-field p-col-12 p-md-6 p-mt-3">
                         <span class="p-float-label">
-                            <InputNumber id="withoutgrouping" v-model="value2" mode="decimal" :useGrouping="false" />
+                            <InputNumber id="withoutgrouping" v-model="value" mode="decimal" :useGrouping="false" />
                             <label for="number">Mobile Number</label>
                         </span>
                     </div>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="p-field p-col-12 p-mt-3">
                         <span class="p-float-label">
-                            <Textarea id="address" class="form-control" rows="4" />
+                            <Textarea id="address"  v-model="address" class="form-control" rows="3" />
                             <label for="address">Address</label>
                         </span>
                         
@@ -78,7 +78,7 @@
                     </div>
                     <div class="p-field p-col-12 p-md-6 p-mt-3">
                         <span class="p-float-label">
-                            <InputText id="lastname" type="text" />
+                            <InputText id="lastname" v-model="Reference" type="text" />
                             <label for="lastname">Reference</label>
                         </span>
                     </div>
@@ -96,19 +96,19 @@
                     </div>
                     <div class="p-field p-col-12 p-md-6 p-mt-3">
                         <span class="p-float-label">
-                            <InputText id="lastname" type="text" />
+                            <InputText id="lastname" v-model="Remarks" type="text" />
                             <label for="lastname">Remarks</label>
                         </span>
                     </div>
                     <div class="p-field p-col-12 p-md-6 p-mt-3">
                         <span class="p-float-label">
-                            <InputText id="lastname" type="password" />
+                            <InputText id="lastname" v-model="Password" type="password" />
                             <label for="lastname">Password</label>
                         </span>
                     </div>
                     <div class="p-field p-col-12 p-md-6 p-mt-3">
                         <span class="p-float-label">
-                            <InputText id="lastname" type="password" />
+                            <InputText id="lastname" v-model="CPassword" type="password" />
                             <label for="lastname">Confirm Password</label>
                         </span>
                     </div>
@@ -122,23 +122,33 @@
 import Dropdown from 'primevue/dropdown';
 import Button from 'primevue/button';
 import Calendar from 'primevue/calendar';
+import Textarea from 'primevue/textarea';
 
 export default {
     name: 'EditContactPerson',
     components:{
         Dropdown,
         Button,
-        Calendar
+        Calendar,
+        Textarea
 
     },
 
 data() {
 	return {
         date: null,
+        name: null,
+        email: null,
+        value: null,
         value2: null,
         value9: null,
         value14: null,
+		Reference: null,
 		department: null,
+		Remarks: null,
+		Password: null,
+		CPassword: null,
+		address: null,
             home: {icon: 'pi pi-home', to: '/'},
             items: [
                 {label: 'CRM'},
